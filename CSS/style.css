@@ -3,140 +3,16 @@
     padding: 0;
 }
 
-
-/* ------- Header ---------*/
-
-.headerLogo {
-    margin: 15px;
-}
-
-
-/*Logos*/
-
-.logoMarque {
-    width: 200px;
-}
-
-.logoPanier,
-.logoLocalisation {
-    width: 15px;
-    margin: 10px;
-}
-
-.headerLogo {
-    display: flex;
-    flex: space-between;
-}
-
-.blocblanc {
-    width: 250px;
-}
-
-
-/* **** Nav **** */
-
-
-/* **** Footer**** */
-
-
-/* **** Footer**** */
-
-footer {
-    background: #7CB9B5;
-    color: white;
-}
-
-footer .ligne {
-    background: white;
-    ;
-}
-
-footer h4 {
-    color: white;
-    text-align: center;
-}
-
-#newsletter {
-    margin-top: 30px;
-    border-bottom: 2px solid #118078;
-}
-
-#newsletter .btn {
+.ligne {
     display: block;
-    background-color: #118078;
-    color: white;
-    margin: 0 auto;
-    font-size: 1.3rem;
-    width: 175px;
-    height: 50px;
-    margin-bottom: 20px;
-    text-align: center;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    border: 2px solid white;
+    height: 2px;
+    background-color: slategray;
+    width: 20%;
+    margin: 20px auto;
 }
 
-#newsletter .btn:hover {
-    background-color: white;
-    color: #118078;
-    border: 2px solid #118078;
-    transform: none;
-}
 
-#newsletter p {
-    text-align: justify center;
-    margin: 0 auto;
-    margin-bottom: 20px;
-}
-
-#infos {
-    margin-top: 30px;
-    border-bottom: 2px solid #118078;
-    background: red;
-}
-
-#infos ul li {
-    list-style: none;
-    text-align: center;
-}
-
-#infos ul li a {
-    text-decoration: none;
-    color: white;
-}
-
-#infos ul li a:hover {
-    color: #118078;
-}
-
-#Social {
-    margin-top: 30px;
-    border-bottom: 2px solid #118078;
-}
-
-#Social a {
-    text-decoration: none;
-    color: red;
-    font-size: 300%;
-    margin: 0 30px;
-}
-
-#Social a i {
-    text-decoration: none;
-}
-
-.divEssai {
-    text-align: center;
-}
-
-footer #copy {
-    background: #118078;
-    color: white;
-    height: 30px;
-    text-align: center;
-}
+/* ****  bouton **** */
 
 .btn {
     display: inline-block;
@@ -194,3 +70,174 @@ footer #copy {
 .show>.btn-outline-success.dropdown-toggle:focus {
     box-shadow: 0 0 0 0.2rem rgba(17, 128, 120, 0.5);
 }
+
+
+/* ------- Header ---------*/
+
+.headerLogo {
+    margin: 15px;
+}
+
+
+/*Logos*/
+
+.logoMarque {
+    width: 200px;
+}
+
+.logoPanier,
+.logoLocalisation {
+    width: 15px;
+    margin: 10px;
+}
+
+.headerLogo {
+    display: flex;
+    flex: space-between;
+}
+
+.blocblanc {
+    width: 250px;
+}
+
+
+/* **** Nav **** */
+
+
+/* **** Footer**** */
+
+footer {
+    background: #7CB9B5;
+    color: white;
+}
+
+footer .ligne {
+    background: white;
+    ;
+}
+
+.footer_align {
+    text-align: center;
+    display: none;
+}
+
+footer h4 {
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+#newsletter {
+    margin-top: 30px;
+    border-bottom: 2px solid #118078;
+}
+
+#newsletter .btn {
+    display: block;
+    background-color: #118078;
+    color: white;
+    margin: 0 auto;
+    font-size: 1.3rem;
+    width: 175px;
+    height: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#newsletter .btn:hover {
+    background-color: white;
+    color: #118078;
+    border: 2px solid #118078;
+    transform: none;
+}
+
+#newsletter p {
+    text-align: justify center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+#infos {
+    margin-top: 30px;
+    border-bottom: 2px solid #118078;
+}
+
+#infos ul li {
+    list-style: none;
+    text-align: center;
+}
+
+#infos ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+#infos ul li a:hover {
+    color: #118078;
+}
+
+#Social {
+    margin-top: 30px;
+    border-bottom: 2px solid #118078;
+}
+
+#Social a {
+    text-decoration: none;
+    color: white;
+    font-size: 300%;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+#Social a i {
+    text-decoration: none;
+}
+
+#Social a i:hover {
+    color: #118078;
+}
+
+footer #copy {
+    background: #118078;
+    color: white;
+    height: 30px;
+    text-align: center;
+}
+
+
+/* ****  responsive**** */
+
+
+/*Extra small devices (portrait phones, less than 576px)*/
+
+@media (max-width: 575.98px) {}
+
+
+/*  Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* **** Footer**** */
+    .footer_align {
+        text-align: center;
+        display: block;
+    }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {}
