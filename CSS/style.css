@@ -2,3 +2,52 @@
     margin: 0;
     padding: 0;
 }
+
+/* ------- Header ---------*/
+
+.headerLogo{
+    margin: 15px;
+}
+/*Logos*/
+.logoMarque{
+    width: 200px;
+}
+
+.logoPanier, .logoLocalisation{
+    width: 15px;
+    margin: 10px;
+}
+
+.headerLogo{
+    display: flex;
+    flex: space-between;
+}
+
+.blocblanc{
+    width: 250px;
+}
+
+
+
+/* **** Nav **** */
+
+
+
+
+/* **** Footer**** */
+
+footer {
+    background: #7CB9B5;
+    color: white;
+}
+
+footer h4 {
+    color: white;
+}
+
+footer div:last-child {
+    background: #118078;
+    color: white;
+    height: 30px;
+    text-align: center;
+}
