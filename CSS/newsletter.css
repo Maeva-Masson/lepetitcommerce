@@ -23,6 +23,10 @@ fieldset {
     border: 1px solid #118078;
 }
 
+legend {
+    text-align: center;
+}
+
 label {
     margin-top: 10px;
 }

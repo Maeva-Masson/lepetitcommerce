@@ -1,0 +1,179 @@
+#main-image {
+    background: url('../img/homme/image_solde.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    align-items: center;
+    width: 80%;
+    border-radius: 4px;
+}
+
+h2 {
+    text-align: right;
+    color: red;
+    padding-top: 40px;
+    font-size: 2.5em;
+    margin-right: 20px;
+}
+
+#main-image p {
+    text-align: right;
+    color: red;
+}
+
+#main-image .redbutton {
+    display: block;
+    color: red;
+    text-decoration: none;
+    font-size: 1.3rem;
+    width: 175px;
+    height: 50px;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid black;
+    margin-top: 40px;
+    float: right;
+    margin-right: 30px;
+}
+
+#main-image .redbutton:hover {
+    color: white;
+    transform: none;
+    background-color: red;
+    border: 1px solid red;
+}
+
+
+/* ***** fil d'ariane ***** */
+
+.breadcrumb {
+    background-color: white !important;
+}
+
+.breadcrumb-item.active {
+    color: #118078;
+}
+
+
+/*  ***** Les Images ***** */
+
+.image_vetement {
+    height: 550px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#card-body1,
+#card-body2,
+#card-body3,
+#card-body4,
+#card-body5,
+#card-body6,
+#card-body7,
+#card-body8,
+#card-body9,
+#card-body10,
+#card-body11,
+#card-body12,
+#card-body13,
+#card-body14,
+#card-body15,
+#card-body16,
+#card-body17,
+#card-body18,
+#card-body19,
+#card-body20,
+#card-body21,
+#card-body22,
+#card-body23,
+#card-body24,
+#card-body25,
+#card-body26,
+#card-body27,
+#card-body28,
+#card-body29,
+#card-body30 {
+    display: none;
+}
+
+.text {
+    padding: 0 20px 20px 20px;
+    margin-bottom: 10px;
+    border: 1px solid #118078;
+}
+
+.text legend {
+    text-align: center;
+    padding-top: ;
+    font-size: 2em;
+    margin-right: 20px;
+}
+
+.text p {
+    text-align: center;
+}
+
+.text button {
+    margin-top: 40px;
+}
+
+
+/* ****  responsive**** */
+
+
+/*Extra small devices (portrait phones, less than 576px)*/
+
+@media (max-width: 575.98px) {}
+
+
+/*  Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {}
+
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+    .image_vetement {
+        height: 350px;
+        width: 100%;
+    }
+    h2 {
+        text-align: center;
+        color: red;
+        padding-top: 40px;
+        font-size: 4.5em;
+    }
+    #main-image p {
+        text-align: center;
+        color: red;
+    }
+    #main-image .redbutton {
+        display: block;
+        color: red;
+        text-decoration: none;
+        font-size: 1.3rem;
+        width: 175px;
+        height: 50px;
+        text-align: center;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        border: 1px solid black;
+        margin-right: 40%
+    }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {}
