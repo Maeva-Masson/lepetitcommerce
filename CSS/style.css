@@ -18,6 +18,15 @@
 .clear {
     height: 70px;
 }
+.dropdown-item.active,
+.dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: red !important;
+}
+
+
+/* *****  header ***** */
 
 
 /* ****  bouton **** */
@@ -112,6 +121,9 @@
 /* **** Nav **** */
 
 
+/*  carousel */
+
+
 /* **** Footer**** */
 
 footer {
@@ -198,6 +210,7 @@ footer h4 {
     font-size: 300%;
     padding: 30px;
     margin-bottom: 20px;
+    justify-content: space-between;
 }
 
 #Social a i {
