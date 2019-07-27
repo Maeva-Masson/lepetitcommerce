@@ -100,41 +100,43 @@
 
     <div id="News_form">
         <form action="">
-            <fieldset>
+            <fieldset id="identity">
                 <legend> Identité : </legend>
                 <label for="Civilité">Civilité :</label><br>
                 <input class="choix inline" type="radio" name="civilité" value="homme">Monsieur
                 <input class="choix inline" type="radio" name="civilité" value="femme" required checked>Madame
                 <br>
-                <label for="prenom">Prenom</label>
-                <input type="text" id="prenom" name="prenom" value="" required placeholder="saisir votre prenom"><br>
+                <label for="prenom">Prenom :</label>
+                <input type="text" id="prenom" name="prenom" id="prenom" value="" required>
+                <span id="miss_infos"></span>
 
-                <label for="Nom">Nom</label>
-                <input type="text" id="Nom" name="Nom" value="" placeholder="saisir votre nom"><br>
+                <br>
+                <label for="Nom">Nom :</label>
+                <input type="text" id="Nom" name="Nom" id="nom" value="" required><br>
             </fieldset>
             <br>
-            <fieldset>
+            <fieldset id="contact">
                 <legend> Contact :</legend>
-                <label for="email">email</label>
+                <label for="email">E-mail :</label>
                 <input type="email" id="email" name="email" value="" required><br>
-                <label for="tel">Téléphone</label>
+                <label for="tel">Téléphone :</label>
                 <input type="text" id="tel" name="tel" maxlength="10" pattern="[0-9]{5}" title "5 chiffres comprit entre 0 et 9">
                 <br>
             </fieldset>
             <br>
-            <fieldset>
+            <fieldset id="adresse">
                 <legend> Coordonnées Postale :</legend>
-                <label for="Adress">Adresse</label>
-                <textarea name="adresse" id="adresse" rows="1" cols="60"></textarea>
+                <label for="Adress">Adresse :</label>
+                <textarea name="adresse" id="adresse" rows="1" cols="50"></textarea>
                 <br>
-                <label for="ville">ville</label>
+                <label for="ville">ville :</label>
                 <input type="text" id="ville " name="ville" list="france">
                 <datalist id="france">
           <option value="Paris">Paris</option>
           <option value="Marseille">Marseille</option>
           <option value="Bordeaux">Bordeaux</option>
         </datalist>
-                <label for="cp">Code Postal</label>
+                <label for="cp">Code Postal :</label>
                 <input type="text" id="cp" name="cp" maxlength="5" pattern="[0-9]{5}" title "5 chiffres comprit entre 0 et 9">
                 <br>
             </fieldset>
@@ -142,7 +144,7 @@
 
             <p><input type="checkbox" name="news_sms" value="">J’accepte de recevoir des messages personnalisés par SMS</p>
             <BR></BR>
-            <input class="btn btn-outline-success my-2 my-sm-0" type="submit" name="" value="Envoyer">
+            <input class="btn btn-outline-success my-2 my-sm-0" id="bouton_envoi" type="submit" name="" value="Envoyer">
             <br>
 
         </form>
@@ -211,6 +213,27 @@
             <p>Copyright &copy; LePetitCommerce</p>
         </div>
     </footer>
+
+    <script>
+        var formValid = document.getElementById('bouton_envoi');
+        var prenom = document.getElementById('prenom');
+        var miss_prenom = document.getElementsByID('miss_prenom');
+        var prenomValid = /^[a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+([-'\s][a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+)?$/;
+
+        formValid.addEventListener('click', f_valid);
+
+        function f_valid(e) {
+            if (prenom.validity.valueMissing) {
+                e.preventDefault();
+                miss_prenom.textContent = 'Information requise';
+                miss_prenom.style.color = 'red';
+            } else if (prenomValid.test(prenom.value) == false) {
+                e.preventDefault();
+                miss_prenom.textContent = 'Format incorrect';
+                miss_prenom.style.color = 'orange';
+            } else {}
+        }
+    </script>
 
     <script>
         $(document).ready(function() {

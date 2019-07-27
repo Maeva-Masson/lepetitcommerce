@@ -1,6 +1,5 @@
 #News_form {
     margin: 0 auto 0 auto;
-    width: 600px;
     margin-top: 30px;
 }
 
@@ -21,6 +20,7 @@ fieldset {
     padding: 0 20px 20px 20px;
     margin-bottom: 10px;
     border: 1px solid #118078;
+    justify-content: center;
 }
 
 legend {
@@ -31,7 +31,21 @@ label {
     margin-top: 10px;
 }
 
-label.inline {
+#identity input[type=text] {
+    display: flex;
+}
+
+#contact input[type=text],
+#contact input[type=email] {
+    display: flex;
+}
+
+#adresse input[type=text],
+#adresse textarea {
+    display: flex;
+}
+
+label .inline {
     margin-right: 50px;
 }
 
@@ -68,6 +82,7 @@ input[type=submit],
 
 .conditions {
     font-size: 10px;
+    margin: 0 auto;
 }
 
 .conditions a {
@@ -96,3 +111,36 @@ input[type=submit],
     border: 2px solid #118078;
     transform: none;
 }
+
+
+/* ****  responsive**** */
+
+
+/*Extra small devices (portrait phones, less than 576px)*/
+
+@media (max-width: 575.98px) {}
+
+
+/*  Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {}
+
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+    /* **** Footer**** */
+    #News_form {
+        width: 600px;
+    }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {}
