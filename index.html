@@ -6,27 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel ="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet">
+
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-
-    <title>LePetitCommerce</title>
-
-
-
+    <title>Le Petit Commerce</title>
 </head>
-
 
 <body>
     <!-- ******  Header  ****** -->
     <header>
-        <div class="headerLogo">
-            <img class="logoMarque" src="img/logo/logo.png" alt="logoMarque">
-            <div class="blocblanc"></div>
-            <div class="localisation"><img class="logoLocalisation" src="img/logo/localisation.png" alt="logoLocalisation"></div>
-            <div class="panier"><img class="logoPanier" src="img/logo/panier.png" alt="logoPanier"></div>
-        </div>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="headerLogo">
+
+                    <div class="searchbar"><i class="fas fa-search"></i></div>          
+                    <div class="localisation"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="panier"><i class="fas fa-shopping-cart"></i></div>
+                    <div class="user"><i class="fas fa-user"></i></div>
+                    <div id="conteneur">
+                            <ul id="menu">
+                                <li>
+                                    <a href="#" class="langues">Langues</a>
+                                <ul class="sous_menu">
+                                    <li>
+                                        <a href="#"><img class="logoLangues" src="img/logo/flag-fr.png" alt="langue france"></a></li>
+                                    <li><a href="#"><img class="logoLangues" src="img/logo/flag-gb.png" alt="langue anglais"></a></li>
+                                </ul>
+                            </li>
+                            </ul>
+                    </div>  
+                </div>
+
+                <figure class="logoMarque">
+                        <img class="logoMarque" src="img/logo/logo.png" alt="Logo Marque">
+                </figure>
+
+
+
+
+
+        </header>
+
+<script>
+$(document).ready(function(){
+    $(".langues").hover(function() {
+        $(".langues").parent().find("ul.sous_menu").stop(true,true).slideDown(200).show(); 
+        $(".langues").parent().hover(function(){ 
+            }, function(){
+            $(this).parent().find("ul.sous_menu").slideUp(150);
+        });
+    });
+});
+</script>
+
+        <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="#"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -34,26 +67,46 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">La Boutique <span class="sr-only">(current)</span></a>
+                        <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    La Boutique <span class="sr-only">(current)</span></a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Qui Sommes-Nous?</a>
+                                <a class="dropdown-item" href="#">Contact</a>
+                                <a class="dropdown-item" href="#">Personal Shopper - Coaching</a>
+                                <a class="dropdown-item" href="#">Avis Clients</a>
+                                <a class="dropdown-item" href="#">Recrutement</a>
+                                <a class="dropdown-item" href="#">Evenements</a>
+                                <a class="dropdown-item" href="#">Presse</a>
+                                <a class="dropdown-item" href="#">Actualités</a>
+                        </div>
+                        </li>
+                    <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle redsoldes" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SOLDES<span class="sr-only">(current)</span></a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">FEMME</a>
+                                <a class="dropdown-item" href="#">HOMME</a>
+                            </div>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             FEMME</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">TOUT VOIR</a>
+                            <a class="dropdown-item" href="#">Soldes</a>
+                            <a class="dropdown-item" href="#">Tout voir</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">TEE-SHIRTS</a>
-                            <a class="dropdown-item" href="#">JEANS</a>
-                            <a class="dropdown-item" href="#">ROBES</a>
+                            <a class="dropdown-item" href="#">Tee-shirts</a>
+                            <a class="dropdown-item" href="#">Chemisiers</a>
+                            <a class="dropdown-item" href="#">Jeans</a>
+                            <a class="dropdown-item" href="#">Robes</a>
                             <a class="dropdown-item nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
-                                        ACCESSOIRES</a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">TOUT VOIR</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">SACS & CEINTURES</a>
-                                <a class="dropdown-item" href="#">LUNETTES & MONTRES</a>
-                                <a class="dropdown-item" href="#">CASQUETTES & BONNETS</a>
+                                    Accessoires</a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">Tout voir</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Sacs & Ceintures</a>
+                                        <a class="dropdown-item" href="#">Lunettes & Montres</a>
+                                        <a class="dropdown-item" href="#">Casquettes & Bonnets</a>
                             </div>
                     </li>
 
@@ -61,96 +114,77 @@
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     HOMME</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">TOUT VOIR</a>
+                            <a class="dropdown-item" href="#">Soldes</a>
+                            <a class="dropdown-item" href="#">Tout voir</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">PANTALONS</a>
-                            <a class="dropdown-item" href="#">JEANS</a>
-                            <a class="dropdown-item" href="#">CHEMISES</a>
-                            <a class="dropdown-item" href="#">LES HAUTS</a>
-                            <a class="dropdown-item" href="#">LES PULLS</a>
-                            <a class="dropdown-item" href="#">VESTES / MANTEAUX</a>
-                            <a class="dropdown-item" href="#">LES CHAUSSURES</a>
+                            <a class="dropdown-item" href="#">Tee-shirts</a>
+                            <a class="dropdown-item" href="#">Chemises</a>
+                            <a class="dropdown-item" href="#">Jeans</a>
                             <a class="dropdown-item nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
-                                    ACCESSOIRES</a>
+                                    Accessoires</a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">TOUT VOIR</a>
+                                <a class="dropdown-item" href="#">Tout voir</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">SACS</a>
-                                <a class="dropdown-item" href="#">CEINTUERES</a>
-                                <a class="dropdown-item" href="#">LUNETTES & MONTRES</a>
-                                <a class="dropdown-item" href="#">CASQUETTES & BONNETS</a>
+                                <a class="dropdown-item" href="#">Sacs & Ceintures</a>
+                                <a class="dropdown-item" href="#">Lunettes & Montres</a>
+                                <a class="dropdown-item" href="#">Casquettes & Bonnets</a>
                             </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Coaching - Personal Shopper</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Avis Clients</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Actualités</a>
-                    </li>
+
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Recherche" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Recherche</button>
-                </form>
                 </div>
         </nav>
 
+        <!-- <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Recherche" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0 search" type="submit">Recherche</button>
+        </form> -->
 
-    </header>
-
-    <main>
-
-
-    </main>
 
 
     <!-- ******  Footer  ****** -->
     <footer>
         <div class="container-fluid">
-            <div class="row ">
-                <Div id="newsletter" class="newsletter col-sm-4 col-md-4 test">
+            <div class="row">
+                <div id="newsletter" class="newsletter col-sm-4 col-md-4">
                     <div id="toggle_news">
-                        <h4>NewsLetter</h4>
-                        <span class="ligne"></span>
+                <h4>NewsLetter</h4>
+                    <span class="ligne"></span>
                     </div>
                     <div class="footer_align" id="news_p">
-                        <p>Inscrivez-vous à notre programme relationnel <span class="vert">LePetitCommerce</span> afin de recevoir toute notre actualité et nos meilleures offres.</p>
+                <p>Inscrivez-vous à notre programme relationnel <span class="vert">LePetitCommerce</span> afin de recevoir toute notre actualité et nos meilleures offres.</p>
                     </div>
                     <a href="newsletter.html"><button class="btn btn-outline-success" type="submit"> M'inscrire !</button></a>
-
-                </Div>
-
-                <div class="col-sm-4 col-md-4 test" id="infos">
-                    <div id="toggle_infos">
-                        <h4>Informations Utiles</h4>
-                        <span class="ligne"></span>
-                    </div>
-                    <div class="footer_align" id="infos_liste">
-                        <ul>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Mentions Légales</a></li>
-                            <li><a href="#">Nos conditions Générales de Vente</a></li>
-                            <li><a href="#">Plan du site</a></li>
-                            <li><a href="#">Imprimer la page</a></li>
-                        </ul>
-                    </div>
                 </div>
 
-                <div class="col-sm-4 col-md-4 " id="Social">
-                    <div id="toggle_Social">
-                        <h4>Suivez Nous</h4>
-                        <span class="ligne"></span>
+            <div class="col-sm-4 col-md-4" id="infos">
+                    <div id="toggle_infos">
+                        <h4>Informations Utiles</h4>
+                    <span class="ligne"></span>
                     </div>
+                <div class="footer_align" id="infos_liste">
+                    <ul>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Mentions Légales</a></li>
+                        <li><a href="#">Nos Conditions Générales de Vente</a></li>
+                        <li><a href="#">Plan du site</a></li>
+                        <li><a href="#">Imprimer la page</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-sm-4 col-md-4" id="Social">
+                <div id="toggle_Social">
+                    <h4>Suivez-Nous</h4>
+                    <span class="ligne"></span>
+                </div>
                     <div class="footer_align row" id="Social_logo">
                         <a href="https://fr-fr.facebook.com/"><i class="fab fa-facebook-square"></i></a>
                         <a href="https://www.instagram.com/?hl=fr"><i class="fab fa-instagram"></i></a>
                         <a href="https://twitter.com/?lang=fr"><i class="fab fa-twitter-square"></i></a>
                         <a href="https://www.pinterest.fr/"><i class="fab fa-pinterest-square"></i></a>
                     </div>
-                </div>
+            </div>
 
 
             </div>
@@ -162,20 +196,25 @@
     </footer>
 
     <script>
-        $(document).ready(function() {
-            $('#toggle_Social').click(function() {
-                $('#Social_logo').slideToggle(200);
+            $(document).ready(function() {
+                $('#toggle_Social').click(function() {
+                    $('#Social_logo').slideToggle(200);
+                });
+                $('#toggle_infos').click(function() {
+                    $('#infos_liste').slideToggle(200);
+                });
+                $('#toggle_news').click(function() {
+                    $('#news_p').slideToggle(200);
+                });
             });
-            $('#toggle_infos').click(function() {
-                $('#infos_liste').slideToggle(200);
-            });
-            $('#toggle_news').click(function() {
-                $('#news_p').slideToggle(200);
-            });
-        });
-    </script>
+        </script>
 
 
+
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="js/bootstrap.js"></script>
 </body>
 
