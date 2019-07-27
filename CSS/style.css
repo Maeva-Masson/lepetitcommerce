@@ -1,40 +1,98 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Didact Gothic','sans-serif';
 }
 
-.ligne {
+h1{
+    color: #BA55D3;
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+/************************** HEADER *****************************************************/
+
+.headerLogo {
+    margin-left: 1300px;
+    margin-right: auto;
+    display: flex;
+    flex: space-between;
+}
+
+.logoMarque {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#conteneur{             /* Icones du haut à droite du header */
+    margin-top: 8px;
+}
+
+.user, .localisation, .panier, .searchbar{
+    margin-left: 6px;
+    margin-top: 0.5px;
+    padding: 5px;
+}
+
+/*-------Choix des Langues---------*/
+
+#menu {	list-style: none;	padding: 0 10px; text-align: center!important;		margin-left: 15px;	float: left; width: 60px; height: 20px;	background: #333;	 font-size: 10px; /*font-size: 1.2em;*/}
+#menu li {	float: left;	margin-top: 1.5px;		padding: 0 15px 0 0;	position: relative; font-size: 10px;}
+#menu li a{	padding: 0px 0px!important;	color: #fff; text-align: center!important;	display: block;	text-decoration: none;	float: left;}
+#menu li a:hover{	background: #222 no-repeat 10px center; }
+#menu li span.subhover {background-position: center bottom; cursor: pointer;} 
+#menu li ul.sous_menu {	list-style: none;	position: absolute;	left: -10px; top: 15px;	background: #333;	margin: 0; padding: 0;	display: none;	float: left;	width: 60px;}
+#menu li ul.sous_menu li{	margin: 0; padding: 0;	border-top: 1px solid #252525; 	border-bottom: 1px solid #444;	clear: both;	width: 60px; text-align: center!important;}
+#menu li ul.sous_menu li a {	float:left;	width: 60px;	background: #333;	padding-left: 20px;}
+#menu li ul.sous_menu li a:hover {	background: #222 no-repeat 10px center; }
+
+
+.logoLangues{
+    width: 25px;
+}
+
+
+
+
+/* ********************** NAV ********************************************** */
+
+nav{
     display: block;
-    height: 2px;
-    background-color: slategray;
-    width: 20%;
-    margin: 20px auto;
+    margin-left: auto!important;
+    margin-right: auto!important;
+    border-bottom: 1px solid #e9e9e9;
+    width: 370px!important;
 }
 
-.vert {
-    color: #118078;
+.navbar{
+
+    background: white;
+    color: black!important;
 }
 
-.clear {
-    height: 70px;
-}
-.dropdown-item.active,
-.dropdown-item:active {
-    color: #fff;
-    text-decoration: none;
-    background-color: red !important;
+.dropdown-toggle::after{
+    display: none;
 }
 
+.redsoldes{
+    font-weight: bold;
+    color: red!important;
+}
 
-/* *****  header ***** */
 
 
-/* ****  bouton **** */
+
+
+/* ***********  Boutons ********************************** */
 
 .btn {
     display: inline-block;
     font-weight: 400;
-    color: #118078;
+    color: #BA55D3;
     text-align: center;
     vertical-align: middle;
     -webkit-user-select: none;
@@ -51,26 +109,36 @@
     border-radius: 10px;
 }
 
-.btn-outline-success {
-    color: #118078;
-    border-color: #118078;
+.search{ /* -------------------------------Bouton de recherche (NAV)--------------*/
+    color: #BA55D3!important;
+    background:#ffffff!important;
+    border: 2px solid #BA55D3!important;
+}
+
+.search:hover{
+    color: #ffffff!important;
+    background: #BA55D3!important;
+}
+
+.btn-outline-success { /*------------------Bouton "M'inscrire" (FOOTER) et "Je découvre"----------- */
+    color: #BA55D3!important;
+    background: #ffffff!important;
+    border: 1px solid #BA55D3!important;
 }
 
 .btn-outline-success:hover {
-    color: white;
-    background-color: #118078;
-    border-color: white;
-    ;
+    color: white!important;
+    background-color: #BA55D3!important;
 }
 
 .btn-outline-success:focus,
 .btn-outline-success.focus {
-    box-shadow: 0 0 0 0.2rem rgba(17, 128, 120, 0.5);
+    box-shadow: 0 0 0 0.2rem #BA55D3!important;
 }
 
 .btn-outline-success.disabled,
 .btn-outline-success:disabled {
-    color: #118078;
+    color: #BA55D3;
     background-color: transparent;
 }
 
@@ -78,57 +146,23 @@
 .btn-outline-success:not(:disabled):not(.disabled).active,
 .show>.btn-outline-success.dropdown-toggle {
     color: white;
-    background-color: #118078;
+    background-color: #BA55D3;
     border-color: white;
 }
 
 .btn-outline-success:not(:disabled):not(.disabled):active:focus,
 .btn-outline-success:not(:disabled):not(.disabled).active:focus,
 .show>.btn-outline-success.dropdown-toggle:focus {
-    box-shadow: 0 0 0 0.2rem rgba(17, 128, 120, 0.5);
+    box-shadow: 0 0 0 0.2rem #BA55D3;
 }
 
 
-/* ------- Header ---------*/
-
-.headerLogo {
-    margin: 15px;
-}
-
-
-/*Logos*/
-
-.logoMarque {
-    width: 200px;
-}
-
-.logoPanier,
-.logoLocalisation {
-    width: 15px;
-    margin: 10px;
-}
-
-.headerLogo {
-    display: flex;
-    flex: space-between;
-}
-
-.blocblanc {
-    width: 250px;
-}
-
-
-/* **** Nav **** */
-
-
-/*  carousel */
-
-
-/* **** Footer**** */
+/* ************** FOOTER ***************************************************** */
 
 footer {
-    background: #7CB9B5;
+    background: black;
     color: white;
+    font-size: 12px;
 }
 
 footer .ligne {
@@ -148,12 +182,12 @@ footer h4 {
 
 #newsletter {
     margin-top: 30px;
-    border-bottom: 2px solid #118078;
+    border-bottom: 2px solid #BA55D3;
 }
 
 #newsletter .btn {
     display: block;
-    background-color: #118078;
+    background-color:#BA55D3;
     color: white;
     margin: 0 auto;
     font-size: 1.3rem;
@@ -169,8 +203,8 @@ footer h4 {
 
 #newsletter .btn:hover {
     background-color: white;
-    color: #118078;
-    border: 2px solid #118078;
+    color: #BA55D3;
+    border: 2px solid #BA55D3;
     transform: none;
 }
 
@@ -180,9 +214,17 @@ footer h4 {
     margin-bottom: 20px;
 }
 
+.ligne {
+    display: block;
+    height: 0.5px;
+    background-color: slategray;
+    width: 20%;
+    margin: 20px auto;
+}
+
 #infos {
     margin-top: 30px;
-    border-bottom: 2px solid #118078;
+    border-bottom: 2px solid #BA55D3;
 }
 
 #infos ul li {
@@ -196,12 +238,12 @@ footer h4 {
 }
 
 #infos ul li a:hover {
-    color: #118078;
+    color: #BA55D3;
 }
 
 #Social {
     margin-top: 30px;
-    border-bottom: 2px solid #118078;
+    border-bottom: 2px solid #BA55D3;
 }
 
 #Social a {
@@ -218,14 +260,37 @@ footer h4 {
 }
 
 #Social a i:hover {
-    color: #118078;
+    color: #BA55D3;
 }
 
 footer #copy {
-    background: #118078;
+    background: #BA55D3;
     color: white;
-    height: 30px;
+    height: 22px;
     text-align: center;
+}
+
+/* ---------- Page "Qui-Sommes-Nous" ----------------*/
+
+.quisommesnous_fieldset{
+    display: block!important;
+    width: 800px;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    border: 0.5px solid black;
+}
+
+legend{
+text-align: center;
+width: 300px;
+color: #BA55D3;
+font-weight: bold;
 }
 
 
@@ -239,12 +304,12 @@ footer #copy {
 
 /*  Small devices (landscape phones, 576px and up) */
 
-@media (min-width: 576px) {}
+@media (min-width: 576px) and (max-width: 767.98px) {}
 
 
 /* Medium devices (tablets, 768px and up) */
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
     /* **** Footer**** */
     .footer_align {
         display: block;
@@ -254,7 +319,7 @@ footer #copy {
 
 /* Large devices (desktops, 992px and up) */
 
-@media (min-width: 992px) {}
+@media (min-width: 992px) and (max-width: 1199.98px) {}
 
 
 /* Extra large devices (large desktops, 1200px and up) */
