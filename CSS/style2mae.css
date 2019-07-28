@@ -1,0 +1,489 @@
+/*  carousel */
+
+.clear {
+    height: 70px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.ligne {
+    display: block;
+    height: 2px;
+    background-color: slategray;
+    width: 20%;
+    margin: 20px auto;
+}
+
+.soldes {
+    height: 300px;
+    background: url('../img/homme/image_solde.jpg');
+    align-items: center;
+    background-size: 70%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.soldes h2 {
+    text-align: right;
+    color: red;
+    margin-top: 50px;
+    font-size: 50px;
+    margin-right: 20px;
+    line-height: 0;
+}
+
+.soldes P {
+    text-align: right;
+    color: red;
+    padding-top: 40px;
+    font-size: 1.2em;
+}
+
+.soldes .redbutton {
+    display: block;
+    color: red;
+    text-decoration: none;
+    font-size: 1.3rem;
+    width: 175px;
+    height: 50px;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid black;
+    margin-top: 40px;
+    float: right;
+    margin-right: 5px;
+}
+
+.soldes .redbutton:hover {
+    color: white;
+    transform: none;
+    background-color: red;
+    border: 1px solid red;
+}
+
+.costume {
+    height: 300px;
+    background: url('../img/homme/Image_slider_3.jpeg');
+    align-items: center;
+    background-size: 70%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.costume h2 {
+    text-align: left;
+    color: #69B0BD;
+    padding-top: 40px;
+    font-size: 2.5em;
+    margin-left: 20px;
+}
+
+.costume P {
+    text-align: left;
+    color: white;
+    padding-top: 40px;
+    font-size: 1.2em;
+    margin-left: 20px;
+}
+
+.costume .redbutton {
+    display: block;
+    color: white;
+    background-color: #69B0BD;
+    text-decoration: none;
+    font-size: 1.3rem;
+    width: 175px;
+    height: 50px;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid;
+    margin-top: 40px;
+    float: left;
+    margin-left: 30px;
+}
+
+.costume .redbutton:hover {
+    background-color: white;
+    color: #152A9E;
+    border: 2px solid #152A9E;
+    transform: none;
+}
+
+.new {
+    height: 300px;
+    background: url('../img/homme/slide_homme2.jpg');
+    align-items: center;
+    background-size: 70%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.new h2 {
+    text-align: left;
+    color: #152A9E;
+    padding-top: 40px;
+    font-size: 2.5em;
+    margin-left: 20px;
+}
+
+.new P {
+    text-align: left;
+    color: #152A9E;
+    padding-top: 40px;
+    font-size: 1.2em;
+    margin-left: 50px;
+}
+
+.new .redbutton {
+    display: block;
+    color: white;
+    background-color: #152A9E;
+    text-decoration: none;
+    font-size: 1.3rem;
+    width: 175px;
+    height: 50px;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid;
+    margin-top: 40px;
+    float: left;
+    margin-left: 30px;
+}
+
+.new .redbutton:hover {
+    background-color: white;
+    color: #152A9E;
+    border: 2px solid #152A9E;
+    transform: none;
+}
+
+
+/* ***** NAV ***** */
+
+#nav2 {
+    width: 100%;
+    background: #000;
+    text-align: center;
+}
+
+#nav2 ul {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#nav2 ul li {
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px;
+}
+
+#nav2 ul li:hover {
+    background: #BA55D3;
+}
+
+#nav2 ul li a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+#nav2 .toggle {
+    width: 100%;
+    padding: 10px 20px;
+    background: #000;
+    text-align: right;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: white;
+    display: none;
+    cursor: pointer;
+}
+
+
+/* ***** fil d'ariane ***** */
+
+.breadcrumb {
+    background-color: white !important;
+}
+
+.breadcrumb-item.active {
+    color: #118078;
+}
+
+
+/*  ***** Les Images ***** */
+
+#nav3 {
+    height: 100%;
+    text-align: center;
+    margin-left: -200px;
+    margin-right: 200px;
+}
+
+#nav3 ul {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#nav3 ul li {
+    list-style: none;
+    padding: 15px;
+}
+
+#nav3 ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+#nav3 ul li a:hover {
+    text-decoration: none;
+    color: #BA55D3;
+}
+
+.categorie {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.categorie a {
+    padding-top: 20px;
+}
+
+.categorie a img {
+    width: 100%;
+}
+
+
+/*  **** infos sup **** */
+
+.pay,
+.help,
+.return {
+    padding: 0 20px 20px 20px;
+    margin-bottom: 10px;
+    border: 1px solid #118078;
+    text-align: center;
+}
+
+.pay legend,
+.help legend,
+.return legend {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.return p {
+    font-size: 1.5em;
+    color: #118078;
+}
+
+#return_logo {
+    width: 70px;
+    height: 70px;
+}
+
+.pay {
+    justify-content: space-around;
+}
+
+.cb {
+    height: 60px;
+    margin: 0 auto;
+    margin-left: 4px;
+}
+
+.help {
+    justify-content: center;
+}
+
+.help a {
+    text-decoration: none;
+    color: #118078;
+    font-size: 40px;
+}
+
+
+/* ****  responsive**** */
+
+
+/*Extra small devices (portrait phones, less than 576px)*/
+
+@media (max-width: 575.98px) {}
+
+
+/*  Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {}
+
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (max-width: 768px) {
+    #nav2 .toggle {
+        display: block;
+        ;
+    }
+    #nav2 ul {
+        width: 100%;
+        display: none;
+    }
+    #nav2 ul li {
+        display: block;
+        text-align: center;
+    }
+    .active {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) {
+    #nav2 {
+        background: white;
+    }
+    #nav2 ul li {
+        text-decoration: none;
+        display: inline-block;
+        padding: 15px;
+        color: #000;
+    }
+    #nav2 ul li:hover {
+        background: white;
+        color: #BA55D3;
+    }
+    #nav2 ul li a {
+        text-decoration: none;
+        color: #000;
+    }
+    #nav2 ul li a:hover {
+        color: #BA55D3;
+    }
+}
+
+h2 {
+    text-align: center;
+    color: red;
+    padding-top: 40px;
+    font-size: 4.5em;
+}
+
+.soldes {
+    height: 500px;
+    background: url('../img/homme/image_solde.jpg');
+    align-items: right;
+    background-size: 70%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.soldes h2 {
+    text-align: right;
+    color: red;
+    margin-top: 50px;
+    font-size: 100px;
+    margin-right: 30px;
+    line-height: 0;
+}
+
+.soldes P {
+    text-align: right;
+    color: red;
+    padding-top: 40px;
+    font-size: 2.2em;
+    margin-right: 30px;
+}
+
+.soldes .btn {
+    margin-right: 30px;
+}
+
+.costume {
+    height: 500px;
+    background: url('../img/homme/Image_slider_3.jpeg');
+    align-items: center;
+    background-size: 70%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.costume h2 {
+    text-align: left;
+    color: #69B0BD;
+    padding-top: 40px;
+    font-size: 2.5em;
+    margin-left: 20px;
+}
+
+.costumes .btn {
+    margin-left: 20px;
+}
+
+.costume P {
+    text-align: left;
+    color: white;
+    padding-top: 40px;
+    font-size: 2em;
+    margin-left: 20px;
+}
+
+.new {
+    height: 500px;
+    background: url('../img/homme/slide_homme2.jpg');
+    align-items: center;
+    background-size: 70%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.new h2 {
+    text-align: left;
+    color: #152A9E;
+    padding-top: 40px;
+    font-size: 3.5em;
+    margin-left: 20px;
+}
+
+.news .btn {
+    margin-left: 20px;
+}
+
+.new P {
+    text-align: left;
+    color: #152A9E;
+    padding-top: 40px;
+    font-size: 2.5em;
+    margin-left: 20px;
+}
+
+.help a {
+    font-size: 20px;
+}
+
+.cb {
+    height: 35px;
+    margin: 0 auto;
+    margin-left: 4px;
+}
+
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
