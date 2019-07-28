@@ -1,22 +1,5 @@
 /*  carousel */
 
-.clear {
-    height: 70px;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-.ligne {
-    display: block;
-    height: 2px;
-    background-color: slategray;
-    width: 20%;
-    margin: 20px auto;
-}
-
 .soldes {
     height: 300px;
     background: url('../img/homme/image_solde.jpg');
@@ -40,11 +23,12 @@
     color: red;
     padding-top: 40px;
     font-size: 1.2em;
+    font-family: 'Didact Gothic', sans-serif;
 }
 
 .soldes .redbutton {
     display: block;
-    color: red;
+    color: red !important;
     text-decoration: none;
     font-size: 1.3rem;
     width: 175px;
@@ -54,17 +38,17 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    border: 1px solid black;
+    border: 1px solid black !important;
     margin-top: 40px;
     float: right;
     margin-right: 5px;
 }
 
 .soldes .redbutton:hover {
-    color: white;
+    color: white !important;
     transform: none;
-    background-color: red;
-    border: 1px solid red;
+    background-color: red !important;
+    border: 1px solid red !important;
 }
 
 .costume {
@@ -78,7 +62,7 @@
 
 .costume h2 {
     text-align: left;
-    color: #69B0BD;
+    color: #69B0BD !important;
     padding-top: 40px;
     font-size: 2.5em;
     margin-left: 20px;
@@ -86,16 +70,17 @@
 
 .costume P {
     text-align: left;
-    color: white;
+    color: white !important;
     padding-top: 40px;
     font-size: 1.2em;
     margin-left: 20px;
+    font-family: 'Didact Gothic', sans-serif;
 }
 
 .costume .redbutton {
     display: block;
-    color: white;
-    background-color: #69B0BD;
+    color: white !important;
+    background-color: #69B0BD !important;
     text-decoration: none;
     font-size: 1.3rem;
     width: 175px;
@@ -109,12 +94,13 @@
     margin-top: 40px;
     float: left;
     margin-left: 30px;
+    border: 2px solid #69B0BD !important;
 }
 
 .costume .redbutton:hover {
-    background-color: white;
-    color: #152A9E;
-    border: 2px solid #152A9E;
+    background-color: white !important;
+    color: #152A9E !important;
+    border: 2px solid #152A9E !important;
     transform: none;
 }
 
@@ -129,7 +115,7 @@
 
 .new h2 {
     text-align: left;
-    color: #152A9E;
+    color: #152A9E !important;
     padding-top: 40px;
     font-size: 2.5em;
     margin-left: 20px;
@@ -137,16 +123,17 @@
 
 .new P {
     text-align: left;
-    color: #152A9E;
+    color: #152A9E !important;
     padding-top: 40px;
     font-size: 1.2em;
     margin-left: 50px;
+    font-family: 'Didact Gothic', sans-serif;
 }
 
 .new .redbutton {
     display: block;
-    color: white;
-    background-color: #152A9E;
+    color: white !important;
+    background-color: #152A9E !important;
     text-decoration: none;
     font-size: 1.3rem;
     width: 175px;
@@ -160,161 +147,55 @@
     margin-top: 40px;
     float: left;
     margin-left: 30px;
+    border: 2px solid #152A9E !important;
 }
 
 .new .redbutton:hover {
-    background-color: white;
-    color: #152A9E;
-    border: 2px solid #152A9E;
+    background-color: white !important;
+    color: #152A9E !important;
+    border: 2px solid #152A9E !important;
     transform: none;
 }
 
 
-/* ***** NAV ***** */
-
-#nav2 {
-    width: 100%;
-    background: #000;
-    text-align: center;
-}
-
-#nav2 ul {
-    width: 80%;
-    margin: 0 auto;
-    padding: 0;
-}
-
-#nav2 ul li {
-    text-decoration: none;
-    display: inline-block;
-    padding: 15px;
-}
-
-#nav2 ul li:hover {
-    background: #BA55D3;
-}
-
-#nav2 ul li a {
-    text-decoration: none;
-    color: #FFF;
-}
-
-#nav2 .toggle {
-    width: 100%;
-    padding: 10px 20px;
-    background: #000;
-    text-align: right;
-    box-sizing: border-box;
-    font-size: 20px;
-    color: white;
-    display: none;
-    cursor: pointer;
-}
-
-
-/* ***** fil d'ariane ***** */
-
-.breadcrumb {
-    background-color: white !important;
-}
-
-.breadcrumb-item.active {
-    color: #118078;
-}
-
-
-/*  ***** Les Images ***** */
-
-#nav3 {
-    height: 100%;
-    text-align: center;
-    margin-left: -200px;
-    margin-right: 200px;
-}
-
-#nav3 ul {
-    width: 80%;
-    margin: 0 auto;
-    padding: 0;
-}
-
-#nav3 ul li {
-    list-style: none;
-    padding: 15px;
-}
-
-#nav3 ul li a {
-    text-decoration: none;
-    color: #000;
-}
-
-#nav3 ul li a:hover {
-    text-decoration: none;
-    color: #BA55D3;
-}
+/* *****  Les Produits ******/
 
 .categorie {
     padding-top: 10px;
     padding-bottom: 20px;
     margin-top: 20px;
-    text-align: center;
 }
 
 .categorie a {
     padding-top: 20px;
+    font-family: 'Didact Gothic', sans-serif;
+    width: 450px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+    padding: 16px;
+    color: #000;
+    text-decoration: none;
+}
+
+.categorie a p {
+    text-align: center;
+    font-size: 25px;
 }
 
 .categorie a img {
     width: 100%;
+    position: absolute;
+    top: 0;
 }
 
-
-/*  **** infos sup **** */
-
-.pay,
-.help,
-.return {
-    padding: 0 20px 20px 20px;
-    margin-bottom: 10px;
-    border: 1px solid #118078;
-    text-align: center;
+.categorie h3 {
+    font-size: 50px;
 }
 
-.pay legend,
-.help legend,
-.return legend {
-    text-align: center;
-    font-size: 1.5em;
-}
-
-.return p {
-    font-size: 1.5em;
-    color: #118078;
-}
-
-#return_logo {
-    width: 70px;
-    height: 70px;
-}
-
-.pay {
-    justify-content: space-around;
-}
-
-.cb {
-    height: 60px;
-    margin: 0 auto;
-    margin-left: 4px;
-}
-
-.help {
-    justify-content: center;
-}
-
-.help a {
-    text-decoration: none;
-    color: #118078;
-    font-size: 40px;
+.categorie p {
+    font-family: 'Didact Gothic', sans-serif;
 }
 
 
@@ -353,24 +234,24 @@
 
 @media (min-width: 768px) {
     #nav2 {
-        background: white;
+        background: white !important;
     }
     #nav2 ul li {
         text-decoration: none;
         display: inline-block;
         padding: 15px;
-        color: #000;
+        color: #000 !important;
     }
     #nav2 ul li:hover {
-        background: white;
+        background: white !important;
         color: #BA55D3;
     }
     #nav2 ul li a {
         text-decoration: none;
-        color: #000;
+        color: #000 !important;
     }
     #nav2 ul li a:hover {
-        color: #BA55D3;
+        color: #BA55D3 !important;
     }
 }
 

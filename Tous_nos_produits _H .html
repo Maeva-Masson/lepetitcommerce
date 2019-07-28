@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tous_produits_H.css">
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet">
-
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="js/script.js"></script>
-    <title>Le Petit Commerce</title>
+    <title>LePetitCommerce</title>
+
+
+
 </head>
+
 
 <body>
     <!-- ******  Header  ****** -->
@@ -65,14 +69,14 @@
     <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="#"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    La Boutique <span class="sr-only">(current)</span></a>
+                                La Boutique <span class="sr-only">(current)</span></a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#">Qui Sommes-Nous?</a>
                         <a class="dropdown-item" href="#">Contact</a>
@@ -93,9 +97,9 @@
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            FEMME</a>
+                        FEMME</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#" style="color:red;">Soldes</a>
+                        <a class="dropdown-item" href="#">Soldes</a>
                         <a class="dropdown-item" href="#">Tout voir</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Tee-shirts</a>
@@ -115,7 +119,7 @@
 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    HOMME</a>
+                                HOMME</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#" style="color:red; ">Soldes</a>
                         <a class="dropdown-item" href="#">Tout voir</a>
@@ -128,7 +132,7 @@
                         <a class="dropdown-item" href="#">Vestes / Manteaux</a>
                         <a class="dropdown-item" href="#">Chaussures</a>
                         <a class="access_h" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
-                                                    Accessoires <i class="fas fa-angle-down"></i> </a>
+                                Accessoires <i class="fas fa-angle-down"></i> </a>
                         <div class="sous_menu_h" id="" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#">Tout voir</a>
                             <div class="dropdown-divider"></div>
@@ -143,92 +147,285 @@
             </div>
     </nav>
 
-    <!-- <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Recherche" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0 search" type="submit">Recherche</button>
-        </form> -->
 
+    <main>
 
-    <div class="clear"></div>
+        <!-- Carousel-->
 
-    <!-- **** infos sup **** -->
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active soldes ">
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 ">
-                <fieldset class=" pay">
-                    <legend> Moyens de paiement </legend>
+                    <div class="carousel-caption  d-md-block">
+                        <h2>Les Soldes</h2>
+                        <p>Vite Vite! <br> Derniéres démarques.</p>
+                        <a href="#"><button class="btn btn-outline-success redbutton" type="submit"> Je découvre <i class="fas fa-arrow-right"></i></button></a>
+                    </div>
+                </div>
+                <div class="carousel-item costume">
 
-                    <img src="img/logo/cb.png" alt="logo_cb" class="cb">
-                    <img src="img/logo/mastercard.png" alt="logo_mastercard" class="cb">
-                    <img src="img/logo/visa.png" alt="logo_visa" class="cb">
-                    <img src="img/logo/amex.png" alt="logo_amex" class="cb">
-                    <img src="img/logo/google_pay.png" alt="logo_google" class="cb">
-                    <img src="img/logo/apple_pay.png" alt="return" class="cb">
-                </fieldset>
+                    <div class="carousel-caption  d-md-block">
+                        <h2>Un Mariage ?</h2>
+                        <p>Une selection de style juste pour vous.</p>
+                        <a href="#"><button class="btn btn-outline-success redbutton" type="submit"> Je découvre <i class="fas fa-arrow-right"></i></button></a>
+                    </div>
+                </div>
+                <div class="carousel-item new">
+
+                    <div class="carousel-caption  d-md-block">
+                        <h2>Les Nouveautés</h2>
+                        <p>Quoi de Neuf ?</p>
+                        <a href="#"><button class="btn btn-outline-success redbutton" type="submit"> Je découvre <i class="fas fa-arrow-right"></i></button></a>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4 col-xl-4">
-                <fieldset class="return">
-                    <legend> Satisfait ou remboursé </legend>
+        </div>
+        <!-- ***** Menu Principale Homme *****-->
 
+        <nav id="nav2">
+            <div class="toggle">
 
-                    <img src="img/logo/return.png" alt="return" id="return_logo">
+                <i class="fas fa-plus menu2"></i>
 
-
-                </fieldset>
             </div>
-            <div class="col-md-4 ">
-                <fieldset class=" help">
-                    <legend> Besoin d'aide</legend>
+            <ul>
+                <li><a href="#">PANTALONS</a></li>
+                <li><a href="#">JEANS</a></li>
+                <li><a href="#">CHEMISES</a></li>
+                <li><a href="#">HAUTS</a></li>
+                <li><a href="#">PULLS</a></li>
+                <li><a href="#">VESTES / MANTEAUX</a></li>
+                <li><a href="#">CHAUSSURES</a></li>
+                <li><a href="#">BONNETS / CASQUETTES</a></li>
+                <li>
+                    <a href="#">ACCESSOIRES </a>
+
+
+                </li>
+
+            </ul>
+        </nav>
+
+
+        <!-- *****  fil d'ariane *****-->
+        <nav aria-label="breadcrumb" id="ariane">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Accueil</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Homme</li>
+            </ol>
+        </nav>
+
+        <!-- *****  catégorie *****-->
+        <div class="container">
+            <div class="row ">
+
+                <div class="col-md-6 categorie" id="pantalons">
+                    <h3>Les Pantalons</h3>
 
 
 
-                    <a href="tel:+33762765434">0101010101</a>
+                    <p>"Retrouvez tous nos Pantalons cintrés de coupe droite ou slim et de style cargo et chino. Les pantalons <span class="orange">LePetitCommerce</span> sont assortis à tous les styles."</p>
 
-                    <p>(Appel Gratuit)</p>
+                    <a href="Pantalons.html"> <img name=pantalons alt="image_pantalon"></a>
+
+                </div>
+                <div class="col-md-6 categorie" id="jeans">
+                    <h3>Les Jeans</h3>
 
 
-                </fieldset>
+
+                    <p>"À chaque homme son jean. Choisissez la coupe selon votre silhouette et le style qui vous ressemble. <span class="vert">LePetitCommerce</span> sont assortis à tous les styles."</p>
+
+                    <a href=""> <img name=jeans alt="image_jean"></a>
+
+
+                </div>
+
+                <div class="col-md-6 categorie" id="chemises">
+                    <h3>Les Chemises</h3>
+
+
+
+                    <p> "Les chemises <span class="vert">LePetitCommerce</span> pour homme sont la pièce maîtresse de tout look masculin, quel que soit sont style, elles apportent toujours une véritable touche d'élégance."
+                    </p>
+
+                    <a href=""> <img name=chemises></a>
+
+
+                </div>
+
+                <div class="col-md-6 categorie" id="hauts">
+                    <h3>Les Hauts</h3>
+
+
+
+                    <p>"Quelle que soit l’occasion, avec <span class="vert">LePetitCommerce</span>, vous trouverez la chemise, le polo ou le tshirt parfaitement assortie. Du bleu classique au blanc habillé, trouvez celui qui est fait pour vous."
+                    </p>
+
+                    <a href=""> <img name=hauts alt="image_tshirt"></a>
+
+
+                </div>
+
+                <div class="col-md-6 categorie" id="pull">
+                    <h3>Les Pulls</h3>
+
+
+                    <p> "Les vêtements en maille prennent un air sophistiqué, que ce soit comme pièce centrale d'un look masculin élégant ou comme accessoire casual pour les looks les plus urbains."
+                    </p>
+
+                    <a href=""> <img name=pull alt="image_pull"></a>
+
+
+                </div>
+
+                <div class="col-md-6 categorie" id="veste">
+                    <h3>Vestes et Manteaux</h3>
+
+
+
+                    <p>"Nos vestes pour homme ne manquent pas de style. Découvrez tous nos modèles indémodables ou originaux <span class="vert">LePetitCommerce</span> ou originaux et tendance."</p>
+
+                    <a href=""> <img name=veste alt="image_veste"></a>
+
+                </div>
+
+                <div class="col-md-6 categorie" id="chaussures">
+                    <h3>Les Chaussures</h3>
+
+
+
+                    <p>"Pour tous les evenements de votre vie, avec <span class="vert">LePetitCommerce</span>, vous trouverez la chaussures a vos pieds."</p>
+
+                    <a href=""> <img name=chaussures alt="image_chaussures"></a>
+                </div>
+
+                <div class="col-md-6 categorie" id="bonnet">
+                    <h3>Bonnets / Casquettes</h3>
+
+
+
+                    <p>"Les casquettes et chapeaux pour homme <span class="vert">LePetitCommerce</span>, sont sophistiqués ou décontractés mais toujours tendance."</p>
+
+                    <a href=""> <img name=bonnet alt="image_bonnet"></a>
+
+                </div>
+
+                <div class="col-md-6 categorie" id="sac">
+                    <h3>Les Sacs</h3>
+
+
+
+                    <p>"Nos sacs pour homme se distinguent grâce à leur commodité. Nos modèles se combinent à merveille avec votre look de bureau ou pour les grandes occasions."</p>
+
+
+
+                    <a href=""> <img name=sac alt="image_sac"></a>
+
+                </div>
+
+                <div class="col-md-6 categorie" id="access">
+                    <h3>Les Accessoires</h3>
+
+
+
+                    <p>"Les accessoires <span class="vert">LePetitCommerce</span> pour homme apportent la touche finale aux looks masculins, ils perfectionnent les styles élégants et rehaussent les looks les plus casual. "</p>
+
+
+                    <a href=""> <img name=access alt="image_accessoires"></a>
+                </div>
+
             </div>
+
 
         </div>
-    </div>
 
 
+        <div class="clear"></div>
+
+        <!-- **** infos sup **** -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 ">
+                    <fieldset class=" pay">
+                        <legend> Moyens de paiement </legend>
+
+                        <img src="img/logo/cb.png" alt="logo_cb" class="cb">
+                        <img src="img/logo/mastercard.png" alt="logo_mastercard" class="cb">
+                        <img src="img/logo/visa.png" alt="logo_visa" class="cb">
+                        <img src="img/logo/amex.png" alt="logo_amex" class="cb">
+                        <img src="img/logo/google_pay.png" alt="logo_google" class="cb">
+                        <img src="img/logo/apple_pay.png" alt="return" class="cb">
+                    </fieldset>
+                </div>
+                <div class="col-md-4 col-xl-4">
+                    <fieldset class="return">
+                        <legend> Satisfait ou remboursé </legend>
+
+
+                        <img src="img/logo/return.png" alt="return" id="return_logo">
+
+
+                    </fieldset>
+                </div>
+                <div class="col-md-4 ">
+                    <fieldset class=" help">
+                        <legend> Besoin d'aide</legend>
+
+
+
+                        <a href="tel:+33762765434">0101010101</a>
+
+                        <p>(Appel Gratuit)</p>
+
+
+                    </fieldset>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </main>
+
+    <div class="clear"></div>
     <!-- ******  Footer  ****** -->
     <footer>
         <div class="container-fluid">
-            <div class="row">
-                <div id="newsletter" class="newsletter col-sm-4 col-md-4">
+            <div class="row ">
+                <Div id="newsletter" class="newsletter col-sm-4 col-md-4 test">
                     <div id="toggle_news">
-                        <h4>NewsLetter</h4>
+                        <h4>NewsLetter <i class="fas fa-angle-down"></i> </h4>
                         <span class="ligne"></span>
                     </div>
                     <div class="footer_align" id="news_p">
                         <p>Inscrivez-vous à notre programme relationnel <span class="vert">LePetitCommerce</span> afin de recevoir toute notre actualité et nos meilleures offres.</p>
                     </div>
                     <a href="newsletter.html"><button class="btn btn-outline-success" type="submit"> M'inscrire !</button></a>
-                </div>
 
-                <div class="col-sm-4 col-md-4" id="infos">
+                </Div>
+
+                <div class="col-sm-4 col-md-4 test" id="infos">
                     <div id="toggle_infos">
-                        <h4>Informations Utiles</h4>
+                        <h4>Informations Utiles <i class="fas fa-angle-down"></i> </h4>
                         <span class="ligne"></span>
                     </div>
                     <div class="footer_align" id="infos_liste">
                         <ul>
                             <li><a href="#">Contact</a></li>
                             <li><a href="#">Mentions Légales</a></li>
-                            <li><a href="#">Nos Conditions Générales de Vente</a></li>
+                            <li><a href="#">Nos conditions Générales de Vente</a></li>
                             <li><a href="#">Plan du site</a></li>
                             <li><a href="#">Imprimer la page</a></li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="col-sm-4 col-md-4" id="Social">
+                <div class="col-sm-4 col-md-4 " id="Social">
                     <div id="toggle_Social">
-                        <h4>Suivez-Nous</h4>
+                        <h4>Suivez Nous <i class="fas fa-angle-down"></i></h4>
                         <span class="ligne"></span>
                     </div>
                     <div class="footer_align row" id="Social_logo">
@@ -236,6 +433,7 @@
                         <a href="https://www.instagram.com/?hl=fr"><i class="fab fa-instagram"></i></a>
                         <a href="https://twitter.com/?lang=fr"><i class="fab fa-twitter-square"></i></a>
                         <a href="https://www.pinterest.fr/"><i class="fab fa-pinterest-square"></i></a>
+                        <a href="https://www.youtube.com/?gl=FR&hl=fr"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
 
@@ -263,11 +461,6 @@
     </script>
 
 
-
-
-
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="js/bootstrap.js"></script>
 </body>
 

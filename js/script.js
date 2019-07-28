@@ -1,11 +1,19 @@
 /* NAV2 */
 $(document).ready(function() {
     $('.menu2').click(function() {
-
         $('ul').slideToggle(200);
-    })
-
+    });
+    $('.access_h').click(function() {
+        $('.sous_menu_h a ').slideToggle(200)
+    });
+    $('.access_f').click(function() {
+        $('.sous_menu_f a ').slideToggle(200)
+    });
+    $('.nav2_toggle').click(function() {
+        $('.nav2_sous_menu a ').slideToggle(200)
+    });
 })
+
 
 
 /* Page Nos Produits */

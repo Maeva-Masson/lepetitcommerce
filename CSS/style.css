@@ -1,17 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap');
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Didact Gothic','sans-serif';
+    font-family: 'Didact Gothic', 'sans-serif';
 }
 
-h1{
+h1 {
     color: #BA55D3;
     text-align: center;
 }
 
-p{
+p {
     text-align: center;
 }
+
+.ligne {
+    display: block;
+    height: 2px;
+    width: 20%;
+    margin: 20px auto;
+}
+
+.vert,
+.orange {
+    color: #BA55D3;
+}
+
+.clear {
+    height: 70px;
+}
+
 
 /************************** HEADER *****************************************************/
 
@@ -28,39 +46,127 @@ p{
     margin-right: auto;
 }
 
-#conteneur{             /* Icones du haut à droite du header */
+#conteneur {
+    /* Icones du haut à droite du header */
     margin-top: 8px;
 }
 
-.user, .localisation, .panier, .searchbar{
+.user,
+.localisation,
+.panier,
+.searchbar {
     margin-left: 6px;
     margin-top: 0.5px;
     padding: 5px;
 }
 
+.access_h,
+.access_f {
+    text-decoration: none;
+    color: #000 !important;
+    padding-left: 23px;
+}
+
+.sous_menu_h ul li,
+.sous_menu_f ul li,
+{
+    text-decoration: none;
+    padding: 15px;
+    list-style: none;
+}
+
+.sous_menu_h a,
+.sous_menu_f a {
+    text-decoration: none;
+    color: #000 !important;
+    font-family: 'Didact Gothic', sans-serif;
+    display: none;
+}
+
+
 /*-------Choix des Langues---------*/
 
-#menu {	list-style: none;	padding: 0 10px; text-align: center!important;		margin-left: 15px;	float: left; width: 60px; height: 20px;	background: #333;	 font-size: 10px; /*font-size: 1.2em;*/}
-#menu li {	float: left;	margin-top: 1.5px;		padding: 0 15px 0 0;	position: relative; font-size: 10px;}
-#menu li a{	padding: 0px 0px!important;	color: #fff; text-align: center!important;	display: block;	text-decoration: none;	float: left;}
-#menu li a:hover{	background: #222 no-repeat 10px center; }
-#menu li span.subhover {background-position: center bottom; cursor: pointer;} 
-#menu li ul.sous_menu {	list-style: none;	position: absolute;	left: -10px; top: 15px;	background: #333;	margin: 0; padding: 0;	display: none;	float: left;	width: 60px;}
-#menu li ul.sous_menu li{	margin: 0; padding: 0;	border-top: 1px solid #252525; 	border-bottom: 1px solid #444;	clear: both;	width: 60px; text-align: center!important;}
-#menu li ul.sous_menu li a {	float:left;	width: 60px;	background: #333;	padding-left: 20px;}
-#menu li ul.sous_menu li a:hover {	background: #222 no-repeat 10px center; }
+#menu {
+    list-style: none;
+    padding: 0 10px;
+    text-align: center!important;
+    margin-left: 15px;
+    float: left;
+    width: 60px;
+    height: 20px;
+    background: #333;
+    font-size: 10px;
+    /*font-size: 1.2em;*/
+}
 
+#menu li {
+    float: left;
+    margin-top: 1.5px;
+    padding: 0 15px 0 0;
+    position: relative;
+    font-size: 10px;
+}
 
-.logoLangues{
+#menu li a {
+    padding: 0px 0px!important;
+    color: #fff;
+    text-align: center!important;
+    display: block;
+    text-decoration: none;
+    float: left;
+}
+
+#menu li a:hover {
+    background: #222 no-repeat 10px center;
+}
+
+#menu li span.subhover {
+    background-position: center bottom;
+    cursor: pointer;
+}
+
+#menu li ul.sous_menu {
+    list-style: none;
+    position: absolute;
+    left: -10px;
+    top: 15px;
+    background: #333;
+    margin: 0;
+    padding: 0;
+    display: none;
+    float: left;
+    width: 60px;
+}
+
+#menu li ul.sous_menu li {
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #252525;
+    border-bottom: 1px solid #444;
+    clear: both;
+    width: 60px;
+    text-align: center!important;
+}
+
+#menu li ul.sous_menu li a {
+    float: left;
+    width: 60px;
+    background: #333;
+    padding-left: 20px;
+}
+
+#menu li ul.sous_menu li a:hover {
+    background: #222 no-repeat 10px center;
+}
+
+.logoLangues {
     width: 25px;
 }
 
 
-
-
 /* ********************** NAV ********************************************** */
 
-nav{
+nav {
     display: block;
     margin-left: auto!important;
     margin-right: auto!important;
@@ -68,23 +174,19 @@ nav{
     width: 370px!important;
 }
 
-.navbar{
-
+.navbar {
     background: white;
     color: black!important;
 }
 
-.dropdown-toggle::after{
+.dropdown-toggle::after {
     display: none;
 }
 
-.redsoldes{
+.redsoldes {
     font-weight: bold;
     color: red!important;
 }
-
-
-
 
 
 /* ***********  Boutons ********************************** */
@@ -109,18 +211,20 @@ nav{
     border-radius: 10px;
 }
 
-.search{ /* -------------------------------Bouton de recherche (NAV)--------------*/
+.search {
+    /* -------------------------------Bouton de recherche (NAV)--------------*/
     color: #BA55D3!important;
-    background:#ffffff!important;
+    background: #ffffff!important;
     border: 2px solid #BA55D3!important;
 }
 
-.search:hover{
+.search:hover {
     color: #ffffff!important;
     background: #BA55D3!important;
 }
 
-.btn-outline-success { /*------------------Bouton "M'inscrire" (FOOTER) et "Je découvre"----------- */
+.btn-outline-success {
+    /*------------------Bouton "M'inscrire" (FOOTER) et "Je découvre"----------- */
     color: #BA55D3!important;
     background: #ffffff!important;
     border: 1px solid #BA55D3!important;
@@ -157,6 +261,56 @@ nav{
 }
 
 
+/*  **** infos sup **** */
+
+.pay,
+.help,
+.return {
+    padding: 0 20px 20px 20px;
+    margin-bottom: 10px;
+    border: 1px solid #000 !important;
+    text-align: center;
+}
+
+.pay legend,
+.help legend,
+.return legend {
+    text-align: center;
+    font-size: 1.5em;
+    color: #000 !important;
+}
+
+.return p {
+    font-size: 1.5em;
+    color: #118078;
+}
+
+#return_logo {
+    width: 70px;
+    height: 70px;
+}
+
+.pay {
+    justify-content: space-around;
+}
+
+.cb {
+    height: 60px;
+    margin: 0 auto;
+    margin-left: 4px;
+}
+
+.help {
+    justify-content: center;
+}
+
+.help a {
+    text-decoration: none;
+    color: #BA55D3;
+    font-size: 50px;
+}
+
+
 /* ************** FOOTER ***************************************************** */
 
 footer {
@@ -178,6 +332,7 @@ footer h4 {
     color: white;
     text-align: center;
     cursor: pointer;
+    font-family: 'Didact Gothic', sans-serif;
 }
 
 #newsletter {
@@ -187,7 +342,7 @@ footer h4 {
 
 #newsletter .btn {
     display: block;
-    background-color:#BA55D3;
+    background-color: #BA55D3;
     color: white;
     margin: 0 auto;
     font-size: 1.3rem;
@@ -199,6 +354,7 @@ footer h4 {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    text-decoration: none;
 }
 
 #newsletter .btn:hover {
@@ -206,18 +362,20 @@ footer h4 {
     color: #BA55D3;
     border: 2px solid #BA55D3;
     transform: none;
+    text-decoration: none;
 }
 
 #newsletter p {
     text-align: justify center;
     margin: 0 auto;
     margin-bottom: 20px;
+    font-family: 'Didact Gothic', sans-serif;
 }
 
 .ligne {
     display: block;
     height: 0.5px;
-    background-color: slategray;
+    background-color: #FFF !important;
     width: 20%;
     margin: 20px auto;
 }
@@ -235,6 +393,7 @@ footer h4 {
 #infos ul li a {
     text-decoration: none;
     color: white;
+    font-family: 'Didact Gothic', sans-serif;
 }
 
 #infos ul li a:hover {
@@ -253,6 +412,7 @@ footer h4 {
     padding: 30px;
     margin-bottom: 20px;
     justify-content: space-between;
+    font-family: 'Didact Gothic', sans-serif;
 }
 
 #Social a i {
@@ -270,9 +430,10 @@ footer #copy {
     text-align: center;
 }
 
+
 /* ---------- Page "Qui-Sommes-Nous" ----------------*/
 
-.quisommesnous_fieldset{
+.quisommesnous_fieldset {
     display: block!important;
     width: 800px;
     margin-top: 150px;
@@ -286,11 +447,11 @@ footer #copy {
     border: 0.5px solid black;
 }
 
-legend{
-text-align: center;
-width: 300px;
-color: #BA55D3;
-font-weight: bold;
+legend {
+    text-align: center;
+    width: 300px;
+    color: #BA55D3;
+    font-weight: bold;
 }
 
 
@@ -304,22 +465,27 @@ font-weight: bold;
 
 /*  Small devices (landscape phones, 576px and up) */
 
-@media (min-width: 576px) and (max-width: 767.98px) {}
+@media (min-width: 576px) {}
 
 
 /* Medium devices (tablets, 768px and up) */
 
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media (min-width: 768px) {
     /* **** Footer**** */
     .footer_align {
         display: block;
+    }
+    #toggle_news h4 i,
+    #toggle_infos h4 i,
+    #toggle_Social h4 i {
+        display: none;
     }
 }
 
 
 /* Large devices (desktops, 992px and up) */
 
-@media (min-width: 992px) and (max-width: 1199.98px) {}
+@media (min-width: 992px) {}
 
 
 /* Extra large devices (large desktops, 1200px and up) */

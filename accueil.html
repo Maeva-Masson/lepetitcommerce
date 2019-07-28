@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/accueil.css">
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet">
 
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/accueil.js"></script>
     <title>Le Petit Commerce</title>
 </head>
 
@@ -143,132 +144,181 @@
             </div>
     </nav>
 
-    <!-- <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Recherche" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0 search" type="submit">Recherche</button>
-        </form> -->
+    <!-- Carousel-->
 
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active soldes ">
 
-    <div class="clear"></div>
-
-    <!-- **** infos sup **** -->
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 ">
-                <fieldset class=" pay">
-                    <legend> Moyens de paiement </legend>
-
-                    <img src="img/logo/cb.png" alt="logo_cb" class="cb">
-                    <img src="img/logo/mastercard.png" alt="logo_mastercard" class="cb">
-                    <img src="img/logo/visa.png" alt="logo_visa" class="cb">
-                    <img src="img/logo/amex.png" alt="logo_amex" class="cb">
-                    <img src="img/logo/google_pay.png" alt="logo_google" class="cb">
-                    <img src="img/logo/apple_pay.png" alt="return" class="cb">
-                </fieldset>
+                <div class="carousel-caption  d-md-block">
+                    <h2>Les Soldes</h2>
+                    <p>Vite Vite! <br> Derniéres démarques.</p>
+                    <a href="#"><button class="btn btn-outline-success redbutton" type="submit"> Je découvre <i class="fas fa-arrow-right"></i></button></a>
+                </div>
             </div>
-            <div class="col-md-4 col-xl-4">
-                <fieldset class="return">
-                    <legend> Satisfait ou remboursé </legend>
+            <div class="carousel-item costume">
 
-
-                    <img src="img/logo/return.png" alt="return" id="return_logo">
-
-
-                </fieldset>
+                <div class="carousel-caption  d-md-block">
+                    <h2>Un Mariage ?</h2>
+                    <p>Une selection de style juste pour vous.</p>
+                    <a href="#"><button class="btn btn-outline-success redbutton" type="submit"> Je découvre <i class="fas fa-arrow-right"></i></button></a>
+                </div>
             </div>
-            <div class="col-md-4 ">
-                <fieldset class=" help">
-                    <legend> Besoin d'aide</legend>
+            <div class="carousel-item new">
 
-
-
-                    <a href="tel:+33762765434">0101010101</a>
-
-                    <p>(Appel Gratuit)</p>
-
-
-                </fieldset>
+                <div class="carousel-caption  d-md-block">
+                    <h2>Les Nouveautés</h2>
+                    <p>Quoi de Neuf ?</p>
+                    <a href="#"><button class="btn btn-outline-success redbutton" type="submit"> Je découvre <i class="fas fa-arrow-right"></i></button></a>
+                </div>
             </div>
-
         </div>
-    </div>
 
+        <!-- *****  homme / femme *****-->
 
-    <!-- ******  Footer  ****** -->
-    <footer>
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
-                <div id="newsletter" class="newsletter col-sm-4 col-md-4">
-                    <div id="toggle_news">
-                        <h4>NewsLetter</h4>
-                        <span class="ligne"></span>
-                    </div>
-                    <div class="footer_align" id="news_p">
-                        <p>Inscrivez-vous à notre programme relationnel <span class="vert">LePetitCommerce</span> afin de recevoir toute notre actualité et nos meilleures offres.</p>
-                    </div>
-                    <a href="newsletter.html"><button class="btn btn-outline-success" type="submit"> M'inscrire !</button></a>
-                </div>
+                <div class="col-md-6 categorie">
 
-                <div class="col-sm-4 col-md-4" id="infos">
-                    <div id="toggle_infos">
-                        <h4>Informations Utiles</h4>
-                        <span class="ligne"></span>
-                    </div>
-                    <div class="footer_align" id="infos_liste">
-                        <ul>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Mentions Légales</a></li>
-                            <li><a href="#">Nos Conditions Générales de Vente</a></li>
-                            <li><a href="#">Plan du site</a></li>
-                            <li><a href="#">Imprimer la page</a></li>
-                        </ul>
-                    </div>
+                    <a href=""> <img name=men alt="image_vetement" legend="texte ici">
+                        <p>Réinventez votre look avec nos derniers vêtements, chaussures et accessoires pour homme. Découvrez nos nouveaux styles et coupes chaque saison. Nos Coatch <span class="orange">LePetitCommerce</span> sont à pour vous aider trouver
+                            la tenue parfaite.</p>
+                    </a>
                 </div>
+                <div class="col-md-6 categorie">
 
-                <div class="col-sm-4 col-md-4" id="Social">
-                    <div id="toggle_Social">
-                        <h4>Suivez-Nous</h4>
-                        <span class="ligne"></span>
-                    </div>
-                    <div class="footer_align row" id="Social_logo">
-                        <a href="https://fr-fr.facebook.com/"><i class="fab fa-facebook-square"></i></a>
-                        <a href="https://www.instagram.com/?hl=fr"><i class="fab fa-instagram"></i></a>
-                        <a href="https://twitter.com/?lang=fr"><i class="fab fa-twitter-square"></i></a>
-                        <a href="https://www.pinterest.fr/"><i class="fab fa-pinterest-square"></i></a>
-                    </div>
+                    <a href=""> <img name=women alt="image_vetement" legend="texte ici">
+                        <p>Réinventez votre look avec nos derniers vêtements, Découvrez chaque semaine nos nouveaux manteaux, jeans, robes, hauts, chaussures, bottes et accessoires. Nos Coatch <span class="orange">LePetitCommerce</span>sont à pour vous aider
+                            trouver la tenue parfaite.</p>
+                    </a>
+
+                    </a>
                 </div>
+            </div>
 
+        </div>
+
+
+        <div class="clear"></div>
+
+        <!-- **** infos sup **** -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 ">
+                    <fieldset class=" pay">
+                        <legend> Moyens de paiement </legend>
+
+                        <img src="img/logo/cb.png" alt="logo_cb" class="cb">
+                        <img src="img/logo/mastercard.png" alt="logo_mastercard" class="cb">
+                        <img src="img/logo/visa.png" alt="logo_visa" class="cb">
+                        <img src="img/logo/amex.png" alt="logo_amex" class="cb">
+                        <img src="img/logo/google_pay.png" alt="logo_google" class="cb">
+                        <img src="img/logo/apple_pay.png" alt="return" class="cb">
+                    </fieldset>
+                </div>
+                <div class="col-md-4 col-xl-4">
+                    <fieldset class="return">
+                        <legend> Satisfait ou remboursé </legend>
+
+
+                        <img src="img/logo/return.png" alt="return" id="return_logo">
+
+
+                    </fieldset>
+                </div>
+                <div class="col-md-4 ">
+                    <fieldset class=" help">
+                        <legend> Besoin d'aide</legend>
+
+
+
+                        <a href="tel:+33762765434">0101010101</a>
+
+                        <p>(Appel Gratuit)</p>
+
+
+                    </fieldset>
+                </div>
 
             </div>
         </div>
 
-        <div id="copy">
-            <p>Copyright &copy; LePetitCommerce</p>
-        </div>
-    </footer>
 
-    <script>
-        $(document).ready(function() {
-            $('#toggle_Social').click(function() {
-                $('#Social_logo').slideToggle(200);
+        <!-- ******  Footer  ****** -->
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div id="newsletter" class="newsletter col-sm-4 col-md-4">
+                        <div id="toggle_news">
+                            <h4>NewsLetter</h4>
+                            <span class="ligne"></span>
+                        </div>
+                        <div class="footer_align" id="news_p">
+                            <p>Inscrivez-vous à notre programme relationnel <span class="vert">LePetitCommerce</span> afin de recevoir toute notre actualité et nos meilleures offres.</p>
+                        </div>
+                        <a href="newsletter.html"><button class="btn btn-outline-success" type="submit"> M'inscrire !</button></a>
+                    </div>
+
+                    <div class="col-sm-4 col-md-4" id="infos">
+                        <div id="toggle_infos">
+                            <h4>Informations Utiles</h4>
+                            <span class="ligne"></span>
+                        </div>
+                        <div class="footer_align" id="infos_liste">
+                            <ul>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Mentions Légales</a></li>
+                                <li><a href="#">Nos Conditions Générales de Vente</a></li>
+                                <li><a href="#">Plan du site</a></li>
+                                <li><a href="#">Imprimer la page</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-md-4" id="Social">
+                        <div id="toggle_Social">
+                            <h4>Suivez-Nous</h4>
+                            <span class="ligne"></span>
+                        </div>
+                        <div class="footer_align row" id="Social_logo">
+                            <a href="https://fr-fr.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                            <a href="https://www.instagram.com/?hl=fr"><i class="fab fa-instagram"></i></a>
+                            <a href="https://twitter.com/?lang=fr"><i class="fab fa-twitter-square"></i></a>
+                            <a href="https://www.pinterest.fr/"><i class="fab fa-pinterest-square"></i></a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div id="copy">
+                <p>Copyright &copy; LePetitCommerce</p>
+            </div>
+        </footer>
+
+        <script>
+            $(document).ready(function() {
+                $('#toggle_Social').click(function() {
+                    $('#Social_logo').slideToggle(200);
+                });
+                $('#toggle_infos').click(function() {
+                    $('#infos_liste').slideToggle(200);
+                });
+                $('#toggle_news').click(function() {
+                    $('#news_p').slideToggle(200);
+                });
             });
-            $('#toggle_infos').click(function() {
-                $('#infos_liste').slideToggle(200);
-            });
-            $('#toggle_news').click(function() {
-                $('#news_p').slideToggle(200);
-            });
-        });
-    </script>
+        </script>
 
 
 
 
 
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.js"></script>
+        <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.js"></script>
 </body>
 
 </html>
