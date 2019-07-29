@@ -1,0 +1,78 @@
+
+main{
+    background-image:url("../img/fond.jpg");
+    height: 500px;
+}
+
+p {
+    text-align: center;
+    font-size: 13px;
+}
+
+h1{
+    font-size: 25px;
+    text-align: center;
+    width: 380px;
+    color: #BA55D3;
+    /* font-weight: lighter; */
+}
+
+.titre_quisommesnous{
+    width: 1500px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    height: 50px;
+    background: white;
+    color: #BA55D3;
+    text-align: center;
+}
+
+fieldset {
+    padding: 0 20px 20px 20px;
+    margin-bottom: 10px;
+    background: white;
+}
+
+.quisommesnous_fieldset{
+    margin-top: 20px;
+    border-color: white;
+    border-radius: 0 0 20px 20px;
+    width: 900px;
+    border-top-color: #E9E9E9;
+}
+
+.credo{
+    font-size: 15px;
+    text-align: center;
+    font-style: oblique;
+}
+
+.bonshopping{
+    width: 350px;
+    margin: auto;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.btn {
+    display: block;
+    background-color: #BA55D3;
+    color: white;
+    margin: 0 auto;
+    width: 300px;
+    height: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.btn:hover {
+    background-color: white;
+    color: #BA55D3;
+    border: 2px solid #BA55D3;
+    transform: none;
+}
