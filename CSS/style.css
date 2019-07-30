@@ -189,6 +189,103 @@ nav {
 }
 
 
+/* ***** NAV 3 ***** */
+
+#nav3 {
+    background: #000;
+    text-align: center;
+    width: 100% !important;
+}
+
+#nav3 ul {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#nav3 ul li {
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px;
+}
+
+#nav3 h3 {
+    display: none;
+}
+
+#nav3 ul li:hover {
+    background: #BA55D3 !important;
+}
+
+#nav3 ul li a {
+    text-decoration: none;
+    color: #FFF !important;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+#nav3 .toggle {
+    width: 100%;
+    padding: 10px 20px;
+    background: #000 !important;
+    text-align: right;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: white !important;
+    display: none;
+    cursor: pointer;
+}
+
+.sous_menu_h_nav2 {
+    display: none;
+    left: 0;
+}
+
+#size_p {
+    background-color: #000;
+    color: white;
+    width: 150px;
+    text-align: center;
+}
+
+.couleurs {
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+
+/* ***** fil d'ariane ***** */
+
+#ariane {
+    width: 100% !important;
+}
+
+.breadcrumb {
+    background-color: white !important;
+}
+
+.breadcrumb-item.active {
+    color: #BA55D3;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #000;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+.breadcrumb a:hover {
+    color: #BA55D3;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    display: inline-block;
+    padding-right: 0.5rem;
+    color: #6c757d;
+    content: ">";
+}
+
+
 /* ***********  Boutons ********************************** */
 
 .btn {
@@ -467,6 +564,24 @@ legend {
 
 @media (min-width: 576px) {}
 
+@media (max-width: 768px) {
+    #nav3 .toggle {
+        display: block;
+        ;
+    }
+    #nav3 ul {
+        width: 100%;
+        display: none;
+    }
+    #nav3 ul li {
+        display: block;
+        text-align: center;
+    }
+    .active {
+        display: block;
+    }
+}
+
 
 /* Medium devices (tablets, 768px and up) */
 
@@ -479,6 +594,31 @@ legend {
     #toggle_infos h4 i,
     #toggle_Social h4 i {
         display: none;
+    }
+    #nav3 {
+        background: white!important;
+        height: 100%;
+        padding-top: 40px;
+    }
+    #nav3 ul li {
+        text-decoration: none;
+        display: block;
+        padding: 15px;
+        color: #000 !important;
+    }
+    #nav3 ul li:hover {
+        background: white !important;
+        color: #BA55D3;
+    }
+    #nav3 ul li a {
+        text-decoration: none;
+        color: #000 !important;
+    }
+    #nav3 ul li a:hover {
+        color: #BA55D3 !important;
+    }
+    #nav3 h3 {
+        display: block;
     }
 }
 

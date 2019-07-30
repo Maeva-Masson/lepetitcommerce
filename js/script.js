@@ -1,4 +1,57 @@
-/* NAV2 */
+/* *****  PAGE ACCEUIL ***** */
+
+/* img homme /  femme*/
+var T = 3000;
+var h = 0;
+var men = [];
+men[0] = 'img/Homme/costume/costume_bleu6.jpg';
+men[1] = 'img/Homme/costume/costume_bleu3.jpg';
+men[2] = 'img/Homme/costume/costume_bleu1.jpg';
+men[3] = 'img/Homme/costume/costume_bleu5.jpg';
+
+var f = 0;
+var women = [];
+women[0] = 'img/femme/pantalons/pantalon_blanc1.jpg';
+women[1] = 'img/femme/pantalons/pantalon_blanc3.jpg';
+women[2] = 'img/femme/pantalons/pantalon_blanc5.jpg';
+women[3] = 'img/femme/pantalons/pantalon_blanc4.jpg';
+
+function diapo() {
+    document.men.src = men[h];
+    if (h < men.length - 1) {
+        h++
+    } else {
+        h = 0
+    }
+
+    setTimeout("diapo()", T);
+}
+
+function diapo2() {
+    document.women.src = women[f];
+    if (f < women.length - 1) {
+        f++
+    } else {
+        f = 0
+    }
+
+    setTimeout("diapo2()", T);
+}
+
+
+window.onload = function() {
+    diapo(), diapo2()
+};
+
+
+
+
+
+
+
+
+/* *****  NAV 2 / PAGE PANTALONS HOMME ***** */
+
 $(document).ready(function() {
     $('.menu2').click(function() {
         $('ul').slideToggle(200);
@@ -6,17 +59,65 @@ $(document).ready(function() {
     $('.access_h').click(function() {
         $('.sous_menu_h a ').slideToggle(200)
     });
+    $('.nav2_sous_menu').click(function() {
+        $('.sous_menu_h_nav2').slideToggle(200)
+    });
     $('.access_f').click(function() {
         $('.sous_menu_f a ').slideToggle(200)
     });
     $('.nav2_toggle').click(function() {
-        $('.nav2_sous_menu a ').slideToggle(200)
+        $('this a ').slideToggle(200)
+    });
+    $('#toggle_Social').click(function() {
+        $('#Social_logo').slideToggle(200);
+    });
+    $('#toggle_infos').click(function() {
+        $('#infos_liste').slideToggle(200);
+    });
+    $('#toggle_news').click(function() {
+        $('#news_p').slideToggle(200);
+    });
+    $('#pantalon1').click(function() {
+        $('#card-body1').slideToggle(200);
+    });
+    $('#pantalon2').click(function() {
+        $('#card-body2').slideToggle(200);
+    });
+    $('#pantalon3').click(function() {
+        $('#card-body3').slideToggle(200);
+    });
+    $('#casual1').click(function() {
+        $('#card-body4').slideToggle(200);
+    });
+    $('#casual2').click(function() {
+        $('#card-body5').slideToggle(200);
+    });
+    $('#casual3').click(function() {
+        $('#card-body6').slideToggle(200);
+    });
+    $('#costume1').click(function() {
+        $('#card-body7').slideToggle(200);
+    });
+    $('#costume2').click(function() {
+        $('#card-body8').slideToggle(200);
+    });
+    $('#costume3').click(function() {
+        $('#card-body9').slideToggle(200);
+    });
+    $('#brut1').click(function() {
+        $('#card-body10').slideToggle(200);
+    });
+    $('#brut2').click(function() {
+        $('#card-body11').slideToggle(200);
+    });
+    $('#brut3').click(function() {
+        $('#card-body12').slideToggle(200);
     });
 })
 
 
 
-/* Page Nos Produits */
+/* ***** PAGE TOUS LES PRODUITS HOMME ***** */
 
 var time = 3000;
 
