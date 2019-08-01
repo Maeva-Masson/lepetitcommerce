@@ -203,10 +203,6 @@
     padding: 15px;
 }
 
-#nav2 ul li:hover {
-    background: #BA55D3 !important;
-}
-
 #nav2 ul li a {
     text-decoration: none;
     color: #FFF !important;

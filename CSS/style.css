@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap');
+@font-face {
+    font-family: 'abangregular';
+    src: url('abang-webfont.woff2') format('woff2'), url('abang-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -189,12 +196,19 @@ nav {
 }
 
 
-/* ***** NAV 3 ***** */
+/* ***** NAV 3 / fiche produits ***** */
 
 #nav3 {
-    background: #000;
+    background: white !important;
     text-align: center;
     width: 100% !important;
+}
+
+#nav3 h3 {
+    font-size: 40px;
+    font-weight: bold;
+    display: none;
+    font-family: 'abangregular';
 }
 
 #nav3 ul {
@@ -209,35 +223,27 @@ nav {
     padding: 15px;
 }
 
-#nav3 h3 {
-    display: none;
-}
-
-#nav3 ul li:hover {
-    background: #BA55D3 !important;
-}
-
 #nav3 ul li a {
     text-decoration: none;
-    color: #FFF !important;
     font-family: 'Didact Gothic', sans-serif;
+    color: black !important;
 }
 
 #nav3 .toggle {
     width: 100%;
     padding: 10px 20px;
-    background: #000 !important;
+    background: white !important;
     text-align: right;
     box-sizing: border-box;
     font-size: 20px;
-    color: white !important;
+    color: black !important;
     display: none;
     cursor: pointer;
 }
 
-.sous_menu_h_nav2 {
-    display: none;
-    left: 0;
+.toggle p {
+    text-align: right;
+    margin-bottom: 0;
 }
 
 #size_p {
@@ -247,10 +253,187 @@ nav {
     text-align: center;
 }
 
+#nav3 ul li .nav2_sous_menu {
+    font-size: 20px !important;
+    font-weight: bold;
+}
+
+#nav3 ul li .nav2_sous_menu:hover {
+    color: #BA55D3 !important;
+}
+
 .couleurs {
     display: flex;
     justify-content: space-around;
     cursor: pointer;
+}
+
+.dropdown-item:hover {
+    color: #BA55D3 !important;
+}
+
+#nav3 .dropdown-item:hover {
+    color: #BA55D3 !important;
+}
+
+
+/*  carousel */
+
+.soldes {
+    height: 300px;
+    background: url('../img/homme/image_solde.jpg');
+    align-items: center;
+    background-size: 70%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.soldes h2 {
+    text-align: right;
+    color: red;
+    padding-top: 50px;
+    font-size: 50px;
+    margin-right: 20px;
+    line-height: 0;
+}
+
+.soldes P {
+    text-align: right;
+    color: red;
+    padding-top: 40px;
+    font-size: 1.2em;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+.soldes .redbutton {
+    display: block;
+    color: red !important;
+    text-decoration: none;
+    font-size: 1.3rem;
+    width: 175px;
+    height: 50px;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid black !important;
+    margin-top: 40px;
+    float: right;
+    margin-right: 5px;
+}
+
+.soldes .redbutton:hover {
+    color: white !important;
+    transform: none;
+    background-color: red !important;
+    border: 1px solid red !important;
+}
+
+.costume {
+    height: 300px;
+    background: url('../img/homme/Image_slider_3.jpeg');
+    align-items: center;
+    background-size: 70%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.costume h2 {
+    text-align: left;
+    color: #69B0BD !important;
+    padding-top: 40px;
+    font-size: 2.5em;
+    margin-left: 20px;
+}
+
+.costume P {
+    text-align: left;
+    color: white !important;
+    padding-top: 40px;
+    font-size: 1.2em;
+    margin-left: 20px;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+.costume .redbutton {
+    display: block;
+    color: white !important;
+    background-color: #69B0BD !important;
+    text-decoration: none;
+    font-size: 1.3rem;
+    width: 175px;
+    height: 50px;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid;
+    margin-top: 40px;
+    float: left;
+    margin-left: 30px;
+    border: 2px solid #69B0BD !important;
+}
+
+.costume .redbutton:hover {
+    background-color: white !important;
+    color: #152A9E !important;
+    border: 2px solid #152A9E !important;
+    transform: none;
+}
+
+.new {
+    height: 300px;
+    background: url('../img/homme/slide_homme2.jpg');
+    align-items: center;
+    background-size: 70%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.new h2 {
+    text-align: left;
+    color: #152A9E !important;
+    padding-top: 40px;
+    font-size: 2.5em;
+    margin-left: 20px;
+}
+
+.new P {
+    text-align: left;
+    color: #152A9E !important;
+    padding-top: 40px;
+    font-size: 1.2em;
+    margin-left: 50px;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+.new .redbutton {
+    display: block;
+    color: white !important;
+    background-color: #152A9E !important;
+    text-decoration: none;
+    font-size: 1.3rem;
+    width: 175px;
+    height: 50px;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid;
+    margin-top: 40px;
+    float: left;
+    margin-left: 30px;
+    border: 2px solid #152A9E !important;
+}
+
+.new .redbutton:hover {
+    background-color: white !important;
+    color: #152A9E !important;
+    border: 2px solid #152A9E !important;
+    transform: none;
 }
 
 
@@ -358,6 +541,106 @@ nav {
 }
 
 
+/* ***********  Pages Produits  ********************************** */
+
+.image_vetement {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.image_vetement .car-body h6 {
+    color: #BA55D3 !important;
+}
+
+#card-body1,
+#card-body2,
+#card-body3,
+#card-body4,
+#card-body5,
+#card-body6,
+#card-body7,
+#card-body8,
+#card-body9,
+#card-body10,
+#card-body11,
+#card-body12,
+#card-body13,
+#card-body14,
+#card-body15,
+#card-body16,
+#card-body17,
+#card-body18,
+#card-body19,
+#card-body20,
+#card-body21,
+#card-body22,
+#card-body23,
+#card-body24,
+#card-body25,
+#card-body26,
+#card-body27,
+#card-body28,
+#card-body29,
+#card-body30 {
+    display: none;
+}
+
+.text {
+    padding: 0 20px 20px 20px;
+    margin-bottom: 10px;
+    border: 1px solid #000;
+}
+
+.text legend {
+    text-align: center;
+    font-size: 2em;
+    margin-right: 20px;
+    color: #000 !important;
+    font-family: 'abangregular';
+}
+
+.text p {
+    text-align: center;
+    font-family: 'Didact Gothic', sans-serif;
+    margin-top: 20px;
+}
+
+.text button {
+    margin-top: 40px;
+}
+
+.text .btn {
+    display: block;
+    background-color: #118078;
+    color: white;
+    margin: 0 auto;
+    font-size: 1.3rem;
+    width: 175px;
+    height: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.text .btn:hover {
+    background-color: white;
+    color: #118078;
+    border: 2px solid #118078;
+    transform: none;
+}
+
+.text a {
+    text-decoration: none;
+}
+
+.car-body {
+    align-items: center;
+}
+
+
 /*  **** infos sup **** */
 
 .pay,
@@ -403,7 +686,7 @@ nav {
 
 .help a {
     text-decoration: none;
-    color: #BA55D3;
+    color: #BA55D3 !important;
     font-size: 50px;
 }
 
@@ -599,6 +882,7 @@ legend {
         background: white!important;
         height: 100%;
         padding-top: 40px;
+        border-bottom: none;
     }
     #nav3 ul li {
         text-decoration: none;
@@ -606,19 +890,18 @@ legend {
         padding: 15px;
         color: #000 !important;
     }
-    #nav3 ul li:hover {
-        background: white !important;
-        color: #BA55D3;
-    }
     #nav3 ul li a {
         text-decoration: none;
         color: #000 !important;
     }
-    #nav3 ul li a:hover {
-        color: #BA55D3 !important;
-    }
     #nav3 h3 {
         display: block;
+    }
+    .text {
+        height: 364.5px;
+    }
+    .text p {
+        margin-top: 50px;
     }
 }
 

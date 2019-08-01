@@ -59,9 +59,7 @@ $(document).ready(function() {
     $('.access_h').click(function() {
         $('.sous_menu_h a ').slideToggle(200)
     });
-    $('.nav2_sous_menu').click(function() {
-        $('.sous_menu_h_nav2').slideToggle(200)
-    });
+
     $('.access_f').click(function() {
         $('.sous_menu_f a ').slideToggle(200)
     });
@@ -115,6 +113,21 @@ $(document).ready(function() {
     });
 })
 
+/* ****** slider prix ******* */
+
+$(function() {
+    $("#slider-range").slider({
+        range: true,
+        min: 0,
+        max: 500,
+        values: [75, 300],
+        slide: function(event, ui) {
+            $("#amount").val("€" + ui.values[0] + " - €" + ui.values[1]);
+        }
+    });
+    $("#amount").val("€" + $("#slider-range").slider("values", 0) +
+        " - €" + $("#slider-range").slider("values", 1));
+});
 
 
 /* ***** PAGE TOUS LES PRODUITS HOMME ***** */

@@ -1,227 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap');
 
-/*  carousel */
-
-.soldes {
-    height: 300px;
-    background: url('../img/homme/image_solde.jpg');
-    align-items: center;
-    background-size: 70%;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.soldes h2 {
-    text-align: right;
-    color: red;
-    margin-top: 50px;
-    font-size: 50px;
-    margin-right: 20px;
-    line-height: 0;
-}
-
-.soldes P {
-    text-align: right;
-    color: red;
-    padding-top: 40px;
-    font-size: 1.2em;
-    font-family: 'Didact Gothic', sans-serif;
-}
-
-.soldes .redbutton {
-    display: block;
-    color: red !important;
-    text-decoration: none;
-    font-size: 1.3rem;
-    width: 175px;
-    height: 50px;
-    text-align: center;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    border: 1px solid black !important;
-    margin-top: 40px;
-    float: right;
-    margin-right: 5px;
-}
-
-.soldes .redbutton:hover {
-    color: white !important;
-    transform: none;
-    background-color: red !important;
-    border: 1px solid red !important;
-}
-
-.costume {
-    height: 300px;
-    background: url('../img/homme/Image_slider_3.jpeg');
-    align-items: center;
-    background-size: 70%;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.costume h2 {
-    text-align: left;
-    color: #69B0BD !important;
-    padding-top: 40px;
-    font-size: 2.5em;
-    margin-left: 20px;
-}
-
-.costume P {
-    text-align: left;
-    color: white !important;
-    padding-top: 40px;
-    font-size: 1.2em;
-    margin-left: 20px;
-    font-family: 'Didact Gothic', sans-serif;
-}
-
-.costume .redbutton {
-    display: block;
-    color: white !important;
-    background-color: #69B0BD !important;
-    text-decoration: none;
-    font-size: 1.3rem;
-    width: 175px;
-    height: 50px;
-    text-align: center;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    border: 1px solid;
-    margin-top: 40px;
-    float: left;
-    margin-left: 30px;
-    border: 2px solid #69B0BD !important;
-}
-
-.costume .redbutton:hover {
-    background-color: white !important;
-    color: #152A9E !important;
-    border: 2px solid #152A9E !important;
-    transform: none;
-}
-
-.new {
-    height: 300px;
-    background: url('../img/homme/slide_homme2.jpg');
-    align-items: center;
-    background-size: 70%;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.new h2 {
-    text-align: left;
-    color: #152A9E !important;
-    padding-top: 40px;
-    font-size: 2.5em;
-    margin-left: 20px;
-}
-
-.new P {
-    text-align: left;
-    color: #152A9E !important;
-    padding-top: 40px;
-    font-size: 1.2em;
-    margin-left: 50px;
-    font-family: 'Didact Gothic', sans-serif;
-}
-
-.new .redbutton {
-    display: block;
-    color: white !important;
-    background-color: #152A9E !important;
-    text-decoration: none;
-    font-size: 1.3rem;
-    width: 175px;
-    height: 50px;
-    text-align: center;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    border: 1px solid;
-    margin-top: 40px;
-    float: left;
-    margin-left: 30px;
-    border: 2px solid #152A9E !important;
-}
-
-.new .redbutton:hover {
-    background-color: white !important;
-    color: #152A9E !important;
-    border: 2px solid #152A9E !important;
-    transform: none;
-}
-
-
 /* ***** NAV  ***** */
 
-#nav3 {
-    background: #000;
-    text-align: center;
-    width: 100% !important;
-}
-
-#nav3 ul {
-    width: 80%;
-    margin: 0 auto;
-    padding: 0;
-}
-
-#nav3 ul li {
-    text-decoration: none;
-    display: inline-block;
-    padding: 15px;
-}
-
-#nav3 h3 {
-    display: none;
-}
-
-#nav3 ul li:hover {
-    background: #BA55D3 !important;
-}
-
-#nav3 ul li a {
-    text-decoration: none;
-    color: #FFF !important;
-    font-family: 'Didact Gothic', sans-serif;
-}
-
-#nav3 .toggle {
-    width: 100%;
-    padding: 10px 20px;
-    background: #000 !important;
+.toggle p {
     text-align: right;
-    box-sizing: border-box;
-    font-size: 20px;
-    color: white !important;
-    display: none;
-    cursor: pointer;
+    margin-bottom: 0;
 }
 
 .sous_menu_h_nav2 {
     display: none;
     left: 0;
-}
-
-#size_p {
-    background-color: #000;
-    color: white;
-    width: 150px;
-    text-align: center;
-}
-
-.couleurs {
-    display: flex;
-    justify-content: space-around;
-    cursor: pointer;
 }
 
 
@@ -308,7 +96,7 @@
     font-size: 2em;
     margin-right: 20px;
     color: #000 !important;
-    font-family: 'Didact Gothic', sans-serif;
+    font-family: 'abangregular';
 }
 
 .text p {
@@ -350,55 +138,6 @@
 
 .car-body {
     align-items: center;
-}
-
-
-/*  **** infos sup **** */
-
-.pay,
-.help,
-.return {
-    padding: 0 20px 20px 20px;
-    margin-bottom: 10px;
-    border: 1px solid #118078;
-    text-align: center;
-}
-
-.pay legend,
-.help legend,
-.return legend {
-    text-align: center;
-    font-size: 1.5em;
-}
-
-.return p {
-    font-size: 1.5em;
-    color: #118078;
-}
-
-#return_logo {
-    width: 70px;
-    height: 70px;
-}
-
-.pay {
-    justify-content: space-around;
-}
-
-.cb {
-    height: 60px;
-    margin: 0 auto;
-    margin-left: 4px;
-}
-
-.help {
-    justify-content: center;
-}
-
-.help a {
-    text-decoration: none;
-    color: #118078;
-    font-size: 40px;
 }
 
 
@@ -447,16 +186,9 @@
         padding: 15px;
         color: #000 !important;
     }
-    #nav3 ul li:hover {
-        background: white !important;
-        color: #BA55D3;
-    }
     #nav3 ul li a {
         text-decoration: none;
         color: #000 !important;
-    }
-    #nav3 ul li a:hover {
-        color: #BA55D3 !important;
     }
     #nav3 h3 {
         display: block;
@@ -470,12 +202,6 @@
     .text p {
         margin-top: 50px;
     }
-    h2 {
-        text-align: center;
-        color: red;
-        padding-top: 40px;
-        font-size: 4.5em;
-    }
     .soldes {
         height: 500px;
         background: url('../img/homme/image_solde.jpg');
@@ -487,7 +213,7 @@
     .soldes h2 {
         text-align: right;
         color: red;
-        margin-top: 50px;
+        padding-top: 50px;
         font-size: 100px;
         margin-right: 30px;
         line-height: 0;
@@ -575,22 +301,22 @@
         background-repeat: no-repeat;
     }
     .soldes h2 {
-        text-align: center;
+        text-align: right;
         color: red;
-        margin-top: 70px;
+        padding-top: 70px;
         font-size: 100px;
-        margin-right: 30px;
+        margin-right: 200px;
         line-height: 0;
     }
     .soldes P {
-        text-align: center;
+        text-align: right;
         color: red;
         padding-top: 40px;
         font-size: 2.2em;
-        margin-right: 0px;
+        margin-right: 200px;
     }
     .soldes .btn {
-        margin-right: 30px;
+        margin-right: 200px;
     }
 }
 
