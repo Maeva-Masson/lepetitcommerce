@@ -34,15 +34,15 @@ p {
 }
 
 .clear {
-    height: 70px;
+    height: 70px !important;
 }
 
 
 /************************** HEADER *****************************************************/
 
 .headerLogo {
-    margin-left: 1300px;
-    margin-right: auto;
+    float: right;
+    margin-right: 30px;
     display: flex;
     flex: space-between;
 }
@@ -176,7 +176,6 @@ p {
 nav {
     display: block;
     margin-left: auto!important;
-    margin-right: auto!important;
     border-bottom: 1px solid #e9e9e9;
     width: 370px!important;
 }
@@ -184,6 +183,7 @@ nav {
 .navbar {
     background: white;
     color: black!important;
+    align-items: flex-end !important;
 }
 
 .dropdown-toggle::after {
@@ -256,10 +256,6 @@ nav {
 #nav3 ul li .nav2_sous_menu {
     font-size: 20px !important;
     font-weight: bold;
-}
-
-#nav3 ul li .nav2_sous_menu:hover {
-    color: #BA55D3 !important;
 }
 
 .couleurs {
@@ -356,7 +352,7 @@ nav {
     font-family: 'Didact Gothic', sans-serif;
 }
 
-.costume .redbutton {
+.costume a {
     display: block;
     color: white !important;
     background-color: #69B0BD !important;
@@ -752,12 +748,8 @@ footer h4 {
     font-family: 'Didact Gothic', sans-serif;
 }
 
-.ligne {
-    display: block;
-    height: 0.5px;
+#newsletter .ligne {
     background-color: #FFF !important;
-    width: 20%;
-    margin: 20px auto;
 }
 
 #infos {
@@ -878,6 +870,13 @@ legend {
     #toggle_Social h4 i {
         display: none;
     }
+    /* **** Les Nav **** */
+    nav {
+        display: block;
+        margin-left: auto!important;
+        border-bottom: 1px solid #e9e9e9;
+        width: 370px!important;
+    }
     #nav3 {
         background: white!important;
         height: 100%;
@@ -908,7 +907,15 @@ legend {
 
 /* Large devices (desktops, 992px and up) */
 
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+    nav {
+        display: block;
+        margin-left: auto!important;
+        margin-right: auto!important;
+        border-bottom: 1px solid #e9e9e9;
+        width: 370px!important;
+    }
+}
 
 
 /* Extra large devices (large desktops, 1200px and up) */
