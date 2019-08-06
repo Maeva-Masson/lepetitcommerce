@@ -291,34 +291,7 @@
 
 /* Large devices (desktops, 992px and up) */
 
-@media (min-width: 992px) {
-    .soldes {
-        height: 500px;
-        background: url('../img/homme/image_solde.jpg');
-        align-items: right;
-        background-size: 70%;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    .soldes h2 {
-        text-align: right;
-        color: red;
-        padding-top: 70px;
-        font-size: 100px;
-        margin-right: 200px;
-        line-height: 0;
-    }
-    .soldes P {
-        text-align: right;
-        color: red;
-        padding-top: 40px;
-        font-size: 2.2em;
-        margin-right: 200px;
-    }
-    .soldes .btn {
-        margin-right: 200px;
-    }
-}
+@media (min-width: 992px) {}
 
 
 /* Extra large devices (large desktops, 1200px and up) */
