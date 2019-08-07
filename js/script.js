@@ -118,7 +118,7 @@ $(document).ready(function() {
 });
 
 
-/* *****  NAV 2 / PAGE PANTALONS HOMME ***** */
+/* *****  NAV 2 / PAGE produits HOMME ***** */
 
 $(document).ready(function() {
     $('.menu2').click(function() {
@@ -178,6 +178,96 @@ $(document).ready(function() {
     });
     $('#brut3').click(function() {
         $('#card-body12').slideToggle(200);
+    });
+    $('#chemise1').click(function() {
+        $('#card-body1').slideToggle(200);
+    });
+    $('#chemise2').click(function() {
+        $('#card-body2').slideToggle(200);
+    });
+    $('#chemise3').click(function() {
+        $('#card-body3').slideToggle(200);
+    });
+    $('#chemise4').click(function() {
+        $('#card-body4').slideToggle(200);
+    });
+    $('#chemise5').click(function() {
+        $('#card-body5').slideToggle(200);
+    });
+    $('#chemise6').click(function() {
+        $('#card-body6').slideToggle(200);
+    });
+    $('#chemise7').click(function() {
+        $('#card-body7').slideToggle(200);
+    });
+    $('#chemise8').click(function() {
+        $('#card-body8').slideToggle(200);
+    });
+    $('#chemise9').click(function() {
+        $('#card-body9').slideToggle(200);
+    });
+    $('#chemise10').click(function() {
+        $('#card-body10').slideToggle(200);
+    });
+    $('#chemise11').click(function() {
+        $('#card-body11').slideToggle(200);
+    });
+    $('#chemise12').click(function() {
+        $('#card-body12').slideToggle(200);
+    });
+    $('#chemise13').click(function() {
+        $('#card-body13').slideToggle(200);
+    });
+    $('#chemise14').click(function() {
+        $('#card-body14').slideToggle(200);
+    });
+    $('#chemise15').click(function() {
+        $('#card-body15').slideToggle(200);
+    });
+    $('#haut1').click(function() {
+        $('#card-body1').slideToggle(200);
+    });
+    $('#haut2').click(function() {
+        $('#card-body2').slideToggle(200);
+    });
+    $('#haut3').click(function() {
+        $('#card-body3').slideToggle(200);
+    });
+    $('#haut4').click(function() {
+        $('#card-body4').slideToggle(200);
+    });
+    $('#haut5').click(function() {
+        $('#card-body5').slideToggle(200);
+    });
+    $('#haut6').click(function() {
+        $('#card-body6').slideToggle(200);
+    });
+    $('#haut7').click(function() {
+        $('#card-body7').slideToggle(200);
+    });
+    $('#haut8').click(function() {
+        $('#card-body8').slideToggle(200);
+    });
+    $('#haut9').click(function() {
+        $('#card-body9').slideToggle(200);
+    });
+    $('#haut10').click(function() {
+        $('#card-body10').slideToggle(200);
+    });
+    $('#haut11').click(function() {
+        $('#card-body11').slideToggle(200);
+    });
+    $('#haut12').click(function() {
+        $('#card-body12').slideToggle(200);
+    });
+    $('#haut13').click(function() {
+        $('#card-body13').slideToggle(200);
+    });
+    $('#haut14').click(function() {
+        $('#card-body14').slideToggle(200);
+    });
+    $('#haut15').click(function() {
+        $('#card-body15').slideToggle(200);
     });
 })
 
