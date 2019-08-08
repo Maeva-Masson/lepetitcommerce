@@ -314,6 +314,43 @@ $(document).ready(function() {
     $('#pull15').click(function() {
         $('#card-body15').slideToggle(200);
     });
+    $('#veste1').click(function() {
+        $('#card-body1').slideToggle(200);
+    });
+    $('#veste2').click(function() {
+        $('#card-body2').slideToggle(200);
+    });
+    $('#veste3').click(function() {
+        $('#card-body3').slideToggle(200);
+    });
+    $('#veste4').click(function() {
+        $('#card-body4').slideToggle(200);
+    });
+    $('#veste5').click(function() {
+        $('#card-body5').slideToggle(200);
+    });
+    $('#veste6').click(function() {
+        $('#card-body6').slideToggle(200);
+    });
+    $('#veste7').click(function() {
+        $('#card-body7').slideToggle(200);
+    });
+    $('#veste8').click(function() {
+        $('#card-body8').slideToggle(200);
+    });
+    $('#veste9').click(function() {
+        $('#card-body9').slideToggle(200);
+    });
+    $('#veste10').click(function() {
+        $('#card-body10').slideToggle(200);
+    });
+    $('#veste11').click(function() {
+        $('#card-body11').slideToggle(200);
+    });
+    $('#veste12').click(function() {
+        $('#card-body12').slideToggle(200);
+    });
+
 })
 
 /* ****** slider prix ******* */
