@@ -350,7 +350,42 @@ $(document).ready(function() {
     $('#veste12').click(function() {
         $('#card-body12').slideToggle(200);
     });
-
+    $('#chaussure1').click(function() {
+        $('#card-body1').slideToggle(200);
+    });
+    $('#chaussure2').click(function() {
+        $('#card-body2').slideToggle(200);
+    });
+    $('#chaussure3').click(function() {
+        $('#card-body3').slideToggle(200);
+    });
+    $('#chaussure4').click(function() {
+        $('#card-body4').slideToggle(200);
+    });
+    $('#chaussure5').click(function() {
+        $('#card-body5').slideToggle(200);
+    });
+    $('#chaussure6').click(function() {
+        $('#card-body6').slideToggle(200);
+    });
+    $('#chaussure7').click(function() {
+        $('#card-body7').slideToggle(200);
+    });
+    $('#chaussure8').click(function() {
+        $('#card-body8').slideToggle(200);
+    });
+    $('#chaussure9').click(function() {
+        $('#card-body9').slideToggle(200);
+    });
+    $('#chaussure10').click(function() {
+        $('#card-body10').slideToggle(200);
+    });
+    $('#chaussure11').click(function() {
+        $('#card-body11').slideToggle(200);
+    });
+    $('#chaussure12').click(function() {
+        $('#card-body12').slideToggle(200);
+    });
 })
 
 /* ****** slider prix ******* */
