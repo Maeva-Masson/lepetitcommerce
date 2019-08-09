@@ -188,6 +188,39 @@ $(document).ready(function() {
     $('#produit15').click(function() {
         $('#card-body15').slideToggle(200);
     });
+    $('#produit16').click(function() {
+        $('#card-body16').slideToggle(200);
+    });
+    $('#produit17').click(function() {
+        $('#card-body17').slideToggle(200);
+    });
+    $('#produit18').click(function() {
+        $('#card-body18').slideToggle(200);
+    });
+    $('#produit19').click(function() {
+        $('#card-body19').slideToggle(200);
+    });
+    $('#produit20').click(function() {
+        $('#card-body20').slideToggle(200);
+    });
+    $('#produit21').click(function() {
+        $('#card-body21').slideToggle(200);
+    });
+    $('#produit22').click(function() {
+        $('#card-body22').slideToggle(200);
+    });
+    $('#produit23').click(function() {
+        $('#card-body23').slideToggle(200);
+    });
+    $('#produit24').click(function() {
+        $('#card-body24').slideToggle(200);
+    });
+    $('#produit25').click(function() {
+        $('#card-body25').slideToggle(200);
+    });
+    $('#produit26').click(function() {
+        $('#card-body26').slideToggle(200);
+    });
 })
 
 /* ****** slider prix ******* */

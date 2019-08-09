@@ -819,6 +819,14 @@ h3 {
 
 /* ***********  Pages Produits  ********************************** */
 
+.presentation {
+    text-align: center;
+}
+
+.presentation .ligne {
+    background: #000;
+}
+
 .image_vetement {
     width: 100%;
     margin-top: 10px;
