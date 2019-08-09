@@ -6,13 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/quisommesnous.css">
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet">
-    <script src="js/script.js"></script>
 
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <title>Le Petit Commerce</title>
+    <script src="js/script.js"></script>
+    <title>Le Petit Commerce - LOGIN</title>
 </head>
 
 <body>
@@ -21,10 +20,6 @@
 
         <div class="headerLogo">
 
-            <div class="searchbar"><i class="fas fa-search"></i></div>
-            <div class="localisation"><i class="fas fa-map-marker-alt"></i></div>
-            <div class="panier"><i class="fas fa-shopping-cart"></i></div>
-            <div class="user"><i class="fas fa-user"></i></div>
             <div id="conteneur">
                 <ul id="menu">
                     <li>
@@ -40,6 +35,10 @@
                     </li>
                 </ul>
             </div>
+            <div class="searchbar"><i class="fas fa-search"></i></div>
+            <a href="" class="localisation"><i class="fas fa-map-marker-alt"></i></a>
+            <a href="login.html" class="user"> <i class="fas fa-user"></i></a>
+            <a href="" class="panier"><i class="fas fa-shopping-cart"></i></a>
         </div>
 
         <figure class="logoMarque">
@@ -66,14 +65,14 @@
     <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="#"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            La Boutique <span class="sr-only">(current)</span></a>
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    La Boutique <span class="sr-only">(current)</span></a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#">Qui Sommes-Nous?</a>
                         <a class="dropdown-item" href="#">Contact</a>
@@ -93,30 +92,31 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    FEMME</a>
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            FEMME</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Soldes</a>
+                        <a class="dropdown-item" href="#" style="color:red;">Soldes</a>
                         <a class="dropdown-item" href="#">Tout voir</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Tee-shirts</a>
                         <a class="dropdown-item" href="#">Chemisiers</a>
                         <a class="dropdown-item" href="#">Jeans</a>
                         <a class="dropdown-item" href="#">Robes</a>
-                        <a class="dropdown-item nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
-                                            Accessoires</a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="access_f" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                                Accessoires <i class="fas fa-angle-down"></i></a>
+                        <div class="sous_menu_f" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#">Tout voir</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#">Sacs & Ceintures</a>
                             <a class="dropdown-item" href="#">Lunettes & Montres</a>
                             <a class="dropdown-item" href="#">Casquettes & Bonnets</a>
                         </div>
+                    </div>
                 </li>
 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                        HOMME</a>
+                                            HOMME</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#" style="color:red; ">Soldes</a>
                         <a class="dropdown-item" href="Tous_nos_produits_H .html">Tout voir</a>
@@ -129,7 +129,7 @@
                         <a class="dropdown-item" href="veste_h.html">Vestes / Manteaux</a>
                         <a class="dropdown-item" href="chaussures_h.html">Chaussures</a>
                         <a class="access_h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="accessoires_h.html">
-                                                                        Accessoires <i class="fas fa-angle-down"></i> </a>
+                                                            Accessoires <i class="fas fa-angle-down"></i> </a>
                         <div class="sous_menu_h" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="accessoires_h.html">Tout voir</a>
                             <div class="dropdown-divider"></div>
@@ -146,81 +146,75 @@
 
 
             </ul>
-            </div>
+        </div>
     </nav>
 
-    <!-- <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Recherche" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0 search" type="submit">Recherche</button>
-                </form> -->
+    <body>
+        <div id="login_page">
+            <div class="loginbox">
+                <div class="avatar">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h1>CONNEXION</h1>
+                <form action="">
+                    <p>Identifiant :</p>
+                    <input type="email" name="identifiant" id="identifiant" placeholder="email">
+                    <p>Mot de Passe : </p>
+                    <input type="password" name="password" id="password" placeholder="Mot de passe">
+                    <input type="submit" value="Continuer">
 
+                    <p id="erreur_login"></p>
 
-    <main>
-        <h4 class="titre_quisommesnous">Qui sommes-nous ?</h4>
-        <fieldset class="quisommesnous_fieldset">
-            <!-- <legend> Qui Sommes-Nous ? </legend> -->
+                    <a href="#">Mot de Passe perdu <i class="fas fa-angle-right"></i></a><br>
+                    <a href="login.html">Je n'ai pas de compte <i class="fas fa-angle-right"></i></a>
+                </form>
 
-            <p>
-                Fondée en 2009, <strong class="lpc">LePetitCommerce</strong> est devenu, en moins de 10 ans, l'une des marques e-commerce de prêt-à-porter mixte leader en France, avec à son actif déjà 4 boutiques implantées à Caen, Toulon, Saint-Etienne
-                et tout récemment Paris! <br> La marque se veut novatrice et souhaite poursuivre son ascension progressivement en Europe puis à l'International.<br> Sa stratégie consiste à s'adapter chaque jour aux dernières tendances tout en affirmant
-                son crédo qui est le suivant: </p>
-
-            <p class="credo">Simplicité, qualité, accessibilité et durabilité!</p>
-
-            <p>A la tête de cette marque, 2 frères, depuis toujours dans le vent de la mode, passionnés par l’actualité shopping 100% dernier cri, mais aussi par le développement textile durable.<br> Le client est au centre du modèle d'activités, ce dernier
-                comprenant la conception, la fabrication, la distribution, la vente par le biais du réseau de magasins de la marque, ainsi que par la possiblité de bénéficier d'un coaching sur mesure directement en magasin, par notre équipe de Personal
-                Shoppers qualifiés.<br>
-
-                <strong class="lpc">LePetitCommerce</strong> touche donc tous les amateurs de mode et a parcouru un long chemin depuis l'ouverture de son premier magasin dans la ville de Caen en 2012. Aujourd'hui, <strong class="lpc">LePetitCommerce</strong>                vous propose la mode de manière simple, accessible et fun, avec des modèles de prêt-à-porter et accessoires féminins et masculins ultra tendances.</p>
-
-            <hr>
-
-            <p class="bonshopping">Bon shopping sur <strong class="lpc">LePetitCommerce!</strong> 🙂</div>
-
-            </p>
-
-        </fieldset>
-
-
-    </main>
-
-
-
+            </div>
+        </div>
+    </body>
 
 
     <!-- ******  Footer  ****** -->
     <footer>
         <div class="container-fluid">
             <div class="row">
-                <Div id="newsletter" class="newsletter col-sm-4 col-md-4">
-                    <h4>NewsLetter</h4>
-                    <span class="ligne"></span>
-                    <p>Inscrivez-vous à notre programme relationnel <strong>LePetitCommerce</strong> afin de recevoir toute notre actualité et nos meilleures offres.</p>
-
-                    <button class="btn btn-outline-success" type="submit"> M'inscrire !</button>
-
-                </Div>
+                <div id="newsletter" class="newsletter col-sm-4 col-md-4">
+                    <div id="toggle_news">
+                        <h4>NewsLetter</h4>
+                        <span class="ligne"></span>
+                    </div>
+                    <div class="footer_align" id="news_p">
+                        <p>Inscrivez-vous à notre programme relationnel <span class="vert">LePetitCommerce</span> afin de recevoir toute notre actualité et nos meilleures offres.</p>
+                    </div>
+                    <a href="newsletter.html" class="btn btn-outline-success" type="submit"> M'inscrire !</a>
+                </div>
 
                 <div class="col-sm-4 col-md-4" id="infos">
-                    <h4>Informations Utiles</h4>
-                    <span class="ligne"></span>
-                    <ul>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Mentions Légales</a></li>
-                        <li><a href="#">Nos conditions Générales de Vente</a></li>
-                        <li><a href="#">Plan du site</a></li>
-                        <li><a href="#">Imprimer la page</a></li>
-                    </ul>
+                    <div id="toggle_infos">
+                        <h4>Informations Utiles</h4>
+                        <span class="ligne"></span>
+                    </div>
+                    <div class="footer_align" id="infos_liste">
+                        <ul>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Mentions Légales</a></li>
+                            <li><a href="#">Nos Conditions Générales de Vente</a></li>
+                            <li><a href="#">Plan du site</a></li>
+                            <li><a href="#">Imprimer la page</a></li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div class="col-sm-4 col-md-4" id="Social">
-                    <h4>Suivez Nous</h4>
-                    <span class="ligne"></span>
-                    <div class="divEssai">
-                        <a href="#"><i class="fab fa-facebook-square"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter-square"></i></a>
-                        <a href="#"><i class="fab fa-pinterest-square"></i></a>
+                    <div id="toggle_Social">
+                        <h4>Suivez-Nous</h4>
+                        <span class="ligne"></span>
+                    </div>
+                    <div class="footer_align row" id="Social_logo">
+                        <a href="https://fr-fr.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                        <a href="https://www.instagram.com/?hl=fr"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/?lang=fr"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://www.pinterest.fr/"><i class="fab fa-pinterest-square"></i></a>
                     </div>
                 </div>
 
@@ -233,14 +227,36 @@
         </div>
     </footer>
 
+    <script>
+        document.getElementById('login_page').addEventListener('submit', function(el) {
+
+            var erreur_login;
+            var identifiant = document.getElementById('identifiant');
+            var password = document.getElementById('password');
+
+            if (!identifiant.value) {
+                erreur_login = "veuillez renseigner votre email";
+                document.getElementById('identifiant').style.cssText = "border-color: red";
+            }
+            if (!password.value) {
+                erreur_login = "veuillez renseigner votre MDP";
+                document.getElementById('password').style.cssText = "border-color: red";
+            }
+            if (erreur_login) {
+                el.preventDefault();
+                document.getElementById("erreur_login").innerHTML = erreur_login;
+                return false;
+            } else {
+                alert('formulaire envoyé !')
+            }
+        })
+    </script>
 
 
 
 
 
-
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
     <script src="js/bootstrap.js"></script>
 </body>
 

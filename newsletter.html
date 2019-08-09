@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/newsletter.css">
+
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 
@@ -18,81 +18,137 @@
 <body>
     <!-- ******  Header  ****** -->
     <header>
+
         <div class="headerLogo">
-            <img class="logoMarque" src="img/logo/logo.png" alt="logoMarque">
-            <div class="blocblanc"></div>
-            <div class="localisation"><img class="logoLocalisation" src="img/logo/localisation.png" alt="logoLocalisation"></div>
-            <div class="panier"><img class="logoPanier" src="img/logo/panier.png" alt="logoPanier"></div>
-        </div>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">La Boutique <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            FEMME</a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">TOUT VOIR</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">TEE-SHIRTS</a>
-                            <a class="dropdown-item" href="#">JEANS</a>
-                            <a class="dropdown-item" href="#">ROBES</a>
-                            <a class="dropdown-item nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
-                                        ACCESSOIRES</a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">TOUT VOIR</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">SACS & CEINTURES</a>
-                                <a class="dropdown-item" href="#">LUNETTES & MONTRES</a>
-                                <a class="dropdown-item" href="#">CASQUETTES & BONNETS</a>
-                            </div>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    HOMME</a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">TOUT VOIR</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">TEE-SHIRTS</a>
-                            <a class="dropdown-item" href="#">JEANS</a>
-                            <a class="dropdown-item nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
-                                    ACCESSOIRES</a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">TOUT VOIR</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">SACS & CEINTURES</a>
-                                <a class="dropdown-item" href="#">LUNETTES & MONTRES</a>
-                                <a class="dropdown-item" href="#">CASQUETTES & BONNETS</a>
-                            </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Coaching - Personal Shopper</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Avis Clients</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Actualités</a>
+            <div id="conteneur">
+                <ul id="menu">
+                    <li>
+                        <a href="#" class="langues">Langues</a>
+                        <ul class="sous_menu">
+                            <li>
+                                <a href="#"><img class="logoLangues" src="img/logo/flag-fr.png" alt="langue france"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img class="logoLangues" src="img/logo/flag-gb.png" alt="langue anglais"></a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Recherche" aria-label="Search">
-                    <button id="news_submit" class="btn btn-outline-success my-2 my-sm-0" type="submit">Recherche</button>
-                </form>
-                </div>
-        </nav>
+            </div>
+            <div class="searchbar"><i class="fas fa-search"></i></div>
+            <a href="" class="localisation"><i class="fas fa-map-marker-alt"></i></a>
+            <a href="login.html" class="user"> <i class="fas fa-user"></i></a>
+            <a href="" class="panier"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+
+        <figure class="logoMarque">
+            <img class="logoMarque" src="img/logo/logo.png" alt="Logo Marque">
+        </figure>
+
+
+
 
 
     </header>
+
+    <script>
+        $(document).ready(function() {
+            $(".langues").hover(function() {
+                $(".langues").parent().find("ul.sous_menu").stop(true, true).slideDown(200).show();
+                $(".langues").parent().hover(function() {}, function() {
+                    $(this).parent().find("ul.sous_menu").slideUp(150);
+                });
+            });
+        });
+    </script>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    La Boutique <span class="sr-only">(current)</span></a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Qui Sommes-Nous?</a>
+                        <a class="dropdown-item" href="#">Contact</a>
+                        <a class="dropdown-item" href="#">Personal Shopper - Coaching</a>
+                        <a class="dropdown-item" href="#">Avis Clients</a>
+                        <a class="dropdown-item" href="#">Recrutement</a>
+                        <a class="dropdown-item" href="#">Evenements</a>
+                        <a class="dropdown-item" href="#">Presse</a>
+                        <a class="dropdown-item" href="#">Actualités</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle redsoldes" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SOLDES<span class="sr-only">(current)</span></a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">FEMME</a>
+                        <a class="dropdown-item" href="#">HOMME</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            FEMME</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#" style="color:red;">Soldes</a>
+                        <a class="dropdown-item" href="#">Tout voir</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Tee-shirts</a>
+                        <a class="dropdown-item" href="chemisiers_femme.html">Chemisiers</a>
+                        <a class="dropdown-item" href="#">Jeans</a>
+                        <a class="dropdown-item" href="#">Robes</a>
+                        <a class="access_f" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                                    Accessoires <i class="fas fa-angle-down"></i></a>
+                        <div class="sous_menu_f" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Tout voir</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Sacs & Ceintures</a>
+                            <a class="dropdown-item" href="#">Lunettes & Montres</a>
+                            <a class="dropdown-item" href="#">Casquettes & Bonnets</a>
+                        </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            HOMME</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#" style="color:red; ">Soldes</a>
+                        <a class="dropdown-item" href="Tous_nos_produits_H .html">Tout voir</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Pantalons.html">Pantalons</a>
+                        <a class="dropdown-item" href="jean_h.html">Jeans</a>
+                        <a class="dropdown-item" href="chemise_h.html">Chemises</a>
+                        <a class="dropdown-item" href="Hauts_h.html">Hauts</a>
+                        <a class="dropdown-item" href="pull_h.html">Pulls</a>
+                        <a class="dropdown-item" href="veste_h.html">Vestes / Manteaux</a>
+                        <a class="dropdown-item" href="chaussures_femme.html">Chaussures</a>
+                        <a class="access_h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="accessoires_h.html">
+                                                            Accessoires <i class="fas fa-angle-down"></i> </a>
+                        <div class="sous_menu_h" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="accessoires_h.html">Tout voir</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="accessoires_h.html#sac">Sacs</a>
+                            <a class="dropdown-item" href="accessoires_h.html#ceintures">Ceintures</a>
+                            <a class="dropdown-item" href="accessoires_h.html#casquettes">Casquettes</a>
+                            <a class="dropdown-item" href="accessoires_h.html#bonnet">Bonnets</a>
+                            <a class="dropdown-item" href="accessoires_h.html#montre">Montres</a>
+                            <a class="dropdown-item" href="accessoires_h.html#lunette">Lunettes</a>
+                            <a class="dropdown-item" href="accessoires_h.html#portefeuille">Portefeuilles</a>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+            </div>
+    </nav>
+
+    <div class="clear"></div>
 
     <h2>Inscription Newsletter LePetitCommerce</h2>
 
@@ -104,21 +160,22 @@
                 <legend> Identité : </legend>
                 <label for="Civilité">Civilité :</label><br>
                 <input class="choix inline" type="radio" name="civilité" value="homme">Monsieur
-                <input class="choix inline" type="radio" name="civilité" value="femme" required checked>Madame
+                <input class="choix inline" type="radio" name="civilité" value="femme" checked>Madame
                 <br>
                 <label for="prenom">Prenom :</label>
-                <input type="text" id="prenom" name="prenom" id="prenom" value="" required>
+                <input type="text" id="prenom" name="prenom" id="prenom" value="">
                 <span id="miss_infos"></span>
 
                 <br>
                 <label for="Nom">Nom :</label>
-                <input type="text" id="Nom" name="Nom" id="nom" value="" required><br>
+                <input type="text" id="nom" name="Nom" id="nom" value=""><br>
             </fieldset>
             <br>
             <fieldset id="contact">
                 <legend> Contact :</legend>
                 <label for="email">E-mail :</label>
-                <input type="email" id="email" name="email" value="" required><br>
+                <input type="email" id="email" name="email" value="">
+                <span id="missEmail"></span><br>
                 <label for="tel">Téléphone :</label>
                 <input type="text" id="tel" name="tel" maxlength="10" pattern="[0-9]{5}" title "5 chiffres comprit entre 0 et 9">
                 <br>
@@ -129,7 +186,7 @@
                 <label for="Adress">Adresse :</label>
                 <textarea name="adresse" id="adresse" rows="1" cols="50"></textarea>
                 <br>
-                <label for="ville">ville :</label>
+                <label for="ville">Ville :</label>
                 <input type="text" id="ville " name="ville" list="france">
                 <datalist id="france">
           <option value="Paris">Paris</option>
@@ -149,6 +206,10 @@
 
         </form>
 
+
+        <p id="erreur"></p>
+
+        <div class="clear"></div>
         <p class="conditions">(<span class="orange">*</span>) LePetitCommerce prend soin de vos données personnelles. Les informations collectées par LePetitCommerce auprès de vous, avec votre consentement, font l’objet d’un traitement automatisé ayant pour finalité l’envoi
             de communications personnalisées selon vos préférences et vos centres d’intérêts par email et/ou par SMS.<br><br> Les informations demandées sont obligatoires et nécessaires pour répondre à votre demande. Ces informations sont à destination
             exclusive de l'entreprise LePetitCommerce et ses sous-traitants et seront conservées pendant 3 ans à compter du dernier contact émanant de votre part. <br><br>Conformément au Règlement (UE) 2016/679 relatif à la protection des données à caractère
@@ -214,42 +275,8 @@
         </div>
     </footer>
 
-    <script>
-        var formValid = document.getElementById('bouton_envoi');
-        var prenom = document.getElementById('prenom');
-        var miss_prenom = document.getElementsByID('miss_prenom');
-        var prenomValid = /^[a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+([-'\s][a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+)?$/;
 
-        formValid.addEventListener('click', f_valid);
-
-        function f_valid(e) {
-            if (prenom.validity.valueMissing) {
-                e.preventDefault();
-                miss_prenom.textContent = 'Information requise';
-                miss_prenom.style.color = 'red';
-            } else if (prenomValid.test(prenom.value) == false) {
-                e.preventDefault();
-                miss_prenom.textContent = 'Format incorrect';
-                miss_prenom.style.color = 'orange';
-            } else {}
-        }
-    </script>
-
-    <script>
-        $(document).ready(function() {
-            $('#toggle_Social').click(function() {
-                $('#Social_logo').slideToggle(200);
-            });
-            $('#toggle_infos').click(function() {
-                $('#infos_liste').slideToggle(200);
-            });
-            $('#toggle_news').click(function() {
-                $('#news_p').slideToggle(200);
-            });
-        });
-    </script>
-
-
+    <script src="js/script.js"></script>
     <script src="js/bootstrap.js"></script>
 </body>
 

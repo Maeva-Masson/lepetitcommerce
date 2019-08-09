@@ -33,7 +33,7 @@ $(document).ready(function() {
         ResCarouselSize();
     });
 
-    //this function define the size of the items
+
     function ResCarouselSize() {
         var incno = 0;
         var dataItems = ("data-items");
@@ -79,7 +79,7 @@ $(document).ready(function() {
     }
 
 
-    //this function used to move the items
+
     function ResCarousel(e, el, s) {
         var leftBtn = ('.leftLst');
         var rightBtn = ('.rightLst');
@@ -108,7 +108,7 @@ $(document).ready(function() {
         $(el + ' ' + itemsDiv).css('transform', 'translateX(' + -translateXval + 'px)');
     }
 
-    //It is used to get some elements from btn
+
     function click(ell, ee) {
         var Parent = "#" + $(ee).parent().attr("id");
         var slide = $(Parent).attr("data-slide");
@@ -422,3 +422,33 @@ function changeImg10() {
 window.onload = function() {
     changeImg(), changeImg2(), changeImg3(), changeImg4(), changeImg5(), changeImg6(), changeImg7(), changeImg8(), changeImg9(), changeImg10()
 };
+
+/* ************** Page Newsletter *************** */
+
+document.getElementById('News_form').addEventListener('submit', function(e) {
+
+    var erreur;
+    var prenom = document.getElementById('prenom');
+    var nom = document.getElementById('nom');
+    var email = document.getElementById('email');
+
+    if (!email.value) {
+        erreur = "veuillez renseigner votre email";
+        document.getElementById('email').style.cssText = "border-color: red";
+    }
+    if (!nom.value) {
+        erreur = "veuillez renseigner votre nom";
+        document.getElementById('nom').style.cssText = "border-color: red";
+    }
+    if (!prenom.value) {
+        erreur = "veuillez renseigner votre prenom";
+        document.getElementById('prenom').style.cssText = "border-color: red";
+    }
+    if (erreur) {
+        e.preventDefault();
+        document.getElementById("erreur").innerHTML = erreur;
+        return false;
+    } else {
+        alert('formulaire envoyé !')
+    }
+})
