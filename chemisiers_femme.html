@@ -19,41 +19,41 @@
 
 <body>
 
-    
+
     <!----------------------------------HEADER------------------------------------------>
 
-<header>
+    <header>
 
-<div class="headerLogo">
+        <div class="headerLogo">
 
-        <div id="conteneur">
-            <ul id="menu">
-                <li>
-                    <a href="#" class="langues">Langues</a>
-                    <ul class="sous_menu">
-                        <li>
-                            <a href="#"><img class="logoLangues" src="img/logo/flag-fr.png" alt="langue france"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img class="logoLangues" src="img/logo/flag-gb.png" alt="langue anglais"></a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
+            <div id="conteneur">
+                <ul id="menu">
+                    <li>
+                        <a href="#" class="langues">Langues</a>
+                        <ul class="sous_menu">
+                            <li>
+                                <a href="#"><img class="logoLangues" src="img/logo/flag-fr.png" alt="langue france"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img class="logoLangues" src="img/logo/flag-gb.png" alt="langue anglais"></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="searchbar"><i class="fas fa-search"></i></div>
+            <div class="localisation"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="panier"><i class="fas fa-shopping-cart"></i></div>
+            <div class="user"><i class="fas fa-user"></i></div>
         </div>
-        <div class="searchbar"><i class="fas fa-search"></i></div>
-        <div class="localisation"><i class="fas fa-map-marker-alt"></i></div>
-        <div class="panier"><i class="fas fa-shopping-cart"></i></div>
-        <div class="user"><i class="fas fa-user"></i></div>
-    </div>
 
-    <figure class="logoMarque">
-        <img class="logoMarque" src="img/logo/logo.png" alt="Logo Marque">
-    </figure>        
-            
-</header>
+        <figure class="logoMarque">
+            <img class="logoMarque" src="img/logo/logo.png" alt="Logo Marque">
+        </figure>
 
-<script>
+    </header>
+
+    <script>
         $(document).ready(function() {
             $(".langues").hover(function() {
                 $(".langues").parent().find("ul.sous_menu").stop(true, true).slideDown(200).show();
@@ -62,146 +62,146 @@
                 });
             });
         });
-</script>
+    </script>
 
     <!----------------------------------NAV------------------------------------------>
 
-<nav class="navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="#"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 La Boutique <span class="sr-only">(current)</span></a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Qui Sommes-Nous?</a>
-                    <a class="dropdown-item" href="#">Contact</a>
-                    <a class="dropdown-item" href="#">Personal Shopper - Coaching</a>
-                    <a class="dropdown-item" href="#">Avis Clients</a>
-                    <a class="dropdown-item" href="#">Recrutement</a>
-                    <a class="dropdown-item" href="#">Evenements</a>
-                    <a class="dropdown-item" href="#">Presse</a>
-                    <a class="dropdown-item" href="#">Actualités</a>
-                </div>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle redsoldes" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SOLDES<span class="sr-only">(current)</span></a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">FEMME</a>
-                    <a class="dropdown-item" href="#">HOMME</a>
-                </div>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Qui Sommes-Nous?</a>
+                        <a class="dropdown-item" href="#">Contact</a>
+                        <a class="dropdown-item" href="#">Personal Shopper - Coaching</a>
+                        <a class="dropdown-item" href="#">Avis Clients</a>
+                        <a class="dropdown-item" href="#">Recrutement</a>
+                        <a class="dropdown-item" href="#">Evenements</a>
+                        <a class="dropdown-item" href="#">Presse</a>
+                        <a class="dropdown-item" href="#">Actualités</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle redsoldes" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SOLDES<span class="sr-only">(current)</span></a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">FEMME</a>
+                        <a class="dropdown-item" href="#">HOMME</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         FEMME</a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#" style="color:red;">Soldes</a>
-                    <a class="dropdown-item" href="#">Tout voir</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Tee-shirts</a>
-                    <a class="dropdown-item" href="#">Chemisiers</a>
-                    <a class="dropdown-item" href="#">Jeans</a>
-                    <a class="dropdown-item" href="#">Robes</a>
-                    <a class="access_f" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#" style="color:red;">Soldes</a>
+                        <a class="dropdown-item" href="#">Tout voir</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Tee-shirts</a>
+                        <a class="dropdown-item" href="#">Chemisiers</a>
+                        <a class="dropdown-item" href="#">Jeans</a>
+                        <a class="dropdown-item" href="#">Robes</a>
+                        <a class="access_f" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
                             Accessoires <i class="fas fa-angle-down"></i></a>
-                    <div class="sous_menu_f" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Tout voir</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Sacs & Ceintures</a>
-                        <a class="dropdown-item" href="#">Lunettes & Montres</a>
-                        <a class="dropdown-item" href="#">Casquettes & Bonnets</a>
+                        <div class="sous_menu_f" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Tout voir</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Sacs & Ceintures</a>
+                            <a class="dropdown-item" href="#">Lunettes & Montres</a>
+                            <a class="dropdown-item" href="#">Casquettes & Bonnets</a>
+                        </div>
                     </div>
-                </div>
-            </li>
+                </li>
 
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 HOMME</a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#" style="color:red; ">Soldes</a>
-                    <a class="dropdown-item" href="#">Tout voir</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="Pantalons.html">Pantalons</a>
-                    <a class="dropdown-item" href="jean_h.html">Jeans</a>
-                    <a class="dropdown-item" href="chemise_h.html">Chemises</a>
-                    <a class="dropdown-item" href="Hauts_h.html">Hauts</a>
-                    <a class="dropdown-item" href="pull_h.html">Pulls</a>
-                    <a class="dropdown-item" href="#">Vestes / Manteaux</a>
-                    <a class="dropdown-item" href="#">Chaussures</a>
-                    <a class="access_h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
-                                                Accessoires <i class="fas fa-angle-down"></i> </a>
-                    <div class="sous_menu_h" aria-labelledby="navbarDropdown">
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#" style="color:red; ">Soldes</a>
                         <a class="dropdown-item" href="#">Tout voir</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Sacs</a>
-                        <a class="dropdown-item" href="#">Ceintures</a>
-                        <a class="dropdown-item" href="#">Lunettes & Montres</a>
-                        <a class="dropdown-item" href="#">Casquettes & Bonnets</a>
+                        <a class="dropdown-item" href="Pantalons.html">Pantalons</a>
+                        <a class="dropdown-item" href="jean_h.html">Jeans</a>
+                        <a class="dropdown-item" href="chemise_h.html">Chemises</a>
+                        <a class="dropdown-item" href="Hauts_h.html">Hauts</a>
+                        <a class="dropdown-item" href="pull_h.html">Pulls</a>
+                        <a class="dropdown-item" href="veste_h.html">Vestes / Manteaux</a>
+                        <a class="dropdown-item" href="chaussures_h.html">Chaussures</a>
+                        <a class="access_h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                                                Accessoires <i class="fas fa-angle-down"></i> </a>
+                        <div class="sous_menu_h" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Tout voir</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="sacs_h.html">Sacs</a>
+                            <a class="dropdown-item" href="#">Ceintures</a>
+                            <a class="dropdown-item" href="#">Lunettes & Montres</a>
+                            <a class="dropdown-item" href="#">Casquettes & Bonnets</a>
+                        </div>
                     </div>
-                </div>
-            </li>
+                </li>
 
-        </ul>
-    </div>
-</nav>
-    
-
-<!----------------MAIN IMAGE------------------>
-
-<main>
-
-<div class="soldes ">
-        <h2>Les Soldes</h2>
-        <p>Vite Vite! <br> Derniéres démarques.</p>
-        <a href="#" class="btn btn-outline-success redbutton"> Je découvre <i class="fas fa-arrow-right"></i></a>
-</div>
-
-<!----------------FIL D'ARIANE------------------>
-
-<nav aria-label="breadcrumb" id="ariane">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Accueil</a></li>
-            <li class="breadcrumb-item"><a href="Tous_nos_produits_H.html">Femme</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Les Chemisiers</li>
-        </ol>
-</nav>
-
-<!------------------------      MENU PRINCIPAL FEMME       ----------------------->
-
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-3">
-            <nav id="nav3" class="">
+            </ul>
+        </div>
+    </nav>
 
 
-                    <div class="toggle">
+    <!----------------MAIN IMAGE------------------>
 
-                        <p class="menu2"> Les Chemisiers <i class="fas fa-angle-down"></i></p>
+    <main>
 
-                    </div>
-                    <H3>Les Chemisiers</H3>
+        <div class="soldes ">
+            <h2>Les Soldes</h2>
+            <p>Vite Vite! <br> Derniéres démarques.</p>
+            <a href="#" class="btn btn-outline-success redbutton"> Je découvre <i class="fas fa-arrow-right"></i></a>
+        </div>
 
-                <ul>
-    <li>
-        <h5 class="nav2_sous_menu">Catégories <i class="fas fa-angle-down"></i> </h5>
-        <div class="dropdown-divider"></div>
-        <ul class="sous_menu_h_nav2">
+        <!----------------FIL D'ARIANE------------------>
 
-            <li><a href="#basique" class="dropdown-item">En Mousseline</a></li>
-            <li><a href="#cardigan" class="dropdown-item">En satin</a></li>
-            <li><a href="#urban" class="dropdown-item">Sans-Manches</a></li>
+        <nav aria-label="breadcrumb" id="ariane">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Accueil</a></li>
+                <li class="breadcrumb-item"><a href="Tous_nos_produits_H.html">Femme</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Les Chemisiers</li>
+            </ol>
+        </nav>
 
-        </ul>
+        <!------------------------      MENU PRINCIPAL FEMME       ----------------------->
 
-    </li>
-    <li>
-            <h5 class="nav2_sous_menu">Choisir une taille: <i class="fas fa-angle-down"></i></h5>
-            <div class="dropdown-divider"></div>
-        <select id="size_p">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <nav id="nav3" class="">
+
+
+                        <div class="toggle">
+
+                            <p class="menu2"> Les Chemisiers <i class="fas fa-angle-down"></i></p>
+
+                        </div>
+                        <H3>Les Chemisiers</H3>
+
+                        <ul>
+                            <li>
+                                <h5 class="nav2_sous_menu">Catégories <i class="fas fa-angle-down"></i> </h5>
+                                <div class="dropdown-divider"></div>
+                                <ul class="sous_menu_h_nav2">
+
+                                    <li><a href="#basique" class="dropdown-item">En Mousseline</a></li>
+                                    <li><a href="#cardigan" class="dropdown-item">En satin</a></li>
+                                    <li><a href="#urban" class="dropdown-item">Sans-Manches</a></li>
+
+                                </ul>
+
+                            </li>
+                            <li>
+                                <h5 class="nav2_sous_menu">Choisir une taille: <i class="fas fa-angle-down"></i></h5>
+                                <div class="dropdown-divider"></div>
+                                <select id="size_p">
                 <option value="">Ma taille</option>
                 <option value="xs">XS</option>
                 <option value="S">S</option>
@@ -210,301 +210,301 @@
                 <option value="XL">XL</option>
                 <option value="XXL">XXL</option>   
         </select>
-    </li>
-    <li>
-            <div>
-                <h5 class="nav2_sous_menu">Choisir une couleur : <i class="fas fa-angle-down"></i></h5>
-                <div class="dropdown-divider"></div>
+                            </li>
+                            <li>
+                                <div>
+                                    <h5 class="nav2_sous_menu">Choisir une couleur : <i class="fas fa-angle-down"></i></h5>
+                                    <div class="dropdown-divider"></div>
 
-                <div class="couleurs row">
-                    <p style="width:30px; height:30px; background-color: red; border: 0.5px solid slategray;" title="rouge" role="button"> </p>
-                    <p style="width:30px; height:30px; background-color: coral; border: 0.5px solid slategray;" title="bleu" role="button"> </p>
-                    <p style="width:30px; height:30px; background-color: white; border: 0.5px solid slategray;" title="blanc" role="button"> </p>
-                    <p style="width:30px; height:30px; background-color: green; border: 0.5px solid slategray;" title="vert" role="button"> </p>
-                    <p style="width:30px; height:30px; background-color: gray; border: 0.5px solid slategray;" title="gris" role="button"> </p>
-                    <p style="width:30px; height:30px; background-color: pink; border: 0.5px solid slategray;" title="rose" role="button"> </p>
-                    <p style="width:30px; height:30px; background-color: black; border: 0.5px solid slategray;" title="noir" role="button"> </p>
-                    <p style="width:30px; height:30px; background-color: slateblue; border: 0.5px solid slategray;" title="noir" role="button"> </p>
-                    <p style="width:30px; height:30px; background-color: turquoise; border: 0.5px solid slategray;" title="noir" role="button"> </p>
-            </div>
-        </li>
+                                    <div class="couleurs row">
+                                        <p style="width:30px; height:30px; background-color: red; border: 0.5px solid slategray;" title="rouge" role="button"> </p>
+                                        <p style="width:30px; height:30px; background-color: coral; border: 0.5px solid slategray;" title="bleu" role="button"> </p>
+                                        <p style="width:30px; height:30px; background-color: white; border: 0.5px solid slategray;" title="blanc" role="button"> </p>
+                                        <p style="width:30px; height:30px; background-color: green; border: 0.5px solid slategray;" title="vert" role="button"> </p>
+                                        <p style="width:30px; height:30px; background-color: gray; border: 0.5px solid slategray;" title="gris" role="button"> </p>
+                                        <p style="width:30px; height:30px; background-color: pink; border: 0.5px solid slategray;" title="rose" role="button"> </p>
+                                        <p style="width:30px; height:30px; background-color: black; border: 0.5px solid slategray;" title="noir" role="button"> </p>
+                                        <p style="width:30px; height:30px; background-color: slateblue; border: 0.5px solid slategray;" title="noir" role="button"> </p>
+                                        <p style="width:30px; height:30px; background-color: turquoise; border: 0.5px solid slategray;" title="noir" role="button"> </p>
+                                    </div>
+                            </li>
 
-        <li>
-                <label for="amount" class="nav2_sous_menu">Tranche de Prix : <i class="fas fa-angle-down"></i></label>
-                <div class="dropdown-divider"></div>
+                            <li>
+                                <label for="amount" class="nav2_sous_menu">Tranche de Prix : <i class="fas fa-angle-down"></i></label>
+                                <div class="dropdown-divider"></div>
 
-                <p>
-                    <label for="amount">PRIX :</label>
-                    <input type="text" id="amount" readonly style="border:0; color:#BA55D3 !important; font-weight:bold;">
-                </p>
+                                <p>
+                                    <label for="amount">PRIX :</label>
+                                    <input type="text" id="amount" readonly style="border:0; color:#BA55D3 !important; font-weight:bold;">
+                                </p>
 
-                <div id="slider-range"></div>
-        </li>
-                </ul>
-        </nav>
-    </div>
-
-
-    <!-- content -->
-    <div class="col-md-9 ">
+                                <div id="slider-range"></div>
+                            </li>
+                        </ul>
+                    </nav>
+                    </div>
 
 
-    <!------------------------------CATEGORIE: EN MOUSSELINE--------------------------------------->
+                    <!-- content -->
+                    <div class="col-md-9 ">
 
-            <div class="container ">
-                <div class="row ">
-                    <div class="col-xs-12 col-md-6 col-xl-3 ">
-                        <div>
 
-                            <img src="img/femme/CHEMISIERS/chemisier1d.jpg" alt="photo_chemisier" class="image_vetement" id="chemisier1">
+                        <!------------------------------CATEGORIE: EN MOUSSELINE--------------------------------------->
 
-                            <div class="car-body" id="card-body1">
-                                <h5 class="card-title ">Chemisier en mousseline, à pois</h5>
-                                <h6 class="card-subtitle mb-2 text-muted ">29,95 EUR</h6>
-                                <p class="card-text ">Chemisier en mousseline légère, de couleur noir, à pois blancs. </p>
-                                <a href="# " class="btn btn-outline-success Description ">Description</a>
-                                <a href="# " class="btn btn-outline-success achat ">Achat Rapide</a>
+                        <div class="container ">
+                            <div class="row ">
+                                <div class="col-xs-12 col-md-6 col-xl-3 ">
+                                    <div>
+
+                                        <img src="img/femme/CHEMISIERS/chemisier1d.jpg" alt="photo_chemisier" class="image_vetement" id="produit1">
+
+                                        <div class="car-body" id="card-body1">
+                                            <h5 class="card-title ">Chemisier en mousseline, à pois</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted ">29,95 EUR</h6>
+                                            <p class="card-text ">Chemisier en mousseline légère, de couleur noir, à pois blancs. </p>
+                                            <a href="# " class="btn btn-outline-success Description ">Description</a>
+                                            <a href="# " class="btn btn-outline-success achat ">Achat Rapide</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-md-6 col-xl-3">
+                                    <fieldset class="text " id="basique ">
+                                        <legend>En Mousseline</legend>
+
+                                        <p>Les Chemisiers <span class="vert ">LePetitCommerce</span> en mousseline sont des pièces soigneusement conçues pour allier confort et élégance. </p>
+
+
+                                    </fieldset>
+                                </div>
+
+                                <div class="col-xs-12 col-md-6 col-xl-3 ">
+                                    <div>
+                                        <img src="img/femme/CHEMISIERS/chemisier5b.jpg" alt="photo_chemisier" class="image_vetement " id="produit2">
+                                        <div class="car-body" id="card-body2">
+                                            <h5 class="card-title ">Chemisier à manches longues - Imprimé Jungle</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted ">29,95 EUR</h6>
+                                            <p class="card-text ">Chemisier façon blouse, à manches bouffantes et imprimé jungle.</p>
+                                            <a href="# " class="btn btn-outline-success ">Description</a>
+                                            <a href="# " class="btn btn-outline-success ">Achat Rapide</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-md-6 col-xl-3 ">
+                                    <div>
+                                        <img src="img/femme/CHEMISIERS/chemisier8.jpg" alt="photo_chemisier" class="image_vetement " id="produit3">
+                                        <div class="car-body" id="card-body3">
+                                            <h5 class="card-title ">Chemisier bouffant à manches longues - Corail</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted ">24,95 EUR</h6>
+                                            <p class="card-text ">Pour un style vitaminé, optez sans attendre pour ce chemisier.</p>
+                                            <a href="# " class="btn btn-outline-success ">Description</a>
+                                            <a href="# " class="btn btn-outline-success ">Achat Rapide</a>
+                                        </div>
+                                    </div>
+                                </div>
+
 
                             </div>
                         </div>
-                    </div>
 
-                    <div class="col-xs-12 col-md-6 col-xl-3">
-                        <fieldset class="text " id="basique ">
-                            <legend>En Mousseline</legend>
+                        <div class="clear "></div>
 
-                            <p>Les Chemisiers <span class="vert ">LePetitCommerce</span> en mousseline sont des pièces soigneusement conçues pour allier confort et élégance. </p>
+                        <!------------------------------CATEGORIE: EN SATIN--------------------------------------->
 
 
-                        </fieldset>
-                    </div>
+                        <div class="container ">
+                            <div class="row ">
+                                <div class="col-xs-12 col-md-6 col-xl-3 ">
+                                    <fieldset class="text " id="cardigan ">
+                                        <legend>En Satin</legend>
 
-                    <div class="col-xs-12 col-md-6 col-xl-3 ">
-                        <div>
-                            <img src="img/femme/CHEMISIERS/chemisier5b.jpg" alt="photo_chemisier" class="image_vetement " id="chemisier2">
-                            <div class="car-body" id="card-body2">
-                                <h5 class="card-title ">Chemisier à manches longues - Imprimé Jungle</h5>
-                                <h6 class="card-subtitle mb-2 text-muted ">29,95 EUR</h6>
-                                <p class="card-text ">Chemisier façon blouse, à manches bouffantes et imprimé jungle.</p>
-                                <a href="# " class="btn btn-outline-success ">Description</a>
-                                <a href="# " class="btn btn-outline-success ">Achat Rapide</a>
+                                        <p>Osez les Chemisiers en satin <span class="vert ">LePetitCommerce</span> pour une élégance et un raffinement sans pareil.</p>
+
+
+                                    </fieldset>
+                                </div>
+
+                                <div class="col-xs-12 col-md-6 col-xl-3 ">
+                                    <div>
+
+                                        <img src="img/femme/CHEMISIERS/chemisier2b.jpg" alt="photo_chemisier " class="image_vetement " id="produit4">
+
+                                        <div class=" car-body " id="card-body4">
+                                            <h5 class="card-title ">Chemisier soyeux - Vert Anisé</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted ">29,95 EUR</h6>
+                                            <p class="card-text ">Un style des plus subtiles assuré avec ce haut distingué.</p>
+                                            <a href="# " class="btn btn-outline-success ">Description</a>
+                                            <a href="# " class="btn btn-outline-success ">Achat Rapide</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="col-xs-12 col-md-6 col-xl-3 ">
+                                    <div>
+                                        <img src="img/femme/CHEMISIERS/chemisier7d.jpg" alt="photo_chemisier " class="image_vetement " id="produit5">
+                                        <div class=" car-body " id="card-body5">
+                                            <h5 class="card-title ">Chemisier en satin - Bleu Ancien</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted ">29,95 EUR</h6>
+                                            <p class="card-text ">Chemisier délicat, pour un look des plus romantiques.</p>
+                                            <a href="# " class="btn btn-outline-success ">Description</a>
+                                            <a href="# " class="btn btn-outline-success ">Achat Rapide</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-md-6 col-xl-3 ">
+                                    <div>
+                                        <img src="img/femme/CHEMISIERS/chemisier9b.jpg" alt="photo_chemisier " class="image_vetement " id="produit6">
+                                        <div class="car-body " id="card-body6">
+                                            <h5 class="card-title ">Chemisier en satin - Vieux Rose</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted ">24,95 EUR</h6>
+                                            <p class="card-text ">Chemisier inspiration bohème avec lien à nouer à la taille.</p>
+                                            <a href="# " class="btn btn-outline-success ">Description</a>
+                                            <a href="# " class="btn btn-outline-success ">Achat Rapide</a>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
                             </div>
                         </div>
-                    </div>
 
-                    <div class="col-xs-12 col-md-6 col-xl-3 ">
-                        <div>
-                            <img src="img/femme/CHEMISIERS/chemisier8.jpg" alt="photo_chemisier" class="image_vetement " id="chemisier3">
-                            <div class="car-body" id="card-body3">
-                                <h5 class="card-title ">Chemisier bouffant à manches longues - Corail</h5>
-                                <h6 class="card-subtitle mb-2 text-muted ">24,95 EUR</h6>
-                                <p class="card-text ">Pour un style vitaminé, optez sans attendre pour ce chemisier.</p>
-                                <a href="# " class="btn btn-outline-success ">Description</a>
-                                <a href="# " class="btn btn-outline-success ">Achat Rapide</a>
+                        <div class="clear "></div>
+                        <!------------------------------CATEGORIE: SANS-MANCHES--------------------------------------->
+
+                        <div class="container ">
+                            <div class="row ">
+
+                                <div class="col-xs-12 col-md-6 col-xl-3 ">
+                                    <div>
+
+                                        <img src="img/femme/CHEMISIERS/chemisier3.jpg " alt="photo_pull " class="image_vetement " id="produit7">
+
+                                        <div class="car-body " id="card-body7">
+                                            <h5 class="card-title ">Chemisier Rose Poudré, col à volants</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted ">19,95 EUR</h6>
+                                            <p class="card-text ">Simple et discret, mais qui fait son effet.</p>
+                                            <a href="# " class="btn btn-outline-success ">Description</a>
+                                            <a href="# " class="btn btn-outline-success ">Achat Rapide</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-md-6 col-xl-3 ">
+                                    <fieldset class="text " id="urban">
+                                        <legend>Sans Manches</legend>
+
+                                        <p>Une déclinaison de chemisiers <span class="vert ">LePetitCommerce</span> sans manches afin de s'adapter à toutes les envies et à tous les styles.
+                                        </p>
+                                    </fieldset>
+                                </div>
+
+
+                                <div class="col-xs-12 col-md-6 col-xl-3 ">
+                                    <div>
+                                        <img src="img/femme/CHEMISIERS/chemisier11b.jpg" alt="photo_chemisier" class="image_vetement " id="produit8">
+                                        <div class="car-body " id="card-body8">
+                                            <h5 class="card-title ">Chemisier rouge avec col à nouer</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted ">19,95 EUR</h6>
+                                            <p class="card-text ">Chemisier rouge élégance, pour colorer votre look.</p>
+                                            <a href="# " class="btn btn-outline-success ">Description</a>
+                                            <a href="# " class="btn btn-outline-success ">Achat Rapide</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-md-6 col-xl-3 ">
+                                    <div>
+                                        <img src="img/femme/CHEMISIERS/chemisier10b.jpg" alt="photo_chemisier " class="image_vetement " id="produit9">
+                                        <div class=" car-body " id="card-body9">
+                                            <h5 class="card-title ">Chemisier blanc sans manches</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted ">14,95 EUR</h6>
+                                            <p class="card-text ">Un classique indémodable car intemporel.</p>
+                                            <a href="# " class="btn btn-outline-success ">Description</a>
+                                            <a href="# " class="btn btn-outline-success ">Achat Rapide</a>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
                             </div>
                         </div>
+
+                        <div class="clear "></div>
+
+    </main>
+
+    <!-------------------------FOOTER---------------------------->
+
+    <footer>
+
+        <div class="container-fluid">
+            <div class="row ">
+                <Div id="newsletter" class="newsletter col-sm-4 col-md-4 test">
+                    <div id="toggle_news">
+                        <h4>NewsLetter <i class="fas fa-angle-down"></i> </h4>
+                        <span class="ligne"></span>
                     </div>
+                    <div class="footer_align" id="news_p">
+                        <p>Inscrivez-vous à notre programme relationnel <span class="vert">LePetitCommerce</span> afin de recevoir toute notre actualité et nos meilleures offres.</p>
+                    </div>
+                    <a href="newsletter.html"><button class="btn btn-outline-success" type="submit"> M'inscrire !</button></a>
 
+                </Div>
 
+                <div class="col-sm-4 col-md-4 test" id="infos">
+                    <div id="toggle_infos">
+                        <h4>Informations Utiles <i class="fas fa-angle-down"></i> </h4>
+                        <span class="ligne"></span>
+                    </div>
+                    <div class="footer_align" id="infos_liste">
+                        <ul>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Mentions Légales</a></li>
+                            <li><a href="#">Nos conditions Générales de Vente</a></li>
+                            <li><a href="#">Plan du site</a></li>
+                            <li><a href="#">Imprimer la page</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
 
-            <div class="clear "></div>
-
-    <!------------------------------CATEGORIE: EN SATIN--------------------------------------->
-
-
-<div class="container ">
-    <div class="row ">
-        <div class="col-xs-12 col-md-6 col-xl-3 ">
-            <fieldset class="text " id="cardigan ">
-                <legend>En Satin</legend>
-
-                <p>Osez les Chemisiers en satin <span class="vert ">LePetitCommerce</span> pour une élégance et un raffinement sans pareil.</p>
-
-
-            </fieldset>
-        </div>
-
-        <div class="col-xs-12 col-md-6 col-xl-3 ">
-            <div>
-
-                <img src="img/femme/CHEMISIERS/chemisier2b.jpg" alt="photo_chemisier " class="image_vetement " id="chemisier4">
-
-                <div class=" car-body " id="card-body4">
-                    <h5 class="card-title ">Chemisier soyeux - Vert Anisé</h5>
-                    <h6 class="card-subtitle mb-2 text-muted ">29,95 EUR</h6>
-                    <p class="card-text ">Un style des plus subtiles assuré avec ce haut distingué.</p>
-                    <a href="# " class="btn btn-outline-success ">Description</a>
-                    <a href="# " class="btn btn-outline-success ">Achat Rapide</a>
-
-                </div>
-            </div>
-        </div>
-
-
-
-        <div class="col-xs-12 col-md-6 col-xl-3 ">
-            <div>
-                <img src="img/femme/CHEMISIERS/chemisier7d.jpg" alt="photo_chemisier " class="image_vetement " id="chemisier5">
-                <div class=" car-body " id="card-body5">
-                    <h5 class="card-title ">Chemisier en satin - Bleu Ancien</h5>
-                    <h6 class="card-subtitle mb-2 text-muted ">29,95 EUR</h6>
-                    <p class="card-text ">Chemisier délicat, pour un look des plus romantiques.</p>
-                    <a href="# " class="btn btn-outline-success ">Description</a>
-                    <a href="# " class="btn btn-outline-success ">Achat Rapide</a>
-
+                <div class="col-sm-4 col-md-4 " id="Social">
+                    <div id="toggle_Social">
+                        <h4>Suivez Nous <i class="fas fa-angle-down"></i></h4>
+                        <span class="ligne"></span>
+                    </div>
+                    <div class="footer_align row" id="Social_logo">
+                        <a href="https://fr-fr.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                        <a href="https://www.instagram.com/?hl=fr"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/?lang=fr"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://www.pinterest.fr/"><i class="fab fa-pinterest-square"></i></a>
+                        <a href="https://www.youtube.com/?gl=FR&hl=fr"><i class="fab fa-youtube"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="col-xs-12 col-md-6 col-xl-3 ">
-            <div>
-                <img src="img/femme/CHEMISIERS/chemisier9b.jpg" alt="photo_chemisier " class="image_vetement " id="chemisier6">
-                <div class="car-body " id="card-body6">
-                    <h5 class="card-title ">Chemisier en satin - Vieux Rose</h5>
-                    <h6 class="card-subtitle mb-2 text-muted ">24,95 EUR</h6>
-                    <p class="card-text ">Chemisier inspiration bohème avec lien à nouer à la taille.</p>
-                    <a href="# " class="btn btn-outline-success ">Description</a>
-                    <a href="# " class="btn btn-outline-success ">Achat Rapide</a>
-
-                </div>
-
-            </div>
+        <div id="copy">
+            <p>Copyright &copy; LePetitCommerce</p>
         </div>
 
+    </footer>
 
-    </div>
-</div>
+    <!----------------------------------------------------------------------------------------->
 
-<div class="clear "></div>
-    <!------------------------------CATEGORIE: SANS-MANCHES--------------------------------------->
-
-<div class="container ">
-        <div class="row ">
-
-    <div class="col-xs-12 col-md-6 col-xl-3 ">
-        <div>
-
-            <img src="img/femme/CHEMISIERS/chemisier3.jpg " alt="photo_pull " class="image_vetement " id="chemisier7">
-
-            <div class="car-body " id="card-body7">
-                <h5 class="card-title ">Chemisier Rose Poudré, col à volants</h5>
-                <h6 class="card-subtitle mb-2 text-muted ">19,95 EUR</h6>
-                <p class="card-text ">Simple et discret, mais qui fait son effet.</p>
-                <a href="# " class="btn btn-outline-success ">Description</a>
-                <a href="# " class="btn btn-outline-success ">Achat Rapide</a>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="col-xs-12 col-md-6 col-xl-3 ">
-        <fieldset class="text " id="urban">
-            <legend>Sans Manches</legend>
-
-            <p>Une déclinaison de chemisiers <span class="vert ">LePetitCommerce</span> sans manches afin de s'adapter à toutes les envies et à tous les styles.
-            </p>
-        </fieldset>
-    </div>
-
-
-    <div class="col-xs-12 col-md-6 col-xl-3 ">
-        <div>
-            <img src="img/femme/CHEMISIERS/chemisier11b.jpg" alt="photo_chemisier" class="image_vetement " id="chemisier8">
-            <div class="car-body " id="card-body8">
-                <h5 class="card-title ">Chemisier rouge avec col à nouer</h5>
-                <h6 class="card-subtitle mb-2 text-muted ">19,95 EUR</h6>
-                <p class="card-text ">Chemisier rouge élégance, pour colorer votre look.</p>
-                <a href="# " class="btn btn-outline-success ">Description</a>
-                <a href="# " class="btn btn-outline-success ">Achat Rapide</a>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="col-xs-12 col-md-6 col-xl-3 ">
-        <div>
-            <img src="img/femme/CHEMISIERS/chemisier10b.jpg" alt="photo_chemisier " class="image_vetement " id="chemisier9">
-            <div class=" car-body " id="card-body9">
-                <h5 class="card-title ">Chemisier blanc sans manches</h5>
-                <h6 class="card-subtitle mb-2 text-muted ">14,95 EUR</h6>
-                <p class="card-text ">Un classique indémodable car intemporel.</p>
-                <a href="# " class="btn btn-outline-success ">Description</a>
-                <a href="# " class="btn btn-outline-success ">Achat Rapide</a>
-
-            </div>
-
-        </div>
-    </div>
-
-
-        </div>
-    </div>
-
-    <div class="clear "></div>
-
-</main>
-
-<!-------------------------FOOTER---------------------------->
-
-<footer>
-
-<div class="container-fluid">
-    <div class="row ">
-        <Div id="newsletter" class="newsletter col-sm-4 col-md-4 test">
-            <div id="toggle_news">
-                <h4>NewsLetter <i class="fas fa-angle-down"></i> </h4>
-                <span class="ligne"></span>
-            </div>
-            <div class="footer_align" id="news_p">
-                <p>Inscrivez-vous à notre programme relationnel <span class="vert">LePetitCommerce</span> afin de recevoir toute notre actualité et nos meilleures offres.</p>
-            </div>
-            <a href="newsletter.html"><button class="btn btn-outline-success" type="submit"> M'inscrire !</button></a>
-
-        </Div>
-
-        <div class="col-sm-4 col-md-4 test" id="infos">
-            <div id="toggle_infos">
-                <h4>Informations Utiles <i class="fas fa-angle-down"></i> </h4>
-                <span class="ligne"></span>
-            </div>
-            <div class="footer_align" id="infos_liste">
-                <ul>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Mentions Légales</a></li>
-                    <li><a href="#">Nos conditions Générales de Vente</a></li>
-                    <li><a href="#">Plan du site</a></li>
-                    <li><a href="#">Imprimer la page</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="col-sm-4 col-md-4 " id="Social">
-            <div id="toggle_Social">
-                <h4>Suivez Nous <i class="fas fa-angle-down"></i></h4>
-                <span class="ligne"></span>
-            </div>
-            <div class="footer_align row" id="Social_logo">
-                <a href="https://fr-fr.facebook.com/"><i class="fab fa-facebook-square"></i></a>
-                <a href="https://www.instagram.com/?hl=fr"><i class="fab fa-instagram"></i></a>
-                <a href="https://twitter.com/?lang=fr"><i class="fab fa-twitter-square"></i></a>
-                <a href="https://www.pinterest.fr/"><i class="fab fa-pinterest-square"></i></a>
-                <a href="https://www.youtube.com/?gl=FR&hl=fr"><i class="fab fa-youtube"></i></a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div id="copy">
-    <p>Copyright &copy; LePetitCommerce</p>
-</div>
-
-</footer>
-
-<!----------------------------------------------------------------------------------------->
-
-<script>
+    <script>
         $(document).ready(function() {
             $('#toggle_Social').click(function() {
                 $('#Social_logo').slideToggle(200);
@@ -523,4 +523,5 @@
 
 
 </body>
+
 </html>
