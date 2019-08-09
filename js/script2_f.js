@@ -19,11 +19,17 @@ CheF[0] = 'img/femme/CHEMISIERS/chemisier1.jpg';
 CheF[1] = 'img/femme/CHEMISIERS/chemisier3.jpg';
 CheF[2] = 'img/femme/CHEMISIERS/chemisier4.jpg';
 
-var hF = 0;
-var hautsF = [];
-hautsF[0] = 'img/femme/HAUTS/haut2.jpg';
-hautsF[1] = 'img/femme/HAUTS/haut3.jpg';
-hautsF[2] = 'img/femme/HAUTS/haut4.jpg';
+var topF = 0;
+var toptopsF = [];
+toptopsF[0] = 'img/femme/HAUTS/haut2.jpg';
+toptopsF[1] = 'img/femme/HAUTS/haut3.jpg';
+toptopsF[2] = 'img/femme/HAUTS/haut4.jpg';
+
+var tsF = 0;
+var teeF = [];
+teeF[0] = 'img/femme/HAUTS/haut2.jpg';
+teeF[1] = 'img/femme/HAUTS/haut3.jpg';
+teeF[2] = 'img/femme/HAUTS/haut4.jpg';
 
 var PuF = 0;
 var pullF = [];
@@ -43,17 +49,11 @@ chaussuresF[0] = 'img/femme/CHAUSSURES/chaussures2.jpg';
 chaussuresF[1] = 'img/femme/CHAUSSURES/chaussures3.jpg';
 chaussuresF[2] = 'img/femme/CHAUSSURES/chaussures4.jpg';
 
-var bF = 0;
-var bonnetF = [];
-bonnetF[0] = 'img/femme/CHAPEAUX/bonnet.jpg';
-bonnetF[1] = 'img/femme/CHAPEAUX/chapeau2.jpg';
-bonnetF[2] = 'img/femme/CHAPEAUX/chapeau1.jpg';
-
-var sF = 0;
-var sacF = [];
-sacF[0] = 'img/femme/ACCESSOIRES/sac1.jpg';
-sacF[1] = 'img/femme/ACCESSOIRES/sac2.jpg';
-sacF[2] = 'img/femme/ACCESSOIRES/sac3.jpg';
+var manF = 0;
+var manteauxF = [];
+manteauxF[0] = 'img/femme/MANTEAUX/manteau2.jpg';
+manteauxF[1] = 'img/femme/MANTEAUX/manteau3.jpg';
+manteauxF[2] = 'img/femme/MANTEAUX/manteau1.jpg';
 
 var aF = 0;
 var accessF = [];
@@ -95,17 +95,28 @@ function changeImg13() {
 }
 
 function changeImg14() {
-    document.hautsF.src = hautsF[hF];
-    if (hF < hautsF.length - 1) {
-        hF++
+    document.topsF.src = toptopsF[topF];
+    if (topF < toptopsF.length - 1) {
+        topF++
     } else {
-        hF = 0
+        topF = 0
     }
 
     setTimeout("changeImg14()", time);
 }
 
 function changeImg15() {
+    document.tshirtF.src = teeF[tsF];
+    if (tsF < teeF.length - 1) {
+        tsF++
+    } else {
+        tsF = 0
+    }
+
+    setTimeout("changeImg15()", time);
+}
+
+function changeImg16() {
     document.pullF.src = pullF[PuF];
     if (PuF < pullF.length - 1) {
         PuF++
@@ -113,10 +124,10 @@ function changeImg15() {
         PuF = 0
     }
 
-    setTimeout("changeImg15()", time);
+    setTimeout("changeImg16()", time);
 }
 
-function changeImg16() {
+function changeImg17() {
     document.vesteF.src = vesteF[vF];
     if (vF < vesteF.length - 1) {
         vF++
@@ -124,10 +135,10 @@ function changeImg16() {
         vF = 0
     }
 
-    setTimeout("changeImg16()", time);
+    setTimeout("changeImg17()", time);
 }
 
-function changeImg17() {
+function changeImg18() {
     document.chaussuresF.src = chaussuresF[chF];
     if (chF < chaussuresF.length - 1) {
         chF++
@@ -135,26 +146,15 @@ function changeImg17() {
         chF = 0
     }
 
-    setTimeout("changeImg17()", time);
-}
-
-function changeImg18() {
-    document.bonnetF.src = bonnetF[bF];
-    if (bF < bonnetF.length - 1) {
-        bF++
-    } else {
-        bF = 0
-    }
-
     setTimeout("changeImg18()", time);
 }
 
 function changeImg19() {
-    document.sacF.src = sacF[sF];
-    if (sF < sacF.length - 1) {
-        sF++
+    document.manteauxF.src = manteauxF[manF];
+    if (manF < manteauxF.length - 1) {
+        manF++
     } else {
-        sF = 0
+        manF = 0
     }
 
     setTimeout("changeImg19()", time);
