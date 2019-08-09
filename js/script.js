@@ -143,248 +143,50 @@ $(document).ready(function() {
     $('#toggle_news').click(function() {
         $('#news_p').slideToggle(200);
     });
-    $('#pantalon1').click(function() {
+    $('#produit1').click(function() {
         $('#card-body1').slideToggle(200);
     });
-    $('#pantalon2').click(function() {
+    $('#produit2').click(function() {
         $('#card-body2').slideToggle(200);
     });
-    $('#pantalon3').click(function() {
+    $('#produit3').click(function() {
         $('#card-body3').slideToggle(200);
     });
-    $('#casual1').click(function() {
+    $('#produit4').click(function() {
         $('#card-body4').slideToggle(200);
     });
-    $('#casual2').click(function() {
+    $('#produit5').click(function() {
         $('#card-body5').slideToggle(200);
     });
-    $('#casual3').click(function() {
+    $('#produit6').click(function() {
         $('#card-body6').slideToggle(200);
     });
-    $('#costume1').click(function() {
+    $('#produit7').click(function() {
         $('#card-body7').slideToggle(200);
     });
-    $('#costume2').click(function() {
+    $('#produit8').click(function() {
         $('#card-body8').slideToggle(200);
     });
-    $('#costume3').click(function() {
+    $('#produit9').click(function() {
         $('#card-body9').slideToggle(200);
     });
-    $('#brut1').click(function() {
+    $('#produit10').click(function() {
         $('#card-body10').slideToggle(200);
     });
-    $('#brut2').click(function() {
+    $('#produit11').click(function() {
         $('#card-body11').slideToggle(200);
     });
-    $('#brut3').click(function() {
+    $('#produit12').click(function() {
         $('#card-body12').slideToggle(200);
     });
-    $('#chemise1').click(function() {
-        $('#card-body1').slideToggle(200);
-    });
-    $('#chemise2').click(function() {
-        $('#card-body2').slideToggle(200);
-    });
-    $('#chemise3').click(function() {
-        $('#card-body3').slideToggle(200);
-    });
-    $('#chemise4').click(function() {
-        $('#card-body4').slideToggle(200);
-    });
-    $('#chemise5').click(function() {
-        $('#card-body5').slideToggle(200);
-    });
-    $('#chemise6').click(function() {
-        $('#card-body6').slideToggle(200);
-    });
-    $('#chemise7').click(function() {
-        $('#card-body7').slideToggle(200);
-    });
-    $('#chemise8').click(function() {
-        $('#card-body8').slideToggle(200);
-    });
-    $('#chemise9').click(function() {
-        $('#card-body9').slideToggle(200);
-    });
-    $('#chemise10').click(function() {
-        $('#card-body10').slideToggle(200);
-    });
-    $('#chemise11').click(function() {
-        $('#card-body11').slideToggle(200);
-    });
-    $('#chemise12').click(function() {
-        $('#card-body12').slideToggle(200);
-    });
-    $('#chemise13').click(function() {
+    $('#produit13').click(function() {
         $('#card-body13').slideToggle(200);
     });
-    $('#chemise14').click(function() {
+    $('#produit14').click(function() {
         $('#card-body14').slideToggle(200);
     });
-    $('#chemise15').click(function() {
+    $('#produit15').click(function() {
         $('#card-body15').slideToggle(200);
-    });
-    $('#haut1').click(function() {
-        $('#card-body1').slideToggle(200);
-    });
-    $('#haut2').click(function() {
-        $('#card-body2').slideToggle(200);
-    });
-    $('#haut3').click(function() {
-        $('#card-body3').slideToggle(200);
-    });
-    $('#haut4').click(function() {
-        $('#card-body4').slideToggle(200);
-    });
-    $('#haut5').click(function() {
-        $('#card-body5').slideToggle(200);
-    });
-    $('#haut6').click(function() {
-        $('#card-body6').slideToggle(200);
-    });
-    $('#haut7').click(function() {
-        $('#card-body7').slideToggle(200);
-    });
-    $('#haut8').click(function() {
-        $('#card-body8').slideToggle(200);
-    });
-    $('#haut9').click(function() {
-        $('#card-body9').slideToggle(200);
-    });
-    $('#haut10').click(function() {
-        $('#card-body10').slideToggle(200);
-    });
-    $('#haut11').click(function() {
-        $('#card-body11').slideToggle(200);
-    });
-    $('#haut12').click(function() {
-        $('#card-body12').slideToggle(200);
-    });
-    $('#haut13').click(function() {
-        $('#card-body13').slideToggle(200);
-    });
-    $('#haut14').click(function() {
-        $('#card-body14').slideToggle(200);
-    });
-    $('#haut15').click(function() {
-        $('#card-body15').slideToggle(200);
-    });
-    $('#pull1').click(function() {
-        $('#card-body1').slideToggle(200);
-    });
-    $('#pull2').click(function() {
-        $('#card-body2').slideToggle(200);
-    });
-    $('#pull3').click(function() {
-        $('#card-body3').slideToggle(200);
-    });
-    $('#pull4').click(function() {
-        $('#card-body4').slideToggle(200);
-    });
-    $('#pull5').click(function() {
-        $('#card-body5').slideToggle(200);
-    });
-    $('#pull6').click(function() {
-        $('#card-body6').slideToggle(200);
-    });
-    $('#pull7').click(function() {
-        $('#card-body7').slideToggle(200);
-    });
-    $('#pull8').click(function() {
-        $('#card-body8').slideToggle(200);
-    });
-    $('#pull9').click(function() {
-        $('#card-body9').slideToggle(200);
-    });
-    $('#pull10').click(function() {
-        $('#card-body10').slideToggle(200);
-    });
-    $('#pull11').click(function() {
-        $('#card-body11').slideToggle(200);
-    });
-    $('#pull12').click(function() {
-        $('#card-body12').slideToggle(200);
-    });
-    $('#pull13').click(function() {
-        $('#card-body13').slideToggle(200);
-    });
-    $('#pull14').click(function() {
-        $('#card-body14').slideToggle(200);
-    });
-    $('#pull15').click(function() {
-        $('#card-body15').slideToggle(200);
-    });
-    $('#veste1').click(function() {
-        $('#card-body1').slideToggle(200);
-    });
-    $('#veste2').click(function() {
-        $('#card-body2').slideToggle(200);
-    });
-    $('#veste3').click(function() {
-        $('#card-body3').slideToggle(200);
-    });
-    $('#veste4').click(function() {
-        $('#card-body4').slideToggle(200);
-    });
-    $('#veste5').click(function() {
-        $('#card-body5').slideToggle(200);
-    });
-    $('#veste6').click(function() {
-        $('#card-body6').slideToggle(200);
-    });
-    $('#veste7').click(function() {
-        $('#card-body7').slideToggle(200);
-    });
-    $('#veste8').click(function() {
-        $('#card-body8').slideToggle(200);
-    });
-    $('#veste9').click(function() {
-        $('#card-body9').slideToggle(200);
-    });
-    $('#veste10').click(function() {
-        $('#card-body10').slideToggle(200);
-    });
-    $('#veste11').click(function() {
-        $('#card-body11').slideToggle(200);
-    });
-    $('#veste12').click(function() {
-        $('#card-body12').slideToggle(200);
-    });
-    $('#chaussure1').click(function() {
-        $('#card-body1').slideToggle(200);
-    });
-    $('#chaussure2').click(function() {
-        $('#card-body2').slideToggle(200);
-    });
-    $('#chaussure3').click(function() {
-        $('#card-body3').slideToggle(200);
-    });
-    $('#chaussure4').click(function() {
-        $('#card-body4').slideToggle(200);
-    });
-    $('#chaussure5').click(function() {
-        $('#card-body5').slideToggle(200);
-    });
-    $('#chaussure6').click(function() {
-        $('#card-body6').slideToggle(200);
-    });
-    $('#chaussure7').click(function() {
-        $('#card-body7').slideToggle(200);
-    });
-    $('#chaussure8').click(function() {
-        $('#card-body8').slideToggle(200);
-    });
-    $('#chaussure9').click(function() {
-        $('#card-body9').slideToggle(200);
-    });
-    $('#chaussure10').click(function() {
-        $('#card-body10').slideToggle(200);
-    });
-    $('#chaussure11').click(function() {
-        $('#card-body11').slideToggle(200);
-    });
-    $('#chaussure12').click(function() {
-        $('#card-body12').slideToggle(200);
     });
 })
 
