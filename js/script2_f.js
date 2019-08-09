@@ -3,9 +3,9 @@ var time = 3000;
 
 var pF = 0;
 var PanF = [];
-PanF[0] = 'img/femme/pantalons/pantalon2.jpg';
-PanF[1] = 'img/femme/pantalons/pantalon3.jpg';
-PanF[2] = 'img/femme/pantalons/pantalon4.jpg';
+PanF[0] = 'img/femme/PANTALONS/pantalon2.jpg';
+PanF[1] = 'img/femme/PANTALONS/pantalon3.jpg';
+PanF[2] = 'img/femme/PANTALONS/pantalon4.jpg';
 
 var jF = 0;
 var jeansF = [];
@@ -51,15 +51,15 @@ bonnetF[2] = 'img/femme/CHAPEAUX/chapeau1.jpg';
 
 var sF = 0;
 var sacF = [];
-sacF[0] = 'img/femme/SACS/sac1.jpg';
-sacF[1] = 'img/femme/SACS/sac2.jpg';
-sacF[2] = 'img/femme/SACS/sac3.jpg';
+sacF[0] = 'img/femme/ACCESSOIRES/sac1.jpg';
+sacF[1] = 'img/femme/ACCESSOIRES/sac2.jpg';
+sacF[2] = 'img/femme/ACCESSOIRES/sac3.jpg';
 
 var aF = 0;
 var accessF = [];
-accessF[0] = 'img/femme/CEINTURES/ceinture2.jpg';
-accessF[1] = 'img/femme/MONTRES/montre2.jpg';
-accessF[2] = 'img/femme/CEINTURES/ceinture1.jpg';
+accessF[0] = 'img/femme/ACCESSOIRES/ceinture2.jpg';
+accessF[1] = 'img/femme/ACCESSOIRES/montre2.jpg';
+accessF[2] = 'img/femme/ACCESSOIRES/ceinture1.jpg';
 
 function changeImg11() {
     document.pantalonsF.src = PanF[pF];
