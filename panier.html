@@ -10,8 +10,8 @@
     <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet">
 
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="js/script.js"></script>
-    <title>Le Petit Commerce - LOGIN</title>
+
+    <title>Le Petit Commerce - Panier</title>
 </head>
 
 <body>
@@ -61,6 +61,7 @@
             });
         });
     </script>
+
 
     <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="#"></a>
@@ -149,115 +150,206 @@
         </div>
     </nav>
 
-    <body>
-        <div id="login_page">
-            <div class="loginbox">
-                <div class="avatar">
-                    <i class="fas fa-user"></i>
-                </div>
-                <h1>CONNEXION</h1>
-                <form action="">
-                    <p>Identifiant :</p>
-                    <input type="email" name="identifiant" id="identifiant" placeholder="email">
-                    <p>Mot de Passe : </p>
-                    <input type="password" name="password" id="password" placeholder="Mot de passe">
-                    <input type="submit" value="Continuer">
+    
 
-                    <p id="erreur_login"></p>
+        <div class="clear"></div>
 
-                    <a href="#">Mot de Passe perdu <i class="fas fa-angle-right"></i></a><br>
-                    <a href="login.html">Je n'ai pas de compte <i class="fas fa-angle-right"></i></a>
-                </form>
+        <h2>Vos Achats</h2>
+        <span class="ligne "></span>
 
-            </div>
+        <div class="clear"></div>
+
+        <table>
+            <tr>
+                <th>Référence:</th>
+                <th>Produits: </th>
+                <th>Quantité:</th>
+                <th>PU:</th>
+                <th></th>
+
+            </tr>
+
+            <tr>
+                <td>hHbmc</td>
+                <td>T-shirt basique coupe regular avec col rond et manches courtes.</td>
+                <td>
+                    <select name="quantite" id="quantite">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </td>
+                <td id="prix">5.95 EUR</td>
+
+                <td><i class="far fa-trash-alt"></i></td>
+            </tr>
+            <tr>
+                <td>jHzbm</td>
+                <td>Jean coupe décontractée à cinq poches. Fermeture à l'avant par zip et bouton métallique.</td>
+                <td>
+                    <select name="quantite2" id="quantite2">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </td>
+                <td id="prix2">29.95 EUR</td>
+
+                <td><i class="far fa-trash-alt"></i></td>
+            </tr>
+            <tr>
+                <td>aHbzc</td>
+                <td>SAC BOWLING HABILLÉ</td>
+                <td>
+                    <select name="quantite3" id="quantite3">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </td>
+                <td id="prix3">59.95 EUR</td>
+
+                <td><i class="far fa-trash-alt"></i></td>
+            </tr>
+            <tr class="bas_tab">
+                <th></th>
+                <th id="total">TOTAL:</th>
+                <th></th>
+                <th><strong>95.85 EUR</strong></th>
+
+                <th>TTC</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>19,17 EUR</td>
+                <td>TVA</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>76,68 EUR</td>
+                <td>HT</td>
+            </tr>
+
+        </table>
+
+
+        <div class="panier_btn">
+        <p>Valider mon panier <i class="fas fa-shopping-cart"></i></p>
         </div>
+
+        <div class="clear"></div>
+         <!-- **** infos sup **** -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 ">
+                <fieldset class=" pay">
+                    <legend> Moyens de paiement </legend>
+
+                    <img src="img/logo/cb.png" alt="logo_cb" class="cb">
+                    <img src="img/logo/mastercard.png" alt="logo_mastercard" class="cb">
+                    <img src="img/logo/visa.png" alt="logo_visa" class="cb">
+                    <img src="img/logo/amex.png" alt="logo_amex" class="cb">
+                    <img src="img/logo/google_pay.png" alt="logo_google" class="cb">
+                    <img src="img/logo/apple_pay.png" alt="return" class="cb">
+                </fieldset>
+            </div>
+            <div class="col-md-4 col-xl-4">
+                <fieldset class="return">
+                    <legend> Satisfait ou remboursé </legend>
+
+
+                    <img src="img/logo/return.png" alt="return" id="return_logo">
+
+
+                </fieldset>
+            </div>
+            <div class="col-md-4 ">
+                <fieldset class=" help">
+                    <legend> Besoin d'aide</legend>
+
+
+
+                    <a href="tel:+33762765434">0101010101</a>
+
+                    <p>(Appel Gratuit)</p>
+
+
+                </fieldset>
+            </div>
+
+        </div>
+    </div>
+        <!-- ******  Footer  ****** -->
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div id="newsletter" class="newsletter col-sm-4 col-md-4">
+                        <div id="toggle_news">
+                            <h4>NewsLetter</h4>
+                            <span class="ligne"></span>
+                        </div>
+                        <div class="footer_align" id="news_p">
+                            <p>Inscrivez-vous à notre programme relationnel <span class="vert">LePetitCommerce</span> afin de recevoir toute notre actualité et nos meilleures offres.</p>
+                        </div>
+                        <a href="newsletter.html" class="btn btn-outline-success" > M'inscrire !</a>
+                    </div>
+
+                    <div class="col-sm-4 col-md-4" id="infos">
+                        <div id="toggle_infos">
+                            <h4>Informations Utiles</h4>
+                            <span class="ligne"></span>
+                        </div>
+                        <div class="footer_align" id="infos_liste">
+                            <ul>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Mentions Légales</a></li>
+                                <li><a href="#">Nos Conditions Générales de Vente</a></li>
+                                <li><a href="#">Plan du site</a></li>
+                                <li><a href="#">Imprimer la page</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-md-4" id="Social">
+                        <div id="toggle_Social">
+                            <h4>Suivez-Nous</h4>
+                            <span class="ligne"></span>
+                        </div>
+                        <div class="footer_align row" id="Social_logo">
+                            <a href="https://fr-fr.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                            <a href="https://www.instagram.com/?hl=fr"><i class="fab fa-instagram"></i></a>
+                            <a href="https://twitter.com/?lang=fr"><i class="fab fa-twitter-square"></i></a>
+                            <a href="https://www.pinterest.fr/"><i class="fab fa-pinterest-square"></i></a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div id="copy">
+                <p>Copyright &copy; LePetitCommerce</p>
+            </div>
+        </footer>
+
+
+
+
+
+
+        <script src="js/script.js"></script>
+        <script src="js/bootstrap.js"></script>
     </body>
-
-
-    <!-- ******  Footer  ****** -->
-    <footer>
-        <div class="container-fluid">
-            <div class="row">
-                <div id="newsletter" class="newsletter col-sm-4 col-md-4">
-                    <div id="toggle_news">
-                        <h4>NewsLetter</h4>
-                        <span class="ligne"></span>
-                    </div>
-                    <div class="footer_align" id="news_p">
-                        <p>Inscrivez-vous à notre programme relationnel <span class="vert">LePetitCommerce</span> afin de recevoir toute notre actualité et nos meilleures offres.</p>
-                    </div>
-                    <a href="newsletter.html" class="btn btn-outline-success" type="submit"> M'inscrire !</a>
-                </div>
-
-                <div class="col-sm-4 col-md-4" id="infos">
-                    <div id="toggle_infos">
-                        <h4>Informations Utiles</h4>
-                        <span class="ligne"></span>
-                    </div>
-                    <div class="footer_align" id="infos_liste">
-                        <ul>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Mentions Légales</a></li>
-                            <li><a href="#">Nos Conditions Générales de Vente</a></li>
-                            <li><a href="#">Plan du site</a></li>
-                            <li><a href="#">Imprimer la page</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-sm-4 col-md-4" id="Social">
-                    <div id="toggle_Social">
-                        <h4>Suivez-Nous</h4>
-                        <span class="ligne"></span>
-                    </div>
-                    <div class="footer_align row" id="Social_logo">
-                        <a href="https://fr-fr.facebook.com/"><i class="fab fa-facebook-square"></i></a>
-                        <a href="https://www.instagram.com/?hl=fr"><i class="fab fa-instagram"></i></a>
-                        <a href="https://twitter.com/?lang=fr"><i class="fab fa-twitter-square"></i></a>
-                        <a href="https://www.pinterest.fr/"><i class="fab fa-pinterest-square"></i></a>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-
-        <div id="copy">
-            <p>Copyright &copy; LePetitCommerce</p>
-        </div>
-    </footer>
-
-    <script>
-        document.getElementById('login_page').addEventListener('submit', function(el) {
-
-            var erreur_login;
-            var identifiant = document.getElementById('identifiant');
-            var password = document.getElementById('password');
-
-            if (!identifiant.value) {
-                erreur_login = "veuillez renseigner votre email";
-                document.getElementById('identifiant').style.cssText = "border-color: red";
-            }
-            if (!password.value) {
-                erreur_login = "veuillez renseigner votre MDP";
-                document.getElementById('password').style.cssText = "border-color: red";
-            }
-            if (erreur_login) {
-                el.preventDefault();
-                document.getElementById("erreur_login").innerHTML = erreur_login;
-                return false;
-            } else {
-                alert('connexion réussie !')
-            }
-        })
-    </script>
-
-
-
-
-
-    <script src="js/script.js"></script>
-    <script src="js/bootstrap.js"></script>
-</body>
 
 </html>
