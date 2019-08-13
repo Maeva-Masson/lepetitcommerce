@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
+
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet">
 
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 
-    <title>Le Petit Commerce - Panier</title>
+    <title>LePetitCommerce - Presse</title>
 </head>
 
 <body>
     <!-- ******  Header  ****** -->
-    <header>
+     <header>
 
         <div class="headerLogo">
 
@@ -38,7 +39,7 @@
             <div class="searchbar"><i class="fas fa-search"></i></div>
             <a href="" class="localisation"><i class="fas fa-map-marker-alt"></i></a>
             <a href="login.html" class="user"> <i class="fas fa-user"></i></a>
-            <a href="" class="panier"><i class="fas fa-shopping-cart"></i></a>
+            <a href="panier.html" class="panier"><i class="fas fa-shopping-cart"></i></a>
         </div>
 
         <figure class="logoMarque">
@@ -61,7 +62,6 @@
             });
         });
     </script>
-
 
     <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="#"></a>
@@ -103,7 +103,7 @@
                         <a class="dropdown-item" href="#">Chemisiers</a>
                         <a class="dropdown-item" href="#">Jeans</a>
                         <a class="dropdown-item" href="#">Robes</a>
-                        <a class="access_f" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                        <a class="access_f" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
                                 Accessoires <i class="fas fa-angle-down"></i></a>
                         <div class="sous_menu_f" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#">Tout voir</a>
@@ -117,7 +117,7 @@
 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            HOMME</a>
+                                        HOMME</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item redsolde" href="solde.h.html">Soldes</a>
                         <a class="dropdown-item" href="Tous_nos_produits_H.html">Tout voir</a>
@@ -130,7 +130,7 @@
                         <a class="dropdown-item" href="veste_h.html">Vestes / Manteaux</a>
                         <a class="dropdown-item" href="chaussures_h.html">Chaussures</a>
                         <a class="access_h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="accessoires_h.html">
-                                                            Accessoires <i class="fas fa-angle-down"></i> </a>
+                                                        Accessoires <i class="fas fa-angle-down"></i> </a>
                         <div class="sous_menu_h" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="accessoires_h.html">Tout voir</a>
                             <div class="dropdown-divider"></div>
@@ -145,110 +145,125 @@
                     </div>
                 </li>
 
-
             </ul>
         </div>
     </nav>
 
-    
+  <div class="clear"></div>
 
-        <div class="clear"></div>
+    <h2>Relations presse</h2>
+ <span class="ligne "></span>
+    <p>Contactez notre attachée de presse :   <a href="mailto:contactpresse@lepetitcommerce.com" id="mail_press">contactpresse@lepetitcommerce.com</a></p>
+  
 
-        <h2>Vos Achats</h2>
+
+
+    <!-- ********** Article de presse ********** -->
+<h3>Derniers Articles de presse</h3>
         <span class="ligne "></span>
-
-        <div class="clear"></div>
-
-        <table>
-            <tr>
-                <th>Référence:</th>
-                <th>Produits: </th>
-                <th>Quantité:</th>
-                <th>PU:</th>
-                <th></th>
-
-            </tr>
-
-            <tr>
-                <td>hHbmc</td>
-                <td>T-shirt basique coupe regular avec col rond et manches courtes.</td>
-                <td>
-                    <select name="quantite" id="quantite">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                </td>
-                <td id="prix">5.95 EUR</td>
-
-                <td><i class="far fa-trash-alt"></i></td>
-            </tr>
-            <tr>
-                <td>jHzbm</td>
-                <td>Jean coupe décontractée à cinq poches. Fermeture à l'avant par zip et bouton métallique.</td>
-                <td>
-                    <select name="quantite2" id="quantite2">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                </td>
-                <td id="prix2">29.95 EUR</td>
-
-                <td><i class="far fa-trash-alt"></i></td>
-            </tr>
-            <tr>
-                <td>aHbzc</td>
-                <td>SAC BOWLING HABILLÉ</td>
-                <td>
-                    <select name="quantite3" id="quantite3">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                </td>
-                <td id="prix3">59.95 EUR</td>
-
-                <td><i class="far fa-trash-alt"></i></td>
-            </tr>
-            <tr class="bas_tab">
-                <th></th>
-                <th id="total">TOTAL:</th>
-                <th></th>
-                <th><strong>95.85 EUR</strong></th>
-
-                <th>TTC</th>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>19,17 EUR</td>
-                <td>TVA</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>76,68 EUR</td>
-                <td>HT</td>
-            </tr>
-
-        </table>
+<div class="clear "></div>
+          <!-- ********** GQ ********** -->
 
 
-        <div class="panier_btn">
-        <p>Valider mon panier <i class="fas fa-shopping-cart"></i></p>
+    <div class="container article_presse">
+        
+        <div class="row ">
+           <div class="col-md-6">
+                <h4>GQ - Juillet 2019</h4>
+                <span class="ligne "></span>
+                <p>Le trés select site GQ à réalisé en juillet 2019, un classment des t-shirts les plus cool de la rentrée.
+
+                Retrouvez notre T-SHIRT PREMIUM À ILLUSTRATION JAMES WILSON, présent dans le classement de GQ</p>
+               
+                
+            </div>
+
+            <div class="col-md-6">
+                <a href="https://www.gqmagazine.fr/style/galerie/les-20-t-shirts-les-plus-cool-de-la-rentree-a-porter-des-maintenant" ><img src="img/gq.png" alt="GQ"></a>
+            </div>
         </div>
 
-        <div class="clear"></div>
-         <!-- **** infos sup **** -->
+    </div>
+      <div class="clear "></div>
+
+    <!-- ********** Chic adepte ********** -->
+
+    <div class="container article_presse">
+        
+        <div class="row ">
+
+            <div class="col-md-6 ">
+                
+                <a href="https://www.chicadepte.fr" ><img src="img/chic.png" alt="chic"></a>
+          
+            </div>
+
+            <div class="col-md-6 ">
+                <h4>Chic Adepte - Juin 2019</h4>
+                <span class="ligne "></span>
+                <p>Retrouvez l'article de notre vente privées, en partenariat avec le site chic adepte</p>
+                <br>
+
+               
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="clear "></div>
+
+    <!-- ********** Figaro ********** -->
+
+   <div class="container article_presse">
+        
+        <div class="row ">
+           <div class="col-md-6">
+                <h4>Le Figaro - Juin 2019</h4>
+                <span class="ligne "></span>
+                <p>Le Figaro nous a fait l'honneur de parler de nos coachs en mode, ainsi que la mis en avant de nos services pour vous aider a vous habiller.
+                retrouvez leur article.</p>
+               
+                
+            </div>
+
+            <div class="col-md-6">
+                <a href="http://www.lefigaro.fr/actualite-france/2009/09/02/01016-20090902ARTFIG00017-le-filon-juteux-de-la-mode-des-coachs-.php" ><img src="img/figaro.png" alt="Le_figaro"></a>
+            </div>
+        </div>
+
+    </div>
+      
+
+    <div class="clear "></div>
+
+<!-- ********** Glamour ********** -->
+
+    <div class="container article_presse">
+        
+        <div class="row ">
+
+            <div class="col-md-6 ">
+                
+                <a href="https://www.glamourparis.com/mode/people-mode/diaporama/zara-back-to-minimal-la-ligne-qui-nous-donnerait-presque-envie-de-rentrer-de-vacances/58433" ><img src="img/glamour.png" alt="glamour"></a>
+          
+            </div>
+
+            <div class="col-md-6 ">
+                <h4>Glamour - Mai 2019</h4>
+                <span class="ligne "></span>
+                <p>Notre collection en partenariat avec ZARA:  "Back to Minmal" pour femme, est à la une du Magasin Glamour.</p>
+                <br>
+
+               
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="clear "></div>
+    <!-- **** infos sup **** -->
 
     <div class="container">
         <div class="row">
@@ -290,66 +305,80 @@
 
         </div>
     </div>
-        <!-- ******  Footer  ****** -->
-        <footer>
-            <div class="container-fluid">
-                <div class="row">
-                    <div id="newsletter" class="newsletter col-sm-4 col-md-4">
-                        <div id="toggle_news">
-                            <h4>NewsLetter</h4>
-                            <span class="ligne"></span>
-                        </div>
-                        <div class="footer_align" id="news_p">
-                            <p>Inscrivez-vous à notre programme relationnel <span class="vert">LePetitCommerce</span> afin de recevoir toute notre actualité et nos meilleures offres.</p>
-                        </div>
-                        <a href="newsletter.html" class="btn btn-outline-success" > M'inscrire !</a>
+
+
+    <!-- ******  Footer  ****** -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row ">
+                <Div id="newsletter" class="newsletter col-sm-4 col-md-4 test">
+                    <div id="toggle_news">
+                        <h4>NewsLetter <i class="fas fa-angle-down"></i></h4>
+                        <span class="ligne"></span>
                     </div>
-
-                    <div class="col-sm-4 col-md-4" id="infos">
-                        <div id="toggle_infos">
-                            <h4>Informations Utiles</h4>
-                            <span class="ligne"></span>
-                        </div>
-                        <div class="footer_align" id="infos_liste">
-                            <ul>
-                                <li><a href="#">Contact</a></li>
-                                <li><a href="#">Mentions Légales</a></li>
-                                <li><a href="#">Nos Conditions Générales de Vente</a></li>
-                                <li><a href="#">Plan du site</a></li>
-                                <li><a href="#">Imprimer la page</a></li>
-                            </ul>
-                        </div>
+                    <div class="footer_align" id="news_p">
+                        <p>Inscrivez-vous à notre programme relationnel <strong>LePetitCommerce</strong> afin de recevoir toute notre actualité et nos meilleures offres.</p>
                     </div>
+                    <a href="newsletter.html" class="btn btn-outline-success"> M'inscrire !</a>
 
-                    <div class="col-sm-4 col-md-4" id="Social">
-                        <div id="toggle_Social">
-                            <h4>Suivez-Nous</h4>
-                            <span class="ligne"></span>
-                        </div>
-                        <div class="footer_align row" id="Social_logo">
-                            <a href="https://fr-fr.facebook.com/"><i class="fab fa-facebook-square"></i></a>
-                            <a href="https://www.instagram.com/?hl=fr"><i class="fab fa-instagram"></i></a>
-                            <a href="https://twitter.com/?lang=fr"><i class="fab fa-twitter-square"></i></a>
-                            <a href="https://www.pinterest.fr/"><i class="fab fa-pinterest-square"></i></a>
-                        </div>
+                </Div>
+
+                <div class="col-sm-4 col-md-4 test" id="infos">
+                    <div id="toggle_infos">
+                        <h4>Informations Utiles <i class="fas fa-angle-down"></i></h4>
+                        <span class="ligne"></span>
                     </div>
-
-
+                    <div class="footer_align" id="infos_liste">
+                        <ul>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Mentions Légales</a></li>
+                            <li><a href="#">Nos conditions Générales de Vente</a></li>
+                            <li><a href="#">Plan du site</a></li>
+                            <li><a href="#">Imprimer la page</a></li>
+                        </ul>
+                    </div>
                 </div>
+                <div class="col-sm-4 col-md-4 " id="Social">
+                    <div id="toggle_Social">
+                        <h4>Suivez Nous <i class="fas fa-angle-down"></i></h4>
+                        <span class="ligne"></span>
+                    </div>
+                    <div class="footer_align row" id="Social_logo">
+                        <a href="https://fr-fr.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                        <a href="https://www.instagram.com/?hl=fr"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/?lang=fr"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://www.pinterest.fr/"><i class="fab fa-pinterest-square"></i></a>
+                    </div>
+                </div>
+
+
             </div>
-
-            <div id="copy">
-                <p>Copyright &copy; LePetitCommerce</p>
-            </div>
-        </footer>
+        </div>
 
 
+        <div id="copy">
+            <p>Copyright &copy; LePetitCommerce</p>
+        </div>
+    </footer>
+
+    <script>
+        $(document).ready(function() {
+            $('.carousel').carousel({
+                interval: 1800
+            })
+
+
+
+        });
+    </script>
 
 
 
 
-        <script src="js/script.js"></script>
-        <script src="js/bootstrap.js"></script>
-    </body>
+
+   
+    <script src="js/script.js "></script>
+    <script src="js/bootstrap.js "></script>
+</body>
 
 </html>

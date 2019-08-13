@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 
-    <title>LePetitCommerce</title>
+    <title>LePetitCommerce - Tous les Produits Homme</title>
 
 
 
@@ -24,10 +24,6 @@
 
         <div class="headerLogo">
 
-            <div class="searchbar"><i class="fas fa-search"></i></div>
-            <div class="localisation"><i class="fas fa-map-marker-alt"></i></div>
-            <div class="panier"><i class="fas fa-shopping-cart"></i></div>
-            <div class="user"><i class="fas fa-user"></i></div>
             <div id="conteneur">
                 <ul id="menu">
                     <li>
@@ -43,6 +39,10 @@
                     </li>
                 </ul>
             </div>
+            <div class="searchbar"><i class="fas fa-search"></i></div>
+            <a href="" class="localisation"><i class="fas fa-map-marker-alt"></i></a>
+            <a href="login.html" class="user"> <i class="fas fa-user"></i></a>
+            <a href="panier.html" class="panier"><i class="fas fa-shopping-cart"></i></a>
         </div>
 
         <figure class="logoMarque">
@@ -84,7 +84,7 @@
                         <a class="dropdown-item" href="#">Avis Clients</a>
                         <a class="dropdown-item" href="#">Recrutement</a>
                         <a class="dropdown-item" href="#">Evenements</a>
-                        <a class="dropdown-item" href="#">Presse</a>
+                        <a class="dropdown-item" href="presse.html">Presse</a>
                         <a class="dropdown-item" href="#">Actualités</a>
                     </div>
                 </li>
@@ -106,7 +106,7 @@
                         <a class="dropdown-item" href="chemisiers_femme.html">Chemisiers</a>
                         <a class="dropdown-item" href="#">Jeans</a>
                         <a class="dropdown-item" href="#">Robes</a>
-                        <a class="access_f" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                        <a class="access_f.html"  id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
                                 Accessoires <i class="fas fa-angle-down"></i></a>
                         <div class="sous_menu_f" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#">Tout voir</a>
@@ -115,13 +115,14 @@
                             <a class="dropdown-item" href="#">Lunettes & Montres</a>
                             <a class="dropdown-item" href="#">Casquettes & Bonnets</a>
                         </div>
+                         </div>
                 </li>
 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         HOMME</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#" style="color:red; ">Soldes</a>
+                        <a class="dropdown-item redsolde" href="solde.h.html">Soldes</a>
                         <a class="dropdown-item" href="Tous_nos_produits_H.html">Tout voir</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="Pantalons.html">Pantalons</a>
@@ -163,7 +164,7 @@
                     <div class="carousel-caption  d-md-block">
                         <h2>Les Soldes</h2>
                         <p>Vite Vite! <br> Derniéres démarques.</p>
-                        <a href="#"><button class="btn btn-outline-success redbutton" type="submit"> Je découvre <i class="fas fa-arrow-right"></i></button></a>
+                        <a href="solde.h.html" class="btn btn-outline-success redbutton" > Je découvre <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="carousel-item costume">
@@ -171,7 +172,7 @@
                     <div class="carousel-caption  d-md-block">
                         <h2>Un Mariage ?</h2>
                         <p>Une selection de style juste pour vous.</p>
-                        <a href="#"><button class="btn btn-outline-success redbutton" type="submit"> Je découvre <i class="fas fa-arrow-right"></i></button></a>
+                        <a href="#" class="btn btn-outline-success redbutton" > Je découvre <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="carousel-item new">
@@ -179,7 +180,7 @@
                     <div class="carousel-caption  d-md-block">
                         <h2>Les Nouveautés</h2>
                         <p>Quoi de Neuf ?</p>
-                        <a href="#"><button class="btn btn-outline-success redbutton" type="submit"> Je découvre <i class="fas fa-arrow-right"></i></button></a>
+                        <a href="#" class="btn btn-outline-success redbutton" > Je découvre <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -218,7 +219,7 @@
                         <H3>HOMME</H3>
                         <ul>
                             <li>
-                                <a href="#" class="nav2_sous_menu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Pantalons <i class="fas fa-angle-down"></i> </a>
+                                <a href="pantalon.html" class="nav2_sous_menu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Pantalons <i class="fas fa-angle-down"></i> </a>
                                 <div class="dropdown-divider"></div>
                                 <ul class="sous_menu_h_nav2">
                                     <li><a class="dropdown-item" href="Pantalons.html">Tout voir</a></li>
@@ -266,7 +267,7 @@
                                     <li><a href="Hauts_h.html#imprime" class="dropdown-item">Imprimés</a></li>
                                     <li><a href="Hauts_h.html#maille" class="dropdown-item">Maille</a></li>
                                     <li><a href="Hauts_h.html#polo" class="dropdown-item">Les Polos</a></li>
-                                    <li><a href="Hauts_h.html#licence" class="dropdown-item">Licences &copy</a></li>
+                                    <li><a href="Hauts_h.html#licence" class="dropdown-item">Licences &copy;</a></li>
 
                                 </ul>
 
@@ -280,7 +281,7 @@
                                     <li><a href="pull_h.html#cardigan" class="dropdown-item">Cardigans</a></li>
                                     <li><a href="pull_h.html#urban" class="dropdown-item">Urban</a></li>
                                     <li><a href="pull_h.html#sweat" class="dropdown-item">Sweats</a></li>
-                                    <li><a href="pull_h.html#license" class="dropdown-item">Licences &copy</a></li>
+                                    <li><a href="pull_h.html#license" class="dropdown-item">Licences &copy;</a></li>
 
                                 </ul>
 
@@ -299,7 +300,7 @@
 
                             </li>
                             <li>
-                                <a href="chaussures_h.html" class="nav2_sous_menu" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Les Chaussures <i class="fas fa-angle-down"></i> </a>
+                                <a href="chaussures_h.html" class="nav2_sous_menu" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Les Chaussures <i class="fas fa-angle-down"></i> </a>
                                 <div class="dropdown-divider"></div>
                                 <ul class="sous_menu_h_nav2">
 
@@ -312,17 +313,17 @@
 
                             </li>
                             <li>
-                                <a href="#" class="nav2_sous_menu" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ACCESSOIRES <i class="fas fa-angle-down"></i> </a>
+                                <a href="accessoires_h.html" class="nav2_sous_menu" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ACCESSOIRES <i class="fas fa-angle-down"></i> </a>
                                 <div class="dropdown-divider"></div>
                                 <ul class="sous_menu_h_nav2">
                                     <li><a href="accessoires_h.html" class="dropdown-item">TOUT VOIR</a></li>
-                                    <li><a href="accessoires_h.html#sac" " class="dropdown-item ">SACS</a></li>
-                                    <li><a href=accessoires_h.html#ceintures" " class="dropdown-item ">CEINTURES</a></li>
+                                    <li><a href="accessoires_h.html#sac"  class="dropdown-item">SACS</a></li>
+                                    <li><a href="accessoires_h.html#ceintures"  class="dropdown-item">CEINTURES</a></li>
                                     <li><a class="dropdown-item " href="accessoires_h.html#casquettes ">CASQUETTES</a></li>
-                                    <li><a class="dropdown-item " href="accessoires_h.html#bonnet ">BONNETS</a></li>
-                                    <li><a class="dropdown-item " href="accessoires_h.html#montre ">MONTRES</a></li>
-                                    <li><a class="dropdown-item " href="accessoires_h.html#lunette ">LUNETTES</a></li>
-                                    <li><a class="dropdown-item " href="accessoires_h.html#portefeuille ">PORTEFEUILLES</a></li>
+                                    <li><a class="dropdown-item " href="accessoires_h.html#bonnet">BONNETS</a></li>
+                                    <li><a class="dropdown-item " href="accessoires_h.html#montre">MONTRES</a></li>
+                                    <li><a class="dropdown-item " href="accessoires_h.html#lunette">LUNETTES</a></li>
+                                    <li><a class="dropdown-item " href="accessoires_h.html#portefeuille">PORTEFEUILLES</a></li>
 
                                 </ul>
 
@@ -342,14 +343,14 @@
                     <div class="container ">
                         <div class="row ">
 
-                            <div class="col-md-6 categorie " id="pantalons ">
+                            <div class="col-md-6 categorie " id="pantalons">
                                 <h3>Les Pantalons</h3>
                                 <span class="ligne "></span>
 
 
                                 <p>"Retrouvez tous nos Pantalons cintrés de coupe droite ou slim et de style cargo et chino. Les pantalons <span class="orange">LePetitCommerce</span> sont assortis à tous les styles."</p>
 
-                                        <a href="Pantalons.html"> <img src="" name=pantalons alt="image_pantalon"></a>
+                                        <a href="Pantalons.html"> <img src="#" name=pantalons alt="image_pantalon"></a>
 
                 </div>
                 <div class="col-md-6 categorie" id="jeans">
@@ -359,7 +360,7 @@
 
                     <p>"À chaque homme son jean. Choisissez la coupe selon votre silhouette et le style qui vous ressemble. <span class="vert">LePetitCommerce</span> sont assortis à tous les styles."</p>
 
-                    <a href="jean_h.html"> <img name=jeans alt="image_jean"></a>
+                    <a href="jean_h.html"> <img  src="#" name=jeans alt="image_jean"></a>
 
 
                 </div>
@@ -372,7 +373,7 @@
                     <p> "Les chemises <span class="vert">LePetitCommerce</span> pour homme sont la pièce maîtresse de tout look masculin, quel que soit sont style, elles apportent toujours une véritable touche d'élégance."
                     </p>
 
-                    <a href="chemise_h.html"> <img name=chemises></a>
+                    <a href="chemise_h.html"> <img  src="#" name=chemises alt="image_chemise"></a>
 
 
                 </div>
@@ -385,7 +386,7 @@
                     <p>"Quelle que soit l’occasion, avec <span class="vert">LePetitCommerce</span>, vous trouverez la chemise, le polo ou le tshirt parfaitement assortie. Du bleu classique au blanc habillé, trouvez celui qui est fait pour vous."
                     </p>
 
-                    <a href="Hauts_h.html"> <img name=hauts alt="image_tshirt"></a>
+                    <a href="Hauts_h.html"> <img  src="#" name=hauts alt="image_tshirt"></a>
 
 
                 </div>
@@ -397,7 +398,7 @@
                     <p> "Les vêtements en maille prennent un air sophistiqué, que ce soit comme pièce centrale d'un look masculin élégant ou comme accessoire casual pour les looks les plus urbains."
                     </p>
 
-                    <a href="pull_h.html"> <img name=pull alt="image_pull"></a>
+                    <a href="pull_h.html"> <img  src="#" name=pull alt="image_pull"></a>
 
 
                 </div>
@@ -409,7 +410,7 @@
 
                     <p>"Nos vestes pour homme ne manquent pas de style. Découvrez tous nos modèles indémodables ou originaux <span class="vert">LePetitCommerce</span> ou originaux et tendance."</p>
 
-                    <a href="veste_h.html"> <img name=veste alt="image_veste"></a>
+                    <a href="veste_h.html"> <img  src="#" name=veste alt="image_veste"></a>
 
                 </div>
 
@@ -420,7 +421,7 @@
 
                     <p>"Pour tous les evenements de votre vie, avec <span class="vert">LePetitCommerce</span>, vous trouverez la chaussures a vos pieds."</p>
 
-                    <a href=""> <img name=chaussures alt="image_chaussures"></a>
+                    <a href=""> <img  src="#" name=chaussures alt="image_chaussures"></a>
                 </div>
 
                 <div class="col-md-6 categorie" id="bonnet">
@@ -430,7 +431,7 @@
 
                     <p>"Les casquettes et chapeaux pour homme <span class="vert">LePetitCommerce</span>, sont sophistiqués ou décontractés mais toujours tendance."</p>
 
-                    <a href=""> <img name=bonnet alt="image_bonnet"></a>
+                    <a href=""> <img  src="#" name=bonnet alt="image_bonnet"></a>
 
                 </div>
 
@@ -443,7 +444,7 @@
 
 
 
-                    <a href=""> <img name=sac alt="image_sac"></a>
+                    <a href=""> <img  src="#" name=sac alt="image_sac"></a>
 
                 </div>
 
@@ -455,7 +456,7 @@
                     <p>"Les accessoires <span class="vert">LePetitCommerce</span> pour homme apportent la touche finale aux looks masculins, ils perfectionnent les styles élégants et rehaussent les looks les plus casual. "</p>
 
 
-                    <a href=""> <img name=access alt="image_accessoires"></a>
+                    <a href=""> <img  src="#" name=access alt="image_accessoires"></a>
                 </div>
 
             </div>
@@ -463,6 +464,9 @@
 
         </div>
         </div>
+        </div>
+        </div>
+</main>
 
         <div class="clear"></div>
 
@@ -511,7 +515,7 @@
 
 
 
-    </main>
+  
 
     <!-- ******  Footer  ****** -->
     <footer>
@@ -525,7 +529,7 @@
                     <div class="footer_align" id="news_p">
                         <p>Inscrivez-vous à notre programme relationnel <span class="vert">LePetitCommerce</span> afin de recevoir toute notre actualité et nos meilleures offres.</p>
                     </div>
-                    <a href="newsletter.html"><button class="btn btn-outline-success" type="submit"> M'inscrire !</button></a>
+                    <a href="newsletter.html" class="btn btn-outline-success"> M'inscrire !</a>
 
                 </Div>
 

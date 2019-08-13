@@ -13,7 +13,7 @@
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-    <title>LePetitCommerce</title>
+    <title>LePetitCommerce - SOLDE HOMME</title>
 
 </head>
 
@@ -40,9 +40,9 @@
                 </ul>
             </div>
             <div class="searchbar"><i class="fas fa-search"></i></div>
-            <div class="localisation"><i class="fas fa-map-marker-alt"></i></div>
-            <div class="panier"><i class="fas fa-shopping-cart"></i></div>
-            <div class="user"><i class="fas fa-user"></i></div>
+            <a href="" class="localisation"><i class="fas fa-map-marker-alt"></i></a>
+            <a href="login.html" class="user"> <i class="fas fa-user"></i></a>
+            <a href="panier.html" class="panier"><i class="fas fa-shopping-cart"></i></a>
         </div>
 
         <figure class="logoMarque">
@@ -84,7 +84,7 @@
                         <a class="dropdown-item" href="#">Avis Clients</a>
                         <a class="dropdown-item" href="#">Recrutement</a>
                         <a class="dropdown-item" href="#">Evenements</a>
-                        <a class="dropdown-item" href="#">Presse</a>
+                        <a class="dropdown-item" href="presse.html">Presse</a>
                         <a class="dropdown-item" href="#">Actualités</a>
                     </div>
                 </li>
@@ -122,7 +122,7 @@
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             HOMME</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item redsolde" href="#">Soldes</a>
+                        <a class="dropdown-item redsolde" href="solde.h.html">Soldes</a>
                         <a class="dropdown-item" href="Tous_nos_produits_H.html">Tout voir</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="Pantalons.html">Pantalons</a>
@@ -155,22 +155,14 @@
 
     <main>
 
-        <!-- main-image-->
-
-        <div class="soldes ">
-
-
-            <h2>Les Soldes</h2>
-            <p>Vite Vite! <br> Derniéres démarques.</p>
-            <a href="#" class="btn btn-outline-success redbutton"> Je découvre <i class="fas fa-arrow-right"></i></a>
-        </div>
+       
 
 
         <!-- *****  fil d'ariane *****-->
         <nav aria-label="breadcrumb" id="ariane">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Accueil</a></li>
-                <li class="breadcrumb-item"><a href="Tous_nos_produits_H.html">Homme</a></li>
+                
                 <li class="breadcrumb-item active redsolde" aria-current="page" >SOLDE</li>
             </ol>
         </nav>
@@ -196,11 +188,11 @@
                                 <div class="dropdown-divider"></div>
                                 <ul class="sous_menu_h_nav2">
 
-                                    <li><a href="#pantalon" class="dropdown-item">Pantalons</a></li>
-                                    <li><a href="#tshirt" class="dropdown-item disabled"><strike>Pull</strike></a></li>
-                                    <li><a href="#tshirt" class="dropdown-item">T-shirt</a></li>
-                                    <li><a href="#mocassin" class="dropdown-item">Mocassin</a></li> <li><a href="#mocassin" class="dropdown-item disabled"> <strike>Accessoires</strike></a></li>
-
+                                    <li><a href="#pantalons" class="dropdown-item">Pantalons</a></li>
+                                    
+                                    <li><a href="#hauts" class="dropdown-item">Hauts</a></li>
+                                     <li><a href="#Chemise" class="dropdown-item "> Chemises</a></li>
+                                 <li><a href="#chaussure" class="dropdown-item">Chaussures</a></li> 
                                 </ul>
 
                             </li>
@@ -258,19 +250,29 @@
 
                 </div>
                 <div class="col-md-9">
-                    <!-- ***** Les Skinny***** -->
+
+
+                   <!-- ************* pantalons *****************-->
+
+ <div class="presentation" id="pantalons">
+                        <h3>Les Pantalons</h3>
+                        <span class="ligne"></span>
+
+                    </div>
 
                     <div class="container">
                         <div class="row">
                             <div class="col-xs-12 col-md-6 col-xl-3">
                                 <div>
 
-                                    <img src="img/homme/jean/jean_gris2.jpg" alt="photo_pantalon" class="image_vetement" id="produit1">
+                                    <img src="img/homme/jean/jean_gris1.jpg" alt="photo_pantalon" class="image_vetement" >
 
-                                    <div class=" car-body" id="card-body1">
-                                        <h5 class="card-title">JEAN SKINNY BASIQUE - Gris</h5>
-                                        <h6 class="card-subtitle mb-2 text-muted">325,95 EUR</h6>
-                                        <p class="card-text">Jean skinny. Cinq poches. Fermeture à l'avant par zip et bouton métallique.</p>
+                                   <div class="card-body_solde" >
+                                        <h5 class="card-title">JEAN SKINNY - Gris</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted prix_solde">25,95 EUR</h6>
+                                        <h6 class="card-subtitle mb-2 text-muted redsolde">
+                                        15,50 EUR</h6>
+                                        
                                         <a href="#" class="btn btn-outline-success Description">Description</a>
                                         <a href="#" class="btn btn-outline-success achat">Achat Rapide</a>
 
@@ -278,23 +280,29 @@
                                 </div>
                             </div>
 
-                            <div class="col-xs-12 col-md-6 col-xl-3">
-                                <fieldset class="text" id="pantalon">
-                                    <legend>Pantalons</legend>
+                             <div class="col-xs-12 col-md-6 col-xl-3">
+                                <div>
+                                    <img src="img/homme/pantalons/chino_blanc2.jpg" alt="photo_pantalon" class="image_vetement" >
+                                   <div class="card-body_solde" >
+                                        <h5 class="card-title">PANTALON '80S CHINO</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted prix_solde">39,95 EUR</h6>
+                                        <h6 class="card-subtitle mb-2 text-muted redsolde">
+                                        15,50 EUR</h6>
+                                        <a href="#" class="btn btn-outline-success">Description</a>
+                                        <a href="#" class="btn btn-outline-success">Achat Rapide</a>
 
-                                    <p>Des Jeans Skinnys <span class="vert">LePetitCommerce</span>, pour mettre le slim au coeur du Style.</p>
-
-
-                                </fieldset>
+                                    </div>
+                                </div>
                             </div>
-
                             <div class="col-xs-12 col-md-6 col-xl-3">
                                 <div>
-                                    <img src="img/homme/jean/skinny_bleu3.jpg" alt="photo_pantalon" class="image_vetement" id="produit2">
-                                    <div class=" car-body" id="card-body2">
+                                    <img src="img/homme/jean/skinny_bleu2.jpg" alt="photo_pantalon" class="image_vetement" >
+                                   <div class="card-body_solde" >
                                         <h5 class="card-title">JEAN SKINNY BASIQUE - bleu</h5>
-                                        <h6 class="card-subtitle mb-2 text-muted">25,95 EUR</h6>
-                                        <p class="card-text">Jean skinny. Cinq poches. Fermeture à l'avant par zip et bouton métallique.</p>
+                                        <h6 class="card-subtitle mb-2 text-muted prix_solde">25,95 EUR</h6>
+                                        <h6 class="card-subtitle mb-2 text-muted redsolde">
+                                        15,50 EUR</h6>
+                                        
                                         <a href="#" class="btn btn-outline-success">Description</a>
                                         <a href="#" class="btn btn-outline-success">Achat Rapide</a>
 
@@ -304,11 +312,13 @@
 
                             <div class="col-xs-12 col-md-6 col-xl-3">
                                 <div>
-                                    <img src="img/homme/jean/skinny_blanc5.jpg" alt="photo_pantalon" class="image_vetement" id="produit3">
-                                    <div class=" car-body" id="card-body3">
-                                        <h5 class="card-title">JEAN SKINNY BASIQUE - blanc</h5>
-                                        <h6 class="card-subtitle mb-2 text-muted">25,95 EUR</h6>
-                                        <p class="card-text">Jean skinny. Cinq poches. Fermeture à l'avant par zip et bouton métallique.</p>
+                                    <img src="img/homme/jean/skinny_blanc5.jpg" alt="photo_pantalon" class="image_vetement" >
+                                   <div class="card-body_solde" >
+                                        <h5 class="card-title">JEAN SKINNY - blanc</h5>
+                                         <h6 class="card-subtitle mb-2 text-muted prix_solde">25,95 EUR</h6>
+                                        <h6 class="card-subtitle mb-2 text-muted redsolde">
+                                        15,50 EUR</h6>
+                                       
                                         <a href="#" class="btn btn-outline-success">Description</a>
                                         <a href="#" class="btn btn-outline-success">Achat Rapide</a>
 
@@ -323,27 +333,44 @@
 
                     <div class="clear"></div>
 
+  <!-- ************* hauts *****************-->
+
+ <div class="presentation" id="hauts">
+                        <h3>Les Hauts</h3>
+                        <span class="ligne"></span>
+
+                    </div>
+
                      <div class="container ">
                         <div class="row ">
                             <div class="col-xs-12 col-md-6 col-xl-3 ">
-                                <fieldset class="text " id="tshirt">
-                                    <legend>tshirt</legend>
+                                <div>
+                                    <img src="img/homme/tshirts/maille_rouge1.jpg " alt="photo_tshirt " class="image_vetement " >
+                                   <div class="card-body_solde" >
+                                        <h5 class="card-title ">FLUIDE CÔTELÉ - rouge</h5>
+                                       <h6 class="card-subtitle mb-2 text-muted prix_solde">25,95 EUR</h6>
+                                        <h6 class="card-subtitle mb-2 text-muted redsolde">
+                                        15,50 EUR</h6>
+                                        <a href="# " class="btn btn-outline-success ">Description</a>
+                                        <a href="# " class="btn btn-outline-success ">Achat Rapide</a>
 
-                                    <p>Les t-shirts à Motifs <span class="vert ">LePetitCommerce</span> pour homme pratiques et pleins de style. Optez pour un t-shirt aux graphismes tendance ou un t-shirt décontracté à rayures selon vos ensembles</p>
+                                    </div>
 
-
-                                </fieldset>
+                                </div>
                             </div>
+
 
                             <div class="col-xs-12 col-md-6 col-xl-3 ">
                                 <div>
 
-                                    <img src="img/homme/tshirts/wilson3.jpg" alt="photo_chemise" class="image_vetement" id="haut4">
+                                    <img src="img/homme/tshirts/wilson2.jpg" alt="photo_chemise" class="image_vetement" >
 
-                                    <div class=" car-body" id="card-body4">
-                                        <h5 class="card-title ">T-SHIRT PREMIUM À ILLUSTRATION JAMES WILSON</h5>
-                                        <h6 class="card-subtitle mb-2 text-muted ">17,95 EUR</h6>
-                                        <p class="card-text ">T-shirt ample à col rond et manches courtes. Illustration avant de James Wilson. </p>
+                                    <div class="card-body_solde" >
+                                        <h5 class="card-title ">T-SHIRT PREMIUM </h5>
+                                        <h6 class="card-subtitle mb-2 text-muted prix_solde">17,95 EUR</h6>
+                                        <h6 class="card-subtitle mb-2 text-muted redsolde">
+                                        8,95 EUR</h6>
+                                        
                                         <a href="# " class="btn btn-outline-success ">Description</a>
                                         <a href="# " class="btn btn-outline-success ">Achat Rapide</a>
 
@@ -355,11 +382,13 @@
 
                             <div class="col-xs-12 col-md-6 col-xl-3 ">
                                 <div>
-                                    <img src="img/homme/tshirts/Ghettoblaster4.jpg" alt="photo_chemise" class="image_vetement" id="haut5">
-                                    <div class=" car-body" id="card-body5">
-                                        <h5 class="card-title ">T-SHIRT AVEC IMPRIMÉ CASSETTE</h5>
-                                        <h6 class="card-subtitle mb-2 text-muted ">17,95 EUR</h6>
-                                        <p class="card-text ">T-shirt à col rond et manches courtes. Imprimé en contraste sur le devant.</p>
+                                    <img src="img/homme/tshirts/Ghettoblaster1.jpg" alt="photo_chemise" class="image_vetement" >
+                                    <div class="card-body_solde" >
+                                        <h5 class="card-title ">T-SHIRT AVEC IMPRIMÉ </h5>
+                                        <h6 class="card-subtitle mb-2 text-muted prix_solde">17,95 EUR</h6>
+                                        <h6 class="card-subtitle mb-2 text-muted redsolde">
+                                        8,95 EUR</h6>
+                                        
                                         <a href="# " class="btn btn-outline-success ">Description</a>
                                         <a href="# " class="btn btn-outline-success ">Achat Rapide</a>
 
@@ -369,11 +398,99 @@
 
                             <div class="col-xs-12 col-md-6 col-xl-3 ">
                                 <div>
-                                    <img src="img/homme/tshirts/holo5.jpg" alt="photo_imprimée" class="image_vetement" id="haut6">
-                                    <div class="car-body" id="card-body6">
-                                        <h5 class="card-title ">T-SHIRT À INSCRIPTION HOLOGRAPHIQUE</h5>
-                                        <h6 class="card-subtitle mb-2 text-muted ">17,95 EUR</h6>
-                                        <p class="card-text ">T-shirt ample à col rond et manches courtes. Inscription imprimée sur le devant avec effet holographique.</p>
+                                    <img src="img/homme/tshirts/holo2.jpg" alt="photo_imprimée" class="image_vetement" >
+                                    <div class="card-body_solde"> 
+                                        <h5 class="card-title ">T-SHIRT À INSCRIPTION </h5>
+                                        <h6 class="card-subtitle mb-2 text-muted prix_solde">17,95 EUR</h6>
+                                        <h6 class="card-subtitle mb-2 text-muted redsolde">
+                                        8,95 EUR</h6>
+                                        
+                                        <a href="# " class="btn btn-outline-success ">Description</a>
+                                        <a href="# " class="btn btn-outline-success ">Achat Rapide</a>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="clear "></div>
+
+                    <!-- ************* hauts *****************-->
+
+ <div class="presentation" id="chemise">
+                        <h3>Les Chemises</h3>
+                        <span class="ligne"></span>
+
+                    </div>
+
+                     <div class="container ">
+                        <div class="row ">
+                            <div class="col-xs-12 col-md-6 col-xl-3 ">
+                                <div>
+                                    <img src="img/homme/Chemises/Chemise_rose4.jpg" alt="photo_tshirt " class="image_vetement ">
+                                   <div class="card-body_solde" >
+                                        <h5 class="card-title ">Chemise rose</h5>
+                                       <h6 class="card-subtitle mb-2 text-muted prix_solde">25,95 EUR</h6>
+                                        <h6 class="card-subtitle mb-2 text-muted redsolde">
+                                        15,50 EUR</h6>
+                                        <a href="# " class="btn btn-outline-success ">Description</a>
+                                        <a href="# " class="btn btn-outline-success ">Achat Rapide</a>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <div class="col-xs-12 col-md-6 col-xl-3 ">
+                                <div>
+
+                                    <img src="img/homme/Chemises/Chemise_bleu1.jpg" alt="photo_chemise" class="image_vetement">
+
+                                    <div class="card-body_solde" >
+                                        <h5 class="card-title ">Chemise bleu</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted prix_solde">17,95 EUR</h6>
+                                        <h6 class="card-subtitle mb-2 text-muted redsolde">
+                                        8,95 EUR</h6>
+                                        
+                                        <a href="# " class="btn btn-outline-success ">Description</a>
+                                        <a href="# " class="btn btn-outline-success ">Achat Rapide</a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-xs-12 col-md-6 col-xl-3 ">
+                                <div>
+                                    <img src="img/homme/Chemises/Chemise_orange1.jpg" alt="photo_chemise" class="image_vetement">
+                                    <div class="card-body_solde" >
+                                        <h5 class="card-title ">Chemise Orange</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted prix_solde">17,95 EUR</h6>
+                                        <h6 class="card-subtitle mb-2 text-muted redsolde">
+                                        8,95 EUR</h6>
+                                        
+                                        <a href="# " class="btn btn-outline-success ">Description</a>
+                                        <a href="# " class="btn btn-outline-success ">Achat Rapide</a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-md-6 col-xl-3 ">
+                                <div>
+                                    <img src="img/homme/Chemises/Chemise_noire6.jpg" alt="photo_chemise" class="image_vetement" >
+                                    <div class="card-body_solde"> 
+                                        <h5 class="card-title ">Chemise Noire</h5>
+                                       <h6 class="card-subtitle mb-2 text-muted prix_solde">59,95 EUR</h6>
+                                        <h6 class="card-subtitle mb-2 text-muted redsolde">
+                                        41,95 EUR</h6>
+                                        
                                         <a href="# " class="btn btn-outline-success ">Description</a>
                                         <a href="# " class="btn btn-outline-success ">Achat Rapide</a>
 
@@ -389,15 +506,25 @@
                     <div class="clear "></div>
 
 
+                    <!-- ************* Chaussures *****************-->
+
+ <div class="presentation" id="chaussure">
+                        <h3>Chaussures</h3>
+                        <span class="ligne"></span>
+
+                    </div>
+
                    <div class="container">
                         <div class="row">
                             <div class="col-xs-12 col-md-6 col-xl-3">
                                 <div>
-                                    <img src="img/homme/chaussures/mocasin_noir3.jpg" alt="photo_chaussure" class="image_vetement" id="produit7">
-                                    <div class=" car-body" id="card-body7">
+                                    <img src="img/homme/chaussures/mocasin_noir1.jpg" alt="photo_chaussure" class="image_vetement" id="produit7">
+                                    <div class="card-body_solde" >
                                         <h5 class="card-title">MOCASSINS NOIRS</h5>
-                                        <h6 class="card-subtitle mb-2 text-muted">59,95 EUR</h6>
-                                        <p class="card-text">Mocassins noirs. Masque sur l'empeigne. Semelle track en deux parties.</p>
+                                         <h6 class="card-subtitle mb-2 text-muted prix_solde">59,95 EUR</h6>
+                                        <h6 class="card-subtitle mb-2 text-muted redsolde">
+                                        41,95 EUR</h6>
+                                       
                                         <a href="#" class="btn btn-outline-success">Description</a>
                                         <a href="#" class="btn btn-outline-success">Achat Rapide</a>
 
@@ -408,10 +535,12 @@
                             <div class="col-xs-12 col-md-6 col-xl-3">
                                 <div>
                                     <img src="img/homme/chaussures/mocasin_gris1.jpg" alt="photo_chaussure" class="image_vetement" id="produit8">
-                                    <div class=" car-body" id="card-body8">
-                                        <h5 class="card-title">MOCASSINS SPORT GRAVÉS GRIS</h5>
-                                        <h6 class="card-subtitle mb-2 text-muted">49,95 EUR</h6>
-                                        <p class="card-text">Mocassins sport en cuir. Fini croûte de cuir. Couleur grise</p>
+                                    <div class="card-body_solde" >
+                                        <h5 class="card-title">MOCASSINS SPORT GRIS</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted prix_solde">49,95 EUR</h6>
+                                        <h6 class="card-subtitle mb-2 text-muted redsolde">
+                                        34,95 EUR</h6>
+                                       
                                         <a href="#" class="btn btn-outline-success">Description</a>
                                         <a href="#" class="btn btn-outline-success">Achat Rapide</a>
 
@@ -419,28 +548,34 @@
                                 </div>
                             </div>
 
-                            <div class="col-xs-12  col-md-6 col-xl-3">
-                                <fieldset class="text" id="mocassin">
-                                    <legend>Chaussures</legend>
+                            <div class="col-xs-12 col-md-6 col-xl-3">
+                                <div>
+                                    <img src="img/homme/chaussures/cuir_noir1.jpg" alt="photo_chaussure" class="image_vetement" >
+                                    <div class="card-body_solde" >
+                                        <h5 class="card-title">CHAUSSURES EN CUIR </h5>
+                                        <h6 class="card-subtitle mb-2 text-muted prix_solde">69,95 EUR</h6>
+                                        <h6 class="card-subtitle mb-2 text-muted redsolde">
+                                        41,95 EUR</h6>
+                                       
+                                        <a href="#" class="btn btn-outline-success">Description</a>
+                                        <a href="#" class="btn btn-outline-success">Achat Rapide</a>
 
-                                    <p> Les mocassins et chaussures richelieu pour homme sont indispensables dans votre armoire à chaussures.
-                                    </p>
+                                    </div>
 
-
-                                </fieldset>
+                                </div>
                             </div>
 
                             <div class="col-xs-12 col-md-6 col-xl-3">
                                 <div>
-                                <span class="prix_solde">-30%</span>
-                                    <img src="img/homme/chaussures/mocasin_pastel2.jpg" alt="photo_chaussure " class="image_vetement" id="produit9">
-                                    <div class=" car-body" id="card-body9">
+                               
+                                    <img src="img/homme/chaussures/mocasin_pastel2.jpg" alt="photo_chaussure " class="image_vetement" id="produit10">
+                                    <div class="card-body_solde" >
                                     
-                                        <h5 class="card-title">MOCASSINS SPORT EN CUIR Pastel</h5>
-                                        <h6 class="card-subtitle mb-2 text-muted"><strike>49,95 EUR</strike></h6>
+                                        <h5 class="card-title">MOCASSINS SPORT  Pastel</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted prix_solde">49,95 EUR</h6>
                                         <h6 class="card-subtitle mb-2 text-muted redsolde">
                                         34,95 EUR</h6>
-                                        <p class="card-text">Mocassins sport en cuir. Fini croûte de cuir. </p>
+                                        
                                         <a href="#" class="btn btn-outline-success">Description</a>
                                         <a href="#" class="btn btn-outline-success">Achat Rapide</a>
 

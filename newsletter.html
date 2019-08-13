@@ -17,7 +17,7 @@
 
 <body>
     <!-- ******  Header  ****** -->
-    <header>
+   <header>
 
         <div class="headerLogo">
 
@@ -39,7 +39,7 @@
             <div class="searchbar"><i class="fas fa-search"></i></div>
             <a href="" class="localisation"><i class="fas fa-map-marker-alt"></i></a>
             <a href="login.html" class="user"> <i class="fas fa-user"></i></a>
-            <a href="" class="panier"><i class="fas fa-shopping-cart"></i></a>
+            <a href="panier.html" class="panier"><i class="fas fa-shopping-cart"></i></a>
         </div>
 
         <figure class="logoMarque">
@@ -81,7 +81,7 @@
                         <a class="dropdown-item" href="#">Avis Clients</a>
                         <a class="dropdown-item" href="#">Recrutement</a>
                         <a class="dropdown-item" href="#">Evenements</a>
-                        <a class="dropdown-item" href="#">Presse</a>
+                       <a class="dropdown-item" href="presse.html">Presse</a>
                         <a class="dropdown-item" href="#">Actualités</a>
                     </div>
                 </li>
@@ -96,14 +96,14 @@
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             FEMME</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#" style="color:red;">Soldes</a>
+                       <a class="dropdown-item redsolde" href="solde.h.html">Soldes</a>
                         <a class="dropdown-item" href="#">Tout voir</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Tee-shirts</a>
                         <a class="dropdown-item" href="chemisiers_femme.html">Chemisiers</a>
                         <a class="dropdown-item" href="#">Jeans</a>
                         <a class="dropdown-item" href="#">Robes</a>
-                        <a class="access_f" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                        <a class="access_f" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
                                     Accessoires <i class="fas fa-angle-down"></i></a>
                         <div class="sous_menu_f" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#">Tout voir</a>
@@ -112,14 +112,15 @@
                             <a class="dropdown-item" href="#">Lunettes & Montres</a>
                             <a class="dropdown-item" href="#">Casquettes & Bonnets</a>
                         </div>
+                        </div>
                 </li>
 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             HOMME</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#" style="color:red; ">Soldes</a>
-                        <a class="dropdown-item" href="Tous_nos_produits_H .html">Tout voir</a>
+                       <a class="dropdown-item redsolde" href="solde.h.html">Soldes</a>
+                        <a class="dropdown-item" href="Tous_nos_produits_H.html">Tout voir</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="Pantalons.html">Pantalons</a>
                         <a class="dropdown-item" href="jean_h.html">Jeans</a>
@@ -155,20 +156,20 @@
     <p>Inscrivez-vous à notre Newsletter afin de suivre l'actualité de notre marque<span class="orange">*</span> et recevoir toutes nos offres en exclusivité !</p>
 
     <div id="News_form">
-        <form action="">
+        <form>
             <fieldset id="identity">
                 <legend> Identité : </legend>
                 <label for="Civilité">Civilité :</label><br>
-                <input class="choix inline" type="radio" name="civilité" value="homme">Monsieur
-                <input class="choix inline" type="radio" name="civilité" value="femme" checked>Madame
+                <input class="choix inline" type="radio" name="Civilité" id="Civilité" value="homme">Monsieur
+                <input class="choix inline" type="radio" name="Civilité" value="femme" checked>Madame
                 <br>
                 <label for="prenom">Prenom :</label>
-                <input type="text" id="prenom" name="prenom" id="prenom" value="">
+                <input type="text" id="prenom" name="prenom"  value="">
                 <span id="miss_infos"></span>
 
                 <br>
-                <label for="Nom">Nom :</label>
-                <input type="text" id="nom" name="Nom" id="nom" value=""><br>
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" value=""><br>
             </fieldset>
             <br>
             <fieldset id="contact">
@@ -177,31 +178,32 @@
                 <input type="email" id="email" name="email" value="">
                 <span id="missEmail"></span><br>
                 <label for="tel">Téléphone :</label>
-                <input type="text" id="tel" name="tel" maxlength="10" pattern="[0-9]{5}" title "5 chiffres comprit entre 0 et 9">
+                <input type="text" id="tel" name="tel" maxlength="10" pattern="[0-9]{5}" title="5chiffres comprit entre 0 et 9">
                 <br>
             </fieldset>
             <br>
             <fieldset id="adresse">
                 <legend> Coordonnées Postale :</legend>
-                <label for="Adress">Adresse :</label>
-                <textarea name="adresse" id="adresse" rows="1" cols="50"></textarea>
+                <label for="adresse_txt">Adresse :</label>
+                <textarea name="adresse" id="adresse_txt" rows="1" cols="50"></textarea>
                 <br>
                 <label for="ville">Ville :</label>
-                <input type="text" id="ville " name="ville" list="france">
+                <input type="text" id="ville" name="ville" list="france">
                 <datalist id="france">
           <option value="Paris">Paris</option>
           <option value="Marseille">Marseille</option>
           <option value="Bordeaux">Bordeaux</option>
         </datalist>
                 <label for="cp">Code Postal :</label>
-                <input type="text" id="cp" name="cp" maxlength="5" pattern="[0-9]{5}" title "5 chiffres comprit entre 0 et 9">
+                <input type="text" id="cp" name="cp" maxlength="5" pattern="[0-9]{5}" title="5 chiffres comprit entre 0 et 9">
                 <br>
             </fieldset>
             <p><input type="checkbox" name="news_email" value="">J’accepte de recevoir des messages personnalisés par email</p>
 
             <p><input type="checkbox" name="news_sms" value="">J’accepte de recevoir des messages personnalisés par SMS</p>
-            <BR></BR>
-            <input class="btn btn-outline-success my-2 my-sm-0" id="bouton_envoi" type="submit" name="" value="Envoyer">
+           <br>
+           <br>
+            <input class="btn btn-outline-success" id="bouton_envoi" type="submit" value="Envoyer">
             <br>
 
         </form>
@@ -233,7 +235,7 @@
                     <div class="footer_align" id="news_p">
                         <p>Inscrivez-vous à notre programme relationnel <strong>LePetitCommerce</strong> afin de recevoir toute notre actualité et nos meilleures offres.</p>
                     </div>
-                    <a href="newsletter.html"><button class="btn btn-outline-success" type="submit"> M'inscrire !</button></a>
+                    <a href="newsletter.html" class="btn btn-outline-success" > M'inscrire !</a>
 
                 </Div>
 

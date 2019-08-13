@@ -221,6 +221,9 @@ $(document).ready(function() {
     $('#produit26').click(function() {
         $('#card-body26').slideToggle(200);
     });
+     $('#produit27').click(function() {
+        $('#card-body27').slideToggle(200);
+    });
 })
 
 /* ****** slider prix ******* */

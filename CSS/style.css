@@ -34,6 +34,7 @@ p {
     color: #BA55D3;
 }
 
+
 .clear {
     height: 70px !important;
 }
@@ -44,7 +45,9 @@ p {
     margin-right: 30px;
     display: flex;
     flex: space-between;
+     
 }
+
 
 .logoMarque {
     width: 400px;
@@ -55,6 +58,7 @@ p {
 #conteneur {
     /* Icones du haut à droite du header */
     margin-top: 8px;
+    
 }
 
 .user,
@@ -64,6 +68,7 @@ p {
     margin-left: 6px;
     margin-top: 0.5px;
     padding: 5px;
+    color: black;
 }
 
 .access_h,
@@ -868,6 +873,26 @@ h3 {
     width: 100%;
     height: 100%;
 }
+/* ***********  Pages Presse ********************************** */
+.article_presse{
+    text-align:center;
+}
+.article_presse img {
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid black;
+}
+.article_presse p {
+    max-width: 600px;
+    margin: 40px auto;
+    font-size: 20px;
+    font-weight: 300;
+}
+#mail_press{
+    text-decoration: none;
+    color: #BA55D3;
+}
+
 /* ***********  Pages Produits  ********************************** */
 
 .presentation {
@@ -977,12 +1002,11 @@ h3 {
 /* ***********  Pages Solde ********************************** */
 
 .prix_solde{
-    background: red;
-    color: #FFF;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    text-decoration: line-through;
     
+}
+.card-body_solde{
+    display: block;
 }
 /* ***********  Pages Newsletter  ********************************** */
 
@@ -1383,6 +1407,15 @@ legend {
 /* Large devices (desktops, 992px and up) */
 
 @media (min-width: 992px) {
+   .user:hover{
+    color:#BA55D3 !important;
+} 
+   .panier:hover{
+    color:#BA55D3 !important;
+} 
+.localisation:hover{
+    color:#BA55D3 !important;
+} 
     nav {
         display: block;
         margin-left: auto!important;
