@@ -283,7 +283,9 @@ nav {
     margin-right: 20px;
     line-height: 0;
 }
-
+.redsolde{
+    color: red !important;
+}
 .soldes P {
     text-align: right;
     color: red;
