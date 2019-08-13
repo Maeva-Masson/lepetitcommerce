@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<head> 
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/quisommesnous.css">
-    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel ="stylesheet"> 
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet">
     <script src="js/script.js"></script>
 
@@ -19,158 +19,170 @@
     <!-- ******  Header  ****** -->
     <header>
 
-                    <div class="headerLogo">
-        
-                            <div class="searchbar"><i class="fas fa-search"></i></div>          
-                            <div class="localisation"><i class="fas fa-map-marker-alt"></i></div>
-                            <div class="panier"><i class="fas fa-shopping-cart"></i></div>
-                            <div class="user"><i class="fas fa-user"></i></div>
-                            <div id="conteneur">
-                                    <ul id="menu">
-                                        <li>
-                                            <a href="#" class="langues">Langues</a>
-                                        <ul class="sous_menu">
-                                            <li>
-                                                <a href="#"><img class="logoLangues" src="img/logo/flag-fr.png" alt="langue france"></a></li>
-                                            <li><a href="#"><img class="logoLangues" src="img/logo/flag-gb.png" alt="langue anglais"></a></li>
-                                        </ul>
-                                    </li>
-                                    </ul>
-                            </div>  
-                        </div>
-        
-                        <figure class="logoMarque">
-                                <img class="logoMarque" src="img/logo/logo.png" alt="Logo Marque">
-                        </figure>
-        
-        
-        
-        
-        
-                </header>
-        
-        <script>
-        $(document).ready(function(){
+        <div class="headerLogo">
+
+            <div class="searchbar"><i class="fas fa-search"></i></div>
+            <div class="localisation"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="panier"><i class="fas fa-shopping-cart"></i></div>
+            <div class="user"><i class="fas fa-user"></i></div>
+            <div id="conteneur">
+                <ul id="menu">
+                    <li>
+                        <a href="#" class="langues">Langues</a>
+                        <ul class="sous_menu">
+                            <li>
+                                <a href="#"><img class="logoLangues" src="img/logo/flag-fr.png" alt="langue france"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img class="logoLangues" src="img/logo/flag-gb.png" alt="langue anglais"></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <figure class="logoMarque">
+            <img class="logoMarque" src="img/logo/logo.png" alt="Logo Marque">
+        </figure>
+
+
+
+
+
+    </header>
+
+    <script>
+        $(document).ready(function() {
             $(".langues").hover(function() {
-                $(".langues").parent().find("ul.sous_menu").stop(true,true).slideDown(200).show(); 
-                $(".langues").parent().hover(function(){ 
-                    }, function(){
+                $(".langues").parent().find("ul.sous_menu").stop(true, true).slideDown(200).show();
+                $(".langues").parent().hover(function() {}, function() {
                     $(this).parent().find("ul.sous_menu").slideUp(150);
                 });
             });
         });
-        </script>
-        
-                <nav class="navbar navbar-expand-lg navbar-light">
-                    <a class="navbar-brand" href="#"></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    </script>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
-        
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
-                                <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             La Boutique <span class="sr-only">(current)</span></a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#">Qui Sommes-Nous?</a>
-                                        <a class="dropdown-item" href="#">Contact</a>
-                                        <a class="dropdown-item" href="#">Personal Shopper - Coaching</a>
-                                        <a class="dropdown-item" href="#">Avis Clients</a>
-                                        <a class="dropdown-item" href="#">Recrutement</a>
-                                        <a class="dropdown-item" href="#">Evenements</a>
-                                        <a class="dropdown-item" href="#">Presse</a>
-                                        <a class="dropdown-item" href="#">Actualités</a>
-                                </div>
-                                </li>
-                            <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle redsoldes" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SOLDES<span class="sr-only">(current)</span></a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#">FEMME</a>
-                                        <a class="dropdown-item" href="#">HOMME</a>
-                                    </div>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Qui Sommes-Nous?</a>
+                        <a class="dropdown-item" href="#">Contact</a>
+                        <a class="dropdown-item" href="#">Personal Shopper - Coaching</a>
+                        <a class="dropdown-item" href="#">Avis Clients</a>
+                        <a class="dropdown-item" href="#">Recrutement</a>
+                        <a class="dropdown-item" href="#">Evenements</a>
+                        <a class="dropdown-item" href="#">Presse</a>
+                        <a class="dropdown-item" href="#">Actualités</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle redsoldes" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SOLDES<span class="sr-only">(current)</span></a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">FEMME</a>
+                        <a class="dropdown-item" href="#">HOMME</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     FEMME</a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">Soldes</a>
-                                    <a class="dropdown-item" href="#">Tout voir</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Tee-shirts</a>
-                                    <a class="dropdown-item" href="#">Chemisiers</a>
-                                    <a class="dropdown-item" href="#">Jeans</a>
-                                    <a class="dropdown-item" href="#">Robes</a>
-                                    <a class="dropdown-item nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Soldes</a>
+                        <a class="dropdown-item" href="#">Tout voir</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Tee-shirts</a>
+                        <a class="dropdown-item" href="#">Chemisiers</a>
+                        <a class="dropdown-item" href="#">Jeans</a>
+                        <a class="dropdown-item" href="#">Robes</a>
+                        <a class="dropdown-item nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
                                             Accessoires</a>
-                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <a class="dropdown-item" href="#">Tout voir</a>
-                                                <div class="dropdown-divider"></div>
-                                                <a class="dropdown-item" href="#">Sacs & Ceintures</a>
-                                                <a class="dropdown-item" href="#">Lunettes & Montres</a>
-                                                <a class="dropdown-item" href="#">Casquettes & Bonnets</a>
-                                    </div>
-                            </li>
-        
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            HOMME</a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">Soldes</a>
-                                    <a class="dropdown-item" href="#">Tout voir</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Tee-shirts</a>
-                                    <a class="dropdown-item" href="#">Chemises</a>
-                                    <a class="dropdown-item" href="#">Jeans</a>
-                                    <a class="dropdown-item nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
-                                            Accessoires</a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#">Tout voir</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Sacs & Ceintures</a>
-                                        <a class="dropdown-item" href="#">Lunettes & Montres</a>
-                                        <a class="dropdown-item" href="#">Casquettes & Bonnets</a>
-                                    </div>
-                            </li>
-        
-                        </ul>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Tout voir</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Sacs & Ceintures</a>
+                            <a class="dropdown-item" href="#">Lunettes & Montres</a>
+                            <a class="dropdown-item" href="#">Casquettes & Bonnets</a>
                         </div>
-                </nav>
-        
-                <!-- <form class="form-inline my-2 my-lg-0">
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        HOMME</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#" style="color:red; ">Soldes</a>
+                        <a class="dropdown-item" href="Tous_nos_produits_H.html">Tout voir</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Pantalons.html">Pantalons</a>
+                        <a class="dropdown-item" href="jean_h.html">Jeans</a>
+                        <a class="dropdown-item" href="chemise_h.html">Chemises</a>
+                        <a class="dropdown-item" href="Hauts_h.html">Hauts</a>
+                        <a class="dropdown-item" href="pull_h.html">Pulls</a>
+                        <a class="dropdown-item" href="veste_h.html">Vestes / Manteaux</a>
+                        <a class="dropdown-item" href="chaussures_h.html">Chaussures</a>
+                        <a class="access_h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="accessoires_h.html">
+                                                                        Accessoires <i class="fas fa-angle-down"></i> </a>
+                        <div class="sous_menu_h" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="accessoires_h.html">Tout voir</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="accessoires_h.html#sac">Sacs</a>
+                            <a class="dropdown-item" href="accessoires_h.html#ceintures">Ceintures</a>
+                            <a class="dropdown-item" href="accessoires_h.html#casquettes">Casquettes</a>
+                            <a class="dropdown-item" href="accessoires_h.html#bonnet">Bonnets</a>
+                            <a class="dropdown-item" href="accessoires_h.html#montre">Montres</a>
+                            <a class="dropdown-item" href="accessoires_h.html#lunette">Lunettes</a>
+                            <a class="dropdown-item" href="accessoires_h.html#portefeuille">Portefeuilles</a>
+                        </div>
+                    </div>
+                </li>
+
+
+            </ul>
+            </div>
+    </nav>
+
+    <!-- <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Recherche" aria-label="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0 search" type="submit">Recherche</button>
                 </form> -->
 
 
-<main>
-            <h4 class="titre_quisommesnous">Qui sommes-nous ?</h4>
+    <main>
+        <h4 class="titre_quisommesnous">Qui sommes-nous ?</h4>
         <fieldset class="quisommesnous_fieldset">
             <!-- <legend> Qui Sommes-Nous ? </legend> -->
 
-        <p>
-            Fondée en 2009, <strong class="lpc">LePetitCommerce</strong> est devenu, en moins de 10 ans, l'une des marques e-commerce de prêt-à-porter mixte leader en France, avec à son actif déjà 4 boutiques implantées à Caen, Toulon, Saint-Etienne et tout récemment Paris! <br>
-            La marque se veut novatrice et souhaite poursuivre son ascension progressivement en Europe puis à l'International.<br>
-            Sa stratégie consiste à s'adapter chaque jour aux dernières tendances tout en affirmant son crédo qui est le suivant: </p>
+            <p>
+                Fondée en 2009, <strong class="lpc">LePetitCommerce</strong> est devenu, en moins de 10 ans, l'une des marques e-commerce de prêt-à-porter mixte leader en France, avec à son actif déjà 4 boutiques implantées à Caen, Toulon, Saint-Etienne
+                et tout récemment Paris! <br> La marque se veut novatrice et souhaite poursuivre son ascension progressivement en Europe puis à l'International.<br> Sa stratégie consiste à s'adapter chaque jour aux dernières tendances tout en affirmant
+                son crédo qui est le suivant: </p>
 
             <p class="credo">Simplicité, qualité, accessibilité et durabilité!</p>
-    
-            <p>A la tête de cette marque, 2 frères, depuis toujours dans le vent de la mode, passionnés par l’actualité shopping 100% dernier cri, mais aussi par le développement textile durable.<br>
-    
-            Le client est au centre du modèle d'activités, ce dernier comprenant la conception, la fabrication, la distribution, la vente par le biais du réseau de magasins de la marque, ainsi que par la possiblité de bénéficier d'un coaching sur mesure directement en magasin, par notre équipe de Personal Shoppers qualifiés.<br>
-    
-            <strong class="lpc">LePetitCommerce</strong> touche donc tous les amateurs de mode et a parcouru un long chemin depuis l'ouverture de son premier magasin dans la ville de Caen en 2012. Aujourd'hui, <strong class="lpc">LePetitCommerce</strong> vous propose la mode de manière simple, accessible et fun, avec des modèles de prêt-à-porter et accessoires féminins et masculins ultra tendances.</p>
-    
+
+            <p>A la tête de cette marque, 2 frères, depuis toujours dans le vent de la mode, passionnés par l’actualité shopping 100% dernier cri, mais aussi par le développement textile durable.<br> Le client est au centre du modèle d'activités, ce dernier
+                comprenant la conception, la fabrication, la distribution, la vente par le biais du réseau de magasins de la marque, ainsi que par la possiblité de bénéficier d'un coaching sur mesure directement en magasin, par notre équipe de Personal
+                Shoppers qualifiés.<br>
+
+                <strong class="lpc">LePetitCommerce</strong> touche donc tous les amateurs de mode et a parcouru un long chemin depuis l'ouverture de son premier magasin dans la ville de Caen en 2012. Aujourd'hui, <strong class="lpc">LePetitCommerce</strong>                vous propose la mode de manière simple, accessible et fun, avec des modèles de prêt-à-porter et accessoires féminins et masculins ultra tendances.</p>
+
             <hr>
 
             <p class="bonshopping">Bon shopping sur <strong class="lpc">LePetitCommerce!</strong> 🙂</div>
-    
-        </p>
-    
+
+            </p>
+
         </fieldset>
 
 
-</main>
+    </main>
 
 
 

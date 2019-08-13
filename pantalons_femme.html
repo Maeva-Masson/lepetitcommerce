@@ -19,41 +19,41 @@
 
 <body>
 
-    
+
     <!----------------------------------HEADER------------------------------------------>
 
-<header>
+    <header>
 
-<div class="headerLogo">
+        <div class="headerLogo">
 
-        <div id="conteneur">
-            <ul id="menu">
-                <li>
-                    <a href="#" class="langues">Langues</a>
-                    <ul class="sous_menu">
-                        <li>
-                            <a href="#"><img class="logoLangues" src="img/logo/flag-fr.png" alt="langue france"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img class="logoLangues" src="img/logo/flag-gb.png" alt="langue anglais"></a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
+            <div id="conteneur">
+                <ul id="menu">
+                    <li>
+                        <a href="#" class="langues">Langues</a>
+                        <ul class="sous_menu">
+                            <li>
+                                <a href="#"><img class="logoLangues" src="img/logo/flag-fr.png" alt="langue france"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img class="logoLangues" src="img/logo/flag-gb.png" alt="langue anglais"></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="searchbar"><i class="fas fa-search"></i></div>
+            <div class="localisation"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="panier"><i class="fas fa-shopping-cart"></i></div>
+            <div class="user"><i class="fas fa-user"></i></div>
         </div>
-        <div class="searchbar"><i class="fas fa-search"></i></div>
-        <div class="localisation"><i class="fas fa-map-marker-alt"></i></div>
-        <div class="panier"><i class="fas fa-shopping-cart"></i></div>
-        <div class="user"><i class="fas fa-user"></i></div>
-    </div>
 
-    <figure class="logoMarque">
-        <img class="logoMarque" src="img/logo/logo.png" alt="Logo Marque">
-    </figure>        
-            
-</header>
+        <figure class="logoMarque">
+            <img class="logoMarque" src="img/logo/logo.png" alt="Logo Marque">
+        </figure>
 
-<script>
+    </header>
+
+    <script>
         $(document).ready(function() {
             $(".langues").hover(function() {
                 $(".langues").parent().find("ul.sous_menu").stop(true, true).slideDown(200).show();
@@ -62,143 +62,147 @@
                 });
             });
         });
-</script>
+    </script>
 
     <!----------------------------------NAV------------------------------------------>
 
-<nav class="navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="#"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 La Boutique <span class="sr-only">(current)</span></a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Qui Sommes-Nous?</a>
-                    <a class="dropdown-item" href="#">Contact</a>
-                    <a class="dropdown-item" href="#">Personal Shopper - Coaching</a>
-                    <a class="dropdown-item" href="#">Avis Clients</a>
-                    <a class="dropdown-item" href="#">Recrutement</a>
-                    <a class="dropdown-item" href="#">Evenements</a>
-                    <a class="dropdown-item" href="#">Presse</a>
-                    <a class="dropdown-item" href="#">Actualités</a>
-                </div>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle redsoldes" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SOLDES<span class="sr-only">(current)</span></a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">FEMME</a>
-                    <a class="dropdown-item" href="#">HOMME</a>
-                </div>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Qui Sommes-Nous?</a>
+                        <a class="dropdown-item" href="#">Contact</a>
+                        <a class="dropdown-item" href="#">Personal Shopper - Coaching</a>
+                        <a class="dropdown-item" href="#">Avis Clients</a>
+                        <a class="dropdown-item" href="#">Recrutement</a>
+                        <a class="dropdown-item" href="#">Evenements</a>
+                        <a class="dropdown-item" href="#">Presse</a>
+                        <a class="dropdown-item" href="#">Actualités</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle redsoldes" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SOLDES<span class="sr-only">(current)</span></a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">FEMME</a>
+                        <a class="dropdown-item" href="#">HOMME</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         FEMME</a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#" style="color:red;">Soldes</a>
-                    <a class="dropdown-item" href="#">Tout voir</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Tee-shirts</a>
-                    <a class="dropdown-item" href="#">Chemisiers</a>
-                    <a class="dropdown-item" href="#">Jeans</a>
-                    <a class="dropdown-item" href="#">Robes</a>
-                    <a class="access_f" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#" style="color:red;">Soldes</a>
+                        <a class="dropdown-item" href="#">Tout voir</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Tee-shirts</a>
+                        <a class="dropdown-item" href="#">Chemisiers</a>
+                        <a class="dropdown-item" href="#">Jeans</a>
+                        <a class="dropdown-item" href="#">Robes</a>
+                        <a class="access_f" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
                             Accessoires <i class="fas fa-angle-down"></i></a>
-                    <div class="sous_menu_f" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Tout voir</a>
+                        <div class="sous_menu_f" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Tout voir</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Sacs & Ceintures</a>
+                            <a class="dropdown-item" href="#">Lunettes & Montres</a>
+                            <a class="dropdown-item" href="#">Casquettes & Bonnets</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        HOMME</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#" style="color:red; ">Soldes</a>
+                        <a class="dropdown-item" href="Tous_nos_produits_H.html">Tout voir</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Sacs & Ceintures</a>
-                        <a class="dropdown-item" href="#">Lunettes & Montres</a>
-                        <a class="dropdown-item" href="#">Casquettes & Bonnets</a>
+                        <a class="dropdown-item" href="Pantalons.html">Pantalons</a>
+                        <a class="dropdown-item" href="jean_h.html">Jeans</a>
+                        <a class="dropdown-item" href="chemise_h.html">Chemises</a>
+                        <a class="dropdown-item" href="Hauts_h.html">Hauts</a>
+                        <a class="dropdown-item" href="pull_h.html">Pulls</a>
+                        <a class="dropdown-item" href="veste_h.html">Vestes / Manteaux</a>
+                        <a class="dropdown-item" href="chaussures_h.html">Chaussures</a>
+                        <a class="access_h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="accessoires_h.html">
+                                                        Accessoires <i class="fas fa-angle-down"></i> </a>
+                        <div class="sous_menu_h" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="accessoires_h.html">Tout voir</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="accessoires_h.html#sac">Sacs</a>
+                            <a class="dropdown-item" href="accessoires_h.html#ceintures">Ceintures</a>
+                            <a class="dropdown-item" href="accessoires_h.html#casquettes">Casquettes</a>
+                            <a class="dropdown-item" href="accessoires_h.html#bonnet">Bonnets</a>
+                            <a class="dropdown-item" href="accessoires_h.html#montre">Montres</a>
+                            <a class="dropdown-item" href="accessoires_h.html#lunette">Lunettes</a>
+                            <a class="dropdown-item" href="accessoires_h.html#portefeuille">Portefeuilles</a>
+                        </div>
                     </div>
-                </div>
-            </li>
+                </li>
 
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                HOMME</a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#" style="color:red; ">Soldes</a>
-                    <a class="dropdown-item" href="#">Tout voir</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="Pantalons.html">Pantalons</a>
-                    <a class="dropdown-item" href="jean_h.html">Jeans</a>
-                    <a class="dropdown-item" href="chemise_h.html">Chemises</a>
-                    <a class="dropdown-item" href="Hauts_h.html">Hauts</a>
-                    <a class="dropdown-item" href="pull_h.html">Pulls</a>
-                    <a class="dropdown-item" href="#">Vestes / Manteaux</a>
-                    <a class="dropdown-item" href="#">Chaussures</a>
-                    <a class="access_h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
-                                                Accessoires <i class="fas fa-angle-down"></i> </a>
-                    <div class="sous_menu_h" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Tout voir</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Sacs</a>
-                        <a class="dropdown-item" href="#">Ceintures</a>
-                        <a class="dropdown-item" href="#">Lunettes & Montres</a>
-                        <a class="dropdown-item" href="#">Casquettes & Bonnets</a>
-                    </div>
-                </div>
-            </li>
 
-        </ul>
-    </div>
-</nav>
-    
-
-<!----------------MAIN IMAGE------------------>
-
-<main>
-
-<div class="soldes ">
-        <h2>Les Soldes</h2>
-        <p>Vite Vite ! <br> Dernières démarques.</p>
-        <a href="#" class="btn btn-outline-success redbutton"> Je découvre <i class="fas fa-arrow-right"></i></a>
-</div>
-
-<!----------------FIL D'ARIANE------------------>
-
-<nav aria-label="breadcrumb" id="ariane">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Accueil</a></li>
-            <li class="breadcrumb-item"><a href="Tous_nos_produits_H.html">Femme</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Les Pantalons</li>
-        </ol>
-</nav>
-
-<!------------------------      MENU PRINCIPAL FEMME       ----------------------->
-
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-3">
-            <nav id="nav3" class="">
-
-                    <div class="toggle">
-                        <p class="menu2"> Les Pantalons <i class="fas fa-angle-down"></i></p>
-                    </div>
-
-                    <H3>Les Pantalons</H3>
-
-                <ul>
-<li>
-            <h5 class="nav2_sous_menu">Catégories <i class="fas fa-angle-down"></i> </h5>
-            <div class="dropdown-divider"></div>
-            <ul class="sous_menu_h_nav2">
-    
-                <li><a href="#tops" class="dropdown-item">A pinces</a></li>
-                <li><a href="#basiques" class="dropdown-item">Les Casuals</a></li>
-                <li><a href="#basiques" class="dropdown-item">Les Fluides</a></li>
-    
             </ul>
-</li>
-<li>
-    <h5 class="nav2_sous_menu">Choisir une taille : <i class="fas fa-angle-down"></i></h5>
-    <div class="dropdown-divider"></div>
-        <select id="size_p">
+        </div>
+    </nav>
+
+
+    <!----------------MAIN IMAGE------------------>
+
+    <main>
+
+        <div class="soldes ">
+            <h2>Les Soldes</h2>
+            <p>Vite Vite ! <br> Dernières démarques.</p>
+            <a href="#" class="btn btn-outline-success redbutton"> Je découvre <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <!----------------FIL D'ARIANE------------------>
+
+        <nav aria-label="breadcrumb" id="ariane">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Accueil</a></li>
+                <li class="breadcrumb-item"><a href="Tous_nos_produits_H.html">Femme</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Les Pantalons</li>
+            </ol>
+        </nav>
+
+        <!------------------------      MENU PRINCIPAL FEMME       ----------------------->
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <nav id="nav3" class="">
+
+                        <div class="toggle">
+                            <p class="menu2"> Les Pantalons <i class="fas fa-angle-down"></i></p>
+                        </div>
+
+                        <H3>Les Pantalons</H3>
+
+                        <ul>
+                            <li>
+                                <h5 class="nav2_sous_menu">Catégories <i class="fas fa-angle-down"></i> </h5>
+                                <div class="dropdown-divider"></div>
+                                <ul class="sous_menu_h_nav2">
+
+                                    <li><a href="#tops" class="dropdown-item">A pinces</a></li>
+                                    <li><a href="#basiques" class="dropdown-item">Les Casuals</a></li>
+                                    <li><a href="#basiques" class="dropdown-item">Les Fluides</a></li>
+
+                                </ul>
+                            </li>
+                            <li>
+                                <h5 class="nav2_sous_menu">Choisir une taille : <i class="fas fa-angle-down"></i></h5>
+                                <div class="dropdown-divider"></div>
+                                <select id="size_p">
             <option value="">Ma taille</option>
             <option value="34">34</option>
             <option value="36">36</option>
@@ -207,295 +211,295 @@
             <option value="42">42</option>
             <option value="44">44</option>
         </select>
-</li>
-<li>
-    <div>
-    <h5 class="nav2_sous_menu">Choisir une couleur : <i class="fas fa-angle-down"></i></h5>
-    <div class="dropdown-divider"></div>
+                            </li>
+                            <li>
+                                <div>
+                                    <h5 class="nav2_sous_menu">Choisir une couleur : <i class="fas fa-angle-down"></i></h5>
+                                    <div class="dropdown-divider"></div>
 
-        <div class="couleurs row">
-            <p style="width:30px; height:30px; background-color: teal; border: 0.5px solid slategray;" title="rouge" role="button"> </p>
-            <p style="width:30px; height:30px; background-color: red; border: 0.5px solid slategray;" title="rouge" role="button"> </p>
-            <p style="width:30px; height:30px; background-color: white; border: 0.5px solid slategray;" title="blanc" role="button"> </p>
-            <p style="width:30px; height:30px; background-color: goldenrod; border: 0.5px solid slategray;" title="or" role="button"> </p>
-            <p style="width:30px; height:30px; background-color: black; border: 0.5px solid slategray;" title="rouge" role="button"> </p>
-            <p style="width:30px; height:30px; background-color: grey; border: 0.5px solid slategray;" title="rouge" role="button"> </p>
+                                    <div class="couleurs row">
+                                        <p style="width:30px; height:30px; background-color: teal; border: 0.5px solid slategray;" title="rouge" role="button"> </p>
+                                        <p style="width:30px; height:30px; background-color: red; border: 0.5px solid slategray;" title="rouge" role="button"> </p>
+                                        <p style="width:30px; height:30px; background-color: white; border: 0.5px solid slategray;" title="blanc" role="button"> </p>
+                                        <p style="width:30px; height:30px; background-color: goldenrod; border: 0.5px solid slategray;" title="or" role="button"> </p>
+                                        <p style="width:30px; height:30px; background-color: black; border: 0.5px solid slategray;" title="rouge" role="button"> </p>
+                                        <p style="width:30px; height:30px; background-color: grey; border: 0.5px solid slategray;" title="rouge" role="button"> </p>
 
-        </div>
-    </div>
-</li>
+                                    </div>
+                                </div>
+                            </li>
 
-<li>
-    <label for="amount" class="nav2_sous_menu">Tranche de Prix : <i class="fas fa-angle-down"></i></label>
-    <div class="dropdown-divider"></div>
+                            <li>
+                                <label for="amount" class="nav2_sous_menu">Tranche de Prix : <i class="fas fa-angle-down"></i></label>
+                                <div class="dropdown-divider"></div>
 
-    <p>
-        <label for="amount">PRIX :</label>
-        <input type="text" id="amount" readonly style="border:0; color:#BA55D3 !important; font-weight:bold;">
-    </p>
+                                <p>
+                                    <label for="amount">PRIX :</label>
+                                    <input type="text" id="amount" readonly style="border:0; color:#BA55D3 !important; font-weight:bold;">
+                                </p>
 
-    <div id="slider-range"></div>
-</li>
-                </ul>
-            </nav>
-        </div>
-
-
-    <!-- content -->
-    <div class="col-md-9 ">
+                                <div id="slider-range"></div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
 
 
-    <!------------------------------CATEGORIE: A PINCES--------------------------------------->
+                <!-- content -->
+                <div class="col-md-9 ">
 
-    <div class="container ">
-        <div class="row ">
-            <div class="col-xs-12 col-md-6 col-xl-3 ">
-                <div>
 
-                    <img src="img/femme/PANTALONS/pantalon9b.jpg" alt="photo_pantalon" class="image_vetement" id="produit1">
+                    <!------------------------------CATEGORIE: A PINCES--------------------------------------->
 
-                    <div class="car-body" id="card-body1">
-                        <h5 class="card-title ">Pantalon</h5>
-                        <h6 class="card-subtitle mb-2 text-muted ">19,95 EUR</h6>
-                        <p class="card-text ">Un classique indispensable. </p>
-                        <a href="# " class="btn btn-outline-success Description ">Description</a>
-                        <a href="# " class="btn btn-outline-success achat ">Achat Rapide</a>
+                    <div class="container ">
+                        <div class="row ">
+                            <div class="col-xs-12 col-md-6 col-xl-3 ">
+                                <div>
 
+                                    <img src="img/femme/PANTALONS/pantalon9b.jpg" alt="photo_pantalon" class="image_vetement" id="produit1">
+
+                                    <div class="car-body" id="card-body1">
+                                        <h5 class="card-title ">Pantalon</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted ">19,95 EUR</h6>
+                                        <p class="card-text ">Un classique indispensable. </p>
+                                        <a href="# " class="btn btn-outline-success Description ">Description</a>
+                                        <a href="# " class="btn btn-outline-success achat ">Achat Rapide</a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-md-6 col-xl-3">
+                                <fieldset class="text " id="basique ">
+                                    <legend>A pinces</legend>
+
+                                    <p>Les Pantalons à Pinces <span class="vert ">LePetitCommerce</span> sont soigneusement conçues pour allier résistance et élégance, en stylisant toutes vos tenues. </p>
+
+
+                                </fieldset>
+                            </div>
+
+                            <div class="col-xs-12 col-md-6 col-xl-3 ">
+                                <div>
+                                    <img src="img/femme/PANTALONS/pantalon8.jpg" alt="photo_pantalon" class="image_vetement" id="produit2">
+                                    <div class="car-body" id="card-body2">
+                                        <h5 class="card-title ">Pantalon</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted ">19,95 EUR</h6>
+                                        <p class="card-text ">Ceinture en cuir supérieur, de couleur noire, parfaite pour s'accorder à toutes vos tenues.</p>
+                                        <a href="# " class="btn btn-outline-success ">Description</a>
+                                        <a href="# " class="btn btn-outline-success ">Achat Rapide</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-md-6 col-xl-3 ">
+                                <div>
+                                    <img src="img/femme/PANTALONS/pantalon3.jpg" alt="photo_pantalon" class="image_vetement" id="produit3">
+                                    <div class="car-body" id="card-body3">
+                                        <h5 class="card-title ">Pantalon</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted ">29,95 EUR</h6>
+                                        <p class="card-text ">L'accessoires ultime de tout look distingué.</p>
+                                        <a href="# " class="btn btn-outline-success ">Description</a>
+                                        <a href="# " class="btn btn-outline-success ">Achat Rapide</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="clear "></div>
+
+                    <!------------------------------CATEGORIE: LES CASUALS--------------------------------------->
+
+
+                    <div class="container ">
+                        <div class="row ">
+                            <div class="col-xs-12 col-md-6 col-xl-3 ">
+                                <fieldset class="text " id="cardigan ">
+                                    <legend>Les Casuals</legend>
+
+                                    <p>Osez Les Pantalons Casuals <span class="vert ">LePetitCommerce</span> pour une élégance et un raffinement sans pareil.</p>
+
+
+                                </fieldset>
+                            </div>
+
+                            <div class="col-xs-12 col-md-6 col-xl-3 ">
+                                <div>
+
+                                    <img src="img/femme/PANTALONS/pantalon4.jpg" alt="photo_pantalon" class="image_vetement" id="produit4">
+
+                                    <div class=" car-body " id="card-body4">
+                                        <h5 class="card-title ">Pantalon</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted ">19,95 EUR</h6>
+                                        <p class="card-text ">S'accordera parfaitement à toutes vos tenues.</p>
+                                        <a href="# " class="btn btn-outline-success ">Description</a>
+                                        <a href="# " class="btn btn-outline-success ">Achat Rapide</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-xs-12 col-md-6 col-xl-3 ">
+                                <div>
+                                    <img src="img/femme/PANTALONS/pantalon10.jpg" alt="photo_pantalon" class="image_vetement" id="produit5">
+                                    <div class=" car-body " id="card-body5">
+                                        <h5 class="card-title ">Pantalon</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted ">19,95 EUR</h6>
+                                        <p class="card-text ">S'accordera parfaitement à toutes vos tenues.</p>
+                                        <a href="# " class="btn btn-outline-success ">Description</a>
+                                        <a href="# " class="btn btn-outline-success ">Achat Rapide</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-md-6 col-xl-3 ">
+                                <div>
+                                    <img src="img/femme/PANTALONS/pantalon2b.jpg" alt="photo_pantalon" class="image_vetement" id="produit6">
+                                    <div class="car-body " id="card-body6">
+                                        <h5 class="card-title ">Pantalon</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted ">19,95 EUR</h6>
+                                        <p class="card-text ">Habillera joliment votre poignet.</p>
+                                        <a href="# " class="btn btn-outline-success ">Description</a>
+                                        <a href="# " class="btn btn-outline-success ">Achat Rapide</a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="clear "></div>
+
+                    <!------------------------------CATEGORIE: LES FLUIDES--------------------------------------->
+
+                    <div class="container ">
+                        <div class="row ">
+
+                            <div class="col-xs-12 col-md-6 col-xl-3 ">
+                                <div>
+
+                                    <img src="img/femme/PANTALONS/pantalon7.jpg" alt="photo_pantalon" class="image_vetement" id="produit7">
+
+                                    <div class="car-body " id="card-body7">
+                                        <h5 class="card-title ">Pantalon</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted ">19,95 EUR</h6>
+                                        <p class="card-text ">Egayera chacune de vos tenues!</p>
+                                        <a href="# " class="btn btn-outline-success ">Description</a>
+                                        <a href="# " class="btn btn-outline-success ">Achat Rapide</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-md-6 col-xl-3 ">
+                                <fieldset class="text " id="urban">
+                                    <legend>Les Fluides</legend>
+
+                                    <p>Une déclinaison de pantalons fluides <span class="vert ">LePetitCommerce</span> afin de s'adapter à toutes les envies et à tous les styles.
+                                    </p>
+                                </fieldset>
+                            </div>
+
+
+                            <div class="col-xs-12 col-md-6 col-xl-3 ">
+                                <div>
+                                    <img src="img/femme/PANTALONS/pantalon5d.jpg" alt="photo_pantalon" class="image_vetement" id="produit8">
+                                    <div class="car-body " id="card-body8">
+                                        <h5 class="card-title ">Pantalon</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted ">9,95 EUR</h6>
+                                        <p class="card-text ">Esprit minimaliste mais ultra féminin assuré avec ce collier à médaillon.</p>
+                                        <a href="# " class="btn btn-outline-success ">Description</a>
+                                        <a href="# " class="btn btn-outline-success ">Achat Rapide</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-md-6 col-xl-3 ">
+                                <div>
+                                    <img src="img/femme/PANTALONS/pantalon6.jpg" alt="photo_pantalon" class="image_vetement" id="produit9">
+                                    <div class=" car-body " id="card-body9">
+                                        <h5 class="card-title ">Pantalon</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted ">9,95 EUR</h6>
+                                        <p class="card-text ">Ajoute une touche d'exotisme tout en raffinement.</p>
+                                        <a href="# " class="btn btn-outline-success ">Description</a>
+                                        <a href="# " class="btn btn-outline-success ">Achat Rapide</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="clear "></div>
+
+
+    </main>
+
+    <!-------------------------FOOTER---------------------------->
+
+    <footer>
+
+        <div class="container-fluid">
+            <div class="row ">
+                <Div id="newsletter" class="newsletter col-sm-4 col-md-4 test">
+                    <div id="toggle_news">
+                        <h4>NewsLetter <i class="fas fa-angle-down"></i> </h4>
+                        <span class="ligne"></span>
+                    </div>
+                    <div class="footer_align" id="news_p">
+                        <p>Inscrivez-vous à notre programme relationnel <span class="vert">LePetitCommerce</span> afin de recevoir toute notre actualité et nos meilleures offres.</p>
+                    </div>
+                    <a href="newsletter.html"><button class="btn btn-outline-success" type="submit"> M'inscrire !</button></a>
+
+                </Div>
+
+                <div class="col-sm-4 col-md-4 test" id="infos">
+                    <div id="toggle_infos">
+                        <h4>Informations Utiles <i class="fas fa-angle-down"></i> </h4>
+                        <span class="ligne"></span>
+                    </div>
+                    <div class="footer_align" id="infos_liste">
+                        <ul>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Mentions Légales</a></li>
+                            <li><a href="#">Nos conditions Générales de Vente</a></li>
+                            <li><a href="#">Plan du site</a></li>
+                            <li><a href="#">Imprimer la page</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 col-md-4 " id="Social">
+                    <div id="toggle_Social">
+                        <h4>Suivez Nous <i class="fas fa-angle-down"></i></h4>
+                        <span class="ligne"></span>
+                    </div>
+                    <div class="footer_align row" id="Social_logo">
+                        <a href="https://fr-fr.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                        <a href="https://www.instagram.com/?hl=fr"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/?lang=fr"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://www.pinterest.fr/"><i class="fab fa-pinterest-square"></i></a>
+                        <a href="https://www.youtube.com/?gl=FR&hl=fr"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
             </div>
-
-            <div class="col-xs-12 col-md-6 col-xl-3">
-                <fieldset class="text " id="basique ">
-                    <legend>A pinces</legend>
-
-                    <p>Les Pantalons à Pinces <span class="vert ">LePetitCommerce</span> sont soigneusement conçues pour allier résistance et élégance, en stylisant toutes vos tenues. </p>
-
-
-                </fieldset>
-            </div>
-
-            <div class="col-xs-12 col-md-6 col-xl-3 ">
-                <div>
-                    <img src="img/femme/PANTALONS/pantalon8.jpg" alt="photo_pantalon" class="image_vetement" id="produit2">
-                    <div class="car-body" id="card-body2">
-                        <h5 class="card-title ">Pantalon</h5>
-                        <h6 class="card-subtitle mb-2 text-muted ">19,95 EUR</h6>
-                        <p class="card-text ">Ceinture en cuir supérieur, de couleur noire, parfaite pour s'accorder à toutes vos tenues.</p>
-                        <a href="# " class="btn btn-outline-success ">Description</a>
-                        <a href="# " class="btn btn-outline-success ">Achat Rapide</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xs-12 col-md-6 col-xl-3 ">
-                <div>
-                    <img src="img/femme/PANTALONS/pantalon3.jpg" alt="photo_pantalon" class="image_vetement" id="produit3">
-                    <div class="car-body" id="card-body3">
-                        <h5 class="card-title ">Pantalon</h5>
-                        <h6 class="card-subtitle mb-2 text-muted ">29,95 EUR</h6>
-                        <p class="card-text ">L'accessoires ultime de tout look distingué.</p>
-                        <a href="# " class="btn btn-outline-success ">Description</a>
-                        <a href="# " class="btn btn-outline-success ">Achat Rapide</a>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-    </div>
-
-    <div class="clear "></div>
-
-    <!------------------------------CATEGORIE: LES CASUALS--------------------------------------->
-
-
-<div class="container ">
-    <div class="row ">
-        <div class="col-xs-12 col-md-6 col-xl-3 ">
-            <fieldset class="text " id="cardigan ">
-                <legend>Les Casuals</legend>
-
-                <p>Osez Les Pantalons Casuals  <span class="vert ">LePetitCommerce</span> pour une élégance et un raffinement sans pareil.</p>
-
-
-            </fieldset>
         </div>
 
-        <div class="col-xs-12 col-md-6 col-xl-3 ">
-            <div>
-
-                <img src="img/femme/PANTALONS/pantalon4.jpg" alt="photo_pantalon" class="image_vetement" id="produit4">
-
-                <div class=" car-body " id="card-body4">
-                    <h5 class="card-title ">Pantalon</h5>
-                    <h6 class="card-subtitle mb-2 text-muted ">19,95 EUR</h6>
-                    <p class="card-text ">S'accordera parfaitement à toutes vos tenues.</p>
-                    <a href="# " class="btn btn-outline-success ">Description</a>
-                    <a href="# " class="btn btn-outline-success ">Achat Rapide</a>
-                </div>
-            </div>
+        <div id="copy">
+            <p>Copyright &copy; LePetitCommerce</p>
         </div>
 
+    </footer>
 
+    <!----------------------------------------------------------------------------------------->
 
-        <div class="col-xs-12 col-md-6 col-xl-3 ">
-            <div>
-                <img src="img/femme/PANTALONS/pantalon10.jpg" alt="photo_pantalon" class="image_vetement" id="produit5">
-                <div class=" car-body " id="card-body5">
-                    <h5 class="card-title ">Pantalon</h5>
-                    <h6 class="card-subtitle mb-2 text-muted ">19,95 EUR</h6>
-                    <p class="card-text ">S'accordera parfaitement à toutes vos tenues.</p>
-                    <a href="# " class="btn btn-outline-success ">Description</a>
-                    <a href="# " class="btn btn-outline-success ">Achat Rapide</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-xs-12 col-md-6 col-xl-3 ">
-            <div>
-                <img src="img/femme/PANTALONS/pantalon2b.jpg" alt="photo_pantalon" class="image_vetement" id="produit6">
-                <div class="car-body " id="card-body6">
-                    <h5 class="card-title ">Pantalon</h5>
-                    <h6 class="card-subtitle mb-2 text-muted ">19,95 EUR</h6>
-                    <p class="card-text ">Habillera joliment votre poignet.</p>
-                    <a href="# " class="btn btn-outline-success ">Description</a>
-                    <a href="# " class="btn btn-outline-success ">Achat Rapide</a>
-                </div>
-
-            </div>
-        </div>
-
-
-    </div>
-</div>
-
-<div class="clear "></div>
-
- <!------------------------------CATEGORIE: LES FLUIDES--------------------------------------->
-
- <div class="container ">
-        <div class="row ">
-
-    <div class="col-xs-12 col-md-6 col-xl-3 ">
-        <div>
-
-            <img src="img/femme/PANTALONS/pantalon7.jpg" alt="photo_pantalon" class="image_vetement" id="produit7">
-
-            <div class="car-body " id="card-body7">
-                <h5 class="card-title ">Pantalon</h5>
-                <h6 class="card-subtitle mb-2 text-muted ">19,95 EUR</h6>
-                <p class="card-text ">Egayera chacune de vos tenues!</p>
-                <a href="# " class="btn btn-outline-success ">Description</a>
-                <a href="# " class="btn btn-outline-success ">Achat Rapide</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-xs-12 col-md-6 col-xl-3 ">
-        <fieldset class="text " id="urban">
-            <legend>Les Fluides</legend>
-
-            <p>Une déclinaison de pantalons fluides <span class="vert ">LePetitCommerce</span> afin de s'adapter à toutes les envies et à tous les styles.
-            </p>
-        </fieldset>
-    </div>
-
-
-    <div class="col-xs-12 col-md-6 col-xl-3 ">
-        <div>
-            <img src="img/femme/PANTALONS/pantalon5d.jpg" alt="photo_pantalon" class="image_vetement" id="produit8">
-            <div class="car-body " id="card-body8">
-                <h5 class="card-title ">Pantalon</h5>
-                <h6 class="card-subtitle mb-2 text-muted ">9,95 EUR</h6>
-                <p class="card-text ">Esprit minimaliste mais ultra féminin assuré avec ce collier à médaillon.</p>
-                <a href="# " class="btn btn-outline-success ">Description</a>
-                <a href="# " class="btn btn-outline-success ">Achat Rapide</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-xs-12 col-md-6 col-xl-3 ">
-        <div>
-            <img src="img/femme/PANTALONS/pantalon6.jpg" alt="photo_pantalon" class="image_vetement" id="produit9">
-            <div class=" car-body " id="card-body9">
-                <h5 class="card-title ">Pantalon</h5>
-                <h6 class="card-subtitle mb-2 text-muted ">9,95 EUR</h6>
-                <p class="card-text ">Ajoute une touche d'exotisme tout en raffinement.</p>
-                <a href="# " class="btn btn-outline-success ">Description</a>
-                <a href="# " class="btn btn-outline-success ">Achat Rapide</a>
-            </div>
-        </div>
-    </div>
-
-
-    </div>
-</div>
-
-<div class="clear "></div>
-
-
-</main>
-
-<!-------------------------FOOTER---------------------------->
-
-<footer>
-
-<div class="container-fluid">
-    <div class="row ">
-        <Div id="newsletter" class="newsletter col-sm-4 col-md-4 test">
-            <div id="toggle_news">
-                <h4>NewsLetter <i class="fas fa-angle-down"></i> </h4>
-                <span class="ligne"></span>
-            </div>
-            <div class="footer_align" id="news_p">
-                <p>Inscrivez-vous à notre programme relationnel <span class="vert">LePetitCommerce</span> afin de recevoir toute notre actualité et nos meilleures offres.</p>
-            </div>
-            <a href="newsletter.html"><button class="btn btn-outline-success" type="submit"> M'inscrire !</button></a>
-
-        </Div>
-
-        <div class="col-sm-4 col-md-4 test" id="infos">
-            <div id="toggle_infos">
-                <h4>Informations Utiles <i class="fas fa-angle-down"></i> </h4>
-                <span class="ligne"></span>
-            </div>
-            <div class="footer_align" id="infos_liste">
-                <ul>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Mentions Légales</a></li>
-                    <li><a href="#">Nos conditions Générales de Vente</a></li>
-                    <li><a href="#">Plan du site</a></li>
-                    <li><a href="#">Imprimer la page</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="col-sm-4 col-md-4 " id="Social">
-            <div id="toggle_Social">
-                <h4>Suivez Nous <i class="fas fa-angle-down"></i></h4>
-                <span class="ligne"></span>
-            </div>
-            <div class="footer_align row" id="Social_logo">
-                <a href="https://fr-fr.facebook.com/"><i class="fab fa-facebook-square"></i></a>
-                <a href="https://www.instagram.com/?hl=fr"><i class="fab fa-instagram"></i></a>
-                <a href="https://twitter.com/?lang=fr"><i class="fab fa-twitter-square"></i></a>
-                <a href="https://www.pinterest.fr/"><i class="fab fa-pinterest-square"></i></a>
-                <a href="https://www.youtube.com/?gl=FR&hl=fr"><i class="fab fa-youtube"></i></a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div id="copy">
-    <p>Copyright &copy; LePetitCommerce</p>
-</div>
-
-</footer>
-
-<!----------------------------------------------------------------------------------------->
-
-<script>
+    <script>
         $(document).ready(function() {
             $('#toggle_Social').click(function() {
                 $('#Social_logo').slideToggle(200);
@@ -514,4 +518,5 @@
 
 
 </body>
+
 </html>

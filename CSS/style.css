@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap');
 @font-face {
     font-family: 'abangregular';
     src: url('abang-webfont.woff2') format('woff2'), url('abang-webfont.woff') format('woff');
@@ -26,6 +26,7 @@ p {
     height: 2px;
     width: 20%;
     margin: 20px auto;
+    background: #000;
 }
 
 .vert,
@@ -36,8 +37,6 @@ p {
 .clear {
     height: 70px !important;
 }
-
-
 /************************** HEADER *****************************************************/
 
 .headerLogo {
@@ -89,8 +88,6 @@ p {
     font-family: 'Didact Gothic', sans-serif;
     display: none;
 }
-
-
 /*-------Choix des Langues---------*/
 
 #menu {
@@ -169,8 +166,6 @@ p {
 .logoLangues {
     width: 25px;
 }
-
-
 /* ********************** NAV ********************************************** */
 
 nav {
@@ -194,8 +189,6 @@ nav {
     font-weight: bold;
     color: red!important;
 }
-
-
 /* ***** NAV 3 / fiche produits ***** */
 
 #nav3 {
@@ -271,8 +264,6 @@ nav {
 #nav3 .dropdown-item:hover {
     color: #BA55D3 !important;
 }
-
-
 /*  carousel */
 
 .soldes {
@@ -292,7 +283,9 @@ nav {
     margin-right: 20px;
     line-height: 0;
 }
-
+.redsolde{
+    color: red !important;
+}
 .soldes P {
     text-align: right;
     color: red;
@@ -431,8 +424,6 @@ nav {
     border: 2px solid #152A9E !important;
     transform: none;
 }
-
-
 /* ***** fil d'ariane ***** */
 
 #ariane {
@@ -463,8 +454,6 @@ nav {
     color: #6c757d;
     content: ">";
 }
-
-
 /* ***********  Boutons ********************************** */
 
 .btn {
@@ -537,9 +526,94 @@ nav {
 }
 
 
+/* ***********  LOGIN ********************************** */
+
+#login_page {
+    background: url('../img/fond.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Didact Gothic', sans-serif;
+    padding-bottom: 70px;
+    padding-top: 70px;
+}
+
+#erreur_login {
+    color: red;
+}
+
+#login_page h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.loginbox {
+    width: 320px;
+    height: 490px;
+    background: #000;
+    color: white;
+    top: 50%;
+    margin: 0 auto;
+    position: relative;
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+.loginbox p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.loginbox input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.loginbox input[type="email"],
+.loginbox input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #FFF;
+    font-size: 16px;
+}
+
+.loginbox input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #BA55D3 !important;
+    color: #FFF;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.loginbox a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.avatar {
+    color: white;
+    background-color: #BA55D3;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 300%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+.avatar i {
+    padding-top: 20px;
+}
 /* ********************** Accueil ********************************************** */
-
-
 /* *****  Les Produits ******/
 
 .categorie_men {
@@ -599,15 +673,11 @@ h3 {
 .categorie p {
     font-family: 'Didact Gothic', sans-serif;
 }
-
-
 /* ************ qui sommes nous ************ */
 
 #QSN .ligne {
     background: #000;
 }
-
-
 /* ************ tete de gondole ************ */
 
 #gondole {
@@ -692,8 +762,6 @@ h3 {
     pointer-events: none;
     background: #ccc;
 }
-
-
 /* ************ newsletter ************ */
 
 .news_rapid {
@@ -747,9 +815,8 @@ h3 {
     padding: 0 10px;
     text-transform: uppercase;
     cursor: pointer;
+    
 }
-
-
 /* ********** Coatching ********** */
 
 .relooking {
@@ -767,18 +834,6 @@ h3 {
 
 .relooking p {
     text-align: justify;
-}
-
-.relooking a {
-    color: white;
-    background-color: #BA55D3;
-    text-decoration: none;
-}
-
-.relooking a:hover {
-    color: #BA55D3;
-    background-color: white !important;
-    border: 1px solid #BA55D3;
 }
 
 
@@ -799,8 +854,6 @@ h3 {
     font-weight: bold;
     color: #BA55D3;
 }
-
-
 /* ************ Store ************ */
 
 .main_local {
@@ -815,8 +868,6 @@ h3 {
     width: 100%;
     height: 100%;
 }
-
-
 /* ***********  Pages Produits  ********************************** */
 
 .presentation {
@@ -923,6 +974,149 @@ h3 {
 .car-body {
     align-items: center;
 }
+/* ***********  Pages Solde ********************************** */
+
+.prix_solde{
+    background: red;
+    color: #FFF;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    
+}
+/* ***********  Pages Newsletter  ********************************** */
+
+#erreur {
+    color: red;
+    font-size: 20px;
+}
+
+#News_form {
+    margin: 0 auto 0 auto;
+    margin-top: 30px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    padding: 10px;
+}
+
+p {
+    text-align: center;
+}
+
+#News_form fieldset {
+    padding: 0 20px 20px 20px;
+    margin-bottom: 10px;
+    border: 1px solid #000;
+    justify-content: center;
+}
+
+#News_form legend {
+    text-align: center;
+}
+
+#News_form label {
+    margin-top: 10px;
+}
+
+#contact input[type=text],
+#contact input[type=email],
+#identity input[type=text],
+#adresse input[type=text] {
+    display: flex;
+    width: 200px;
+}
+
+#adresse textarea {
+    display: flex;
+}
+
+#News_form label .inline {
+    margin-right: 50px;
+}
+
+#News_form input,
+#News_form textarea,
+#News_form select {
+    padding: 3px;
+    /*border: 1px solid #BA55D3; */
+    margin: 0 auto;
+}
+
+#News_form select {
+    margin-top: 10px;
+}
+
+#News_form input[type=radio] {
+    border: none;
+    width: 30px;
+}
+
+#News_form input[type=submit],
+{
+    width: 100px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.conditions {
+    font-size: 10px;
+    margin: 0 auto;
+}
+
+.conditions a {
+    text-decoration: none;
+}
+
+
+/* ***********  Pages Panier  ********************************** */
+
+table {
+    margin: 0 auto;
+}
+
+th {
+    padding: 10px;
+    border-bottom: 0.5px solid #BA55D3;
+}
+
+td {
+    padding: 10px;
+}
+
+.bas_tab th {
+    border-top: 0.5px solid #BA55D3;
+    border-bottom: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#total {
+    text-align: right
+}
+.panier_btn{
+    display: block;
+    background-color: #BA55D3;
+    color: white;
+    margin: 0 auto;
+    margin-top:20px;
+    font-size: 1.3rem;
+    width: 220px;
+    height: 70px;   
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-radius: 10px;
+    padding: 0 auto;
+    padding-top: 20px;
+}
 
 
 /*  **** infos sup **** */
@@ -972,8 +1166,6 @@ h3 {
     color: #BA55D3 !important;
     font-size: 20px;
 }
-
-
 /* ************** FOOTER ***************************************************** */
 
 footer {
@@ -1088,8 +1280,6 @@ footer #copy {
     height: 22px;
     text-align: center;
 }
-
-
 /* ---------- Page "Qui-Sommes-Nous" ----------------*/
 
 .quisommesnous_fieldset {
@@ -1112,16 +1302,10 @@ legend {
     color: #BA55D3;
     font-weight: bold;
 }
-
-
 /* ****  responsive**** */
-
-
 /*Extra small devices (portrait phones, less than 576px)*/
 
 @media (max-width: 575.98px) {}
-
-
 /*  Small devices (landscape phones, 576px and up) */
 
 @media (min-width: 576px) {}
@@ -1143,8 +1327,6 @@ legend {
         display: block;
     }
 }
-
-
 /* Medium devices (tablets, 768px and up) */
 
 @media (min-width: 768px) {
@@ -1198,8 +1380,6 @@ legend {
         margin-top: 50px;
     }
 }
-
-
 /* Large devices (desktops, 992px and up) */
 
 @media (min-width: 992px) {
@@ -1277,9 +1457,15 @@ legend {
         margin-left: 50px;
         font-family: 'Didact Gothic', sans-serif;
     }
-}
-
-
-/* Extra large devices (large desktops, 1200px and up) */
-
-@media (min-width: 1200px) {}
+    /* ************ Page Newsletter *********/
+    #News_form {
+        width: 600px;
+    }
+    }
+    .panier_btn:hover{
+        background: white;
+        color: #BA55D3;
+        border: 1px solid #BA55D3;
+    }
+    /* Extra large devices (large desktops, 1200px and up) */
+    @media (min-width: 1200px) {}
