@@ -980,6 +980,37 @@ h3 {
 }
 
 
+/* ***********  Pages Tous les produits  ********************************** */
+
+.categorie {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.categorie .ligne {
+    background-color: #000 !important;
+}
+
+.categorie a {
+    padding-top: 20px;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+.categorie a img {
+    width: 100%;
+}
+
+.categorie h3 {
+    font-size: 50px;
+}
+
+.categorie p {
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+
 /* ***********  Pages Produits  ********************************** */
 
 .presentation {

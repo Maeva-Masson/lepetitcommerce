@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /login.html/
+Disallow: /newsletter.html/
+Disallow: /panier.html/
+
+
+Sitemap :
