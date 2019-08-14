@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet">
 
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="js/script.js"></script>
+
     <title>LePetitCommerce - LOGIN</title>
 </head>
 
@@ -97,7 +97,7 @@
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             FEMME</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#" style="color:red;">Soldes</a>
+                        <a class="dropdown-item redsolde" href="#">Soldes</a>
                         <a class="dropdown-item" href="#">Tout voir</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Tee-shirts</a>
@@ -175,62 +175,61 @@
     </div>
 
 
+    <!-- ******  Footer  ****** -->
     <footer>
-        <div class="container-fluid">
-            <div class="row ">
-                <Div id="newsletter" class="newsletter col-sm-4 col-md-4 test">
-                    <div id="toggle_news">
-                        <h4>NewsLetter <i class="fas fa-angle-down"></i></h4>
-                        <span class="ligne"></span>
-                    </div>
-                    <div class="footer_align" id="news_p">
-                        <p>Inscrivez-vous à notre programme relationnel <strong>LePetitCommerce</strong> afin de recevoir toute notre actualité et nos meilleures offres.</p>
-                    </div>
-                    <<<<<<< HEAD <a href="newsletter.html" class="btn btn-outline-success"> M'inscrire !</a>
-                </div>
-                =======
-                <a href="newsletter.html" class="btn btn-outline-success"> M'inscrire !</a> >>>>>>> 978f9f07a4a207a139309410d4c8a38b70a41b76
+        <div>
+            <div class="container-fluid">
+                <div class="row ">
+                    <Div id="newsletter" class="newsletter col-sm-4 col-md-4 test">
+                        <div id="toggle_news">
+                            <h4>NewsLetter <i class="fas fa-angle-down"></i></h4>
+                            <span class="ligne"></span>
+                        </div>
+                        <div class="footer_align" id="news_p">
+                            <p>Inscrivez-vous à notre programme relationnel <strong>LePetitCommerce</strong> afin de recevoir toute notre actualité et nos meilleures offres.</p>
+                        </div>
+                        <a href="newsletter.html" class="btn btn-outline-success"> M'inscrire !</a>
 
-            </Div>
+                    </Div>
 
-            <div class="col-sm-4 col-md-4 test" id="infos">
-                <div id="toggle_infos">
-                    <h4>Informations Utiles <i class="fas fa-angle-down"></i></h4>
-                    <span class="ligne"></span>
-                </div>
-                <div class="footer_align" id="infos_liste">
-                    <ul>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Mentions Légales</a></li>
-                        <li><a href="#">Nos conditions Générales de Vente</a></li>
-                        <li><a href="#">Plan du site</a></li>
-                        <li><a href="#">Imprimer la page</a></li>
-                    </ul>
+                    <div class="col-sm-4 col-md-4 test" id="infos">
+                        <div id="toggle_infos">
+                            <h4>Informations Utiles <i class="fas fa-angle-down"></i></h4>
+                            <span class="ligne"></span>
+                        </div>
+                        <div class="footer_align" id="infos_liste">
+                            <ul>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Mentions Légales</a></li>
+                                <li><a href="#">Nos conditions Générales de Vente</a></li>
+                                <li><a href="#">Plan du site</a></li>
+                                <li><a href="#">Imprimer la page</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4 " id="Social">
+                        <div id="toggle_Social">
+                            <h4>Suivez Nous <i class="fas fa-angle-down"></i></h4>
+                            <span class="ligne"></span>
+                        </div>
+                        <div class="footer_align row" id="Social_logo">
+                            <a href="https://fr-fr.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                            <a href="https://www.instagram.com/?hl=fr"><i class="fab fa-instagram"></i></a>
+                            <a href="https://twitter.com/?lang=fr"><i class="fab fa-twitter-square"></i></a>
+                            <a href="https://www.pinterest.fr/"><i class="fab fa-pinterest-square"></i></a>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
-            <div class="col-sm-4 col-md-4 " id="Social">
-                <div id="toggle_Social">
-                    <h4>Suivez Nous <i class="fas fa-angle-down"></i></h4>
-                    <span class="ligne"></span>
-                </div>
-                <div class="footer_align row" id="Social_logo">
-                    <a href="https://fr-fr.facebook.com/"><i class="fab fa-facebook-square"></i></a>
-                    <a href="https://www.instagram.com/?hl=fr"><i class="fab fa-instagram"></i></a>
-                    <a href="https://twitter.com/?lang=fr"><i class="fab fa-twitter-square"></i></a>
-                    <a href="https://www.pinterest.fr/"><i class="fab fa-pinterest-square"></i></a>
-                </div>
+
+
+            <div id="copy">
+                <p>Copyright &copy; LePetitCommerce</p>
             </div>
-
-
-        </div>
-        </div>
-
-
-        <div id="copy">
-            <p>Copyright &copy; LePetitCommerce</p>
         </div>
     </footer>
-
     <script>
         document.getElementById('login_page').addEventListener('submit', function(el) {
 

@@ -1,4 +1,4 @@
-/* *****  PAGE ACCEUIL ***** */
+/* ***********************  PAGE ACCEUIL *************************** */
 
 /* img homme /  femme*/
 
@@ -116,7 +116,6 @@ $(document).ready(function() {
     }
 
 });
-
 
 /* *****  NAV 2 / PAGE produits HOMME ***** */
 
