@@ -221,7 +221,7 @@ $(document).ready(function() {
     $('#produit26').click(function() {
         $('#card-body26').slideToggle(200);
     });
-     $('#produit27').click(function() {
+    $('#produit27').click(function() {
         $('#card-body27').slideToggle(200);
     });
 })
@@ -269,7 +269,7 @@ var h = 0;
 var hauts = [];
 hauts[0] = 'img/Homme/tshirts/bunny1.jpg';
 hauts[1] = 'img/Homme/tshirts/polo_bleu1.jpg';
-hauts[2] = 'img/Homme/tshirts/polo_rayé_blanc5.jpg';
+hauts[2] = 'img/Homme/tshirts/polo_raye_blanc5.jpg';
 
 var Pu = 0;
 var pull = [];
