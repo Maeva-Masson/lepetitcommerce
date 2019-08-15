@@ -1130,6 +1130,45 @@ h3 {
 }
 
 
+/* ***********  Pages Nouveautés  ********************************** */
+
+.card-columns {
+    @include media-breakpoint-only(lg) {
+        column-count: 4;
+    }
+    @include media-breakpoint-only(xl) {
+        column-count: 5;
+    }
+}
+
+.card-columns {
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.badge-secondary {
+    background: #BA55D3 !important;
+}
+
+.card-columns .card {
+    width: 80%;
+    text-align: center;
+}
+
+.card-columns .card h5 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.card-columns img {
+    width: 100%;
+}
+
+.bg-primary {
+    background: #BA55D3 !important;
+}
+
+
 /* ***********  Pages Newsletter  ********************************** */
 
 #erreur {
