@@ -436,15 +436,15 @@ document.getElementById('News_form').addEventListener('submit', function(e) {
 
     if (!email.value) {
         erreur = "veuillez renseigner votre email";
-        document.getElementById('email').style.cssText = "border-color: red";
+        document.getElementById('email').style.cssText = "border-color: #BA55D3";
     }
     if (!nom.value) {
         erreur = "veuillez renseigner votre nom";
-        document.getElementById('nom').style.cssText = "border-color: red";
+        document.getElementById('nom').style.cssText = "border-color: #BA55D3";
     }
     if (!prenom.value) {
         erreur = "veuillez renseigner votre prenom";
-        document.getElementById('prenom').style.cssText = "border-color: red";
+        document.getElementById('prenom').style.cssText = "border-color: #BA55D3";
     }
     if (erreur) {
         e.preventDefault();

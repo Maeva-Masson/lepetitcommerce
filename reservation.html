@@ -9,11 +9,22 @@
 
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="CSS/jquery-ui.theme.min.css">
+    <link rel="stylesheet" href="CSS/jquery-ui.min.css">
+    <link rel="stylesheet" href="CSS/jquery-ui.structure.min.css">
+    <script src="js/jquery-ui-1.12.1.custom/external/jquery/jquery.js"></script>
+    <script src="js/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 
     <title>LePetitCommerce - Réservation</title>
     <meta name="description" content="Retrouvez tout l'univers de la marque LePetitcommerce à travers sa E-boutique.">
+    <script>
+        $(function() {
+            $("#datepicker").datepicker({
+                showButtonPanel: true
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -79,9 +90,9 @@
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     La Boutique <span class="sr-only">(current)</span></a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Qui Sommes-Nous?</a>
+                        <a class="dropdown-item" href="quisommesnous.html">Qui Sommes-Nous?</a>
                         <a class="dropdown-item" href="#">Contact</a>
-                        <a class="dropdown-item" href="#">Personal Shopper - Coaching</a>
+                        <a class="dropdown-item" href="reservation.html">Personal Shopper - Coaching</a>
                         <a class="dropdown-item" href="#">Avis Clients</a>
                         <a class="dropdown-item" href="#">Recrutement</a>
                         <a class="dropdown-item" href="#">Evenements</a>
@@ -90,7 +101,7 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle redsoldes" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SOLDES<span class="sr-only">(current)</span></a>
+                    <a class="nav-link dropdown-toggle redsoldes" href="#" id="navbarDropdown5" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SOLDES<span class="sr-only">(current)</span></a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#">FEMME</a>
                         <a class="dropdown-item" href="solde.h.html">HOMME</a>
@@ -158,69 +169,108 @@
     <h2>Coaching</h2>
     <span class="ligne "></span>
 
-    <div>
-        <fieldset>
-            <legend>Réservation</legend>
-            <form>
-                <label for="mois">mois: </label>
-                <select name="" id="">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                </select>
+    <div class="container">
+        <div class="row">
 
-                <label for="jour">jour: </label>
-                <select name="" id="">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-                <option value="13">13</option>
-                <option value="14">14</option>
-                <option value="15">15</option>
-                <option value="16">16</option>
-                <option value="17">17</option>
-                <option value="18">18</option>
-                <option value="19">19</option>
-                <option value="20">20</option>
-                <option value="21">21</option>
-                <option value="22">22</option>
-                <option value="23">23</option>
-                <option value="24">24</option>
-                <option value="25">25</option>
-                <option value="26">26</option>
-                <option value="27">27</option>
-                <option value="28">28</option>
-                <option value="29">29</option>
-                <option value="30">30</option>
-                <option value="31">31</option>
-            </select>
-            </form>
-        </fieldset>
+            <div class="col-md-6">
+                <div class="container reservation_description">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3>Nos Coachs sont là pour vous:</h3>
+                            <br>Un changement complet est parfois utile lorsque l’on ne sait plus comment s’habiller ni comment se maquiller… <br> Découvrez les offres de relooking complet <span class="vert ">LePetitCommerce</span>.
+                            <br> Les spécialistes de la mode et de la beauté analyseront votre physique et votre personnalité pour trouver une garde-robe adaptée à votre morphologie, une coiffure qui convient à votre visage et vous bénéficierez de leurs
+                            précieux conseils !<br>
+                        </div>
+                        <div class="col-12">
+                            <img src="img/store-984393_960_720.jpg" alt="">
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="col-md-6" id="reservation">
+                <fieldset>
+                    <legend>Réservation</legend>
+                    <form>
+
+                        <label for="Civilité">Civilité :</label><br>
+                        <input class="choix inline" type="radio" name="Civilité" id="Civilité" value="homme">Monsieur
+                        <input class="choix inline" type="radio" name="Civilité" value="femme" checked>Madame
+                        <br>
+                        <label for="prenom">Prenom :</label>
+                        <input type="text" id="prenom" name="prenom" value="">
+                        <br>
+                        <label for="nom">Nom :</label>
+                        <input type="text" id="nom" name="nom" value="">
+                        <br>
+                        <label for="email">E-mail :</label>
+                        <input type="email" id="email" name="email" value="">
+                        <br>
+
+                        <label for="tel">Téléphone :</label>
+                        <input type="text" id="tel" name="tel" maxlength="10" pattern="[0-9]{5}" title="5chiffres comprit entre 0 et 9">
+
+
+
+
+
+
+                        <p>Choisir une date de rendez-vous: </p>
+                        <span class="ligne"></span>
+
+
+
+                        <p>Date: <input type="text" id="datepicker"></p>
+
+
+
+                        <input class="btn btn-outline-success" id="bouton_envoi" type="submit" value="Réserver">
+
+                        <p id="erreur_mail"></p>
+                    </form>
+                </fieldset>
+            </div>
+
+
+            <script>
+                document.getElementById('reservation').addEventListener('submit', function(xr) {
+
+                    var erreur_mail;
+                    var prenom = document.getElementById('prenom');
+                    var nom = document.getElementById('nom');
+                    var email = document.getElementById('email');
+                    var date = document.getElementById('datepicker');
+
+                    if (!email.value) {
+                        erreur_mail = "veuillez renseigner votre email";
+                        document.getElementById('email').style.cssText = "border-color: #BA55D3";
+                    }
+                    if (!nom.value) {
+                        erreur_mail = "veuillez renseigner votre nom";
+                        document.getElementById('nom').style.cssText = "border-color: #BA55D3";
+                    }
+                    if (!prenom.value) {
+                        erreur_mail = "veuillez renseigner votre prenom";
+                        document.getElementById('prenom').style.cssText = "border-color: #BA55D3";
+                    }
+                    if (erreur_mail) {
+                        xr.preventDefault();
+                        document.getElementById("erreur_mail").innerHTML = erreur_mail;
+                        return false;
+                    } else {
+
+                        alert('Merci pour votre réservation');
+                    }
+                })
+            </script>
+
+
+        </div>
+
     </div>
-
-
-
-
-
-
     <div class="clear "></div>
     <!-- **** infos sup **** -->
 
@@ -290,8 +340,8 @@
                     <div class="footer_align" id="infos_liste">
                         <ul>
                             <li><a href="#">Contact</a></li>
-                            <li><a href="#">Mentions Légales</a></li>
-                            <li><a href="#">Nos conditions Générales de Vente</a></li>
+                            <li><a href="cgv.html">Mentions Légales</a></li>
+                            <li><a href="cgv.html">Nos conditions Générales de Vente</a></li>
                             <li><a href="#">Plan du site</a></li>
                             <li><a href="#">Imprimer la page</a></li>
                         </ul>
@@ -325,9 +375,6 @@
             $('.carousel').carousel({
                 interval: 1800
             })
-
-
-
         });
     </script>
 
@@ -335,7 +382,7 @@
 
 
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="js/script.js "></script>
     <script src="js/bootstrap.js "></script>
 </body>

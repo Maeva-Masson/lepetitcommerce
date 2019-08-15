@@ -1172,7 +1172,7 @@ h3 {
 /* ***********  Pages Newsletter  ********************************** */
 
 #erreur {
-    color: red;
+    color: #BA55D3;
     font-size: 20px;
 }
 
@@ -1242,8 +1242,7 @@ p {
     width: 30px;
 }
 
-#News_form input[type=submit],
-{
+#News_form input[type=submit] {
     width: 100px;
     margin-left: 5px;
     cursor: pointer;
@@ -1256,6 +1255,78 @@ p {
 
 .conditions a {
     text-decoration: none;
+    color: #BA55D3 !important;
+}
+
+
+/* ***********  Pages CGV ********************************** */
+
+#cgv {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#cgv p {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+
+/* ***********  Pages reservation ********************************** */
+
+#reservation {
+    margin: 0 auto 0 auto;
+    margin-top: 30px;
+    text-align: center;
+}
+
+#reservation form {
+    padding: 10px;
+}
+
+#reservation fieldset {
+    padding: 0 20px 20px 20px;
+    margin-bottom: 10px;
+    border: 1px solid #000;
+    justify-content: center;
+}
+
+#reservation legend {
+    text-align: center;
+}
+
+#reservation input[type=text],
+#reservation input[type=email] {
+    display: flex;
+    margin: 0 auto;
+    width: 200px;
+}
+
+#reservation input[type=submit] {
+    margin-top: 10px;
+    width: 100px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.reservation_description img {
+    padding-top: 20px;
+    width: 100%;
+}
+
+.reservation_description {
+    margin: 0 auto 0 auto;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+#datepicker {
+    margin: 0 auto;
+}
+
+#erreur_mail {
+    color: #BA55D3;
 }
 
 

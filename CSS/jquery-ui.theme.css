@@ -8,7 +8,7 @@
  *
  * http://api.jqueryui.com/category/theming/
  *
- * To view and modify this theme, visit http://jqueryui.com/themeroller/?scope=&folderName=eggplant&cornerRadiusShadow=0px&offsetLeftShadow=-4px&offsetTopShadow=-4px&thicknessShadow=4px&opacityShadow=60&bgImgOpacityShadow=0&bgTextureShadow=flat&bgColorShadow=aaaaaa&opacityOverlay=80&bgImgOpacityOverlay=0&bgTextureOverlay=flat&bgColorOverlay=eeeeee&iconColorError=ebccce&fcError=ffffff&borderColorError=994d53&bgImgOpacityError=55&bgTextureError=flat&bgColorError=994d53&iconColorHighlight=8d78a5&fcHighlight=333333&borderColorHighlight=ffdb1f&bgImgOpacityHighlight=55&bgTextureHighlight=flat&bgColorHighlight=fafafa&iconColorActive=454545&fcActive=ffffff&borderColorActive=7e7783&bgImgOpacityActive=45&bgTextureActive=highlight_soft&bgColorActive=5f5964&iconColorHover=734d99&fcHover=734d99&borderColorHover=d1c5d8&bgImgOpacityHover=100&bgTextureHover=highlight_soft&bgColorHover=eae6ea&iconColorDefault=8d78a5&fcDefault=665874&borderColorDefault=dcd9de&bgImgOpacityDefault=100&bgTextureDefault=highlight_soft&bgColorDefault=dcd9de&iconColorContent=ffffff&fcContent=ffffff&borderColorContent=7e7783&bgImgOpacityContent=30&bgTextureContent=gloss_wave&bgColorContent=3d3644&iconColorHeader=a8a3ae&fcHeader=ffffff&borderColorHeader=231d2b&bgImgOpacityHeader=25&bgTextureHeader=highlight_soft&bgColorHeader=30273a&cornerRadius=6px&fsDefault=1.1em&fwDefault=bold&ffDefault=Lucida%20Grande%2CLucida%20Sans%2CArial%2Csans-serif
+ * To view and modify this theme, visit http://jqueryui.com/themeroller/?scope=&folderName=custom-theme&bgImgOpacityError=55&bgImgOpacityHighlight=55&bgImgOpacityActive=45&bgImgOpacityHover=100&bgImgOpacityDefault=100&bgImgOpacityContent=30&bgImgOpacityHeader=25&cornerRadiusShadow=0px&offsetLeftShadow=-4px&offsetTopShadow=-4px&thicknessShadow=4px&opacityShadow=60&bgImgOpacityShadow=0&bgTextureShadow=flat&bgColorShadow=%23aaaaaa&opacityOverlay=80&bgImgOpacityOverlay=0&bgTextureOverlay=flat&bgColorOverlay=%23eeeeee&iconColorError=%23ebccce&fcError=%23ffffff&borderColorError=%23994d53&bgTextureError=flat&bgColorError=%23994d53&iconColorHighlight=%238d78a5&fcHighlight=%23333333&borderColorHighlight=%23ffdb1f&bgTextureHighlight=flat&bgColorHighlight=%23fafafa&iconColorActive=%23454545&fcActive=%23ffffff&borderColorActive=%237e7783&bgTextureActive=highlight_soft&bgColorActive=%235f5964&iconColorHover=%23734d99&fcHover=%23734d99&borderColorHover=%23d1c5d8&bgTextureHover=highlight_soft&bgColorHover=%23eae6ea&iconColorDefault=%238d78a5&fcDefault=%23665874&borderColorDefault=%23dcd9de&bgTextureDefault=highlight_soft&bgColorDefault=%23dcd9de&iconColorContent=%23ffffff&fcContent=%23ffffff&borderColorContent=%237e7783&bgTextureContent=gloss_wave&bgColorContent=%23BA55D3&iconColorHeader=%23a8a3ae&fcHeader=%23ffffff&borderColorHeader=%23231d2b&bgTextureHeader=highlight_soft&bgColorHeader=%23BA55D3&cornerRadius=6px&fwDefault=bold&fsDefault=1.1em&ffDefault=Lucida%20Grande%2CLucida%20Sans%2CArial%2Csans-serif
  */
 
 
@@ -33,7 +33,7 @@
 }
 .ui-widget-content {
 	border: 1px solid #7e7783;
-	background: #3d3644 url("images/ui-bg_gloss-wave_30_3d3644_500x100.png") 50% top repeat-x;
+	background: #BA55D3 url("images/ui-bg_gloss-wave_30_BA55D3_500x100.png") 50% top repeat-x;
 	color: #ffffff;
 }
 .ui-widget-content a {
@@ -41,7 +41,7 @@
 }
 .ui-widget-header {
 	border: 1px solid #231d2b;
-	background: #30273a url("images/ui-bg_highlight-soft_25_30273a_1x100.png") 50% 50% repeat-x;
+	background: #BA55D3 url("images/ui-bg_highlight-soft_25_BA55D3_1x100.png") 50% 50% repeat-x;
 	color: #ffffff;
 	font-weight: bold;
 }
