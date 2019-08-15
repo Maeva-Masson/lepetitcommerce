@@ -709,8 +709,6 @@ h3 {
     height: 50px;
 }
 
-/* ************ recrutement ************ */
-
 .recrut_main{
     background-image:url("../img/fond.jpg");
     background-size: cover;
@@ -786,9 +784,13 @@ h3 {
 .submit_recrutement{
     margin-top: 2%;
     text-align: center;
-    margin-bottom: 5%;
 }
 
+.recrut{
+    color: black;
+    font-size: 80%!important;
+    width: 40%;
+}
 /* ************ tete de gondole ************ */
 
 #gondole {
