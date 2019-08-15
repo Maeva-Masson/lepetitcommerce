@@ -1,0 +1,72 @@
+.container{
+    display: flex;
+    width: 100%;
+}
+
+
+.image_description{
+    cursor: pointer;
+    margin: 20px;
+}
+
+.description_article{
+    margin-top: 30px;
+    margin-left: 33px;
+}
+
+.prix_description{
+    font-weight: bold;
+}
+
+.img_declinaison{
+    margin: 10px;
+}
+
+#img_description{
+    cursor: pointer;
+}
+
+.declinaison{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+.achat{
+    margin-top: 30px;
+}
+
+#nav3{
+    list-style: none;
+    margin-top: 10px;
+}
+
+.fixdroite{
+    z-index: 9999;
+    position: fixed;
+    /* top: 530px; */
+    margin-top: -600px;
+    margin-left: 66.6%;
+    /* margin-bottom: */
+    width: 80%;
+}
+
+.fixdroiteB{
+    z-index: 9999;
+    background: orange;
+    display: block;
+    scroll-margin-block-end: 100px;
+}
+
+.avisClients{
+    font-weight: bold;
+}
+
+.avis_c{
+    margin-top: 15px;
+}
+
+.avisClients1, .avisClients2, .avisClients3{
+    font-style: italic; 
+}
+
