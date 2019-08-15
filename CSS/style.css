@@ -709,6 +709,86 @@ h3 {
     height: 50px;
 }
 
+/* ************ recrutement ************ */
+
+.recrut_main{
+    background-image:url("../img/fond.jpg");
+    background-size: cover;
+}
+
+.introFormulaire{
+    /* border: 1px solid #BA55D3; */
+    padding: 2%;
+    width: 50%;
+    margin: auto;
+    margin-top: 5%;
+    background-image:url("../img/fond.jpg");
+    background-size: cover;
+    border-radius: 10px;
+    color: rgb(41, 41, 41);
+    font-weight: bold;
+}
+
+.form_recrutement p{
+    text-align: initial;
+}
+
+.emploi_span{
+    font-size: 125%;
+}
+
+.civilite_form, .emplois_form, .langues_form, .upload_CV {
+    background: #000;
+    color: grey;
+    width: 50%;
+    margin: auto;
+    margin-top: 5%;
+    padding: 2%;
+}
+
+.recrut_legend{
+    background: #BA55D3;
+    border: 1px solid #BA55D3;
+    border-radius: 30px;
+    color: white;
+    font-weight: lighter; 
+}
+
+.input_recrut{
+    margin-left: 10px;
+}
+
+.ecart{
+    margin-right: 5%;
+}
+
+.ecart2{
+    margin-left: 2%;
+}
+
+.ecart3{
+    margin-left: 8%;
+}
+
+.textarea{
+    width: 80%;
+    margin-left: 10%;
+}
+
+.choix_conditions{
+    text-align: center;
+    margin: auto;
+    margin-top: 15px;
+    color: lightgrey;
+    font-style: italic;
+}
+
+.submit_recrutement{
+    margin-top: 2%;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
 /* ************ tete de gondole ************ */
 
 #gondole {
