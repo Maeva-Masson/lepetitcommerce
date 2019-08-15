@@ -12,7 +12,6 @@
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 
     <title>LePetitCommerce</title>
-    <meta name="description" content="Retrouvez tout l'univers de la marque LePetitcommerce à travers sa E-boutique.">
 
 
 
@@ -22,11 +21,15 @@
 <body>
 
 
-    <!---------------------------------------HEADER-------------------------------------------------------->
+<!---------------------------------------HEADER-------------------------------------------------------->
     <header>
 
         <div class="headerLogo">
 
+            <div class="searchbar"><i class="fas fa-search"></i></div>
+            <div class="localisation"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="panier"><i class="fas fa-shopping-cart"></i></div>
+            <div class="user"><i class="fas fa-user"></i></div>
             <div id="conteneur">
                 <ul id="menu">
                     <li>
@@ -42,21 +45,13 @@
                     </li>
                 </ul>
             </div>
-            <div class="searchbar"><i class="fas fa-search"></i></div>
-            <a href="localisation.html" class="localisation"><i class="fas fa-map-marker-alt"></i></a>
-            <a href="login.html" class="user"> <i class="fas fa-user"></i></a>
-            <a href="panier.html" class="panier"><i class="fas fa-shopping-cart"></i></a>
         </div>
 
         <figure class="logoMarque">
             <img class="logoMarque" src="img/logo/logo.png" alt="Logo Marque">
         </figure>
-
-
-
-
-
     </header>
+
     <script>
         $(document).ready(function() {
             $(".langues").hover(function() {
@@ -79,19 +74,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item dropdown">
-                    <a class="nav-link" href="index.html">Accueil</a>
-                </li>
-                <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 La Boutique <span class="sr-only">(current)</span></a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="quisommesnous.html">Qui Sommes-Nous?</a>
+                        <a class="dropdown-item" href="#">Qui Sommes-Nous?</a>
                         <a class="dropdown-item" href="#">Contact</a>
-                        <a class="dropdown-item" href="reservation.html">Personal Shopper - Coaching</a>
+                        <a class="dropdown-item" href="#">Personal Shopper - Coaching</a>
                         <a class="dropdown-item" href="#">Avis Clients</a>
                         <a class="dropdown-item" href="#">Recrutement</a>
                         <a class="dropdown-item" href="#">Evenements</a>
-                        <a class="dropdown-item" href="presse.html">Presse</a>
+                        <a class="dropdown-item" href="#">Presse</a>
                         <a class="dropdown-item" href="#">Actualités</a>
                     </div>
                 </li>
@@ -99,14 +91,14 @@
                     <a class="nav-link dropdown-toggle redsoldes" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SOLDES<span class="sr-only">(current)</span></a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#">FEMME</a>
-                        <a class="dropdown-item" href="solde.h.html">HOMME</a>
+                        <a class="dropdown-item" href="#">HOMME</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         FEMME</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item redsolde" href="#">Soldes</a>
+                        <a class="dropdown-item" href="#" style="color:red;">Soldes</a>
                         <a class="dropdown-item" href="#">Tout voir</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Tee-shirts</a>
@@ -128,7 +120,7 @@
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             HOMME</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item redsolde" href="solde.h.html">Soldes</a>
+                        <a class="dropdown-item" href="#" style="color:red; ">Soldes</a>
                         <a class="dropdown-item" href="Tous_nos_produits_H.html">Tout voir</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="Pantalons.html">Pantalons</a>
@@ -160,505 +152,351 @@
     </nav>
 
 
-    <!-------------------------------CAROUSSEL--------------------------------------->
+<!-------------------------------CAROUSSEL--------------------------------------->
 
-    <main>
+<main>
 
 
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active soldes ">
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active soldes ">
 
-                    <div class="carousel-caption  d-md-block">
-                        <h2>Les Soldes</h2>
-                        <p>Vite Vite! <br> Derniéres démarques.</p>
-                        <a href="solde.h.html"><button class="btn btn-outline-success redbutton" type="submit"> Je découvre <i class="fas fa-arrow-right"></i></button></a>
-                    </div>
-                </div>
-                <div class="carousel-item costume">
-
-                    <div class="carousel-caption  d-md-block">
-                        <h2>Un Mariage ?</h2>
-                        <p>Une selection de style juste pour vous.</p>
-                        <a href="nouveautés_h.html"><button class="btn btn-outline-success redbutton" type="submit"> Je découvre <i class="fas fa-arrow-right"></i></button></a>
-                    </div>
-                </div>
-                <div class="carousel-item new">
-
-                    <div class="carousel-caption  d-md-block">
-                        <h2>Les Nouveautés</h2>
-                        <p>Quoi de Neuf ?</p>
-                        <a href="nouveautés_h.html"><button class="btn btn-outline-success redbutton" type="submit"> Je découvre <i class="fas fa-arrow-right"></i></button></a>
-                    </div>
-                </div>
+            <div class="carousel-caption  d-md-block">
+                <h2>Les Soldes</h2>
+                <p>Vite Vite! <br> Derniéres démarques.</p>
+                <a href="#"><button class="btn btn-outline-success redbutton" type="submit"> Je découvre <i class="fas fa-arrow-right"></i></button></a>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
         </div>
+        <div class="carousel-item costume">
 
-
-        <!--------------FIL D'ARIANE------------------>
-
-        <nav aria-label="breadcrumb" id="ariane">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Femme</li>
-            </ol>
-        </nav>
-
-
-        <!------------------------      MENU PRINCIPAL FEMME       ----------------------->
-
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-3 ">
-                    <nav id="nav3" class="">
-
-                        <<<<<<< HEAD <div class="toggle">
-                            <i class="fas fa-angle-down"></i>
-                </div>
-                <H3>FEMME</H3>
-                <ul>
-                    <li>
-                        <a href="#" class="nav2_sous_menu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Pantalons <i class="fas fa-angle-down"></i> </a>
-                        <div class="dropdown-divider"></div>
-                        <ul class="sous_menu_h_nav2">
-                            <li><a class="dropdown-item" href="pantalons_femme.html">Tout voir</a></li>
-                            <li><a href="pantalons_femme.html#pince" class="dropdown-item">Les Pantalons à pinces</a></li>
-                            <li><a href="pantalons_femme.html#casuals" class="dropdown-item">Les Casuals</a></li>
-                            <li><a href="pantalons_femme.html#fluide" class="dropdown-item">Les Fluides</a></li>
-                        </ul>
-                    </li>
-                    =======
-                    <div class="toggle">
-                        <i class="fas fa-angle-down"></i>
-                    </div>
-                    <H3>FEMME</H3>
-                    <ul>
-                        <li>
-                            <a href="#" class="nav2_sous_menu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Pantalons <i class="fas fa-angle-down"></i> </a>
-                            <div class="dropdown-divider"></div>
-                            <ul class="sous_menu_h_nav2">
-                                <li><a class="dropdown-item" href="pantalons_femme.html">Tout voir</a></li>
-                                <li><a href="pantalons_femme.html#pinces" class="dropdown-item">Les Pantalons à pinces</a></li>
-                                <li><a href="pantalons_femme.html#casuals" class="dropdown-item">Les Casuals</a></li>
-                                <li><a href="pantalons_femme.html#fluides" class="dropdown-item">Les Fluides</a></li>
-                            </ul>
-                        </li>
-                        >>>>>>> refs/remotes/origin/master
-
-                        <li>
-                            <a href="jean_femme.html" class="nav2_sous_menu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Jeans <i class="fas fa-angle-down"></i> </a>
-                            <div class="dropdown-divider"></div>
-                            <ul class="sous_menu_h_nav2">
-
-                                <li><a href="jean_femme.html#skinny" class="dropdown-item">Les "Skinny"</a></li>
-                                <li><a href="jean_femme.html#regular" class="dropdown-item">Les "Regular"</a></li>
-                                <li><a href="jean_femme.html#custom" class="dropdown-item">Les Customisés</a></li>
-                            </ul>
-                        </li>
-
-                        <<<<<<< HEAD <li>
-                            <a href="chemisiers_femme.html" class="nav2_sous_menu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Les Chemisiers <i class="fas fa-angle-down"></i> </a>
-                            <div class="dropdown-divider"></div>
-                            <ul class="sous_menu_h_nav2">
-                                <li><a href="chemisiers_femme.html#mousseline" class="dropdown-item">En Mousseline</a></li>
-                                <li><a href="chemisiers_femme.html#satin" class="dropdown-item">En Satin</a></li>
-                                <li><a href="chemisiers_femme.html#mao" class="dropdown-item">Sans Manches</a></li>
-                            </ul>
-                            </li>
-
-                            <li>
-                                <a href="hauts_femme.html" class="nav2_sous_menu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Les hauts <i class="fas fa-angle-down"></i> </a>
-                                <div class="dropdown-divider"></div>
-                                <ul class="sous_menu_h_nav2">
-                                    <li><a href="hauts_femme.html#tops" class="dropdown-item">Les Tops Colorés</a></li>
-                                    <li><a href="hauts_femme.html#basiques" class="dropdown-item">Les Basiques</a></li>
-                                    <li><a href="hauts_femme.html#manchesLongues" class="dropdown-item">Les Manches Longues</a></li>
-                                </ul>
-                            </li>
-                            =======
-                            <li><a href="jean_femme.html#skinny" class="dropdown-item">Les "Skinny"</a></li>
-                            <li><a href="jean_femme.html#regular" class="dropdown-item">Les "Regular"</a></li>
-                            <li><a href="jean_femme.html#custom" class="dropdown-item">Les "Custom"</a></li>
-                    </ul>
-                    </li>
-
-                    <li>
-                        <a href="chemisiers_femme.html" class="nav2_sous_menu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Les Chemisiers <i class="fas fa-angle-down"></i> </a>
-                        <div class="dropdown-divider"></div>
-                        <ul class="sous_menu_h_nav2">
-                            <li><a href="chemisiers_femme.html#mousseline" class="dropdown-item">En Mousseline</a></li>
-                            <li><a href="chemisiers_femme.html#satin" class="dropdown-item">En Satin</a></li>
-                            <li><a href="chemisiers_femme.html#sansManches" class="dropdown-item">Sans Manches</a></li>
-                        </ul>
-                    </li>
-                    >>>>>>> refs/remotes/origin/master
-
-                    <li>
-                        <a href="pulls_femme.html" class="nav2_sous_menu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Les Pulls <i class="fas fa-angle-down"></i> </a>
-                        <div class="dropdown-divider"></div>
-                        <ul class="sous_menu_h_nav2">
-                            <li><a href="pulls_femme.html#basique" class="dropdown-item">Les Basiques</a></li>
-                            <li><a href="pulls_femme.html#cardigan" class="dropdown-item">Cardigans</a></li>
-                            <li><a href="pulls_femme.html#urban" class="dropdown-item">Urban</a></li>
-                        </ul>
-                    </li>
-
-                    <<<<<<< HEAD <li>
-                        <a href="vestes_femme.html" class="nav2_sous_menu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Vestes / Manteaux <i class="fas fa-angle-down"></i> </a>
-                        <div class="dropdown-divider"></div>
-                        <ul class="sous_menu_h_nav2">
-                            <li><a href="vestes_femme.html" class="dropdown-item">En Jean</a></li>
-                            <li><a href="vestes_femme.html" class="dropdown-item">Les Vestes Cintrées</a></li>
-
-                        </ul>
-                        </li>
-
-                        <li>
-                            <a href="chaussures_femme.html" class="nav2_sous_menu" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Les Chaussures <i class="fas fa-angle-down"></i> </a>
-                            <div class="dropdown-divider"></div>
-                            <ul class="sous_menu_h_nav2">
-                                <li><a href="chaussures_femme.html#talons" class="dropdown-item">A Talons</a></li>
-                                <li><a href="chaussures_femme.html#plates" class="dropdown-item">Chaussures Plates</a></li>
-                                <li><a href="chaussures_femme.html#sandales" class="dropdown-item">Sandales</a></li>
-                            </ul>
-                        </li>
-                        =======
-                        <li>
-                            <a href="pulls_femme.html" class="nav2_sous_menu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Les Pulls <i class="fas fa-angle-down"></i> </a>
-                            <div class="dropdown-divider"></div>
-                            <ul class="sous_menu_h_nav2">
-                                <li><a href="pulls_femme.html#cachemires" class="dropdown-item">Les Cachemires</a></li>
-                                <li><a href="pulls_femme.html#mailles" class="dropdown-item">Les Mailles Fines</a></li>
-                                <li><a href="pulls_femme.html#colsRoules" class="dropdown-item">Les Cols Roulés</a></li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <a href="vestes_femme.html" class="nav2_sous_menu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Vestes / Manteaux <i class="fas fa-angle-down"></i> </a>
-                            <div class="dropdown-divider"></div>
-                            <ul class="sous_menu_h_nav2">
-                                <li><a href="vestes_femme.html#enJean" class="dropdown-item">En Jean</a></li>
-                                <li><a href="vestes_femme.html#cintrees" class="dropdown-item">Les Vestes Cintrées</a></li>
-                            </ul>
-                        </li>
-                        >>>>>>> refs/remotes/origin/master
-
-                        <li>
-                            <a href="accessoires_femme.html" class="nav2_sous_menu" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">ACCESSOIRES <i class="fas fa-angle-down"></i> </a>
-                            <div class="dropdown-divider"></div>
-                            <ul class="sous_menu_h_nav2">
-                                <li><a href="accessoires_femme.html" class="dropdown-item">Tout voir</a></li>
-                                <li><a href="accessoires_femme.html" class="dropdown-item">Sacs</a></li>
-                                <li><a href="accessoires_femme.html" class="dropdown-item">Ceintures</a></li>
-                                <li><a href="accessoires_femme.html" class="dropdown-item">Montres / Lunettes</a></li>
-                                <li><a href="accessoires_femme.html" class="dropdown-item">Chapeaux / Bonnets</a></li>
-                            </ul>
-                        </li>
-
-                        <<<<<<< HEAD </ul>
-                            </nav>
+            <div class="carousel-caption  d-md-block">
+                <h2>Un Mariage ?</h2>
+                <p>Une selection de style juste pour vous.</p>
+                <a href="#"><button class="btn btn-outline-success redbutton" type="submit"> Je découvre <i class="fas fa-arrow-right"></i></button></a>
             </div>
-            =======
-            <li>
-                <a href="accessoires_femme.html" class="nav2_sous_menu" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">ACCESSOIRES <i class="fas fa-angle-down"></i> </a>
-                <div class="dropdown-divider"></div>
-                <ul class="sous_menu_h_nav2">
-                    <li><a href="accessoires_femme.html" class="dropdown-item">Tout voir</a></li>
-                    <li><a href="accessoires_femme.html#sacs" class="dropdown-item">Sacs</a></li>
-                    <li><a href="accessoires_femme.html#ceintures" class="dropdown-item">Ceintures</a></li>
-                    <li><a href="accessoires_femme.html#montresLunettes" class="dropdown-item">Montres / Lunettes</a></li>
-                    <li><a href="accessoires_femme.html#chapeauxBonnet" class="dropdown-item">Chapeaux / Bonnets</a></li>
-                </ul>
-            </li>
-            >>>>>>> refs/remotes/origin/master
+        </div>
+        <div class="carousel-item new">
+
+            <div class="carousel-caption  d-md-block">
+                <h2>Les Nouveautés</h2>
+                <p>Quoi de Neuf ?</p>
+                <a href="#"><button class="btn btn-outline-success redbutton" type="submit"> Je découvre <i class="fas fa-arrow-right"></i></button></a>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+
+<!--------------FIL D'ARIANE------------------>
+
+<nav aria-label="breadcrumb" id="ariane">
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Accueil</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Femme</li>
+</ol>
+</nav>
+
+
+<!------------------------      MENU PRINCIPAL FEMME       ----------------------->
+
+<div class="container-fluid">
+<div class="row">
+    <div class="col-md-3 ">
+        <nav id="nav3" class="">
+
+<div class="toggle">
+    <i class="fas fa-angle-down"></i>
+</div>
+<H3>FEMME</H3>
+<ul>
+    <li>
+        <a href="#" class="nav2_sous_menu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Pantalons <i class="fas fa-angle-down"></i> </a>
+        <div class="dropdown-divider"></div>
+        <ul class="sous_menu_h_nav2">
+            <li><a class="dropdown-item" href="pantalons_femme.html">Tout voir</a></li>
+            <li><a href="pantalons_femme.html#pinces" class="dropdown-item">Les Pantalons à pinces</a></li>
+            <li><a href="pantalons_femme.html#casuals" class="dropdown-item">Les Casuals</a></li>
+            <li><a href="pantalons_femme.html#fluides" class="dropdown-item">Les Fluides</a></li>
+        </ul>
+    </li>
+
+    <li>
+        <a href="jean_femme.html" class="nav2_sous_menu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Jeans <i class="fas fa-angle-down"></i> </a>
+        <div class="dropdown-divider"></div>
+        <ul class="sous_menu_h_nav2">
+            <li><a href="jean_femme.html#skinny" class="dropdown-item">Les "Skinny"</a></li>
+            <li><a href="jean_femme.html#regular" class="dropdown-item">Les "Regular"</a></li>
+            <li><a href="jean_femme.html#custom" class="dropdown-item">Les Customisés</a></li>
+        </ul>
+    </li>
+
+    <li>
+        <a href="chemisiers_femme.html" class="nav2_sous_menu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Les Chemisiers <i class="fas fa-angle-down"></i> </a>
+        <div class="dropdown-divider"></div>
+        <ul class="sous_menu_h_nav2">
+            <li><a href="chemisiers_femme.html#mousseline" class="dropdown-item">En Mousseline</a></li>
+            <li><a href="chemisiers_femme.html#satin" class="dropdown-item">En Satin</a></li>
+            <li><a href="chemisiers_femme.html#sansManches" class="dropdown-item">Sans Manches</a></li>
+        </ul>
+    </li>
+
+    <li>
+        <a href="pulls_femme.html" class="nav2_sous_menu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Les Pulls <i class="fas fa-angle-down"></i> </a>
+        <div class="dropdown-divider"></div>
+        <ul class="sous_menu_h_nav2">
+            <li><a href="pulls_femme.html#basique" class="dropdown-item">Les Basiques</a></li>
+            <li><a href="pulls_femme.html#cardigan" class="dropdown-item">Cardigans</a></li>
+            <li><a href="pulls_femme.html#urban" class="dropdown-item">Urban</a></li>
+        </ul>
+    </li>
+
+    <li>
+        <a href="pulls_femme.html" class="nav2_sous_menu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Les Pulls <i class="fas fa-angle-down"></i> </a>
+        <div class="dropdown-divider"></div>
+        <ul class="sous_menu_h_nav2">
+            <li><a href="pulls_femme.html#cachemires" class="dropdown-item">Les Cachemires</a></li>
+            <li><a href="pulls_femme.html#mailles" class="dropdown-item">Les Mailles Fines</a></li>
+            <li><a href="pulls_femme.html#colsRoules" class="dropdown-item">Les Cols Roulés</a></li>
+        </ul>
+    </li>
+
+    <li>
+        <a href="vestes_femme.html" class="nav2_sous_menu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Vestes / Manteaux <i class="fas fa-angle-down"></i> </a>
+        <div class="dropdown-divider"></div>
+        <ul class="sous_menu_h_nav2">
+            <li><a href="vestes_femme.html#enJean" class="dropdown-item">En Jean</a></li>
+            <li><a href="vestes_femme.html#cintrees" class="dropdown-item">Les Vestes Cintrées</a></li>
+        </ul>
+    </li>
 
-            <!-----------------       CATEGORIES D'ARTICLES      ------------------------>
-            <div class="col-md-9">
-                <div class="container">
-                    <div class="row ">
+    <li>
+        <a href="accessoires_femme.html" class="nav2_sous_menu" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">ACCESSOIRES <i class="fas fa-angle-down"></i> </a>
+        <div class="dropdown-divider"></div>
+        <ul class="sous_menu_h_nav2">
+            <li><a href="accessoires_femme.html" class="dropdown-item">Tout voir</a></li>
+            <li><a href="accessoires_femme.html" class="dropdown-item">Sacs</a></li>
+            <li><a href="accessoires_femme.html" class="dropdown-item">Ceintures</a></li>
+            <li><a href="accessoires_femme.html" class="dropdown-item">Montres / Lunettes</a></li>
+            <li><a href="accessoires_femme.html" class="dropdown-item">Chapeaux / Bonnets</a></li>
+        </ul>
+    </li>
 
+    <li>
+        <a href="accessoires_femme.html" class="nav2_sous_menu" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">ACCESSOIRES <i class="fas fa-angle-down"></i> </a>
+        <div class="dropdown-divider"></div>
+        <ul class="sous_menu_h_nav2">
+            <li><a href="accessoires_femme.html" class="dropdown-item">Tout voir</a></li>
+            <li><a href="accessoires_femme.html#sacs" class="dropdown-item">Sacs</a></li>
+            <li><a href="accessoires_femme.html#ceintures" class="dropdown-item">Ceintures</a></li>
+            <li><a href="accessoires_femme.html#montresLunettes" class="dropdown-item">Montres / Lunettes</a></li>
+            <li><a href="accessoires_femme.html#chapeauxBonnet" class="dropdown-item">Chapeaux / Bonnets</a></li>
+        </ul>
+    </li>
 
-                        <div class="col-md-6 categorie" id="pantalonsF">
-                            <!----- LES PANTALONS------>
+    </ul>
+        </nav>
+    </div>
 
-                            <h3>Les Pantalons</h3>
-                            <span class="ligne"></span>
+<!-----------------       CATEGORIES D'ARTICLES      ------------------------>
+<div class="col-md-9">
+    <div class="container">
+        <div class="row ">
 
-                            <p>"Retrouvez notre large gamme de pantalons, pour toute occasion. En effet, <span class="orange">LePetitCommerce</span> sait s'assortir à tous les styles."</p>
 
-                            <a href="pantalons_femme.html"><img src="" name=pantalonsF alt="image_pantalon"></a>
+    <div class="col-md-6 categorie" id="pantalonsF">
+        <!----- LES PANTALONS------>
 
-                        </div>
+        <h3>Les Pantalons</h3>
+        <span class="ligne"></span>
 
-                        <!----------------------------------------------------------------------------------------------->
+        <p>"Retrouvez notre large gamme de pantalons, pour toute occasion. En effet, <span class="orange">LePetitCommerce</span> sait s'assortir à tous les styles."</p>
 
-                        <div class="col-md-6 categorie" id="jeansF">
-                            <!----- LES JEANS------>
+        <a href="pantalons_femme.html"><img name=pantalonsF alt="image_pantalon"></a>
 
-                            <h3>Les Jeans</h3>
-                            <span class="ligne"></span>
+    </div>
 
-                            <p>"À chaque femme son jean. <span class="vert">LePetitCommerce</span> est là pour s'adapter à toutes les morphologies."</p>
+<!----------------------------------------------------------------------------------------------->
 
-                            <a href="jeans_femme.html"> <img src="" name=jeansF alt="image_jean"></a>
+    <div class="col-md-6 categorie" id="jeansF">
+        <!----- LES JEANS------>
 
-                        </div>
+        <h3>Les Jeans</h3>
+        <span class="ligne"></span>
 
-                        <!----------------------------------------------------------------------------------------------->
+        <p>"À chaque femme son jean. <span class="vert">LePetitCommerce</span> est là pour s'adapter à toutes les morphologies."</p>
 
-                        <div class="col-md-6 categorie" id="chemisiersF">
-                            <!----- LES CHEMISIERS------>
+        <a href="jeans_femme.html"> <img name=jeansF alt="image_jean"></a>
 
-                            <h3>Les Chemisiers</h3>
-                            <span class="ligne"></span>
+    </div>
 
-                            <p> "Les chemisiers <span class="vert">LePetitCommerce</span> pour femme sont les pièces maîtresses de tout look féminin."
-                            </p>
+<!----------------------------------------------------------------------------------------------->
 
-                            <<<<<<< HEAD <a href="chemisiers_femme.html"> <img src="" name=chemisiersF alt="image_chemisier"></a>
-                                =======
-                                <p> "Les chemisiers <span class="vert">LePetitCommerce</span> sont les pièces maîtresses de tout look féminin."
-                                </p>
-                                >>>>>>> refs/remotes/origin/master
+    <div class="col-md-6 categorie" id="chemisiersF">
+        <!----- LES CHEMISIERS------>
 
-                        </div>
+        <h3>Les Chemisiers</h3>
+        <span class="ligne"></span>
 
-                        <!----------------------------------------------------------------------------------------------->
+        <p> "Les chemisiers <span class="vert">LePetitCommerce</span> sont les pièces maîtresses de tout look féminin."</p>
 
-                        <div class="col-md-6 categorie" id="hautsF">
-                            <!----- LES HAUTS------>
+        <a href="chemisiers_femme.html"> <img name=chemisiersF alt="image_chemisier"></a>
 
-                            <<<<<<< HEAD <h3>Les Hauts</h3>
-                                <span class="ligne"></span>
+    </div>
 
-                                <p>"Quelle que soit l’occasion, avec <span class="vert">LePetitCommerce</span>, vous trouverez le petit top, débardeur ou tee-shirt qui s'accordera parfaitement à votre style."
-                                </p>
+<!----------------------------------------------------------------------------------------------->
 
-                                <a href="hauts_femme.html"> <img src="" name=hautsF alt="image_tshirt"></a>
+    <div class="col-md-6 categorie" id="topsF">
+        <!----- LES TOPS------>
 
-                        </div>
-                        =======
-                        <div class="col-md-6 categorie" id="topsF">
-                            <!----- LES TOPS------>
+        <h3>Les Tops</h3>
+        <span class="ligne"></span>
 
-                            <h3>Les Tops</h3>
-                            <span class="ligne"></span>
+        <p>"Avec <span class="vert">LePetitCommerce</span>, vous trouverez le petit top, débardeur ou tee-shirt qui s'accordera parfaitement à votre style."</p>
 
-                            <p>"Avec <span class="vert">LePetitCommerce</span>, vous trouverez le petit top, débardeur ou tee-shirt qui s'accordera parfaitement à votre style."
-                            </p>
+        <a href="hauts_femme.html"> <img name=topsF alt="image_top"></a>
 
-                            <a href="hauts_femme.html"> <img src="" name=topsF alt="image_top"></a>
-                            >>>>>>> refs/remotes/origin/master
+    </div>
 
-                            <!----------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------->
 
-                            <<<<<<< HEAD <div class="col-md-6 categorie" id="pull">
-                                <!----- LES PULLS------>
+    <div class="col-md-6 categorie" id="tshirtsF">
+        <!----- LES TSHIRTS------>
 
-                                <h3>Les Pulls</h3>
-                                <span class="ligne"></span>
+        <h3>Les Tee-Shirts</h3>
+        <span class="ligne"></span>
 
-                                <p> "Vous trouverez ici le petit pull idéal pour parfaire votre look tendance hivernal, grâce à l'élégance de la maille ou à la douceur du cachemire."
-                                </p>
+        <p>"Quelle que soit l’occasion, avec <span class="vert">LePetitCommerce</span>, vous trouverez le tee-shirt qui s'accordera parfaitement à votre style."
+        </p>
 
-                                <a href="pulls_femme.html"> <img src="" name=pullF alt="image_pull"></a>
+        <a href="tshirts_femme.html"> <img name=tshirtF alt="image_tshirt"></a>
 
-                        </div>
-                        =======
+    </div>
 
-                        <!----------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------->
 
-                        <div class="col-md-6 categorie" id="tshirtsF">
-                            <!----- LES TSHIRTS------>
+    <div class="col-md-6 categorie" id="pullF">
+        <!----- LES PULLS------>
 
-                            <h3>Les Tee-Shirts</h3>
-                            <span class="ligne"></span>
+        <h3>Les Pulls</h3>
+        <span class="ligne"></span>
 
-                            <p>"Quelle que soit l’occasion, avec <span class="vert">LePetitCommerce</span>, vous trouverez le tee-shirt qui s'accordera parfaitement à votre style."
-                            </p>
+        <p> "Vous trouverez ici le petit pull idéal pour parfaire votre look tendance hivernal, grâce à l'élégance de la maille ou à la douceur du cachemire."
+        </p>
 
-                            <a href="tshirts_femme.html"> <img src="" name=tshirtF alt="image_tshirt"></a>
-                            >>>>>>> refs/remotes/origin/master
+        <a href="pulls_femme.html"> <img name=pullF alt="image_pull"></a>
 
-                            <!----------------------------------------------------------------------------------------------->
+    </div>
 
-                            <div class="col-md-6 categorie" id="veste">
-                                <!----- LES VESTES------>
+<!----------------------------------------------------------------------------------------------->
 
-                                <<<<<<< HEAD <h3>Vestes et Manteaux</h3>
-                                    <span class="ligne"></span>
+    <div class="col-md-6 categorie" id="vesteF">
+        <!----- LES VESTES------>
 
-                                    <p>"Nos vestes pour femme <span class="vert">LePetitCommerce</span> apportent la touche d'élégance et de raffinement que vous recherchez!"</p>
+        <h3>Les Vestes</h3>
+        <span class="ligne"></span>
 
-                                    <a href="vestes_femme.html"> <img src="" name=vesteF alt="image_veste"></a>
+        <p>"Nos vestes pour femme <span class="vert">LePetitCommerce</span> apportent la touche d'élégance et de raffinement que vous recherchez!"</p>
 
-                            </div>
-                            =======
-                            <div class="col-md-6 categorie" id="pullF">
-                                <!----- LES PULLS------>
+        <a href="vestes_femme.html"> <img name=vesteF alt="image_veste"></a>
 
-                                <h3>Les Pulls</h3>
-                                <span class="ligne"></span>
+    </div>
 
-                                <p> "Vous trouverez ici le petit pull idéal pour parfaire votre look tendance hivernal, grâce à l'élégance de la maille ou à la douceur du cachemire."
-                                </p>
+<!----------------------------------------------------------------------------------------------->
 
-                                <a href="pulls_femme.html"> <img src="" name=pullF alt="image_pull"></a>
-                                >>>>>>> refs/remotes/origin/master
+    <div class="col-md-6 categorie" id="manteauxF">
+        <!----- LES MANTEAUX------>
 
-                                <!----------------------------------------------------------------------------------------------->
+        <h3>Les Manteaux</h3>
+        <span class="ligne"></span>
 
-                                <div class="col-md-6 categorie" id="chaussures">
-                                    <!----- LES CHAUSSURES------>
+        <p>"Nos manteaux pour femme <span class="vert">LePetitCommerce</span> sauront vous tenir chaud et vous protéger des intempéries!"</p>
 
-                                    <<<<<<< HEAD <h3>Les Chaussures</h3>
-                                        <span class="ligne"></span>
+        <a href="manteaux_femme.html"> <img name=manteauxF alt="image_manteaux"></a>
+    
+    </div>
 
-                                        <p>"Avec <span class="vert">LePetitCommerce</span>, vous trouverez forcément chaussure à votre pied. Découvrez tous nos modèles."</p>
+<!----------------------------------------------------------------------------------------------->
 
-                                        <a href="chaussures_femme.html"> <img src="" name=chaussuresF alt="image_chaussures"></a>
-                                </div>
+    <div class="col-md-6 categorie" id="chaussuresF">
+        <!----- LES CHAUSSURES------>
 
-                                <!----------------------------------------------------------------------------------------------->
-                                =======
-                                <div class="col-md-6 categorie" id="vesteF">
-                                    <!----- LES VESTES------>
+        <h3>Les Chaussures</h3>
+        <span class="ligne"></span>
 
-                                    <h3>Les Vestes</h3>
-                                    <span class="ligne"></span>
+        <p>"Avec <span class="vert">LePetitCommerce</span>, vous trouverez forcément chaussure à votre pied. Découvrez tous nos modèles."</p>
 
-                                    <p>"Nos vestes pour femme <span class="vert">LePetitCommerce</span> apportent la touche d'élégance et de raffinement que vous recherchez!"</p>
+        <a href="chaussures_femme.html"> <img name=chaussuresF alt="image_chaussures"></a>
 
-                                    <a href="vestes_femme.html"> <img src="" name=vesteF alt="image_veste"></a>
+    </div>
 
-                                </div>
-                                >>>>>>> refs/remotes/origin/master
+<!----------------------------------------------------------------------------------------------->
 
-                                <div class="col-md-6 categorie" id="bonnet">
-                                    <!----- LES BONNETS & CHAPEAUX------>
+    <div class="col-md-6 categorie" id="accessF">
+        <!----- LES ACCESSOIRES------>
+        <h3>Les Accessoires</h3>
+        <span class="ligne"></span>
 
-                                    <<<<<<< HEAD <h3>Bonnets & Chapeaux</h3>
-                                        <span class="ligne"></span>
+        <p>"Les accessoires <span class="vert">LePetitCommerce</span> pour femme apportent la touche finale à votre look, ils perfectionnent votre style en réhaussant chacune de vos tenues. "</p>
+        <a href="accessoires_femme.html"> <img name=accessF alt="image_accessoires"></a>
 
-                                        <p>"Les bonnets et chapeaux pour femme <span class="vert">LePetitCommerce</span>, sont sophistiqués ou décontractés mais toujours tendance."</p>
+    </div>
 
-                                        <a href="accessoires_femme.html"> <img src="" name=bonnetF alt="image_bonnet"></a>
+<!----------------------------------------------------------------------------------------------->
 
-                                </div>
+        </div>
+    </div>
+</div>
 
-                                <!----------------------------------------------------------------------------------------------->
-                                =======
-                                <div class="col-md-6 categorie" id="chaussuresF">
-                                    <!----- LES CHAUSSURES------>
+<div class="clear"></div>
 
-                                    <h3>Les Chaussures</h3>
-                                    <span class="ligne"></span>
 
-                                    <p>"Avec <span class="vert">LePetitCommerce</span>, vous trouverez forcément chaussure à votre pied. Découvrez tous nos modèles."</p>
+<!-------------------------INFOS SUPPLEMENTAIRES--------------------------------------->
 
-                                    <a href="chaussures_femme.html"> <img src="" name=chaussuresF alt="image_chaussures"></a>
-                                </div>
-                                >>>>>>> refs/remotes/origin/master
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 ">
+            <fieldset class=" pay">
 
-                                <div class="col-md-6 categorie" id="sac">
-                                    <!----- LES SACS------>
+                <legend> Moyens de paiement </legend>
 
-                                    <<<<<<< HEAD <h3>Les Sacs</h3>
-                                        <span class="ligne"></span>
+                <img src="img/logo/cb.png" alt="logo_cb" class="cb">
+                <img src="img/logo/mastercard.png" alt="logo_mastercard" class="cb">
+                <img src="img/logo/visa.png" alt="logo_visa" class="cb">
+                <img src="img/logo/amex.png" alt="logo_amex" class="cb">
+                <img src="img/logo/google_pay.png" alt="logo_google" class="cb">
+                <img src="img/logo/apple_pay.png" alt="return" class="cb">
+            </fieldset>
+        </div>
+        <div class="col-md-4 col-xl-4">
+            <fieldset class="return">
+                <legend> Satisfait ou remboursé </legend>
 
-                                        <p>"Nos sacs pour femme se distinguent grâce à leur commodité. Nos modèles se combinent à merveille avec votre look de bureau ou pour les grandes occasions."</p>
+                <img src="img/logo/return.png" alt="return" id="return_logo">
 
-                                        <a href="accessoires_femme.html"> <img src="" name=sacF alt="image_sac"></a>
+            </fieldset>
+        </div>
+        <div class="col-md-4 ">
+            <fieldset class=" help">
+                <legend> Besoin d'aide</legend>
 
-                                </div>
-                                =======
-                                <div class="col-md-6 categorie" id="manteauxF">
-                                    <!----- LES MANTEAUX------>
+                <a href="tel:+33762765434">0101010101</a>
 
-                                    <h3>Les Manteaux</h3>
-                                    <span class="ligne"></span>
+                <p>(Appel Gratuit)</p>
 
-                                    <p>"Nos manteaux pour femme <span class="vert">LePetitCommerce</span> sauront vous tenir chaud et vous protéger des intempéries!"</p>
-
-                                    <a href="manteaux_femme.html"> <img src="" name=manteauxF alt="image_manteaux"></a>
-                                    >>>>>>> refs/remotes/origin/master
-
-                                    <!----------------------------------------------------------------------------------------------->
-
-                                    <<<<<<< HEAD <div class="col-md-6 categorie" id="access">
-                                        <!----- LES ACCESSOIRES------>
-
-                                        <h3>Les Accessoires</h3>
-                                        <span class="ligne"></span> =======
-                                        <!----------------------------------------------------------------------------------------------->
-
-                                        <div class="col-md-6 categorie" id="accessF">
-                                            <!----- LES ACCESSOIRES------>
-                                            >>>>>>> refs/remotes/origin/master
-
-                                            <p>"Les accessoires <span class="vert">LePetitCommerce</span> pour femme apportent la touche finale à votre look, ils perfectionnent votre style en réhaussant chacune de vos tenues. "</p>
-
-
-                                            <a href="accessoires_femme.html"> <img src="" name=accessF alt="image_accessoires"></a>
-                                        </div>
-                                        <!----------------------------------------------------------------------------------------------->
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="clear"></div>
-
-
-                        <!-------------------------INFOS SUPPLEMENTAIRES--------------------------------------->
-
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-4 ">
-                                    <fieldset class=" pay">
-
-                                        <legend> Moyens de paiement </legend>
-
-                                        <img src="img/logo/cb.png" alt="logo_cb" class="cb">
-                                        <img src="img/logo/mastercard.png" alt="logo_mastercard" class="cb">
-                                        <img src="img/logo/visa.png" alt="logo_visa" class="cb">
-                                        <img src="img/logo/amex.png" alt="logo_amex" class="cb">
-                                        <img src="img/logo/google_pay.png" alt="logo_google" class="cb">
-                                        <img src="img/logo/apple_pay.png" alt="return" class="cb">
-                                    </fieldset>
-                                </div>
-                                <div class="col-md-4 col-xl-4">
-                                    <fieldset class="return">
-                                        <legend> Satisfait ou remboursé </legend>
-
-                                        <img src="img/logo/return.png" alt="return" id="return_logo">
-
-                                    </fieldset>
-                                </div>
-                                <div class="col-md-4 ">
-                                    <fieldset class=" help">
-                                        <legend> Besoin d'aide</legend>
-
-                                        <a href="tel:+33762765434">0101010101</a>
-
-                                        <p>(Appel Gratuit)</p>
-
-                                    </fieldset>
-                                </div>
-                            </div>
-                        </div>
+            </fieldset>
+        </div>
+    </div>
+</div>
 
     </main>
-
-
 
     <!-------------------------FOOTER---------------------------->
 
@@ -686,8 +524,8 @@
                     <div class="footer_align" id="infos_liste">
                         <ul>
                             <li><a href="#">Contact</a></li>
-                            <li><a href="cgv.html">Mentions Légales</a></li>
-                            <li><a href="cgv.html">Nos conditions Générales de Vente</a></li>
+                            <li><a href="#">Mentions Légales</a></li>
+                            <li><a href="#">Nos conditions Générales de Vente</a></li>
                             <li><a href="#">Plan du site</a></li>
                             <li><a href="#">Imprimer la page</a></li>
                         </ul>
@@ -732,7 +570,9 @@
         });
     </script>
 
+    
     <script src="js/script2_f.js"></script>
+    <!-- <script src="js/script.js"></script> -->
     <script src="js/bootstrap.js"></script>
 
 
