@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+    <title>LePetitCommerce - Nos Magasins</title>
+    <meta name="description" content="Retrouvez tout l'univers de la marque LePetitcommerce à travers sa E-boutique.">
+
+</head>
+
+
+<body>
+    <!-- ******  Header  ****** -->
+    <header>
+
+        <div class="headerLogo">
+
+            <div id="conteneur">
+                <ul id="menu">
+                    <li>
+                        <a href="#" class="langues">Langues</a>
+                        <ul class="sous_menu">
+                            <li>
+                                <a href="#"><img class="logoLangues" src="img/logo/flag-fr.png" alt="langue france"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img class="logoLangues" src="img/logo/flag-gb.png" alt="langue anglais"></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="searchbar"><i class="fas fa-search"></i></div>
+            <a href="localisation.html" class="localisation"><i class="fas fa-map-marker-alt"></i></a>
+            <a href="login.html" class="user"> <i class="fas fa-user"></i></a>
+            <a href="panier.html" class="panier"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+
+        <figure class="logoMarque">
+            <img class="logoMarque" src="img/logo/logo.png" alt="Logo Marque">
+        </figure>
+
+
+
+
+
+    </header>
+
+    <script>
+        $(document).ready(function() {
+            $(".langues").hover(function() {
+                $(".langues").parent().find("ul.sous_menu").stop(true, true).slideDown(200).show();
+                $(".langues").parent().hover(function() {}, function() {
+                    $(this).parent().find("ul.sous_menu").slideUp(150);
+                });
+            });
+        });
+    </script>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Accueil</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    La Boutique <span class="sr-only">(current)</span></a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="quisommesnous.html">Qui Sommes-Nous?</a>
+                        <a class="dropdown-item" href="#">Contact</a>
+                        <a class="dropdown-item" href="reservation.html">Personal Shopper - Coaching</a>
+                        <a class="dropdown-item" href="#">Avis Clients</a>
+                        <a class="dropdown-item" href="#">Recrutement</a>
+                        <a class="dropdown-item" href="#">Evenements</a>
+                        <a class="dropdown-item" href="presse.html">Presse</a>
+                        <a class="dropdown-item" href="#">Actualités</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle redsoldes" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SOLDES<span class="sr-only">(current)</span></a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">FEMME</a>
+                        <a class="dropdown-item" href="#">HOMME</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            FEMME</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item redsolde" href="solde.h.html">Soldes</a>
+                        <a class="dropdown-item" href="#">Tout voir</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Tee-shirts</a>
+                        <a class="dropdown-item" href="chemisiers_femme.html">Chemisiers</a>
+                        <a class="dropdown-item" href="#">Jeans</a>
+                        <a class="dropdown-item" href="#">Robes</a>
+                        <a class="access_f" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                                    Accessoires <i class="fas fa-angle-down"></i></a>
+                        <div class="sous_menu_f" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Tout voir</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Sacs & Ceintures</a>
+                            <a class="dropdown-item" href="#">Lunettes & Montres</a>
+                            <a class="dropdown-item" href="#">Casquettes & Bonnets</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            HOMME</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item redsolde" href="solde.h.html">Soldes</a>
+                        <a class="dropdown-item" href="Tous_nos_produits_H.html">Tout voir</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Pantalons.html">Pantalons</a>
+                        <a class="dropdown-item" href="jean_h.html">Jeans</a>
+                        <a class="dropdown-item" href="chemise_h.html">Chemises</a>
+                        <a class="dropdown-item" href="Hauts_h.html">Hauts</a>
+                        <a class="dropdown-item" href="pull_h.html">Pulls</a>
+                        <a class="dropdown-item" href="veste_h.html">Vestes / Manteaux</a>
+                        <a class="dropdown-item" href="chaussures_femme.html">Chaussures</a>
+                        <a class="access_h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="accessoires_h.html">
+                                                            Accessoires <i class="fas fa-angle-down"></i> </a>
+                        <div class="sous_menu_h" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="accessoires_h.html">Tout voir</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="accessoires_h.html#sac">Sacs</a>
+                            <a class="dropdown-item" href="accessoires_h.html#ceintures">Ceintures</a>
+                            <a class="dropdown-item" href="accessoires_h.html#casquettes">Casquettes</a>
+                            <a class="dropdown-item" href="accessoires_h.html#bonnet">Bonnets</a>
+                            <a class="dropdown-item" href="accessoires_h.html#montre">Montres</a>
+                            <a class="dropdown-item" href="accessoires_h.html#lunette">Lunettes</a>
+                            <a class="dropdown-item" href="accessoires_h.html#portefeuille">Portefeuilles</a>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="clear"></div>
+
+    <h2>Nos Magasins</h2>
+    <span class="ligne "></span>
+    <p>Retrouvez ici le magasin le plus proche de chez vous</p>
+
+    <div class="clear"></div>
+
+    <div class="container">
+        <div class="row">
+
+            <section class="col">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 ville">
+                            <h4>LePetitCommerce Paris</h4>
+                            <p>80 Quai de Jammapes, 75010 Paris</p>
+                            <p> Tél: <a href="tel:+33762765434">0101010101</a></p>
+                            <p>Ouvert du Lundi au Vendredi de 10h à 19h.</p>
+                            <button id="map_bouton1">Voir le magasin</button>
+                            <div class="dropdown-divider"></div>
+                        </div>
+
+                        <div class="col-12 ville">
+                            <h4>LePetitCommerce Lyon</h4>
+                            <p>52 avenue de la République, 69002 Lyon</p>
+                            <p> Tél: <a href="tel:+33762765434">0101010101</a></p>
+                            <p>Ouvert du Lundi au Vendredi de 10h à 19h.</p>
+                            <button id="map_bouton2">Voir le magasin</button>
+                            <div class="dropdown-divider"></div>
+                        </div>
+
+                        <div class="col-12 ville">
+                            <h4>LePetitCommerce Bordeaux</h4>
+                            <p>53-59 Rue Sainte-Catherine, 33000 Bordeaux</p>
+                            <p> Tél: <a href="tel:+33762765434">0101010101</a></p>
+                            <p>Ouvert du Lundi au Vendredi de 9h à 18h.</p>
+                            <button id="map_bouton3">Voir le magasin</button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="col">
+
+                <div id="map">
+                    <iframe id="map_paris" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.270448515933!2d2.3630130509333!3d48.87212067918713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e0bca348265%3A0x3464e454c1ba8775!2zTGUgQ29tcHRvaXIgR8OpbsOpcmFs!5e0!3m2!1sfr!2sfr!4v1565791079764!5m2!1sfr!2sfr"
+                        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+                    <iframe id="map_lyon" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22268.22664499039!2d4.818047591032139!3d45.76060108163287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea56b6d25faf%3A0xe355901db5355a15!2scelio!5e0!3m2!1sfr!2sfr!4v1565791356424!5m2!1sfr!2sfr"
+                        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+                    <iframe id="map_bordeaux" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2829.100639870456!2d-0.5764549492301521!3d44.83988377899597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5527dab53bc4f7%3A0x1c1f670dfb0c3e3d!2scelio!5e0!3m2!1sfr!2sfr!4v1565791422749!5m2!1sfr!2sfr"
+                        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </section>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="clear"></div>
+    <!-- ******  Footer  ****** -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row ">
+                <Div id="newsletter" class="newsletter col-sm-4 col-md-4 test">
+                    <div id="toggle_news">
+                        <h4>NewsLetter</h4>
+                        <span class="ligne"></span>
+                    </div>
+                    <div class="footer_align" id="news_p">
+                        <p>Inscrivez-vous à notre programme relationnel <strong>LePetitCommerce</strong> afin de recevoir toute notre actualité et nos meilleures offres.</p>
+                    </div>
+                    <a href="newsletter.html" class="btn btn-outline-success"> M'inscrire !</a>
+
+                </Div>
+
+                <div class="col-sm-4 col-md-4 test" id="infos">
+                    <div id="toggle_infos">
+                        <h4>Informations Utiles</h4>
+                        <span class="ligne"></span>
+                    </div>
+                    <div class="footer_align" id="infos_liste">
+                        <ul>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="cgv.html">Mentions Légales</a></li>
+                            <li><a href="cgv.html">Nos conditions Générales de Vente</a></li>
+                            <li><a href="#">Plan du site</a></li>
+                            <li><a href="#">Imprimer la page</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 col-md-4 " id="Social">
+                    <div id="toggle_Social">
+                        <h4>Suivez Nous</h4>
+                        <span class="ligne"></span>
+                    </div>
+                    <div class="footer_align row" id="Social_logo">
+                        <a href="https://fr-fr.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                        <a href="https://www.instagram.com/?hl=fr"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/?lang=fr"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://www.pinterest.fr/"><i class="fab fa-pinterest-square"></i></a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div id="copy">
+            <p>Copyright &copy; LePetitCommerce</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('map_bouton1').addEventListener("click", changeMaps_Paris);
+        document.getElementById('map_bouton2').addEventListener("click", changeMaps_Lyon);
+        document.getElementById('map_bouton3').addEventListener("click", changeMaps_Bordeaux);
+
+
+        function changeMaps_Lyon() {
+            document.getElementById('map_lyon').style.cssText = "display: block";
+            document.getElementById('map_paris').style.cssText = "display: none";
+            document.getElementById('map_bordeaux').style.cssText = "display: none";
+        }
+
+        function changeMaps_Paris() {
+            document.getElementById('map_lyon').style.cssText = "display: none";
+            document.getElementById('map_paris').style.cssText = "display: block";
+            document.getElementById('map_bordeaux').style.cssText = "display: none";
+        }
+
+        function changeMaps_Bordeaux() {
+            document.getElementById('map_lyon').style.cssText = "display: none";
+            document.getElementById('map_paris').style.cssText = "display: none";
+            document.getElementById('map_bordeaux').style.cssText = "display: block";
+        }
+    </script>
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>

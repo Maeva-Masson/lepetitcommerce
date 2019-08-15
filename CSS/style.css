@@ -1,4 +1,4 @@
-    @import url('https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap');
 @font-face {
     font-family: 'abangregular';
     src: url('abang-webfont.woff2') format('woff2'), url('abang-webfont.woff') format('woff');
@@ -37,6 +37,8 @@ p {
 .clear {
     height: 70px !important;
 }
+
+
 /************************** HEADER *****************************************************/
 
 .headerLogo {
@@ -64,6 +66,7 @@ p {
     margin-left: 6px;
     margin-top: 0.5px;
     padding: 5px;
+    color: black;
 }
 
 .access_h,
@@ -88,6 +91,8 @@ p {
     font-family: 'Didact Gothic', sans-serif;
     display: none;
 }
+
+
 /*-------Choix des Langues---------*/
 
 #menu {
@@ -166,6 +171,8 @@ p {
 .logoLangues {
     width: 25px;
 }
+
+
 /* ********************** NAV ********************************************** */
 
 nav {
@@ -189,6 +196,8 @@ nav {
     font-weight: bold;
     color: red!important;
 }
+
+
 /* ***** NAV 3 / fiche produits ***** */
 
 #nav3 {
@@ -264,6 +273,8 @@ nav {
 #nav3 .dropdown-item:hover {
     color: #BA55D3 !important;
 }
+
+
 /*  carousel */
 
 .soldes {
@@ -283,9 +294,11 @@ nav {
     margin-right: 20px;
     line-height: 0;
 }
-.redsolde{
+
+.redsolde {
     color: red !important;
 }
+
 .soldes P {
     text-align: right;
     color: red;
@@ -424,6 +437,8 @@ nav {
     border: 2px solid #152A9E !important;
     transform: none;
 }
+
+
 /* ***** fil d'ariane ***** */
 
 #ariane {
@@ -454,6 +469,8 @@ nav {
     color: #6c757d;
     content: ">";
 }
+
+
 /* ***********  Boutons ********************************** */
 
 .btn {
@@ -613,7 +630,11 @@ nav {
 .avatar i {
     padding-top: 20px;
 }
+
+
 /* ********************** Accueil ********************************************** */
+
+
 /* *****  Les Produits ******/
 
 .categorie_men {
@@ -673,6 +694,8 @@ h3 {
 .categorie p {
     font-family: 'Didact Gothic', sans-serif;
 }
+
+
 /* ************ qui sommes nous ************ */
 
 #QSN .ligne {
@@ -770,6 +793,12 @@ h3 {
     pointer-events: none;
     background: #ccc;
 }
+
+.card h5 {
+    font-size: 16px;
+}
+
+
 /* ************ newsletter ************ */
 
 .news_rapid {
@@ -823,8 +852,9 @@ h3 {
     padding: 0 10px;
     text-transform: uppercase;
     cursor: pointer;
-    
 }
+
+
 /* ********** Coatching ********** */
 
 .relooking {
@@ -862,6 +892,8 @@ h3 {
     font-weight: bold;
     color: #BA55D3;
 }
+
+
 /* ************ Store ************ */
 
 .main_local {
@@ -875,7 +907,116 @@ h3 {
 .main_local iframe {
     width: 100%;
     height: 100%;
+    margin-top: 20px;
 }
+
+.article_presse {
+    text-align: center;
+}
+
+.article_presse img {
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid black;
+}
+
+.article_presse p {
+    max-width: 600px;
+    margin: 40px auto;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#mail_press {
+    text-decoration: none;
+    color: #BA55D3;
+}
+
+
+/* ************ Accueil - avis client ************ */
+
+.card-img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+
+.card_avis {
+    max-width: 540px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#avis_clients {
+    text-align: center;
+}
+
+
+/* ***********  Pages localisation ********************************** */
+
+#map_lyon,
+#map_bordeaux {
+    display: none;
+}
+
+.ville {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.ville a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000 !important;
+}
+
+.ville button {
+    margin-top: 10px;
+    background: #FFF !important;
+    color: #BA55D3;
+    border: 1px solid #BA55D3;
+    width: 200px;
+    border-radius: 10px;
+}
+
+#map {
+    padding-top: 30px;
+}
+
+
+/* ***********  Pages Tous les produits  ********************************** */
+
+.categorie {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.categorie .ligne {
+    background-color: #000 !important;
+}
+
+.categorie a {
+    padding-top: 20px;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+.categorie a img {
+    width: 100%;
+}
+
+.categorie h3 {
+    font-size: 50px;
+}
+
+.categorie p {
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+
 /* ***********  Pages Produits  ********************************** */
 
 .presentation {
@@ -982,20 +1123,62 @@ h3 {
 .car-body {
     align-items: center;
 }
+
+
 /* ***********  Pages Solde ********************************** */
 
-.prix_solde{
-    background: red;
-    color: #FFF;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    
+.prix_solde {
+    text-decoration: line-through;
 }
+
+.card-body_solde {
+    display: block;
+}
+
+
+/* ***********  Pages Nouveaut�s  ********************************** */
+
+.card-columns {
+    @include media-breakpoint-only(lg) {
+        column-count: 4;
+    }
+    @include media-breakpoint-only(xl) {
+        column-count: 5;
+    }
+}
+
+.card-columns {
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.badge-secondary {
+    background: #BA55D3 !important;
+}
+
+.card-columns .card {
+    width: 80%;
+    text-align: center;
+}
+
+.card-columns .card h5 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.card-columns img {
+    width: 100%;
+}
+
+.bg-primary {
+    background: #BA55D3 !important;
+}
+
+
 /* ***********  Pages Newsletter  ********************************** */
 
 #erreur {
-    color: red;
+    color: #BA55D3;
     font-size: 20px;
 }
 
@@ -1065,8 +1248,7 @@ p {
     width: 30px;
 }
 
-#News_form input[type=submit],
-{
+#News_form input[type=submit] {
     width: 100px;
     margin-left: 5px;
     cursor: pointer;
@@ -1079,6 +1261,78 @@ p {
 
 .conditions a {
     text-decoration: none;
+    color: #BA55D3 !important;
+}
+
+
+/* ***********  Pages CGV ********************************** */
+
+#cgv {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#cgv p {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+
+/* ***********  Pages reservation ********************************** */
+
+#reservation {
+    margin: 0 auto 0 auto;
+    margin-top: 30px;
+    text-align: center;
+}
+
+#reservation form {
+    padding: 10px;
+}
+
+#reservation fieldset {
+    padding: 0 20px 20px 20px;
+    margin-bottom: 10px;
+    border: 1px solid #000;
+    justify-content: center;
+}
+
+#reservation legend {
+    text-align: center;
+}
+
+#reservation input[type=text],
+#reservation input[type=email] {
+    display: flex;
+    margin: 0 auto;
+    width: 200px;
+}
+
+#reservation input[type=submit] {
+    margin-top: 10px;
+    width: 100px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.reservation_description img {
+    padding-top: 20px;
+    width: 100%;
+}
+
+.reservation_description {
+    margin: 0 auto 0 auto;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+#datepicker {
+    margin: 0 auto;
+}
+
+#erreur_mail {
+    color: #BA55D3;
 }
 
 
@@ -1107,15 +1361,16 @@ td {
 #total {
     text-align: right
 }
-.panier_btn{
+
+.panier_btn {
     display: block;
     background-color: #BA55D3;
     color: white;
     margin: 0 auto;
-    margin-top:20px;
+    margin-top: 20px;
     font-size: 1.3rem;
     width: 220px;
-    height: 70px;   
+    height: 70px;
     text-align: center;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -1174,10 +1429,12 @@ td {
     color: #BA55D3 !important;
     font-size: 20px;
 }
+
+
 /* ************** FOOTER ***************************************************** */
 
 footer {
-    background: black;
+    background: black !important;
     color: white;
     font-size: 12px;
 }
@@ -1288,6 +1545,8 @@ footer #copy {
     height: 22px;
     text-align: center;
 }
+
+
 /* ---------- Page "Qui-Sommes-Nous" ----------------*/
 
 .quisommesnous_fieldset {
@@ -1310,10 +1569,16 @@ legend {
     color: #BA55D3;
     font-weight: bold;
 }
+
+
 /* ****  responsive**** */
+
+
 /*Extra small devices (portrait phones, less than 576px)*/
 
 @media (max-width: 575.98px) {}
+
+
 /*  Small devices (landscape phones, 576px and up) */
 
 @media (min-width: 576px) {}
@@ -1334,7 +1599,24 @@ legend {
     .active {
         display: block;
     }
+    /* ************ Accueil - avis client ************ */
+    #quote-carousel .carousel-indicators {
+        bottom: -20px !important;
+    }
+    #quote-carousel .carousel-indicators li {
+        display: inline-block;
+        margin: 0px 5px;
+        width: 15px;
+        height: 15px;
+    }
+    #quote-carousel .carousel-indicators li.active {
+        margin: 0px 5px;
+        width: 20px;
+        height: 20px;
+    }
 }
+
+
 /* Medium devices (tablets, 768px and up) */
 
 @media (min-width: 768px) {
@@ -1354,6 +1636,11 @@ legend {
     #toggle_infos h4 i,
     #toggle_Social h4 i {
         display: none;
+    }
+    /* ************ Accueil - avis client ************ */
+    #quote-carousel {
+        margin-bottom: 0;
+        padding: 0 40px 30px 40px;
     }
     /* **** Les Nav **** */
     nav {
@@ -1387,10 +1674,30 @@ legend {
     .text p {
         margin-top: 50px;
     }
+    /* *******  Page localisation ******** */
+    .ville button:hover {
+        background: #BA55D3 !important;
+        color: #fff !important;
+        border: 1px solid #BA55D3 !important;
+    }
+    #map {
+        padding-top: 90px;
+    }
 }
+
+
 /* Large devices (desktops, 992px and up) */
 
 @media (min-width: 992px) {
+    .user:hover {
+        color: #BA55D3 !important;
+    }
+    .panier:hover {
+        color: #BA55D3 !important;
+    }
+    .localisation:hover {
+        color: #BA55D3 !important;
+    }
     nav {
         display: block;
         margin-left: auto!important;
@@ -1469,11 +1776,15 @@ legend {
     #News_form {
         width: 600px;
     }
-    }
-    .panier_btn:hover{
-        background: white;
-        color: #BA55D3;
-        border: 1px solid #BA55D3;
-    }
-    /* Extra large devices (large desktops, 1200px and up) */
-    @media (min-width: 1200px) {}
+}
+
+.panier_btn:hover {
+    background: white;
+    color: #BA55D3;
+    border: 1px solid #BA55D3;
+}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {}

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet">
+
+    <script src="js/jquery.min.js"></script>
+
+    <title>Le Petit Commerce - CGV</title>
+    <meta name="description" content="Retrouvez tout l'univers de la marque LePetitcommerce à travers sa E-boutique.">
+</head>
+
+<body>
+    <!-- ******  Header  ****** -->
+    <header>
+
+
+        <div class="headerLogo">
+
+            <div id="conteneur">
+                <ul id="menu">
+                    <li>
+                        <a href="#" class="langues">Langues</a>
+                        <ul class="sous_menu">
+                            <li>
+                                <a href="#"><img class="logoLangues" src="img/logo/flag-fr.png" alt="langue france"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img class="logoLangues" src="img/logo/flag-gb.png" alt="langue anglais"></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="searchbar"><i class="fas fa-search"></i></div>
+            <a href="localisation.html" class="localisation"><i class="fas fa-map-marker-alt"></i></a>
+            <a href="login.html" class="user"> <i class="fas fa-user"></i></a>
+            <a href="panier.html" class="panier"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+
+        <figure class="logoMarque ">
+            <img class="logoMarque" src="img/logo/logo.png" alt="Logo Marque">
+        </figure>
+
+
+
+
+
+    </header>
+
+    <script>
+        $(document).ready(function() {
+            $(".langues").hover(function() {
+                $(".langues").parent().find("ul.sous_menu").stop(true, true).slideDown(200).show();
+                $(".langues").parent().hover(function() {}, function() {
+                    $(this).parent().find("ul.sous_menu").slideUp(150);
+                });
+            });
+        });
+    </script>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="index.html">Accueil</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    La Boutique <span class="sr-only">(current)</span></a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="quisommesnous.html">Qui Sommes-Nous?</a>
+                        <a class="dropdown-item" href="#">Contact</a>
+                        <a class="dropdown-item" href="reservation.html">Personal Shopper - Coaching</a>
+                        <a class="dropdown-item" href="#">Avis Clients</a>
+                        <a class="dropdown-item" href="#">Recrutement</a>
+                        <a class="dropdown-item" href="#">Evenements</a>
+                        <a class="dropdown-item" href="presse.html">Presse</a>
+                        <a class="dropdown-item" href="#">Actualités</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle redsoldes" href="#" id="navbarDropdown42" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SOLDES<span class="sr-only">(current)</span></a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">FEMME</a>
+                        <a class="dropdown-item" href="solde.h.html">HOMME</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            FEMME</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item redsolde" href="#">Soldes</a>
+                        <a class="dropdown-item" href="#">Tout voir</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Tee-shirts</a>
+                        <a class="dropdown-item" href="#">Chemisiers</a>
+                        <a class="dropdown-item" href="#">Jeans</a>
+                        <a class="dropdown-item" href="#">Robes</a>
+                        <a class="access_f" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                                Accessoires <i class="fas fa-angle-down"></i></a>
+                        <div class="sous_menu_f" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Tout voir</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Sacs & Ceintures</a>
+                            <a class="dropdown-item" href="#">Lunettes & Montres</a>
+                            <a class="dropdown-item" href="#">Casquettes & Bonnets</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    HOMME</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item redsolde" href="solde.h.html">Soldes</a>
+                        <a class="dropdown-item" href="Tous_nos_produits_H.html">Tout voir</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Pantalons.html">Pantalons</a>
+                        <a class="dropdown-item" href="jean_h.html">Jeans</a>
+                        <a class="dropdown-item" href="chemise_h.html">Chemises</a>
+                        <a class="dropdown-item" href="Hauts_h.html">Hauts</a>
+                        <a class="dropdown-item" href="pull_h.html">Pulls</a>
+                        <a class="dropdown-item" href="veste_h.html">Vestes / Manteaux</a>
+                        <a class="dropdown-item" href="#">Chaussures</a>
+                        <a class="access_h" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                                                    Accessoires <i class="fas fa-angle-down"></i> </a>
+                        <div class="sous_menu_h" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Tout voir</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Sacs</a>
+                            <a class="dropdown-item" href="#">Ceintures</a>
+                            <a class="dropdown-item" href="#">Lunettes & Montres</a>
+                            <a class="dropdown-item" href="#">Casquettes & Bonnets</a>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <section id="cgv">
+        <h2>Conditions Générales de Ventes</h2>
+        <span class="ligne "></span>
+
+        <h4>1. Introduction</h4>
+        <br>
+        <p>Le présent document (et tout document mentionné ci-après) établit les conditions générales d'utilisation de ce site web ainsi que les conditions générales d'achat de produits par le biais de ce dernier (ci-après : les « Conditions »).
+            <br>
+            <br> Veuillez lire attentivement les présentes Conditions avant d'utiliser ce site web. En utilisant ce site web ou en passant une commande par le biais de ce dernier, vous acceptez d'être lié par ces Conditions. Si vous n'acceptez pas
+            l'ensemble des Conditions, veuillez ne pas utiliser ce site web.
+            <br>
+            <br> Ces Conditions peuvent faire l'objet de modifications. Il vous incombe de les consulter régulièrement, car les Conditions applicables seront celles en vigueur au moment de l'utilisation du site web ou de la conclusion du Contrat (telle
+            que décrite ci-dessous).
+        </p>
+        <br>
+        <h4>2. Nos Coordonnées</h4>
+        <br>
+        <p>Ce site web est géré sous le nom de « LePetitCommerce » par FASHION RETAIL, S.A., une société française dont le siège social est situé à Paris. Société inscrite au registre du commerce de La Corogne dans le volume 3.425, Section générale,
+            Feuille 49, Page C-47.731, 1re entrée. Son numéro de TVA est FR 01 792811713 et son capital social s'élève à 100 000 €.</p>
+        <br>
+        <h4>3. Vos Coordonnées et vos sivistes du site web</h4>
+        <br>
+        <p>
+            Les informations ou données personnelles que vous nous communiquez seront traitées en vertu de notre politique de confidentialité. En utilisant ce site web, vous donnez votre accord au traitement de ces informations et données et vous déclarez que
+            toutes les informations ou données que vous nous avez fournies sont véridiques et exactes.
+        </p>
+        <br>
+        <h4>4. UTILISATION DE NOTRE SITE WEB</h4>
+        <br>
+        <p>
+            En utilisant ce site web et/ou en passant une commande par le biais de ce dernier, vous vous engagez à :
+            <br>
+            <br> 1/ Utiliser le site web uniquement afin de formuler des demandes ou de passer des commandes légitimes.
+            <br>
+            <br> 2/ Ne pas passer de commandes fausses ou frauduleuses. Si nous avons des raisons de penser qu'une commande de ce type a été passée, nous serons en droit d'annuler cette commande et d'avertir les autorités compétentes.
+            <br>
+            <br> 3/ Nous fournir une adresse électronique, une adresse postale et/ou d'autres coordonnées correctes et exactes. De même, vous nous autorisez à utiliser ces données pour que nous puissions vous contacter le cas échéant (voir notre
+            politique de confidentialité).
+            <br>
+            <br> Si vous ne nous communiquez pas toutes les informations dont nous avons besoin, nous risquons de ne pas être en mesure de compléter le processus de votre commande.
+            <br>
+            <br> En passant une commande par le biais du site web, vous garantissez que vous êtes âgé de plus de 18 ans et que vous jouissez de la capacité juridique pour conclure des contrats contraignants.
+        </p>
+        <br>
+        <h4>5. DISPONIBILITÉ DES SERVICES</h4>
+        <br>
+        <p>
+            Les articles en vente sur ce site, sont uniquement disponibles dans les pays suivants : l’Allemagne (sauf l’île de Helgoland ainsi que la ville de Büsingen), l’Espagne, la France (sauf DOM-TOM), l’Italie (sauf Saint Marin, Liviano, Campione d’Italia,
+            ainsi que les eaux du Lac de Lugano), le Portugal, le Royaume-Uni (uniquement en Mainland), l’Irlande, l’Autriche, la Belgique, les Pays-Bas, le Luxembourg, la Suisse, Monaco, le Danemark(sauf Groenland et îles Féroe), la Suède, et la Norvège
+            (sauf Svarbald).
+        </p>
+        <br>
+        <h4>6. PROCESSUS DE FORMATION DU CONTRAT</h4>
+        <br>
+        <p>
+            L'information contenue dans ces Conditions générales et les détails figurant sur ce site ne constituent pas une offre de vente mais plutôt une invitation à contracter. Aucun contrat ne saurait exister entre vous et nous au regard des produits tant
+            que nous n'aurons pas accepté expressément votre commande. Si votre commande n'est pas acceptée et que son montant a déjà été débité, vous serez intégralement remboursé.
+            <br>
+            <br> Pour effectuer une commande, il vous sera demandé de suivre le processus d'achat en ligne et de cliquer sur « Autoriser paiement » pour soumettre la commande.
+            <br>
+            <br> Vous recevrez ensuite un e-mail de notre part confirmant que nous avons bien reçu votre commande (la « Confirmation de commande »). Veuillez noter que cela ne signifie pas que votre commande aura été acceptée. Votre commande constitue
+            votre offre de nous acheter un ou plusieurs produits. Toutes commandes sont soumises à acceptation de notre part et nous vous confirmerons cette acceptation en vous envoyant un e-mail vous confirmant que le produit a bien été expédié
+            (« Confirmation de l ́Envoi »). Le contrat pour l'achat d'un produit sera formé entre vous et nous (Contrat) uniquement à compter de l'envoi de la Confirmation d'Envoi.
+            <br>
+            <br> Le Contrat ne portera que sur les produits dont nous vous aurons confirmé l'expédition dans la Confirmation de l'Envoi. Nous ne serons liés par aucune obligation de vous fournir tous autres produits pouvant figurer dans votre commande
+            tant que l'envoi de ces produits n'aura pas été confirmé dans une Confirmation d'Envoi séparée.
+
+        </p>
+        <br>
+        <h4>7. DISPONIBILITÉ DES PRODUITS</h4>
+        <br>
+        <p>
+            Toutes les commandes sont soumises à la disponibilité des produits. Nous vous informerons en cas de difficultés d'approvisionnement ou si les produits ne sont plus en stock et nous nous réservons le droit de vous informer sur la possibilité de commander
+            des produits de remplacement d'une qualité ou d'une valeur identique ou supérieure.
+            <br>
+            <br> Si vous ne souhaitez pas commander ces produits de remplacement, nous vous rembourserons les montants éventuellement engagés dans un délai maximal de trente (30) jours à compter du jour où vous avez effectué ce paiement.
+        </p>
+        <br>
+        <h4>8. REFUS DE COMMANDE</h4>
+        <br>
+        <p>
+            Nous nous réservons le droit de retirer, à tout moment, tout Produit de ce site internet, et/ou de remplacer ou modifier tout contenu ou information figurant sur ce site. Bien que nous nous efforcions de toujours essayer de répondre aux commandes que
+            vous nous soumettez, il peut exister des circonstances exeptionnelles dans lesquelles nous sommes contraints de refuser de traiter ou d'accepter une commande aprés que nous lavons reçue ou que nous vous avons adressé une confirmation de commande,
+            et nous nous réservons ce droit à tout moment et à notre seule discrétion.
+        </p>
+        <br>
+        <h4>9. LIVRAISON</h4>
+        <br>
+        <p>
+            Sous réserve des dispositions de la clause 7 susmentionnée portant sur la disponibilité des produits, et sauf en cas de circonstances exceptionnelles, nous mettrons tout en œuvre pour exécuter votre commande du ou des produits(s) visé(s) dans la
+            confirmation de livraison à la date de livraison indiquée dans cette dernière ou, si aucune date de livraison estimée n'est spécifiée, dans un délai de 15 jours à compter de la date de la confirmation de livraison.
+            <br>
+            <br> Des retards peuvent néanmoins se produire pour l'une des raisons suivantes :
+            <ul>
+                <li>personnalisation des produits</li>
+                <li>articles spéciaux</li>
+                <li>circonstances imprévues</li>
+                <li>zone de livraison</li>
+            </ul>
+            <br>
+            <br> Si nous ne sommes pas en mesure de respecter la date de livraison pour quelque raison que ce soit, nous vous informerons de ce fait et vous proposerons soit de poursuivre le processus d'achat avec une nouvelle date de livraison, soit
+            d'annuler votre commande et de vous rembourser l'intégralité du montant que vous avez payé. Veuillez tenir compte du fait qu'aucune livraison n'est effectuée le samedi, le dimanche ou les jours fériés. Il est possible, néanmoins, qu'une
+            livraison soit effectuée ces jours-là.
+            <br>
+            <br> Aux fins des présentes Conditions, la « livraison » sera considérée comme ayant été effectuée ou la commande sera considérée comme ayant été délivrée au moment de la signature de l'accusé de réception de la commande à l'adresse
+            de livraison convenue.
+
+        </p>
+        <br>
+        <h4>10. IMPOSSIBILITÉ DE LIVRAISON
+        </h4>
+        <br>
+        <p>
+            Après deux tentatives infructueuses de livraison des produits, nous nous efforcerons de trouver un endroit sécurisé pour y déposer votre colis. Nous laisserons un avis vous expliquant où se trouve votre colis et la marche à suivre pour aller le
+            chercher. Si vous ne vous trouvez pas au lieu de livraison au moment convenu, veuillez nous contacter pour organiser la livraison à une date ultérieure.
+            <br>
+            <br> Après un délai de 15 jours suivant la date à laquelle votre commande est prête à être livrée, sans que cette commande n'ait pu être livrée pour des raisons qui ne nous sont pas imputables, nous considérerons que vous souhaitez
+            mettre un terme au Contrat et celui-ci sera donc considéré comme étant résilié. En conséquence de la résiliation du Contrat, nous rembourserons le montant payé pour ces produits dans les plus brefs délais et, dans tous les cas, dans
+            un délai de 30 jours à compter du moment où nous considérerons le Contrat comme étant résilié. Dans ce cas, nous serons autorisés à vous facturer tous les frais de livraison et les frais inhérents à la résiliation du Contrat.
+        </p>
+        <br>
+        <h4>11. RISQUE ET TRANSFERT DE PROPRIÉTÉ
+        </h4>
+        <br>
+        <p>
+            Les produits sont placés sous votre responsabilité dès le moment de la livraison.
+            <br>
+            <br> Les produits deviendront votre propriété dès que nous aurons reçu le paiement intégral du montant correspondant aux produits, y compris les frais de livraison, ou au moment de la livraison (conformément à la définition établie
+            à la clause 9 ci-dessus) ci celle-ci se produit à une date ultérieure.
+        </p>
+        <br>
+        <h4>12. PRIX ET PAIEMENT
+        </h4>
+        <br>
+        <p>
+            Le prix de chaque produit sera celui indiqué à tout moment sur notre site web, sauf en cas d'erreur manifeste. Des erreurs peuvent se produire en dépit de tous nos efforts pour nous assurer que tous les prix indiqués sur le site sont exacts. Si nous
+            décelons une erreur dans le prix du ou des produit(s) que vous avez commandé(s), nous vous informerons de ce fait dans les plus brefs délais et vous proposerons soit de confirmer à nouveau votre commande au prix correct, soit d'annuler
+            cette commande. Si nous ne parvenons pas à vous contacter, la commande sera considérée comme étant annulée et, le cas échéant, nous vous rembourserons l'intégralité du montant payé pour ce ou ces produit(s).
+            <br>
+            <br> Nous ne sommes pas tenus de vendre un produit à un prix inférieur incorrect (et ce, même après vous avoir envoyé une confirmation de livraison) si l'erreur est manifeste et sans ambiguïté et si vous êtes raisonnablement en mesure
+            de l'identifier comme telle.
+            <br>
+            <br> Les prix affichés sur notre site web comprennent la TVA mais excluent les frais de livraison, qui s'ajouteront au montant total à payer, tel qu'établi dans notre guide en matière de frais de livraison. Les prix affichés sur notre
+            site web sont indiqués en euros.
+            <br>
+            <br> Les prix peuvent être modifiés à tout moment (à l'exception des cas décrits ci-dessus) mais aucune modification éventuelle n'aura d'effet sur les commandes vis-à-vis desquelles une confirmation de commande a déjà été envoyée.
+            <br>
+            <br> Au terme de votre processus d'achat, tous les articles que vous souhaitez acheter seront ajoutés au panier. Le processus de paiement est l'étape suivante, au cours de laquelle vous serez invité à effectuer le paiement. La marche à
+            suivre est la suivante :
+            <br>
+            <br>
+            <ol>
+                <li>Cliquez sur « Panier d'achat » en haut de la page.</li>
+                <li>Cliquez sur « Voir panier ».</li>
+                <li>Cliquez sur « Passer commande ».</li>
+                <li>Complétez ou vérifiez vos coordonnées, les données de votre commande, l'adresse de livraison et l'adresse de facturation.
+                </li>
+                <li>Saisissez les données relatives à votre carte bancaire.
+                </li>
+                <li>Cliquez sur « Autoriser paiement ».</li>
+
+            </ol>
+            <br>
+            <br> Vous pouvez effectuer le paiement à l'aide des cartes suivantes : Visa, Visa Electron, Master card, American Express et PayPal. Les données de votre carte seront cryptées afin de réduire tout risque d'accès non autorisé. Une fois
+            votre commande passée, nous formulerons une demande de pré-autorisation de prélèvement par carte bancaire afin de nous assurer que vous disposez de fonds suffisants pour effectuer la transaction. Le montant sera prélevé sur votre carte
+            au moment où les produits faisant l'objet de votre commande quitteront notre entrepôt.
+            <br>
+            <br> En cliquant sur « Autoriser paiement », vous confirmez que la carte bancaire vous appartient.
+            <br>
+            <br> Les cartes de crédit sont soumises à des contrôles de validité et à une autorisation de la part de l'émetteur de la carte. Si nous ne recevons pas l'autorisation requise, nous ne serons pas tenus responsables du retard ou du défaut
+            de livraison des produits et nous ne serons pas en mesure de conclure un Contrat avec vous.
+
+        </p>
+        <br>
+        <h4>13. TAXE SUR LA VALEUR AJOUTÉE
+        </h4>
+        <br>
+        <p>
+            Conformément aux règles applicables et aux règlementations en vigueur, tout achat fait par l'intermédiare du site internet est soumus à la TVA.
+            <br>
+            <br> A ce titre et conforméméent au Chapitre I du Titre V de la Directive 2006/112/CE du 28 novembre 2006, sur le systeme commun de la TVA, le lieu de livraison est supposé etre celui de l'état Membre à l'adresse où les articles doivent être
+            livrés et la TVA applicable sera celle en vigueur dans chaque Etat Membre où les articles doivent être livrés conformément aux bons de commandes.
+            <br>
+            <br>
+
+
+        </p>
+    </section>
+
+
+
+    <!-- ******  Footer  ****** -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row ">
+                <Div id="newsletter" class="newsletter col-sm-4 col-md-4 test">
+                    <div id="toggle_news">
+                        <h4>NewsLetter <i class="fas fa-angle-down"></i></h4>
+                        <span class="ligne"></span>
+                    </div>
+                    <div class="footer_align" id="news_p">
+                        <p>Inscrivez-vous à notre programme relationnel <strong>LePetitCommerce</strong> afin de recevoir toute notre actualité et nos meilleures offres.</p>
+                    </div>
+                    <a href="newsletter.html" class="btn btn-outline-success"> M'inscrire !</a>
+
+                </Div>
+
+                <div class="col-sm-4 col-md-4 test" id="infos">
+                    <div id="toggle_infos">
+                        <h4>Informations Utiles <i class="fas fa-angle-down"></i></h4>
+                        <span class="ligne"></span>
+                    </div>
+                    <div class="footer_align" id="infos_liste">
+                        <ul>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="cgv.html">Mentions Légales</a></li>
+                            <li><a href="cgv.html">Nos conditions Générales de Vente</a></li>
+                            <li><a href="#">Plan du site</a></li>
+                            <li><a href="#">Imprimer la page</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 " id="Social">
+                    <div id="toggle_Social">
+                        <h4>Suivez Nous <i class="fas fa-angle-down"></i></h4>
+                        <span class="ligne"></span>
+                    </div>
+                    <div class="footer_align row" id="Social_logo">
+                        <a href="https://fr-fr.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                        <a href="https://www.instagram.com/?hl=fr"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/?lang=fr"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://www.pinterest.fr/"><i class="fab fa-pinterest-square"></i></a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <div id="copy">
+            <p>Copyright &copy; LePetitCommerce</p>
+        </div>
+    </footer>
+
+    <script>
+        $(document).ready(function() {
+            $('.carousel').carousel({
+                interval: 1800
+            })
+
+
+
+        });
+    </script>
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>

@@ -13,7 +13,8 @@
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-    <title>LePetitCommerce</title>
+    <title>LePetitCommerce - Chemises Homme</title>
+    <meta name="description" content="Retrouvez tout l'univers de la marque LePetitcommerce à travers sa E-boutique.">
 
 </head>
 
@@ -40,9 +41,9 @@
                 </ul>
             </div>
             <div class="searchbar"><i class="fas fa-search"></i></div>
-            <div class="localisation"><i class="fas fa-map-marker-alt"></i></div>
-            <div class="panier"><i class="fas fa-shopping-cart"></i></div>
-            <div class="user"><i class="fas fa-user"></i></div>
+            <a href="localisation.html" class="localisation"><i class="fas fa-map-marker-alt"></i></a>
+            <a href="login.html" class="user"> <i class="fas fa-user"></i></a>
+            <a href="panier.html" class="panier"><i class="fas fa-shopping-cart"></i></a>
         </div>
 
         <figure class="logoMarque">
@@ -54,7 +55,6 @@
 
 
     </header>
-
     <script>
         $(document).ready(function() {
             $(".langues").hover(function() {
@@ -75,16 +75,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item dropdown">
+                    <a class="nav-link" href="index.html">Accueil</a>
+                </li>
+                <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     La Boutique <span class="sr-only">(current)</span></a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Qui Sommes-Nous?</a>
+                        <a class="dropdown-item" href="quisommesnous.html">Qui Sommes-Nous?</a>
                         <a class="dropdown-item" href="#">Contact</a>
-                        <a class="dropdown-item" href="#">Personal Shopper - Coaching</a>
+                        <a class="dropdown-item" href="reservation.html">Personal Shopper - Coaching</a>
                         <a class="dropdown-item" href="#">Avis Clients</a>
                         <a class="dropdown-item" href="#">Recrutement</a>
                         <a class="dropdown-item" href="#">Evenements</a>
-                        <a class="dropdown-item" href="#">Presse</a>
+                        <a class="dropdown-item" href="presse.html">Presse</a>
                         <a class="dropdown-item" href="#">Actualités</a>
                     </div>
                 </li>
@@ -92,14 +95,14 @@
                     <a class="nav-link dropdown-toggle redsoldes" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SOLDES<span class="sr-only">(current)</span></a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#">FEMME</a>
-                        <a class="dropdown-item" href="#">HOMME</a>
+                        <a class="dropdown-item" href="solde.h.html">HOMME</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             FEMME</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#" style="color:red;">Soldes</a>
+                        <a class="dropdown-item redsolde" href="#">Soldes</a>
                         <a class="dropdown-item" href="#">Tout voir</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Tee-shirts</a>
@@ -122,7 +125,7 @@
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         HOMME</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#" style="color:red; ">Soldes</a>
+                        <a class="dropdown-item redsolde" href="solde.h.html">Soldes</a>
                         <a class="dropdown-item" href="Tous_nos_produits_H.html">Tout voir</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="Pantalons.html">Pantalons</a>
@@ -160,14 +163,14 @@
 
             <h2>Les Soldes</h2>
             <p>Vite Vite! <br> Derniéres démarques.</p>
-            <a href="#" class="btn btn-outline-success redbutton"> Je découvre <i class="fas fa-arrow-right"></i></a>
+            <a href="solde.h.html" class="btn btn-outline-success redbutton"> Je découvre <i class="fas fa-arrow-right"></i></a>
         </div>
 
 
         <!-- *****  fil d'ariane *****-->
         <nav aria-label="breadcrumb" id="ariane">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Accueil</a></li>
+                <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
                 <li class="breadcrumb-item"><a href="Tous_nos_produits_H.html">Homme</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Chemises</li>
             </ol>
@@ -395,7 +398,7 @@
 
                             <div class="col-xs-12 col-md-6 col-xl-3">
                                 <div>
-                                    <img src="img/homme/Chemises/imprimée4.jpg" alt="photo_imprimée" class="image_vetement" id="produit6">
+                                    <img src="img/homme/Chemises/imprimee4.jpg" alt="photo_imprimée" class="image_vetement" id="produit6">
                                     <div class=" car-body" id="card-body6">
                                         <h5 class="card-title">CHEMISE IMPRIMÉE</h5>
                                         <h6 class="card-subtitle mb-2 text-muted">39,95 EUR</h6>
@@ -708,8 +711,8 @@
                     <div class="footer_align" id="infos_liste">
                         <ul>
                             <li><a href="#">Contact</a></li>
-                            <li><a href="#">Mentions Légales</a></li>
-                            <li><a href="#">Nos conditions Générales de Vente</a></li>
+                            <li><a href="cgv.html">Mentions Légales</a></li>
+                            <li><a href="cgv.html">Nos conditions Générales de Vente</a></li>
                             <li><a href="#">Plan du site</a></li>
                             <li><a href="#">Imprimer la page</a></li>
                         </ul>

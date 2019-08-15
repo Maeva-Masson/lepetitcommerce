@@ -1,4 +1,4 @@
-/* *****  PAGE ACCEUIL ***** */
+/* ***********************  PAGE ACCEUIL *************************** */
 
 /* img homme /  femme*/
 
@@ -117,7 +117,6 @@ $(document).ready(function() {
 
 });
 
-
 /* *****  NAV 2 / PAGE produits HOMME ***** */
 
 $(document).ready(function() {
@@ -221,6 +220,9 @@ $(document).ready(function() {
     $('#produit26').click(function() {
         $('#card-body26').slideToggle(200);
     });
+    $('#produit27').click(function() {
+        $('#card-body27').slideToggle(200);
+    });
 })
 
 /* ****** slider prix ******* */
@@ -266,7 +268,7 @@ var h = 0;
 var hauts = [];
 hauts[0] = 'img/Homme/tshirts/bunny1.jpg';
 hauts[1] = 'img/Homme/tshirts/polo_bleu1.jpg';
-hauts[2] = 'img/Homme/tshirts/polo_rayé_blanc5.jpg';
+hauts[2] = 'img/Homme/tshirts/polo_raye_blanc5.jpg';
 
 var Pu = 0;
 var pull = [];
@@ -434,15 +436,15 @@ document.getElementById('News_form').addEventListener('submit', function(e) {
 
     if (!email.value) {
         erreur = "veuillez renseigner votre email";
-        document.getElementById('email').style.cssText = "border-color: red";
+        document.getElementById('email').style.cssText = "border-color: #BA55D3";
     }
     if (!nom.value) {
         erreur = "veuillez renseigner votre nom";
-        document.getElementById('nom').style.cssText = "border-color: red";
+        document.getElementById('nom').style.cssText = "border-color: #BA55D3";
     }
     if (!prenom.value) {
         erreur = "veuillez renseigner votre prenom";
-        document.getElementById('prenom').style.cssText = "border-color: red";
+        document.getElementById('prenom').style.cssText = "border-color: #BA55D3";
     }
     if (erreur) {
         e.preventDefault();

@@ -11,8 +11,9 @@
     <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet">
 
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="js/script.js"></script>
-    <title>Le Petit Commerce - LOGIN</title>
+
+    <title>LePetitCommerce - LOGIN</title>
+    <meta name="description" content="Retrouvez tout l'univers de la marque LePetitcommerce à travers sa E-boutique.">
 </head>
 
 <body>
@@ -38,9 +39,9 @@
                 </ul>
             </div>
             <div class="searchbar"><i class="fas fa-search"></i></div>
-            <a href="" class="localisation"><i class="fas fa-map-marker-alt"></i></a>
+            <a href="localisation.html" class="localisation"><i class="fas fa-map-marker-alt"></i></a>
             <a href="login.html" class="user"> <i class="fas fa-user"></i></a>
-            <a href="" class="panier"><i class="fas fa-shopping-cart"></i></a>
+            <a href="panier.html" class="panier"><i class="fas fa-shopping-cart"></i></a>
         </div>
 
         <figure class="logoMarque ">
@@ -73,16 +74,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item dropdown">
+                    <a class="nav-link" href="index.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Accueil<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     La Boutique <span class="sr-only">(current)</span></a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Qui Sommes-Nous?</a>
+                        <a class="dropdown-item" href="quisommesnous.html">Qui Sommes-Nous?</a>
                         <a class="dropdown-item" href="#">Contact</a>
-                        <a class="dropdown-item" href="#">Personal Shopper - Coaching</a>
+                        <a class="dropdown-item" href="reservation.html">Personal Shopper - Coaching</a>
                         <a class="dropdown-item" href="#">Avis Clients</a>
                         <a class="dropdown-item" href="#">Recrutement</a>
                         <a class="dropdown-item" href="#">Evenements</a>
-                        <a class="dropdown-item" href="#">Presse</a>
+                        <a class="dropdown-item" href="presse.html">Presse</a>
                         <a class="dropdown-item" href="#">Actualités</a>
                     </div>
                 </li>
@@ -97,7 +101,7 @@
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             FEMME</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#" style="color:red;">Soldes</a>
+                        <a class="dropdown-item redsolde" href="#">Soldes</a>
                         <a class="dropdown-item" href="#">Tout voir</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Tee-shirts</a>
@@ -120,7 +124,7 @@
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             HOMME</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#" style="color:red; ">Soldes</a>
+                        <a class="dropdown-item redsolde" href="solde.h.html">Soldes</a>
                         <a class="dropdown-item" href="Tous_nos_produits_H.html">Tout voir</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="Pantalons.html">Pantalons</a>
@@ -151,85 +155,85 @@
         </div>
     </nav>
 
-    <body>
-        <div id="login_page">
-            <div class="loginbox">
-                <div class="avatar">
-                    <i class="fas fa-user"></i>
-                </div>
-                <h1>CONNEXION</h1>
-                <form action="">
-                    <p>Identifiant :</p>
-                    <input type="email" name="identifiant" id="identifiant" placeholder="email">
-                    <p>Mot de Passe : </p>
-                    <input type="password" name="password" id="password" placeholder="Mot de passe">
-                    <input type="submit" value="Continuer">
 
-                    <p id="erreur_login"></p>
-
-                    <a href="#">Mot de Passe perdu <i class="fas fa-angle-right"></i></a><br>
-                    <a href="login.html">Je n'ai pas de compte <i class="fas fa-angle-right"></i></a>
-                </form>
-
+    <div id="login_page">
+        <div class="loginbox">
+            <div class="avatar">
+                <i class="fas fa-user"></i>
             </div>
+            <h1>CONNEXION</h1>
+            <form>
+                <p>Identifiant :</p>
+                <input type="email" name="identifiant" id="identifiant" placeholder="email">
+                <p>Mot de Passe : </p>
+                <input type="password" name="password" id="password" placeholder="Mot de passe">
+                <input type="submit" value="Continuer">
+
+                <p id="erreur_login"></p>
+
+                <a href="#">Mot de Passe perdu <i class="fas fa-angle-right"></i></a><br>
+                <a href="login.html">Je n'ai pas de compte <i class="fas fa-angle-right"></i></a>
+            </form>
+
         </div>
-    </body>
+    </div>
 
 
     <!-- ******  Footer  ****** -->
     <footer>
-        <div class="container-fluid">
-            <div class="row ">
-                <Div id="newsletter" class="newsletter col-sm-4 col-md-4 test">
-                    <div id="toggle_news">
-                        <h4>NewsLetter <i class="fas fa-angle-down"></i></h4>
-                        <span class="ligne"></span>
-                    </div>
-                    <div class="footer_align" id="news_p">
-                        <p>Inscrivez-vous à notre programme relationnel <strong>LePetitCommerce</strong> afin de recevoir toute notre actualité et nos meilleures offres.</p>
-                    </div>
-                    <a href="newsletter.html" class="btn btn-outline-success"> M'inscrire !</a>
+        <div>
+            <div class="container-fluid">
+                <div class="row ">
+                    <Div id="newsletter" class="newsletter col-sm-4 col-md-4 test">
+                        <div id="toggle_news">
+                            <h4>NewsLetter <i class="fas fa-angle-down"></i></h4>
+                            <span class="ligne"></span>
+                        </div>
+                        <div class="footer_align" id="news_p">
+                            <p>Inscrivez-vous à notre programme relationnel <strong>LePetitCommerce</strong> afin de recevoir toute notre actualité et nos meilleures offres.</p>
+                        </div>
+                        <a href="newsletter.html" class="btn btn-outline-success"> M'inscrire !</a>
 
-                </Div>
+                    </Div>
 
-                <div class="col-sm-4 col-md-4 test" id="infos">
-                    <div id="toggle_infos">
-                        <h4>Informations Utiles <i class="fas fa-angle-down"></i></h4>
-                        <span class="ligne"></span>
+                    <div class="col-sm-4 col-md-4 test" id="infos">
+                        <div id="toggle_infos">
+                            <h4>Informations Utiles <i class="fas fa-angle-down"></i></h4>
+                            <span class="ligne"></span>
+                        </div>
+                        <div class="footer_align" id="infos_liste">
+                            <ul>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="cgv.html">Mentions Légales</a></li>
+                                <li><a href="cgv.html">Nos conditions Générales de Vente</a></li>
+                                <li><a href="#">Plan du site</a></li>
+                                <li><a href="#">Imprimer la page</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="footer_align" id="infos_liste">
-                        <ul>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Mentions Légales</a></li>
-                            <li><a href="#">Nos conditions Générales de Vente</a></li>
-                            <li><a href="#">Plan du site</a></li>
-                            <li><a href="#">Imprimer la page</a></li>
-                        </ul>
+                    <div class="col-sm-4 col-md-4 " id="Social">
+                        <div id="toggle_Social">
+                            <h4>Suivez Nous <i class="fas fa-angle-down"></i></h4>
+                            <span class="ligne"></span>
+                        </div>
+                        <div class="footer_align row" id="Social_logo">
+                            <a href="https://fr-fr.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                            <a href="https://www.instagram.com/?hl=fr"><i class="fab fa-instagram"></i></a>
+                            <a href="https://twitter.com/?lang=fr"><i class="fab fa-twitter-square"></i></a>
+                            <a href="https://www.pinterest.fr/"><i class="fab fa-pinterest-square"></i></a>
+                        </div>
                     </div>
+
+
                 </div>
-                <div class="col-sm-4 col-md-4 " id="Social">
-                    <div id="toggle_Social">
-                        <h4>Suivez Nous <i class="fas fa-angle-down"></i></h4>
-                        <span class="ligne"></span>
-                    </div>
-                    <div class="footer_align row" id="Social_logo">
-                        <a href="https://fr-fr.facebook.com/"><i class="fab fa-facebook-square"></i></a>
-                        <a href="https://www.instagram.com/?hl=fr"><i class="fab fa-instagram"></i></a>
-                        <a href="https://twitter.com/?lang=fr"><i class="fab fa-twitter-square"></i></a>
-                        <a href="https://www.pinterest.fr/"><i class="fab fa-pinterest-square"></i></a>
-                    </div>
-                </div>
+            </div>
 
 
+            <div id="copy">
+                <p>Copyright &copy; LePetitCommerce</p>
             </div>
         </div>
-
-
-        <div id="copy">
-            <p>Copyright &copy; LePetitCommerce</p>
-        </div>
     </footer>
-
     <script>
         document.getElementById('login_page').addEventListener('submit', function(el) {
 
@@ -254,9 +258,6 @@
             }
         })
     </script>
-
-
-
 
 
     <script src="js/script.js"></script>

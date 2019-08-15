@@ -13,7 +13,8 @@
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-    <title>LePetitCommerce</title>
+    <title>LePetitCommerce - Les Hauts pour Homme</title>
+    <meta name="description" content="Retrouvez tout l'univers de la marque LePetitcommerce à travers sa E-boutique.">
 
 </head>
 
@@ -40,9 +41,9 @@
                 </ul>
             </div>
             <div class="searchbar"><i class="fas fa-search"></i></div>
-            <div class="localisation"><i class="fas fa-map-marker-alt"></i></div>
-            <div class="panier"><i class="fas fa-shopping-cart"></i></div>
-            <div class="user"><i class="fas fa-user"></i></div>
+            <a href="localisation.html" class="localisation"><i class="fas fa-map-marker-alt"></i></a>
+            <a href="login.html" class="user"> <i class="fas fa-user"></i></a>
+            <a href="panier.html" class="panier"><i class="fas fa-shopping-cart"></i></a>
         </div>
 
         <figure class="logoMarque">
@@ -74,17 +75,20 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Accueil</a>
+                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     La Boutique <span class="sr-only">(current)</span></a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Qui Sommes-Nous?</a>
+                        <a class="dropdown-item" href="quisommesnous.html">Qui Sommes-Nous?</a>
                         <a class="dropdown-item" href="#">Contact</a>
-                        <a class="dropdown-item" href="#">Personal Shopper - Coaching</a>
+                        <a class="dropdown-item" href="reservation.html">Personal Shopper - Coaching</a>
                         <a class="dropdown-item" href="#">Avis Clients</a>
                         <a class="dropdown-item" href="#">Recrutement</a>
                         <a class="dropdown-item" href="#">Evenements</a>
-                        <a class="dropdown-item" href="#">Presse</a>
+                        <a class="dropdown-item" href="presse.html">Presse</a>
                         <a class="dropdown-item" href="#">Actualités</a>
                     </div>
                 </li>
@@ -92,14 +96,14 @@
                     <a class="nav-link dropdown-toggle redsoldes" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SOLDES<span class="sr-only">(current)</span></a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#">FEMME</a>
-                        <a class="dropdown-item" href="#">HOMME</a>
+                        <a class="dropdown-item" href="solde.h.html">HOMME</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             FEMME</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#" style="color:red;">Soldes</a>
+                        <a class="dropdown-item redsolde" href="#">Soldes</a>
                         <a class="dropdown-item" href="#">Tout voir</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Tee-shirts</a>
@@ -122,7 +126,7 @@
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             HOMME</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#" style="color:red; ">Soldes</a>
+                        <a class="dropdown-item redsolde" href="solde.h.html">Soldes</a>
                         <a class="dropdown-item" href="Tous_nos_produits_H.html">Tout voir</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="Pantalons.html">Pantalons</a>
@@ -162,14 +166,14 @@
 
             <h2>Les Soldes</h2>
             <p>Vite Vite! <br> Derniéres démarques.</p>
-            <a href="#" class="btn btn-outline-success redbutton"> Je découvre <i class="fas fa-arrow-right"></i></a>
+            <a href="solde.h.html" class="btn btn-outline-success redbutton"> Je découvre <i class="fas fa-arrow-right"></i></a>
         </div>
 
 
         <!-- *****  fil d'ariane *****-->
         <nav aria-label="breadcrumb" id="ariane">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Accueil</a></li>
+                <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
                 <li class="breadcrumb-item"><a href="Tous_nos_produits_H.html">Homme</a></li>
                 <li class="breadcrumb-item active" aria-current="page">les Hauts</li>
             </ol>
@@ -200,7 +204,7 @@
                                     <li><a href="#imprime" class="dropdown-item">Imprimés</a></li>
                                     <li><a href="#maille" class="dropdown-item">Maille</a></li>
                                     <li><a href="#polo" class="dropdown-item">Les Polos</a></li>
-                                    <li><a href="#licence" class="dropdown-item">Licences &copy</a></li>
+                                    <li><a href="#licence" class="dropdown-item">Licences</a></li>
 
                                 </ul>
 
@@ -354,7 +358,7 @@
                     <div class="container ">
                         <div class="row ">
                             <div class="col-xs-12 col-md-6 col-xl-3 ">
-                                <fieldset class="text " id="imprime ">
+                                <fieldset class="text " id="imprime">
                                     <legend>Imprimés</legend>
 
                                     <p>Les t-shirts à Motifs <span class="vert ">LePetitCommerce</span> pour homme pratiques et pleins de style. Optez pour un t-shirt aux graphismes tendance ou un t-shirt décontracté à rayures selon vos ensembles</p>
@@ -490,7 +494,7 @@
                         <div class="row ">
                             <div class="col-xs-12 col-md-6 col-xl-3 ">
                                 <div>
-                                    <img src="img/homme/tshirts/polo_rayé_blanc3.jpg" alt="photo_polo" class="image_vetement" id="haut10">
+                                    <img src="img/homme/tshirts/polo_raye_blanc3.jpg" alt="photo_polo" class="image_vetement" id="haut10">
                                     <div class=" car-body" id="card-body10">
                                         <h5 class="card-title ">POLO BASIQUE EN PIQUÉ</h5>
                                         <h6 class="card-subtitle mb-2 text-muted ">12,95 EUR</h6>
@@ -517,7 +521,7 @@
                             </div>
 
                             <div class="col-xs-12 col-md-6 col-xl-3 ">
-                                <fieldset class="text " id="polo ">
+                                <fieldset class="text " id="polo">
                                     <legend>Les Polos</legend>
 
                                     <p> Les polos pour homme sont si versatiles qu'ils se conjuguent avec les looks casual comme les looks habillés et chics.
@@ -690,39 +694,39 @@
     <footer>
         <div class="container-fluid ">
             <div class="row ">
-                <Div id="newsletter " class="newsletter col-sm-4 col-md-4 test ">
-                    <div id="toggle_news ">
+                <Div id="newsletter" class="newsletter col-sm-4 col-md-4 test ">
+                    <div id="toggle_news">
                         <h4>NewsLetter <i class="fas fa-angle-down "></i></h4>
                         <span class="ligne "></span>
                     </div>
-                    <div class="footer_align " id="news_p ">
+                    <div class="footer_align " id="news_p">
                         <p>Inscrivez-vous à notre programme relationnel <strong>LePetitCommerce</strong> afin de recevoir toute notre actualité et nos meilleures offres.</p>
                     </div>
                     <a href="newsletter.html " class="btn btn-outline-success "> M'inscrire !</a>
 
                 </Div>
 
-                <div class="col-sm-4 col-md-4 test " id="infos ">
-                    <div id="toggle_infos ">
+                <div class="col-sm-4 col-md-4 test " id="infos">
+                    <div id="toggle_infos">
                         <h4>Informations Utiles <i class="fas fa-angle-down "></i></h4>
-                        <span class="ligne "></span>
+                        <span class="ligne"></span>
                     </div>
-                    <div class="footer_align " id="infos_liste ">
+                    <div class="footer_align " id="infos_liste">
                         <ul>
                             <li><a href="# ">Contact</a></li>
-                            <li><a href="# ">Mentions Légales</a></li>
-                            <li><a href="# ">Nos conditions Générales de Vente</a></li>
+                            <li><a href="cgv.html">Mentions Légales</a></li>
+                            <li><a href="cgv.html">Nos conditions Générales de Vente</a></li>
                             <li><a href="# ">Plan du site</a></li>
                             <li><a href="# ">Imprimer la page</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-4 col-md-4 " id="Social ">
-                    <div id="toggle_Social ">
+                <div class="col-sm-4 col-md-4" id="Social">
+                    <div id="toggle_Social">
                         <h4>Suivez Nous <i class="fas fa-angle-down "></i></h4>
-                        <span class="ligne "></span>
+                        <span class="ligne"></span>
                     </div>
-                    <div class="footer_align row " id="Social_logo ">
+                    <div class="footer_align row " id="Social_logo">
                         <a href="https://fr-fr.facebook.com/ "><i class="fab fa-facebook-square "></i></a>
                         <a href="https://www.instagram.com/?hl=fr "><i class="fab fa-instagram "></i></a>
                         <a href="https://twitter.com/?lang=fr "><i class="fab fa-twitter-square "></i></a>
@@ -735,7 +739,7 @@
         </div>
 
 
-        <div id="copy ">
+        <div id="copy">
             <p>Copyright &copy; LePetitCommerce</p>
         </div>
     </footer>

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/jquery-ui.theme.min.css">
+    <link rel="stylesheet" href="CSS/jquery-ui.min.css">
+    <link rel="stylesheet" href="CSS/jquery-ui.structure.min.css">
+    <script src="js/jquery-ui-1.12.1.custom/external/jquery/jquery.js"></script>
+    <script src="js/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+    <title>LePetitCommerce - Réservation</title>
+    <meta name="description" content="Retrouvez tout l'univers de la marque LePetitcommerce à travers sa E-boutique.">
+    <script>
+        $(function() {
+            $("#datepicker").datepicker({
+                showButtonPanel: true
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- ******  Header  ****** -->
+    <header>
+
+        <div class="headerLogo">
+
+            <div id="conteneur">
+                <ul id="menu">
+                    <li>
+                        <a href="#" class="langues">Langues</a>
+                        <ul class="sous_menu">
+                            <li>
+                                <a href="#"><img class="logoLangues" src="img/logo/flag-fr.png" alt="langue france"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img class="logoLangues" src="img/logo/flag-gb.png" alt="langue anglais"></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="searchbar"><i class="fas fa-search"></i></div>
+            <a href="localisation.html" class="localisation"><i class="fas fa-map-marker-alt"></i></a>
+            <a href="login.html" class="user"> <i class="fas fa-user"></i></a>
+            <a href="panier.html" class="panier"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+
+        <figure class="logoMarque">
+            <img class="logoMarque" src="img/logo/logo.png" alt="Logo Marque">
+        </figure>
+
+
+
+
+
+    </header>
+
+    <script>
+        $(document).ready(function() {
+            $(".langues").hover(function() {
+                $(".langues").parent().find("ul.sous_menu").stop(true, true).slideDown(200).show();
+                $(".langues").parent().hover(function() {}, function() {
+                    $(this).parent().find("ul.sous_menu").slideUp(150);
+                });
+            });
+        });
+    </script>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Accueil</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    La Boutique <span class="sr-only">(current)</span></a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="quisommesnous.html">Qui Sommes-Nous?</a>
+                        <a class="dropdown-item" href="#">Contact</a>
+                        <a class="dropdown-item" href="reservation.html">Personal Shopper - Coaching</a>
+                        <a class="dropdown-item" href="#">Avis Clients</a>
+                        <a class="dropdown-item" href="#">Recrutement</a>
+                        <a class="dropdown-item" href="#">Evenements</a>
+                        <a class="dropdown-item" href="presse.html">Presse</a>
+                        <a class="dropdown-item" href="#">Actualités</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle redsoldes" href="#" id="navbarDropdown5" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SOLDES<span class="sr-only">(current)</span></a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">FEMME</a>
+                        <a class="dropdown-item" href="solde.h.html">HOMME</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            FEMME</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item redsolde" href="#">Soldes</a>
+                        <a class="dropdown-item" href="#">Tout voir</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Tee-shirts</a>
+                        <a class="dropdown-item" href="#">Chemisiers</a>
+                        <a class="dropdown-item" href="#">Jeans</a>
+                        <a class="dropdown-item" href="#">Robes</a>
+                        <a class="access_f" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                                Accessoires <i class="fas fa-angle-down"></i></a>
+                        <div class="sous_menu_f" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Tout voir</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Sacs & Ceintures</a>
+                            <a class="dropdown-item" href="#">Lunettes & Montres</a>
+                            <a class="dropdown-item" href="#">Casquettes & Bonnets</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        HOMME</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item redsolde" href="solde.h.html">Soldes</a>
+                        <a class="dropdown-item" href="Tous_nos_produits_H.html">Tout voir</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Pantalons.html">Pantalons</a>
+                        <a class="dropdown-item" href="jean_h.html">Jeans</a>
+                        <a class="dropdown-item" href="chemise_h.html">Chemises</a>
+                        <a class="dropdown-item" href="Hauts_h.html">Hauts</a>
+                        <a class="dropdown-item" href="pull_h.html">Pulls</a>
+                        <a class="dropdown-item" href="veste_h.html">Vestes / Manteaux</a>
+                        <a class="dropdown-item" href="chaussures_h.html">Chaussures</a>
+                        <a class="access_h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="accessoires_h.html">
+                                                        Accessoires <i class="fas fa-angle-down"></i> </a>
+                        <div class="sous_menu_h" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="accessoires_h.html">Tout voir</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="accessoires_h.html#sac">Sacs</a>
+                            <a class="dropdown-item" href="accessoires_h.html#ceintures">Ceintures</a>
+                            <a class="dropdown-item" href="accessoires_h.html#casquettes">Casquettes</a>
+                            <a class="dropdown-item" href="accessoires_h.html#bonnet">Bonnets</a>
+                            <a class="dropdown-item" href="accessoires_h.html#montre">Montres</a>
+                            <a class="dropdown-item" href="accessoires_h.html#lunette">Lunettes</a>
+                            <a class="dropdown-item" href="accessoires_h.html#portefeuille">Portefeuilles</a>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <div class="clear"></div>
+
+    <h2>Coaching</h2>
+    <span class="ligne "></span>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-6">
+                <div class="container reservation_description">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3>Nos Coachs sont là pour vous:</h3>
+                            <br>Un changement complet est parfois utile lorsque l’on ne sait plus comment s’habiller ni comment se maquiller… <br> Découvrez les offres de relooking complet <span class="vert ">LePetitCommerce</span>.
+                            <br> Les spécialistes de la mode et de la beauté analyseront votre physique et votre personnalité pour trouver une garde-robe adaptée à votre morphologie, une coiffure qui convient à votre visage et vous bénéficierez de leurs
+                            précieux conseils !<br>
+                        </div>
+                        <div class="col-12">
+                            <img src="img/store-984393_960_720.jpg" alt="">
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="col-md-6" id="reservation">
+                <fieldset>
+                    <legend>Réservation</legend>
+                    <form>
+
+                        <label for="Civilité">Civilité :</label><br>
+                        <input class="choix inline" type="radio" name="Civilité" id="Civilité" value="homme">Monsieur
+                        <input class="choix inline" type="radio" name="Civilité" value="femme" checked>Madame
+                        <br>
+                        <label for="prenom">Prenom :</label>
+                        <input type="text" id="prenom" name="prenom" value="">
+                        <br>
+                        <label for="nom">Nom :</label>
+                        <input type="text" id="nom" name="nom" value="">
+                        <br>
+                        <label for="email">E-mail :</label>
+                        <input type="email" id="email" name="email" value="">
+                        <br>
+
+                        <label for="tel">Téléphone :</label>
+                        <input type="text" id="tel" name="tel" maxlength="10" pattern="[0-9]{5}" title="5chiffres comprit entre 0 et 9">
+
+
+
+
+
+
+                        <p>Choisir une date de rendez-vous: </p>
+                        <span class="ligne"></span>
+
+
+
+                        <p>Date: <input type="text" id="datepicker"></p>
+
+
+
+                        <input class="btn btn-outline-success" id="bouton_envoi" type="submit" value="Réserver">
+
+                        <p id="erreur_mail"></p>
+                    </form>
+                </fieldset>
+            </div>
+
+
+            <script>
+                document.getElementById('reservation').addEventListener('submit', function(xr) {
+
+                    var erreur_mail;
+                    var prenom = document.getElementById('prenom');
+                    var nom = document.getElementById('nom');
+                    var email = document.getElementById('email');
+                    var date = document.getElementById('datepicker');
+
+                    if (!email.value) {
+                        erreur_mail = "veuillez renseigner votre email";
+                        document.getElementById('email').style.cssText = "border-color: #BA55D3";
+                    }
+                    if (!nom.value) {
+                        erreur_mail = "veuillez renseigner votre nom";
+                        document.getElementById('nom').style.cssText = "border-color: #BA55D3";
+                    }
+                    if (!prenom.value) {
+                        erreur_mail = "veuillez renseigner votre prenom";
+                        document.getElementById('prenom').style.cssText = "border-color: #BA55D3";
+                    }
+                    if (erreur_mail) {
+                        xr.preventDefault();
+                        document.getElementById("erreur_mail").innerHTML = erreur_mail;
+                        return false;
+                    } else {
+
+                        alert('Merci pour votre réservation');
+                    }
+                })
+            </script>
+
+
+        </div>
+
+    </div>
+    <div class="clear "></div>
+    <!-- **** infos sup **** -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 ">
+                <fieldset class=" pay">
+                    <legend> Moyens de paiement </legend>
+
+                    <img src="img/logo/cb.png" alt="logo_cb" class="cb">
+                    <img src="img/logo/mastercard.png" alt="logo_mastercard" class="cb">
+                    <img src="img/logo/visa.png" alt="logo_visa" class="cb">
+                    <img src="img/logo/amex.png" alt="logo_amex" class="cb">
+                    <img src="img/logo/google_pay.png" alt="logo_google" class="cb">
+                    <img src="img/logo/apple_pay.png" alt="return" class="cb">
+                </fieldset>
+            </div>
+            <div class="col-md-4 col-xl-4">
+                <fieldset class="return">
+                    <legend> Satisfait ou remboursé </legend>
+
+
+                    <img src="img/logo/return.png" alt="return" id="return_logo">
+
+
+                </fieldset>
+            </div>
+            <div class="col-md-4 ">
+                <fieldset class=" help">
+                    <legend> Besoin d'aide</legend>
+
+
+
+                    <a href="tel:+33762765434">0101010101</a>
+
+                    <p>(Appel Gratuit)</p>
+
+
+                </fieldset>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- ******  Footer  ****** -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row ">
+                <Div id="newsletter" class="newsletter col-sm-4 col-md-4 test">
+                    <div id="toggle_news">
+                        <h4>NewsLetter <i class="fas fa-angle-down"></i></h4>
+                        <span class="ligne"></span>
+                    </div>
+                    <div class="footer_align" id="news_p">
+                        <p>Inscrivez-vous à notre programme relationnel <strong>LePetitCommerce</strong> afin de recevoir toute notre actualité et nos meilleures offres.</p>
+                    </div>
+                    <a href="newsletter.html" class="btn btn-outline-success"> M'inscrire !</a>
+
+                </Div>
+
+                <div class="col-sm-4 col-md-4 test" id="infos">
+                    <div id="toggle_infos">
+                        <h4>Informations Utiles <i class="fas fa-angle-down"></i></h4>
+                        <span class="ligne"></span>
+                    </div>
+                    <div class="footer_align" id="infos_liste">
+                        <ul>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="cgv.html">Mentions Légales</a></li>
+                            <li><a href="cgv.html">Nos conditions Générales de Vente</a></li>
+                            <li><a href="#">Plan du site</a></li>
+                            <li><a href="#">Imprimer la page</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 " id="Social">
+                    <div id="toggle_Social">
+                        <h4>Suivez Nous <i class="fas fa-angle-down"></i></h4>
+                        <span class="ligne"></span>
+                    </div>
+                    <div class="footer_align row" id="Social_logo">
+                        <a href="https://fr-fr.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                        <a href="https://www.instagram.com/?hl=fr"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/?lang=fr"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://www.pinterest.fr/"><i class="fab fa-pinterest-square"></i></a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <div id="copy">
+            <p>Copyright &copy; LePetitCommerce</p>
+        </div>
+    </footer>
+
+    <script>
+        $(document).ready(function() {
+            $('.carousel').carousel({
+                interval: 1800
+            })
+        });
+    </script>
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/script.js "></script>
+    <script src="js/bootstrap.js "></script>
+</body>
+
+</html>
