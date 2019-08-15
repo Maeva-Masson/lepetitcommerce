@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/description_article_f.css">
+
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <title>LePetitCommerce</title>
+
+</head>
+
+<body>
+
+    
+    <!----------------------------------HEADER------------------------------------------>
+
+<header>
+
+<div class="headerLogo">
+
+        <div id="conteneur">
+            <ul id="menu">
+                <li>
+                    <a href="#" class="langues">Langues</a>
+                    <ul class="sous_menu">
+                        <li>
+                            <a href="#"><img class="logoLangues" src="img/logo/flag-fr.png" alt="langue france"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="logoLangues" src="img/logo/flag-gb.png" alt="langue anglais"></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="searchbar"><i class="fas fa-search"></i></div>
+        <div class="localisation"><i class="fas fa-map-marker-alt"></i></div>
+        <div class="panier"><i class="fas fa-shopping-cart"></i></div>
+        <div class="user"><i class="fas fa-user"></i></div>
+    </div>
+
+    <figure class="logoMarque">
+        <img class="logoMarque" src="img/logo/logo.png" alt="Logo Marque">
+    </figure>        
+            
+</header>
+
+<script>
+        $(document).ready(function() {
+            $(".langues").hover(function() {
+                $(".langues").parent().find("ul.sous_menu").stop(true, true).slideDown(200).show();
+                $(".langues").parent().hover(function() {}, function() {
+                    $(this).parent().find("ul.sous_menu").slideUp(150);
+                });
+            });
+        });
+</script>
+
+    <!----------------------------------NAV------------------------------------------>
+
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                La Boutique <span class="sr-only">(current)</span></a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Qui Sommes-Nous?</a>
+                    <a class="dropdown-item" href="#">Contact</a>
+                    <a class="dropdown-item" href="#">Personal Shopper - Coaching</a>
+                    <a class="dropdown-item" href="#">Avis Clients</a>
+                    <a class="dropdown-item" href="#">Recrutement</a>
+                    <a class="dropdown-item" href="#">Evenements</a>
+                    <a class="dropdown-item" href="#">Presse</a>
+                    <a class="dropdown-item" href="#">Actualités</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle redsoldes" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SOLDES<span class="sr-only">(current)</span></a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">FEMME</a>
+                    <a class="dropdown-item" href="#">HOMME</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        FEMME</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#" style="color:red;">Soldes</a>
+                    <a class="dropdown-item" href="#">Tout voir</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Tee-shirts</a>
+                    <a class="dropdown-item" href="#">Chemisiers</a>
+                    <a class="dropdown-item" href="#">Jeans</a>
+                    <a class="dropdown-item" href="#">Robes</a>
+                    <a class="access_f" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                            Accessoires <i class="fas fa-angle-down"></i></a>
+                    <div class="sous_menu_f" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Tout voir</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Sacs & Ceintures</a>
+                        <a class="dropdown-item" href="#">Lunettes & Montres</a>
+                        <a class="dropdown-item" href="#">Casquettes & Bonnets</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                HOMME</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#" style="color:red; ">Soldes</a>
+                    <a class="dropdown-item" href="#">Tout voir</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="Pantalons.html">Pantalons</a>
+                    <a class="dropdown-item" href="jean_h.html">Jeans</a>
+                    <a class="dropdown-item" href="chemise_h.html">Chemises</a>
+                    <a class="dropdown-item" href="Hauts_h.html">Hauts</a>
+                    <a class="dropdown-item" href="pull_h.html">Pulls</a>
+                    <a class="dropdown-item" href="#">Vestes / Manteaux</a>
+                    <a class="dropdown-item" href="#">Chaussures</a>
+                    <a class="access_h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                                                Accessoires <i class="fas fa-angle-down"></i> </a>
+                    <div class="sous_menu_h" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Tout voir</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Sacs</a>
+                        <a class="dropdown-item" href="#">Ceintures</a>
+                        <a class="dropdown-item" href="#">Lunettes & Montres</a>
+                        <a class="dropdown-item" href="#">Casquettes & Bonnets</a>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+    
+
+<!----------------MAIN IMAGE------------------>
+
+<main>
+
+<div class="soldes ">
+        <h2>Les Soldes</h2>
+        <p>Vite Vite ! <br> Dernières démarques.</p>
+        <a href="#" class="btn btn-outline-success redbutton"> Je découvre <i class="fas fa-arrow-right"></i></a>
+</div>
+
+<!----------------FIL D'ARIANE------------------>
+
+<nav aria-label="breadcrumb" id="ariane">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Accueil</a></li>
+        <li class="breadcrumb-item"><a href="tous_produits_F.html">Femme</a></li>
+        <li class="breadcrumb-item"><a href="pantalons_femme.html">Les Pantalons</a></li>
+        <li class="breadcrumb-item active" aria-current="page">A pinces</li>
+    </ol>
+</nav>
+
+
+<!----------------DESCRIPTION COMPLETE DE L'ARTICLE------------------>
+
+<div class="container col-12">
+<div class="row">
+
+        <div class="col-xs-12 col-md-4">
+        <figure class="image_description">
+                <img src="img/femme/PANTALONS/pantalon9b.jpg" alt="photo_pantalon" class="image_vetement" id="produit1">
+        </figure>
+        </div>
+
+        <div class="col-xs-12 col-md-4">
+        <figure class="image_description">
+                <img src="img/femme/PANTALONS/pantalon9.jpg" alt="photo_pantalon" class="image_vetement" id="produit1">
+        </figure>
+        </div>
+
+        <div class="descript_art col-xs-12 col-md-4" id="description">
+        <aside class="description_article">
+            <h3>Pantalon à pinces</h3>
+            <hr>
+            
+            <p>Taille haute, avec détail boutons argentés.<br>
+                2 poches avant, longueur 90cm.<br>
+                Braguette zippée et pli marqué.<br><br>
+                <span class="prix_description">29,95€</span>
+            </p>
+
+<!-----------------------Déclinaisons d'article----------------------->
+
+    <div class="declinaison container">
+        <div class="img_declinaison">
+                <img src="img/femme/PANTALONS/pantalon9.jpg" alt="photo_pantalon" class="image_vetement" id="img_description">
+        </div>
+        <div class="img_declinaison">
+                <img src="img/femme/PANTALONS/pantalon9.jpg" alt="photo_pantalon" class="image_vetement" id="img_description">
+        </div>
+        <div class="img_declinaison">
+                <img src="img/femme/PANTALONS/pantalon9.jpg" alt="photo_pantalon" class="image_vetement" id="img_description">
+        </div>
+        <div class="img_declinaison">
+                <img src="img/femme/PANTALONS/pantalon9.jpg" alt="photo_pantalon" class="image_vetement" id="img_description">
+        </div>
+    </div>
+
+<!---------------------Choisir une taille---------------------------->
+
+            <nav id="nav3" class="choisir1taille">
+            <li>
+                <h5 class="nav2_sous_menu">Choisir une taille : <i class="fas fa-angle-down"></i></h5>
+                <div class="dropdown-divider"></div>
+                    <select id="size_p">
+                        <option value="">Ma taille</option>
+                        <option value="34">34</option>
+                        <option value="36">36</option>
+                        <option value="38">38</option>
+                        <option value="40">40</option>
+                        <option value="42">42</option>
+                        <option value="44">44</option>
+                    </select>
+            </li>
+            <a href="#" class="btn btn-outline-success achat">Acheter</a>
+        </nav>
+
+        
+
+        </aside>
+        </div>
+    <!-- </div> -->
+
+<!-----------------Avis clients------------------>
+
+<div class="avisClients1 col-xs-10 col-md-6">
+    <p class="avis_c"> <span class="avisClients">Un classique indispensable."</span> - Jenny, Lyon </p>
+</div>
+<div class="avisClients2 col-xs-10 col-md-8">
+    <p class="avis_c"> <span class="avisClients">"Taille super bien!"</span> - Astrid, Paris </p>
+</div>
+<div class="avisClients3 col-10">
+    <p class="avis_c"> <span class="avisClients">"Hyper confortable, je recommande!"</span> - Alex, Caen </p>
+</div>
+
+<!--------------------------------------------------------------------------->
+
+<!--Suite des photos-->
+
+    <div class="col-xs-12 col-md-4">
+    <figure class="image_description">
+            <img src="img/femme/PANTALONS/pantalon9c.jpg" alt="photo_pantalon" class="image_vetement" id="produit1">
+    </figure>
+    </div>
+    <div class="col-xs-12 col-md-4">
+    <figure class="image_description">
+            <img src="img/femme/PANTALONS/pantalon9d.jpg" alt="photo_pantalon" class="image_vetement" id="produit1">
+    </figure>
+    </div>
+
+<!--------------------------------------------------------------------------->
+
+<!--Dernière photo, centrée dans l'axe des 2 photos-->
+    
+    <div class="col-xs-12 col-md-4 offset-2">
+    <figure class="image_description solo">
+            <img src="img/femme/PANTALONS/pantalon9e.jpg" alt="photo_pantalon" class="image_vetement" id="produit1">
+    </figure>
+    </div>
+</div>
+</div>
+
+<div class="clear "></div>
+
+<!-- -------------------------SELECTION "POUR COMPLETER CE LOOK"----------------------------------------- -->
+
+<div class="selection_look">
+    <div class="container-fluid ">
+            <h4>Articles assortis à votre sélection:</h4>
+            <span class="ligne "></span>
+            <div class="row ">
+                <div class="MultiCarousel " data-items="1,3,5,6 " data-slide="1 " id="MultiCarousel " data-interval="1000 ">
+                    <div class="MultiCarousel-inner ">
+                        <div class="item ">
+                            <div class="pad15 ">
+                                <div class="card lead ">
+                                    <a href="#"> <img src="img/femme/CHEMISIERS/chemisier3d.jpg " class="card-img-top " alt="... ">
+                                        <div class="card-body ">
+                                    </a>
+
+                                    <h5 class="card-title ">Chemisier Rose Poudré</h5>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item ">
+                            <div class="pad15 ">
+                                <div class="card lead ">
+                                    <a href=" "> <img src="img/femme/CHAPEAUX/chapeau2.jpg " class="card-img-top " alt="... ">
+                                        <div class="card-body ">
+                                    </a>
+                                    <h5 class="card-title ">Chapeau en paille</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item ">
+                            <div class="pad15 ">
+                                <div class="card lead ">
+                                    <img src="img/femme/CHAUSSURES/chaussures1d.jpg" class="card-img-top " alt="... ">
+                                    <div class="card-body ">
+                                        <h5 class="card-title ">Sandales blanches</h5>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item ">
+                            <div class="pad15 ">
+                                <div class="card lead ">
+                                    <img src="img/femme/PULLS/pull3d.jpg" class="card-img-top " alt="... ">
+                                    <div class="card-body ">
+                                        <h5 class="card-title ">Pull fin beige</h5>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item ">
+                            <div class="pad15 ">
+                                <div class="card lead ">
+                                    <img src="img/femme/ACCESSOIRES/montre2.jpg" class="card-img-top " alt="... ">
+                                    <div class="card-body ">
+                                        <h5 class="card-title ">Montre Camel</h5>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item ">
+                            <div class="pad15 ">
+                                <div class="card lead ">
+                                    <img src="img/femme/ACCESSOIRES/sac3.jpg" class="card-img-top " alt="... ">
+                                    <div class="card-body ">
+                                        <h5 class="card-title ">Sac Rose Poudré</h5>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item ">
+                            <div class="pad15 ">
+                                <div class="card lead ">
+                                    <img src="img/femme/TSHIRTS/tshirt3.jpg" class="card-img-top " alt="... ">
+                                    <div class="card-body ">
+                                        <h5 class="card-title ">T-shirt Rolling Stones</h5>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item ">
+                            <div class="pad15 ">
+                                <div class="card lead ">
+                                    <img src="img/femme/HAUTS/haut4c.jpg" class="card-img-top " alt="... ">
+                                    <div class="card-body ">
+                                        <h5 class="card-title ">Débardeur Noir</h5>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item ">
+                            <div class="pad15 ">
+                                <div class="card lead ">
+                                    <img src="img/femme/VESTES/veste3.jpg" class="card-img-top " alt="... ">
+                                    <div class="card-body ">
+                                        <h5 class="card-title ">Veste Longue</h5>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item ">
+                            <div class="pad15 ">
+                                <div class="card lead ">
+                                    <img src="img/femme/MANTEAUX/manteau1.jpg" class="card-img-top " alt="... ">
+                                    <div class="card-body ">
+                                        <h5 class="card-title ">Manteau</h5>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+                    </div>
+                    <button class="btn btn-primary leftLst "><</button>
+                    <button class="btn btn-primary rightLst ">></button>
+                </div>
+            </div>
+</div>
+
+<!---------------------------"D'AUTRES ONT EGALEMENT ACHETE"------------------------------------------->
+
+<div class="selection_look">
+        <div class="container-fluid autres_achats ">
+                <h4>D'autres ont également acheté:</h4>
+                <span class="ligne "></span>
+                <div class="row ">
+                    <div class="MultiCarousel " data-items="1,3,5,6 " data-slide="1 " id="MultiCarousel " data-interval="1000 ">
+                        <div class="MultiCarousel-inner ">
+                            <div class="item ">
+                                <div class="pad15 ">
+                                    <div class="card lead ">
+                                        <a href="#"> <img src="img/femme/ACCESSOIRES/sac1.jpg" class="card-img-top " alt="... ">
+                                            <div class="card-body ">
+                                        </a>
+    
+                                        <h5 class="card-title ">Petit Sac Noir</h5>
+    
+    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item ">
+                                <div class="pad15 ">
+                                    <div class="card lead ">
+                                        <a href=" "> <img src="img/femme/MANTEAUX/manteau2d.jpg" class="card-img-top " alt="... ">
+                                            <div class="card-body ">
+                                        </a>
+                                        <h5 class="card-title ">Manteau à Carreaux</h5>
+    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="item ">
+                                <div class="pad15 ">
+                                    <div class="card lead ">
+                                        <img src="img/femme/ACCESSOIRES/montre1.jpg" class="card-img-top " alt="... ">
+                                        <div class="card-body ">
+                                            <h5 class="card-title ">Montre Noire</h5>
+    
+    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item ">
+                                <div class="pad15 ">
+                                    <div class="card lead ">
+                                        <img src="img/femme/PULLS/pull1.jpg" class="card-img-top " alt="... ">
+                                        <div class="card-body ">
+                                            <h5 class="card-title ">Gilet en Maille Fine</h5>
+    
+    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item ">
+                                <div class="pad15 ">
+                                    <div class="card lead ">
+                                        <img src="img/femme/CHEMISIERS/chemisier1d.jpg" class="card-img-top " alt="... ">
+                                        <div class="card-body ">
+                                            <h5 class="card-title ">Chemisier Noir à Pois</h5>
+    
+    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item ">
+                                <div class="pad15 ">
+                                    <div class="card lead ">
+                                        <img src="img/femme/TSHIRTS/tshirt2d.jpg" class="card-img-top " alt="... ">
+                                        <div class="card-body ">
+                                            <h5 class="card-title ">T-Shirt Mickey Gris</h5>
+    
+    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item ">
+                                <div class="pad15 ">
+                                    <div class="card lead ">
+                                        <img src="img/femme/HAUTS/haut7d.jpg" class="card-img-top " alt="... ">
+                                        <div class="card-body ">
+                                            <h5 class="card-title ">Débardeur Dentelle Rouge</h5>
+    
+    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item ">
+                                <div class="pad15 ">
+                                    <div class="card lead ">
+                                        <img src="img/femme/ACCESSOIRES/collier1.jpg" class="card-img-top " alt="... ">
+                                        <div class="card-body ">
+                                            <h5 class="card-title ">Collier à Médaillon</h5>
+    
+    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item ">
+                                <div class="pad15 ">
+                                    <div class="card lead ">
+                                        <img src="img/femme/VESTES/veste1c.jpg" class="card-img-top " alt="... ">
+                                        <div class="card-body ">
+                                            <h5 class="card-title ">Veste en Jean</h5>
+    
+    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item ">
+                                <div class="pad15 ">
+                                    <div class="card lead ">
+                                        <img src="img/femme/ACCESSOIRES/lunettes2.jpg" class="card-img-top " alt="... ">
+                                        <div class="card-body ">
+                                            <h5 class="card-title ">Lunettes Noires</h5>
+    
+    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+    
+    
+    
+    
+                        </div>
+                        <button class="btn btn-primary leftLst "><</button>
+                        <button class="btn btn-primary rightLst ">></button>
+                    </div>
+                </div>
+    </div>
+
+
+
+<!----------------------FOOTER------------------------------------------->
+
+<footer>
+    <div class="container-fluid">
+        <div class="row ">
+            <Div id="newsletter" class="newsletter col-sm-4 col-md-4 test">
+                <div id="toggle_news">
+                    <h4>NewsLetter <i class="fas fa-angle-down"></i> </h4>
+                    <span class="ligne"></span>
+                </div>
+                <div class="footer_align" id="news_p">
+                    <p>Inscrivez-vous à notre programme relationnel <span class="vert">LePetitCommerce</span> afin de recevoir toute notre actualité et nos meilleures offres.</p>
+                </div>
+                <a href="newsletter.html"><button class="btn btn-outline-success" type="submit"> M'inscrire !</button></a>
+
+            </Div>
+
+            <div class="col-sm-4 col-md-4 test" id="infos">
+                <div id="toggle_infos">
+                    <h4>Informations Utiles <i class="fas fa-angle-down"></i> </h4>
+                    <span class="ligne"></span>
+                </div>
+                <div class="footer_align" id="infos_liste">
+                    <ul>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Mentions Légales</a></li>
+                        <li><a href="#">Nos conditions Générales de Vente</a></li>
+                        <li><a href="#">Plan du site</a></li>
+                        <li><a href="#">Imprimer la page</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-sm-4 col-md-4 " id="Social">
+                <div id="toggle_Social">
+                    <h4>Suivez Nous <i class="fas fa-angle-down"></i></h4>
+                    <span class="ligne"></span>
+                </div>
+                <div class="footer_align row" id="Social_logo">
+                    <a href="https://fr-fr.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.instagram.com/?hl=fr"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/?lang=fr"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.pinterest.fr/"><i class="fab fa-pinterest-square"></i></a>
+                    <a href="https://www.youtube.com/?gl=FR&hl=fr"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div id="copy">
+        <p>Copyright &copy; LePetitCommerce</p>
+    </div>
+</footer>
+
+<script>
+    $(document).ready(function() {
+        $('#toggle_Social').click(function() {
+            $('#Social_logo').slideToggle(200);
+        });
+        $('#toggle_infos').click(function() {
+            $('#infos_liste').slideToggle(200);
+        });
+        $('#toggle_news').click(function() {
+            $('#news_p').slideToggle(200);
+        });
+    });
+</script>
+
+    <script src="js/script2_f.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>
