@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <title>LePetitCommerce</title>
+
+</head>
+
+<body>
+
+    
+    <!----------------------------------HEADER------------------------------------------>
+
+<header>
+
+<div class="headerLogo">
+
+        <div id="conteneur">
+            <ul id="menu">
+                <li>
+                    <a href="#" class="langues">Langues</a>
+                    <ul class="sous_menu">
+                        <li>
+                            <a href="#"><img class="logoLangues" src="img/logo/flag-fr.png" alt="langue france"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="logoLangues" src="img/logo/flag-gb.png" alt="langue anglais"></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="searchbar"><i class="fas fa-search"></i></div>
+        <div class="localisation"><i class="fas fa-map-marker-alt"></i></div>
+        <div class="panier"><i class="fas fa-shopping-cart"></i></div>
+        <div class="user"><i class="fas fa-user"></i></div>
+    </div>
+
+    <figure class="logoMarque">
+        <img class="logoMarque" src="img/logo/logo.png" alt="Logo Marque">
+    </figure>        
+            
+</header>
+
+<script>
+        $(document).ready(function() {
+            $(".langues").hover(function() {
+                $(".langues").parent().find("ul.sous_menu").stop(true, true).slideDown(200).show();
+                $(".langues").parent().hover(function() {}, function() {
+                    $(this).parent().find("ul.sous_menu").slideUp(150);
+                });
+            });
+        });
+</script>
+
+    <!----------------------------------NAV------------------------------------------>
+
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                La Boutique <span class="sr-only">(current)</span></a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Qui Sommes-Nous?</a>
+                    <a class="dropdown-item" href="#">Contact</a>
+                    <a class="dropdown-item" href="#">Personal Shopper - Coaching</a>
+                    <a class="dropdown-item" href="#">Avis Clients</a>
+                    <a class="dropdown-item" href="#">Recrutement</a>
+                    <a class="dropdown-item" href="#">Evenements</a>
+                    <a class="dropdown-item" href="#">Presse</a>
+                    <a class="dropdown-item" href="#">Actualités</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle redsoldes" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SOLDES<span class="sr-only">(current)</span></a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">FEMME</a>
+                    <a class="dropdown-item" href="#">HOMME</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        FEMME</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#" style="color:red;">Soldes</a>
+                    <a class="dropdown-item" href="#">Tout voir</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Tee-shirts</a>
+                    <a class="dropdown-item" href="#">Chemisiers</a>
+                    <a class="dropdown-item" href="#">Jeans</a>
+                    <a class="dropdown-item" href="#">Robes</a>
+                    <a class="access_f" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                            Accessoires <i class="fas fa-angle-down"></i></a>
+                    <div class="sous_menu_f" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Tout voir</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Sacs & Ceintures</a>
+                        <a class="dropdown-item" href="#">Lunettes & Montres</a>
+                        <a class="dropdown-item" href="#">Casquettes & Bonnets</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                HOMME</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#" style="color:red; ">Soldes</a>
+                    <a class="dropdown-item" href="#">Tout voir</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="Pantalons.html">Pantalons</a>
+                    <a class="dropdown-item" href="jean_h.html">Jeans</a>
+                    <a class="dropdown-item" href="chemise_h.html">Chemises</a>
+                    <a class="dropdown-item" href="Hauts_h.html">Hauts</a>
+                    <a class="dropdown-item" href="pull_h.html">Pulls</a>
+                    <a class="dropdown-item" href="#">Vestes / Manteaux</a>
+                    <a class="dropdown-item" href="#">Chaussures</a>
+                    <a class="access_h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                                                Accessoires <i class="fas fa-angle-down"></i> </a>
+                    <div class="sous_menu_h" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Tout voir</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Sacs</a>
+                        <a class="dropdown-item" href="#">Ceintures</a>
+                        <a class="dropdown-item" href="#">Lunettes & Montres</a>
+                        <a class="dropdown-item" href="#">Casquettes & Bonnets</a>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+    
+
+<!----------------MAIN IMAGE------------------>
+
+
+
+<div class="soldes ">
+        <h2>Les Soldes</h2>
+        <p>Vite Vite ! <br> Dernières démarques.</p>
+        <a href="#" class="btn btn-outline-success redbutton"> Je découvre <i class="fas fa-arrow-right"></i></a>
+</div>
+
+<!----------------FIL D'ARIANE------------------>
+
+<nav aria-label="breadcrumb" id="ariane">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Accueil</a></li>
+        <li class="breadcrumb-item"><a href="tous_produits_F.html">La Boutique</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Nous Rejoindre</li>
+    </ol>
+</nav>
+
+<main class="recrut_main">
+<!----------------INTRO FORMULAIRE------------------>
+
+<div class="introFormulaire">
+    <p><span class="emploi_span">Vous souhaitez nous rejoindre?</span></p>
+    <p>Remplissez ce formulaire et nous vous recontacterons sous un maximum de 3 semaines.</p>
+</div>
+
+<!----------------FORMULAIRE------------------>
+
+
+<form method="post" action="" class="form_recrutement">
+    
+    <fieldset class="civilite_form">
+        <legend class="recrut_legend">Civilité</legend>
+
+        <p><label for="choix_civilite"> Choisissez : </label>
+        <select class="input_recrut" name="choix_civilite" id="choix_civilite" autofocus>
+                <option value="Madame" selected>Madame</option>
+                <option value="Monsieur" >Monsieur</option>
+        </select>
+
+        <label class="ecart2" for="nom"> Nom : </label><input class="input_recrut" type="text" name="nom" id="nom" size="12" required />
+        <label class="ecart2" for="prenom">Prénom : </label><input class="input_recrut" type="text" name="prenom" id="prenom" size="12" required/>
+        </p>
+        <p>
+        <label for="dateNaissance">Date de Naissance : </label><input class="input_recrut" type="date" name="dateNaissance" id="dateNaissance" required size="8" maxlength="10" />
+        <label class="ecart2" for="villeNaissance">Ville : </label><input class="input_recrut" type="text" name="villeNaissance" id="villeNaissance" required size="30" />
+        </p>
+        <p>
+        <label for="adresseMail">Adresse Mail : </label><input class="input_recrut" type="email" name="adresseMail" id="adresseMail" size="30" required />
+        <label class="ecart2" for="telCV">Téléphone : </label><input class="input_recrut" type="tel" name="telCV" id="telCV" required size="10" maxlength="10" />
+        </p>
+        <p>
+        <label for="adresseCV">Adresse : </label><input class="input_recrut" type="text" name="adresseCV" id="adresseCV" required size="30" /><br>
+        <input class="input_recrut ecart2 ecart3" type="text" name="adresseCV" id="adresseCV" required size="30" />
+        
+        </p>
+        <p>
+        <label for="CP_CV">Code Postal : </label><input class="input_recrut" type="text" name="CP_CV" id="CP_CV" required size="5" maxlength="5" />
+        <label class="ecart2" for="villeCV">Ville : </label><input class="input_recrut" type="text" name="villeCV" id="villeCV" required size="30" />
+        </p>
+        <p>
+        <label for="paysCV">Pays : </label><input class="input_recrut" type="text" name="paysCV" id="paysCV" required />
+        </p>
+
+    </fieldset>
+                   
+    
+
+
+<!----------Derniers Emplois---------------->
+
+    <fieldset class="emplois_form">
+        <legend class="recrut_legend">Vos Derniers Emplois</legend>
+
+                <p><label for="emploi1"><span class="emploi_span">Emploi Précédant 1 :</span></label><br>
+                    <label for="emploi1">Intitulé :</label>
+                    <input class="input_recrut ecart" type="text" name="dernierEmploi" id="emploi1" required size="30" />
+
+                <label for="emploi1">Type de contrat :</label>
+                    <select class="input_recrut" name="typeContrats" id="emploi1">
+                            <option value="CDI" selected>CDI</option>
+                            <option value="CDD" >CDD</option>
+                            <option value="intérim" >Intérim</option>
+                            <option value="stage" >Stage</option>
+                            <option value="autre" >Autre</option>
+                    </select>
+                </p>
+                
+                <label for="emploi1">Durée :</label><input class="input_recrut ecart2" type="number" size="2" min="0" max="12"/>
+                    <select class="input_recrut" name="dureeContrats" id="emploi1">
+                        <option value="mois" selected>Mois</option>
+                        <option value="années">Année(s)</option>
+                    </select>
+                </p>
+                <hr>
+
+                <p><label for="emploi1"><span class="emploi_span">Emploi Précédant 2 :</span></label><br>
+                    <label for="emploi1">Intitulé :</label>
+                    <input class="input_recrut ecart" type="text" name="dernierEmploi" id="emploi1" required size="30" />
+
+                <label for="emploi1">Type de contrat :</label>
+                    <select class="input_recrut" name="typeContrats" id="emploi1">
+                            <option value="CDI" selected>CDI</option>
+                            <option value="CDD" >CDD</option>
+                            <option value="intérim" >Intérim</option>
+                            <option value="stage" >Stage</option>
+                            <option value="autre" >Autre</option>
+                    </select>
+                </p>
+                <p><label for="emploi1">Durée :</label><input class="input_recrut ecart2" type="number" size="2" min="0" max="12"/>
+                    <select class="input_recrut" name="dureeContrats" id="emploi1">
+                        <option value="mois" selected>Mois</option>
+                        <option value="années">Année(s)</option>
+                    </select>
+                </p>
+                <hr>
+
+                <p><label for="emploi1"><span class="emploi_span">Emploi Précédant 3 :</span></label><br>
+                    <label for="emploi1">Intitulé :</label>
+                    <input class="input_recrut ecart" type="text" name="dernierEmploi" id="emploi1" required size="30" />
+
+                <label for="emploi1">Type de contrat :</label>
+                    <select class="input_recrut" name="typeContrats" id="emploi1">
+                            <option value="CDI" selected>CDI</option>
+                            <option value="CDD" >CDD</option>
+                            <option value="intérim" >Intérim</option>
+                            <option value="stage" >Stage</option>
+                            <option value="autre" >Autre</option>
+                    </select>
+                </p>
+                <p><label for="emploi1">Durée :</label><input class="input_recrut ecart2" type="number" size="2" min="0" max="12"/>
+                    <select class="input_recrut" name="dureeContrats" id="emploi1">
+                        <option value="mois" selected>Mois</option>
+                        <option value="années">Année(s)</option>
+                    </select>
+                </p>
+                
+    </fieldset>
+
+    <!----------Choix des langues---------------->
+
+    <fieldset class="langues_form">
+            <legend class="recrut_legend">Langues</legend>
+            <p>
+                    <label for="languesCV">Langue 1 :</label>
+                    
+                    <select class="input_recrut" name="languesCV" id="languesCV">
+                        <option value="anglais" selected>Anglais</option>
+                        <option value="espagnol">Espagnol</option>
+                        <option value="allemand">Allemand</option>
+                        <option value="portugais">Portguais</option>
+                        <option value="italien">Italien</option>
+                        <option value="chinois">Chinois</option>
+                        <option value="hebreux">Hébreux</option>
+                        <option value="mandarin">Mandarin</option>
+                        <option value="coréen">Coréen</option>
+                        <option value="grec">Grec</option>
+                        <option value="arabe">Arabe</option>
+                        <option value="japonais">Japonais</option>
+                        <option value="turque">Turque</option>
+                    </select>
+
+                    <input class="input_recrut" type="radio" name="choix1" value="debutant" id="debutant"/> <label for="debutant">Débutant</label>
+                    <input type="radio" name="choix1" value="intermediaire" id="intermediaire" /> <label for="intermediaire">Intermediaire</label>
+                    <input type="radio" name="choix1" value="avance" id="avance" /> <label for="avance">Avancé</label> <br>
+
+                    <label for="languesCV">Langue 2 :</label>
+                    <select class="input_recrut" name="languesCV" id="languesCV">
+                            <option value="anglais">Anglais</option>
+                            <option value="espagnol" selected>Espagnol</option>
+                            <option value="allemand">Allemand</option>
+                            <option value="portugais">Portguais</option>
+                            <option value="italien">Italien</option>
+                            <option value="chinois">Chinois</option>
+                            <option value="hebreux">Hébreux</option>
+                            <option value="mandarin">Mandarin</option>
+                            <option value="coréen">Coréen</option>
+                            <option value="grec">Grec</option>
+                            <option value="arabe">Arabe</option>
+                            <option value="japonais">Japonais</option>
+                            <option value="turque">Turque</option>
+                    </select> 
+
+                    <input class="input_recrut" type="radio" name="choix2" value="debutant" id="debutant"/> <label for="debutant">Débutant</label>
+                    <input type="radio" name="choix2" value="intermediaire" id="intermediaire" /> <label for="intermediaire">Intermediaire</label> 
+                    <input type="radio" name="choix2" value="avance" id="avance" /> <label for="avance">Avancé</label> <br>
+
+                    <label for="languesCV">Langue 3 :</label>
+                    <select class="input_recrut" name="languesCV" id="languesCV">
+                        <option value="anglais">Anglais</option>
+                        <option value="espagnol">Espagnol</option>
+                        <option value="allemand" selected>Allemand</option>
+                        <option value="portugais">Portguais</option>
+                        <option value="italien">Italien</option>
+                        <option value="chinois">Chinois</option>
+                        <option value="hebreux">Hébreux</option>
+                        <option value="mandarin">Mandarin</option>
+                        <option value="coréen">Coréen</option>
+                        <option value="grec">Grec</option>
+                        <option value="arabe">Arabe</option>
+                        <option value="japonais">Japonais</option>
+                        <option value="turque">Turque</option>
+                    </select>
+
+                    <input class="input_recrut" type="radio" name="choix3" value="debutant" id="debutant"/> <label for="debutant">Débutant</label>     
+                    <input type="radio" name="choix3" value="intermediaire" id="intermediaire" /> <label for="intermediaire">Intermediaire</label> 
+                    <input type="radio" name="choix3" value="avance" id="avance" /> <label for="avance">Avancé</label>
+            </p>
+    </fieldset>
+
+<!----------Téléchargement CV---------------->
+    <fieldset class="upload_CV">
+        <legend class="recrut_legend">CV & Motivations</legend>
+                <p><label for="curriculum">Téléchargez ici votre CV :</label><input class="input_recrut" type="file" name="curriculum" id="curriculum"/> </p>
+
+<!----------Motivations---------------->
+                    <p>
+                        <label for="motivations">Vos motivations en quelques lignes :</label><br />
+                        <textarea class="textarea" name="motivations" id="motivations" rows="8" cols="80"></textarea>
+                    </p>
+    </fieldset>
+<!----------Bouton Envoyer---------------->
+
+<div class="choix_conditions">
+<input type="checkbox" name="choix_conditions" id="choix_conditions" /><label class="ecart2" for="choix_conditions">En cochant cette case, j’accepte la Politique de confidentialité</label><br>
+<input type="checkbox" name="choix_conditions" id="choix_conditions" /><label class="ecart2" for="choix_conditions">Je souhaite recevoir des emails de la part de LEPETITCOMMERCE concernant des informations et opportunités d’emploi.</label>
+</div>
+
+<div class="submit_recrutement">
+                    <input type="submit" value="Envoyer" class="submit_recrutement"/></div>
+
+
+</form>
+
+</main>
+
+<!-- ******  Footer  ****** -->
+<footer>
+    <div class="container-fluid">
+        <div class="row ">
+            <Div id="newsletter" class="newsletter col-sm-4 col-md-4 test">
+                <div id="toggle_news">
+                    <h4>NewsLetter <i class="fas fa-angle-down"></i> </h4>
+                    <span class="ligne"></span>
+                </div>
+                <div class="footer_align" id="news_p">
+                    <p>Inscrivez-vous à notre programme relationnel <span class="vert">LePetitCommerce</span> afin de recevoir toute notre actualité et nos meilleures offres.</p>
+                </div>
+                <a href="newsletter.html"><button class="btn btn-outline-success" type="submit"> M'inscrire !</button></a>
+
+            </Div>
+
+            <div class="col-sm-4 col-md-4 test" id="infos">
+                <div id="toggle_infos">
+                    <h4>Informations Utiles <i class="fas fa-angle-down"></i> </h4>
+                    <span class="ligne"></span>
+                </div>
+                <div class="footer_align" id="infos_liste">
+                    <ul>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Mentions Légales</a></li>
+                        <li><a href="#">Nos conditions Générales de Vente</a></li>
+                        <li><a href="#">Plan du site</a></li>
+                        <li><a href="#">Imprimer la page</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-sm-4 col-md-4 " id="Social">
+                <div id="toggle_Social">
+                    <h4>Suivez Nous <i class="fas fa-angle-down"></i></h4>
+                    <span class="ligne"></span>
+                </div>
+                <div class="footer_align row" id="Social_logo">
+                    <a href="https://fr-fr.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.instagram.com/?hl=fr"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/?lang=fr"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.pinterest.fr/"><i class="fab fa-pinterest-square"></i></a>
+                    <a href="https://www.youtube.com/?gl=FR&hl=fr"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div id="copy">
+        <p>Copyright &copy; LePetitCommerce</p>
+    </div>
+</footer>
+
+<script>
+    $(document).ready(function() {
+        $('#toggle_Social').click(function() {
+            $('#Social_logo').slideToggle(200);
+        });
+        $('#toggle_infos').click(function() {
+            $('#infos_liste').slideToggle(200);
+        });
+        $('#toggle_news').click(function() {
+            $('#news_p').slideToggle(200);
+        });
+    });
+</script>
+
+<script src="js/script.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+
+</html>
