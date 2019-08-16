@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap');
 @font-face {
     font-family: 'abangregular';
     src: url('abang-webfont.woff2') format('woff2'), url('abang-webfont.woff') format('woff');
@@ -1224,7 +1224,7 @@ h3 {
 }
 
 
-/* ***********  Pages Nouveautï¿½s  ********************************** */
+/* ***********  Pages Nouveauté  ********************************** */
 
 .card-columns {
     @include media-breakpoint-only(lg) {
@@ -1367,512 +1367,463 @@ p {
 }
 
 
-/* ***********  Pages reservation ********************************** */
+/* ***********  Pages plan ********************************** */
 
-#reservation {
-    margin: 0 auto 0 auto;
-    margin-top: 30px;
+#plan {
     text-align: center;
-}
-
-#reservation form {
-    padding: 10px;
-}
-
-#reservation fieldset {
-    padding: 0 20px 20px 20px;
-    margin-bottom: 10px;
-    border: 1px solid #000;
-    justify-content: center;
-}
-
-#reservation legend {
-    text-align: center;
-}
-
-#reservation input[type=text],
-#reservation input[type=email] {
-    display: flex;
-    margin: 0 auto;
-    width: 200px;
-}
-
-#reservation input[type=submit] {
-    margin-top: 10px;
-    width: 100px;
-    margin-left: 5px;
-    cursor: pointer;
-}
-
-.reservation_description img {
-    padding-top: 20px;
-    width: 100%;
-}
-
-.reservation_description {
-    margin: 0 auto 0 auto;
-    margin-top: 10px;
-    text-align: justify;
-}
-
-#datepicker {
     margin: 0 auto;
 }
 
-#erreur_mail {
-    color: #BA55D3;
-}
-
-
-/* ***********  Pages Panier  ********************************** */
-
-table {
+#plan ul {
+    width: 50%;
     margin: 0 auto;
-}
-
-th {
-    padding: 10px;
-    border-bottom: 0.5px solid #BA55D3;
-}
-
-td {
-    padding: 10px;
-}
-
-.bas_tab th {
-    border-top: 0.5px solid #BA55D3;
-    border-bottom: none;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-#total {
-    text-align: right
-}
-
-.panier_btn {
-    display: block;
-    background-color: #BA55D3;
-    color: white;
-    margin: 0 auto;
+    font-size: 14px;
     margin-top: 20px;
-    font-size: 1.3rem;
-    width: 220px;
-    height: 70px;
-    text-align: center;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    border-radius: 10px;
-    padding: 0 auto;
-    padding-top: 20px;
 }
-
-
-/*  **** infos sup **** */
-
-.pay,
-.help,
-.return {
-    padding: 0 20px 20px 20px;
-    margin-bottom: 10px;
-    border: 1px solid #000 !important;
-    text-align: center;
-}
-
-.pay legend,
-.help legend,
-.return legend {
-    text-align: center !important;
-    font-size: 1.5em !important;
-    color: #000 !important;
-}
-
-.return p {
-    font-size: 1.5em !important;
-}
-
-#return_logo {
-    width: 70px;
-    height: 70px;
-}
-
-.pay {
-    justify-content: space-around !important;
-}
-
-.cb {
-    height: 35px;
-    margin: 0 auto;
-    margin-left: 4px;
-}
-
-.help {
-    justify-content: center;
-}
-
-.help a {
-    text-decoration: none;
-    color: #BA55D3 !important;
-    font-size: 20px;
-}
-
-
-/* ************** FOOTER ***************************************************** */
-
-footer {
-    background: black !important;
-    color: white;
-    font-size: 12px;
-}
-
-footer .ligne {
-    background: white;
-}
-
-.footer_align {
-    text-align: center;
-    display: none;
-}
-
-footer h4 {
-    color: white;
-    text-align: center;
-    cursor: pointer;
-    font-family: 'Didact Gothic', sans-serif;
-}
-
-#newsletter {
-    margin-top: 30px;
-    border-bottom: 2px solid #BA55D3;
-}
-
-#newsletter .btn {
-    display: block;
-    background-color: #BA55D3;
-    color: white;
-    margin: 0 auto;
-    font-size: 1.3rem;
-    width: 175px;
-    height: 50px;
-    margin-bottom: 20px;
-    text-align: center;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    text-decoration: none;
-}
-
-#newsletter .btn:hover {
-    background-color: white;
-    color: #BA55D3;
-    border: 2px solid #BA55D3;
-    transform: none;
-    text-decoration: none;
-}
-
-#newsletter p {
-    text-align: justify center;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    font-family: 'Didact Gothic', sans-serif;
-}
-
-#newsletter .ligne {
-    background-color: #FFF !important;
-}
-
-#infos {
-    margin-top: 30px;
-    border-bottom: 2px solid #BA55D3;
-}
-
-#infos ul li {
+#plan ul li{
     list-style: none;
-    text-align: center;
 }
-
-#infos ul li a {
+#plan a{
     text-decoration: none;
-    color: white;
-    font-family: 'Didact Gothic', sans-serif;
-}
-
-#infos ul li a:hover {
     color: #BA55D3;
 }
 
-#Social {
-    margin-top: 30px;
-    border-bottom: 2px solid #BA55D3;
-}
 
-#Social a {
-    text-decoration: none;
-    color: white;
-    font-size: 300%;
-    padding: 30px;
-    margin-bottom: 20px;
-    justify-content: space-between;
-    font-family: 'Didact Gothic', sans-serif;
-}
-
-#Social a i {
-    text-decoration: none;
-}
-
-#Social a i:hover {
-    color: #BA55D3;
-}
-
-footer #copy {
-    background: #BA55D3;
-    color: white;
-    height: 22px;
-    text-align: center;
-}
-
-
-/* ---------- Page "Qui-Sommes-Nous" ----------------*/
-
-.quisommesnous_fieldset {
-    display: block!important;
-    width: 800px;
-    margin-top: 150px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2em;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
-    border: 0.5px solid black;
-}
-
-legend {
-    text-align: center;
-    width: 300px;
-    color: #BA55D3;
-    font-weight: bold;
-}
-
-
-/* ****  responsive**** */
-
-
-/*Extra small devices (portrait phones, less than 576px)*/
-
-@media (max-width: 575.98px) {}
-
-
-/*  Small devices (landscape phones, 576px and up) */
-
-@media (min-width: 576px) {}
-
-@media (max-width: 768px) {
-    #nav3 .toggle {
-        display: block;
-        ;
-    }
-    #nav3 ul {
-        width: 100%;
-        display: none;
-    }
-    #nav3 ul li {
-        display: block;
+    /* ***********  Pages reservation ********************************** */
+    #reservation {
+        margin: 0 auto 0 auto;
+        margin-top: 30px;
         text-align: center;
     }
-    .active {
+    #reservation form {
+        padding: 10px;
+    }
+    #reservation fieldset {
+        padding: 0 20px 20px 20px;
+        margin-bottom: 10px;
+        border: 1px solid #000;
+        justify-content: center;
+    }
+    #reservation legend {
+        text-align: center;
+    }
+    #reservation input[type=text],
+    #reservation input[type=email] {
+        display: flex;
+        margin: 0 auto;
+        width: 200px;
+    }
+    #reservation input[type=submit] {
+        margin-top: 10px;
+        width: 100px;
+        margin-left: 5px;
+        cursor: pointer;
+    }
+    .reservation_description img {
+        padding-top: 20px;
+        width: 100%;
+    }
+    .reservation_description {
+        margin: 0 auto 0 auto;
+        margin-top: 10px;
+        text-align: justify;
+    }
+    #datepicker {
+        margin: 0 auto;
+    }
+    #erreur_mail {
+        color: #BA55D3;
+    }
+    /* ***********  Pages Panier  ********************************** */
+    table {
+        margin: 0 auto;
+    }
+    th {
+        padding: 10px;
+        border-bottom: 0.5px solid #BA55D3;
+    }
+    td {
+        padding: 10px;
+    }
+    .bas_tab th {
+        border-top: 0.5px solid #BA55D3;
+        border-bottom: none;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    #total {
+        text-align: right
+    }
+    .panier_btn {
         display: block;
+        background-color: #BA55D3;
+        color: white;
+        margin: 0 auto;
+        margin-top: 20px;
+        font-size: 1.3rem;
+        width: 220px;
+        height: 70px;
+        text-align: center;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        border-radius: 10px;
+        padding: 0 auto;
+        padding-top: 20px;
     }
-    /* ************ Accueil - avis client ************ */
-    #quote-carousel .carousel-indicators {
-        bottom: -20px !important;
+    /*  **** infos sup **** */
+    .pay,
+    .help,
+    .return {
+        padding: 0 20px 20px 20px;
+        margin-bottom: 10px;
+        border: 1px solid #000 !important;
+        text-align: center;
     }
-    #quote-carousel .carousel-indicators li {
-        display: inline-block;
-        margin: 0px 5px;
-        width: 15px;
-        height: 15px;
+    .pay legend,
+    .help legend,
+    .return legend {
+        text-align: center !important;
+        font-size: 1.5em !important;
+        color: #000 !important;
     }
-    #quote-carousel .carousel-indicators li.active {
-        margin: 0px 5px;
-        width: 20px;
-        height: 20px;
+    .return p {
+        font-size: 1.5em !important;
     }
-}
-
-
-/* Medium devices (tablets, 768px and up) */
-
-@media (min-width: 768px) {
-    /* **************** Accueil ****************/
-    .categorie_men,
-    .categorie_women {
-        height: 500px;
+    #return_logo {
+        width: 70px;
+        height: 70px;
     }
-    .news_rapid p {
-        padding-top: 15%;
+    .pay {
+        justify-content: space-around !important;
     }
-    /* **** Footer**** */
+    .cb {
+        height: 35px;
+        margin: 0 auto;
+        margin-left: 4px;
+    }
+    .help {
+        justify-content: center;
+    }
+    .help a {
+        text-decoration: none;
+        color: #BA55D3 !important;
+        font-size: 20px;
+    }
+    /* ************** FOOTER ***************************************************** */
+    footer {
+        background: black !important;
+        color: white;
+        font-size: 12px;
+    }
+    footer .ligne {
+        background: white;
+    }
     .footer_align {
-        display: block;
-    }
-    #toggle_news h4 i,
-    #toggle_infos h4 i,
-    #toggle_Social h4 i {
+        text-align: center;
         display: none;
     }
-    /* ************ Accueil - avis client ************ */
-    #quote-carousel {
-        margin-bottom: 0;
-        padding: 0 40px 30px 40px;
-    }
-    /* **** Les Nav **** */
-    nav {
-        display: block;
-        margin-left: auto!important;
-        border-bottom: 1px solid #e9e9e9;
-        width: 370px!important;
-    }
-    #nav3 {
-        background: white!important;
-        height: 100%;
-        padding-top: 40px;
-        border-bottom: none;
-    }
-    #nav3 ul li {
-        text-decoration: none;
-        display: block;
-        padding: 15px;
-        color: #000 !important;
-    }
-    #nav3 ul li a {
-        text-decoration: none;
-        color: #000 !important;
-    }
-    #nav3 h3 {
-        display: block;
-    }
-    .text {
-        height: 364.5px;
-    }
-    .text p {
-        margin-top: 50px;
-    }
-    /* *******  Page localisation ******** */
-    .ville button:hover {
-        background: #BA55D3 !important;
-        color: #fff !important;
-        border: 1px solid #BA55D3 !important;
-    }
-    #map {
-        padding-top: 90px;
-    }
-}
-
-
-/* Large devices (desktops, 992px and up) */
-
-@media (min-width: 992px) {
-    .user:hover {
-        color: #BA55D3 !important;
-    }
-    .panier:hover {
-        color: #BA55D3 !important;
-    }
-    .localisation:hover {
-        color: #BA55D3 !important;
-    }
-    nav {
-        display: block;
-        margin-left: auto!important;
-        margin-right: auto!important;
-        border-bottom: 1px solid #e9e9e9;
-        width: 370px!important;
-    }
-    .soldes {
-        height: 500px;
-        align-items: right;
-        background-size: 70%;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    .soldes h2 {
-        text-align: right;
-        padding-top: 70px;
-        font-size: 100px;
-        margin-right: 200px;
-        line-height: 0;
-    }
-    .soldes P {
-        text-align: right;
-        padding-top: 40px;
-        font-size: 2.2em;
-        margin-right: 200px;
-    }
-    .soldes .btn {
-        margin-right: 200px;
-    }
-    .costume {
-        height: 500px;
-        align-items: center;
-        background-size: 70%;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    .costume h2 {
-        text-align: left;
-        color: #69B0BD !important;
-        padding-top: 40px;
-        font-size: 2.5em;
-        margin-left: 20px;
-    }
-    .costume P {
-        text-align: left;
-        color: white !important;
-        padding-top: 40px;
-        font-size: 1.2em;
-        margin-left: 20px;
+    footer h4 {
+        color: white;
+        text-align: center;
+        cursor: pointer;
         font-family: 'Didact Gothic', sans-serif;
     }
-    .new {
-        height: 500px;
-        align-items: center;
-        background-size: 70%;
-        background-size: cover;
-        background-repeat: no-repeat;
+    #newsletter {
+        margin-top: 30px;
+        border-bottom: 2px solid #BA55D3;
     }
-    .new h2 {
-        text-align: left;
-        color: #152A9E !important;
-        padding-top: 40px;
-        font-size: 2.5em;
-        margin-left: 20px;
+    #newsletter .btn {
+        display: block;
+        background-color: #BA55D3;
+        color: white;
+        margin: 0 auto;
+        font-size: 1.3rem;
+        width: 175px;
+        height: 50px;
+        margin-bottom: 20px;
+        text-align: center;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        text-decoration: none;
     }
-    .new P {
-        text-align: left;
-        color: #152A9E !important;
-        padding-top: 40px;
-        font-size: 1.2em;
-        margin-left: 50px;
+    #newsletter .btn:hover {
+        background-color: white;
+        color: #BA55D3;
+        border: 2px solid #BA55D3;
+        transform: none;
+        text-decoration: none;
+    }
+    #newsletter p {
+        text-align: justify center;
+        margin: 0 auto;
+        margin-bottom: 20px;
         font-family: 'Didact Gothic', sans-serif;
     }
-    /* ************ Page Newsletter *********/
-    #News_form {
-        width: 600px;
+    #newsletter .ligne {
+        background-color: #FFF !important;
     }
-}
-
-.panier_btn:hover {
-    background: white;
-    color: #BA55D3;
-    border: 1px solid #BA55D3;
-}
-
-
-/* Extra large devices (large desktops, 1200px and up) */
-
-@media (min-width: 1200px) {}
+    #infos {
+        margin-top: 30px;
+        border-bottom: 2px solid #BA55D3;
+    }
+    #infos ul li {
+        list-style: none;
+        text-align: center;
+    }
+    #infos ul li a {
+        text-decoration: none;
+        color: white;
+        font-family: 'Didact Gothic', sans-serif;
+    }
+    #infos ul li a:hover {
+        color: #BA55D3;
+    }
+    #Social {
+        margin-top: 30px;
+        border-bottom: 2px solid #BA55D3;
+    }
+    #Social a {
+        text-decoration: none;
+        color: white;
+        font-size: 300%;
+        padding: 30px;
+        margin-bottom: 20px;
+        justify-content: space-between;
+        font-family: 'Didact Gothic', sans-serif;
+    }
+    #Social a i {
+        text-decoration: none;
+    }
+    #Social a i:hover {
+        color: #BA55D3;
+    }
+    footer #copy {
+        background: #BA55D3;
+        color: white;
+        height: 22px;
+        text-align: center;
+    }
+    /* ---------- Page "Qui-Sommes-Nous" ----------------*/
+    .quisommesnous_fieldset {
+        display: block!important;
+        width: 800px;
+        margin-top: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        border: 0.5px solid black;
+    }
+    legend {
+        text-align: center;
+        width: 300px;
+        color: #BA55D3;
+        font-weight: bold;
+    }
+    /* ****  responsive**** */
+    /*Extra small devices (portrait phones, less than 576px)*/
+    @media (max-width: 575.98px) {}
+    /*  Small devices (landscape phones, 576px and up) */
+    @media (min-width: 576px) {}
+    @media (max-width: 768px) {
+        #nav3 .toggle {
+            display: block;
+            ;
+        }
+        #nav3 ul {
+            width: 100%;
+            display: none;
+        }
+        #nav3 ul li {
+            display: block;
+            text-align: center;
+        }
+        .active {
+            display: block;
+        }
+        /* ************ Accueil - avis client ************ */
+        #quote-carousel .carousel-indicators {
+            bottom: -20px !important;
+        }
+        #quote-carousel .carousel-indicators li {
+            display: inline-block;
+            margin: 0px 5px;
+            width: 15px;
+            height: 15px;
+        }
+        #quote-carousel .carousel-indicators li.active {
+            margin: 0px 5px;
+            width: 20px;
+            height: 20px;
+        }
+    }
+    /* Medium devices (tablets, 768px and up) */
+    @media (min-width: 768px) {
+        /* **************** Accueil ****************/
+        .categorie_men,
+        .categorie_women {
+            height: 500px;
+        }
+        .news_rapid p {
+            padding-top: 15%;
+        }
+        /* **** Footer**** */
+        .footer_align {
+            display: block;
+        }
+        #toggle_news h4 i,
+        #toggle_infos h4 i,
+        #toggle_Social h4 i {
+            display: none;
+        }
+        /* ************ Accueil - avis client ************ */
+        #quote-carousel {
+            margin-bottom: 0;
+            padding: 0 40px 30px 40px;
+        }
+        /* **** Les Nav **** */
+        nav {
+            display: block;
+            margin-left: auto!important;
+            border-bottom: 1px solid #e9e9e9;
+            width: 370px!important;
+        }
+        #nav3 {
+            background: white!important;
+            height: 100%;
+            padding-top: 40px;
+            border-bottom: none;
+        }
+        #nav3 ul li {
+            text-decoration: none;
+            display: block;
+            padding: 15px;
+            color: #000 !important;
+        }
+        #nav3 ul li a {
+            text-decoration: none;
+            color: #000 !important;
+        }
+        #nav3 h3 {
+            display: block;
+        }
+        .text {
+            height: 364.5px;
+        }
+        .text p {
+            margin-top: 50px;
+        }
+        /* *******  Page localisation ******** */
+        .ville button:hover {
+            background: #BA55D3 !important;
+            color: #fff !important;
+            border: 1px solid #BA55D3 !important;
+        }
+        #map {
+            padding-top: 90px;
+        }
+    }
+    /* Large devices (desktops, 992px and up) */
+    @media (min-width: 992px) {
+        .user:hover {
+            color: #BA55D3 !important;
+        }
+        .panier:hover {
+            color: #BA55D3 !important;
+        }
+        .localisation:hover {
+            color: #BA55D3 !important;
+        }
+        nav {
+            display: block;
+            margin-left: auto!important;
+            margin-right: auto!important;
+            border-bottom: 1px solid #e9e9e9;
+            width: 370px!important;
+        }
+        .soldes {
+            height: 500px;
+            align-items: right;
+            background-size: 70%;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .soldes h2 {
+            text-align: right;
+            padding-top: 70px;
+            font-size: 100px;
+            margin-right: 200px;
+            line-height: 0;
+        }
+        .soldes P {
+            text-align: right;
+            padding-top: 40px;
+            font-size: 2.2em;
+            margin-right: 200px;
+        }
+        .soldes .btn {
+            margin-right: 200px;
+        }
+        .costume {
+            height: 500px;
+            align-items: center;
+            background-size: 70%;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .costume h2 {
+            text-align: left;
+            color: #69B0BD !important;
+            padding-top: 40px;
+            font-size: 2.5em;
+            margin-left: 20px;
+        }
+        .costume P {
+            text-align: left;
+            color: white !important;
+            padding-top: 40px;
+            font-size: 1.2em;
+            margin-left: 20px;
+            font-family: 'Didact Gothic', sans-serif;
+        }
+        .new {
+            height: 500px;
+            align-items: center;
+            background-size: 70%;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .new h2 {
+            text-align: left;
+            color: #152A9E !important;
+            padding-top: 40px;
+            font-size: 2.5em;
+            margin-left: 20px;
+        }
+        .new P {
+            text-align: left;
+            color: #152A9E !important;
+            padding-top: 40px;
+            font-size: 1.2em;
+            margin-left: 50px;
+            font-family: 'Didact Gothic', sans-serif;
+        }
+        /* ************ Page Newsletter *********/
+        #News_form {
+            width: 600px;
+        }
+    }
+    .panier_btn:hover {
+        background: white;
+        color: #BA55D3;
+        border: 1px solid #BA55D3;
+    }
+    /* Extra large devices (large desktops, 1200px and up) */
+    @media (min-width: 1200px) {}
