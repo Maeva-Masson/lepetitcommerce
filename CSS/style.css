@@ -632,6 +632,29 @@ MAJ .loginbox input[type="email"],
 }
 
 
+/* ***** Paeg Contact ******/
+
+.form_contact p {
+    text-align: initial;
+}
+
+.votremessage {
+    text-align: center;
+}
+
+.contactmessage{
+    width: 50%;
+    margin: auto;
+    margin-top: 5%;
+    padding: 2%;
+}
+
+.contactmessage p{
+    text-align: center;
+}
+
+
+
 /* ********************** Accueil ********************************************** */
 
 
