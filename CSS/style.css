@@ -1446,6 +1446,11 @@
             text-align: right
         }
         
+        .condition_vente {
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+        
         .panier_btn {
             display: block;
             background-color: #BA55D3;
@@ -1464,7 +1469,7 @@
             padding: 0 auto;
             padding-top: 20px;
         }
-        /*  **** infos sup **** */
+        /*  ********************* infos sup ******************* */
         
         .pay,
         .help,
