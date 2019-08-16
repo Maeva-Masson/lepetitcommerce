@@ -201,7 +201,7 @@
         <!----------------FORMULAIRE------------------>
 
 
-        <form method="post" action="" class="form_recrutement">
+        <form method="post" class="form_recrutement">
 
             <fieldset class="civilite_form">
                 <legend class="recrut_legend">Civilité</legend>
@@ -216,7 +216,7 @@
                     <label class="ecart2" for="prenom">Prénom : </label><input class="input_recrut" type="text" name="prenom" id="prenom" size="12" required/>
                 </p>
                 <p>
-                    <label for="dateNaissance">Date de Naissance : </label><input class="input_recrut" type="date" name="dateNaissance" id="dateNaissance" required size="8" maxlength="10" />
+                    <label for="dateNaissance">Date de Naissance : </label><input class="input_recrut" type="date" name="dateNaissance" id="dateNaissance" required />
                     <label class="ecart2" for="villeNaissance">Ville : </label><input class="input_recrut" type="text" name="villeNaissance" id="villeNaissance" required size="30" />
                 </p>
                 <p>
@@ -228,7 +228,7 @@
 
                 </p>
                 <p>
-                    <label for="CP_CV">Code Postal : </label><input class="input_recrut" type="text" name="CP_CV" id="CP_CV" required size="5" maxlength="5" />
+                    <label for="CP_CV">Code Postal : </label><input class="input_recrut" type="text" name="CP_CV" id="CP_CV" required maxlength="5" />
                     <label class="ecart2" for="villeCV">Ville : </label><input class="input_recrut" type="text" name="villeCV" id="villeCV" required size="30" />
                 </p>
                 <p>
@@ -245,12 +245,13 @@
             <fieldset class="emplois_form">
                 <legend class="recrut_legend">Vos Derniers Emplois</legend>
 
-                <p><label for="emploi1"><span class="emploi_span">Emploi Précédant 1 :</span></label><br>
+                <h6>Emploi Précédant 1 :</h6><br>
+                <p>
                     <label for="emploi1">Intitulé :</label>
-                    <input class="input_recrut ecart" type="text" name="dernierEmploi" id="emploi1" required size="30" />
+                    <input class="input_recrut ecart" id="emploi1" type="text" name="dernierEmploi" required size="30" />
 
                     <label for="emploi1">Type de contrat :</label>
-                    <select class="input_recrut" name="typeContrats" id="emploi1">
+                    <select class="input_recrut" name="typeContrats">
                             <option value="CDI" selected>CDI</option>
                             <option value="CDD" >CDD</option>
                             <option value="intérim" >Intérim</option>
@@ -258,21 +259,22 @@
                             <option value="autre" >Autre</option>
                     </select>
                 </p>
-
-                <label for="emploi1">Durée :</label><input class="input_recrut ecart2" type="number" size="2" min="0" max="12" />
-                <select class="input_recrut" name="dureeContrats" id="emploi1">
+                <p>
+                    <label for="emploi1">Durée :</label><input class="input_recrut ecart2" type="number" min="0" max="12" />
+                    <select class="input_recrut" name="dureeContrats">
                         <option value="mois" selected>Mois</option>
                         <option value="années">Année(s)</option>
                     </select>
                 </p>
                 <hr>
 
-                <p><label for="emploi1"><span class="emploi_span">Emploi Précédant 2 :</span></label><br>
+                <h6>Emploi Précédant 2 :</h6><br>
+                <p>
                     <label for="emploi2">Intitulé :</label>
                     <input class="input_recrut ecart" type="text" name="dernierEmploi" id="emploi2" required size="30" />
 
                     <label for="emploi2">Type de contrat :</label>
-                    <select class="input_recrut" name="typeContrats" id="emploi1">
+                    <select class="input_recrut" name="typeContrats">
                             <option value="CDI" selected>CDI</option>
                             <option value="CDD" >CDD</option>
                             <option value="intérim" >Intérim</option>
@@ -280,20 +282,21 @@
                             <option value="autre" >Autre</option>
                     </select>
                 </p>
-                <p><label for="emploi2">Durée :</label><input class="input_recrut ecart2" type="number" size="2" min="0" max="12" />
-                    <select class="input_recrut" name="dureeContrats" id="emploi1">
+                <p><label for="emploi2">Durée :</label><input class="input_recrut ecart2" type="number" min="0" max="12" />
+                    <select class="input_recrut" name="dureeContrats">
                         <option value="mois" selected>Mois</option>
                         <option value="années">Année(s)</option>
                     </select>
                 </p>
                 <hr>
 
-                <p><label for="emploi3"><span class="emploi_span">Emploi Précédant 3 :</span></label><br>
+                <h6>Emploi Précédant 3 :</h6><br>
+                <p>
                     <label for="emploi3">Intitulé :</label>
-                    <input class="input_recrut ecart" type="text" name="dernierEmploi" id="emploi3" required size="30" />
+                    <input class="input_recrut ecart" type="text" id="emploi3" name="dernierEmploi" required size="30" />
 
-                    <label for="emploi3">Type de contrat :</label>
-                    <select class="input_recrut" name="typeContrats" id="emploi1">
+                    <label for="emploi3_select">Type de contrat :</label>
+                    <select class="input_recrut" name="typeContrats" id="emploi3_select">
                             <option value="CDI" selected>CDI</option>
                             <option value="CDD" >CDD</option>
                             <option value="intérim" >Intérim</option>
@@ -301,8 +304,8 @@
                             <option value="autre" >Autre</option>
                     </select>
                 </p>
-                <p><label for="emploi3">Durée :</label><input class="input_recrut ecart2" type="number" size="2" min="0" max="12" />
-                    <select class="input_recrut" name="dureeContrats" id="emploi1">
+                <p><label for="emploi3">Durée :</label><input class="input_recrut ecart2" type="number" min="0" max="12" />
+                    <select class="input_recrut" name="dureeContrats">
                         <option value="mois" selected>Mois</option>
                         <option value="années">Année(s)</option>
                     </select>
@@ -341,7 +344,7 @@
                     <input class="input_recrut2" type="radio" name="choix1" value="avance" id="avance" /> <br>
 
                     <label for="languesCV">Langue 2 :</label>
-                    <select class="input_recrut2" name="languesCV" id="languesCV">
+                    <select class="input_recrut2" name="languesCV" id="languesCV2">
                             <option value="anglais">Anglais</option>
                             <option value="espagnol" selected>Espagnol</option>
                             <option value="allemand">Allemand</option>
@@ -364,7 +367,7 @@
                     <input class="input_recrut2" type="radio" name="choix2" value="avance" id="avance2" /> <br>
 
                     <label for="languesCV">Langue 3 :</label>
-                    <select class="input_recrut2" name="languesCV" id="languesCV">
+                    <select class="input_recrut2" name="languesCV" id="languesCV3">
                         <option value="anglais">Anglais</option>
                         <option value="espagnol">Espagnol</option>
                         <option value="allemand" selected>Allemand</option>
@@ -403,7 +406,7 @@
 
             <div class="choix_conditions">
                 <input type="checkbox" name="choix_conditions" id="choix_conditions" /><label class="ecart2" for="choix_conditions">En cochant cette case, j’accepte la Politique de confidentialité</label><br>
-                <input type="checkbox" name="choix_conditions" id="choix_conditions" /><label class="ecart2" for="choix_conditions">Je souhaite recevoir des emails de la part de LEPETITCOMMERCE concernant des informations et opportunités d’emploi.</label>
+                <input type="checkbox" name="choix_conditions" id="choix_conditions2" /><label class="ecart2" for="choix_conditions">Je souhaite recevoir des emails de la part de LEPETITCOMMERCE concernant des informations et opportunités d’emploi.</label>
             </div>
 
             <div class="submit_recrutement">
@@ -435,8 +438,7 @@
                     <div class="footer_align" id="news_p">
                         <p>Inscrivez-vous à notre programme relationnel <span class="vert">LePetitCommerce</span> afin de recevoir toute notre actualité et nos meilleures offres.</p>
                     </div>
-                    <a href="newsletter.html"><button class="btn btn-outline-success" type="submit"> M'inscrire
-                            !</button></a>
+                    <a href="newsletter.html" class="btn btn-outline-success"> M'inscrire !</a>
 
                 </Div>
 
