@@ -23,13 +23,9 @@
 
 <!---------------------------------------HEADER-------------------------------------------------------->
     <header>
-
+    
         <div class="headerLogo">
-
-            <div class="searchbar"><i class="fas fa-search"></i></div>
-            <div class="localisation"><i class="fas fa-map-marker-alt"></i></div>
-            <div class="panier"><i class="fas fa-shopping-cart"></i></div>
-            <div class="user"><i class="fas fa-user"></i></div>
+    
             <div id="conteneur">
                 <ul id="menu">
                     <li>
@@ -45,11 +41,20 @@
                     </li>
                 </ul>
             </div>
+            <div class="searchbar"><i class="fas fa-search"></i></div>
+            <a href="localisation.html" class="localisation"><i class="fas fa-map-marker-alt"></i></a>
+            <a href="login.html" class="user"> <i class="fas fa-user"></i></a>
+            <a href="panier.html" class="panier"><i class="fas fa-shopping-cart"></i></a>
         </div>
-
+    
         <figure class="logoMarque">
             <img class="logoMarque" src="img/logo/logo.png" alt="Logo Marque">
         </figure>
+    
+    
+    
+    
+    
     </header>
 
     <script>
@@ -65,91 +70,103 @@
 
     <!-----------------------------------NAV------------------------------------------>
 
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                La Boutique <span class="sr-only">(current)</span></a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Qui Sommes-Nous?</a>
-                        <a class="dropdown-item" href="#">Contact</a>
-                        <a class="dropdown-item" href="#">Personal Shopper - Coaching</a>
-                        <a class="dropdown-item" href="#">Avis Clients</a>
-                        <a class="dropdown-item" href="#">Recrutement</a>
-                        <a class="dropdown-item" href="#">Evenements</a>
-                        <a class="dropdown-item" href="#">Presse</a>
-                        <a class="dropdown-item" href="#">Actualités</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle redsoldes" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SOLDES<span class="sr-only">(current)</span></a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">FEMME</a>
-                        <a class="dropdown-item" href="#">HOMME</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        FEMME</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#" style="color:red;">Soldes</a>
-                        <a class="dropdown-item" href="#">Tout voir</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Accueil</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    La Boutique <span class="sr-only">(current)</span></a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="quisommesnous.html">Qui Sommes-Nous?</a>
+                    <a class="dropdown-item" href="#">Contact</a>
+                    <a class="dropdown-item" href="reservation.html">Personal Shopper - Coaching</a>
+                    <a class="dropdown-item" href="#">Avis Clients</a>
+                    <a class="dropdown-item" href="recrutement.html">Recrutement</a>
+                    <a class="dropdown-item" href="#">Evenements</a>
+                    <a class="dropdown-item" href="presse.html">Presse</a>
+                    <a class="dropdown-item" href="#">Actualités</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle redsoldes" href="#" id="navbarDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SOLDES<span
+                        class="sr-only">(current)</span></a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">FEMME</a>
+                    <a class="dropdown-item" href="solde.h.html">HOMME</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    FEMME</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item redsolde" href="#">Soldes</a>
+                    <a class="dropdown-item" href="tous_produits_f.html">Tout voir</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="hauts_femme.html">Tee-shirts</a>
+                    <a class="dropdown-item" href="chemisiers_femme.html">Chemisiers</a>
+                    <a class="dropdown-item" href="jeans_femme.html">Jeans</a>
+                    <a class="dropdown-item" href="#">Robes</a>
+                    <a class="access_f" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                        href="#">
+                        Accessoires <i class="fas fa-angle-down"></i></a>
+                    <div class="sous_menu_f" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="accessoires_femme.html">Tout voir</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Tee-shirts</a>
-                        <a class="dropdown-item" href="#">Chemisiers</a>
-                        <a class="dropdown-item" href="#">Jeans</a>
-                        <a class="dropdown-item" href="#">Robes</a>
-                        <a class="access_f" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
-                                Accessoires <i class="fas fa-angle-down"></i></a>
-                        <div class="sous_menu_f" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Tout voir</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Sacs & Ceintures</a>
-                            <a class="dropdown-item" href="#">Lunettes & Montres</a>
-                            <a class="dropdown-item" href="#">Casquettes & Bonnets</a>
-                        </div>
-                </li>
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            HOMME</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#" style="color:red; ">Soldes</a>
-                        <a class="dropdown-item" href="Tous_nos_produits_H.html">Tout voir</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="Pantalons.html">Pantalons</a>
-                        <a class="dropdown-item" href="jean_h.html">Jeans</a>
-                        <a class="dropdown-item" href="chemise_h.html">Chemises</a>
-                        <a class="dropdown-item" href="Hauts_h.html">Hauts</a>
-                        <a class="dropdown-item" href="pull_h.html">Pulls</a>
-                        <a class="dropdown-item" href="veste_h.html">Vestes / Manteaux</a>
-                        <a class="dropdown-item" href="chaussures_h.html">Chaussures</a>
-                        <a class="access_h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="accessoires_h.html">
-                                                            Accessoires <i class="fas fa-angle-down"></i> </a>
-                        <div class="sous_menu_h" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="accessoires_h.html">Tout voir</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="accessoires_h.html#sac">Sacs</a>
-                            <a class="dropdown-item" href="accessoires_h.html#ceintures">Ceintures</a>
-                            <a class="dropdown-item" href="accessoires_h.html#casquettes">Casquettes</a>
-                            <a class="dropdown-item" href="accessoires_h.html#bonnet">Bonnets</a>
-                            <a class="dropdown-item" href="accessoires_h.html#montre">Montres</a>
-                            <a class="dropdown-item" href="accessoires_h.html#lunette">Lunettes</a>
-                            <a class="dropdown-item" href="accessoires_h.html#portefeuille">Portefeuilles</a>
-                        </div>
+                        <a class="dropdown-item" href="#">Sacs & Ceintures</a>
+                        <a class="dropdown-item" href="#">Lunettes & Montres</a>
+                        <a class="dropdown-item" href="#">Casquettes & Bonnets</a>
                     </div>
-                </li>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    HOMME</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item redsolde" href="solde.h.html">Soldes</a>
+                    <a class="dropdown-item" href="tous_nos_produits_h.html">Tout voir</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="pantalons.html">Pantalons</a>
+                    <a class="dropdown-item" href="jean_h.html">Jeans</a>
+                    <a class="dropdown-item" href="chemise_h.html">Chemises</a>
+                    <a class="dropdown-item" href="hauts_h.html">Hauts</a>
+                    <a class="dropdown-item" href="pull_h.html">Pulls</a>
+                    <a class="dropdown-item" href="veste_h.html">Vestes / Manteaux</a>
+                    <a class="dropdown-item" href="chaussures_h.html">Chaussures</a>
+                    <a class="access_h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                        href="accessoires_h.html">
+                        Accessoires <i class="fas fa-angle-down"></i> </a>
+                    <div class="sous_menu_h" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="accessoires_h.html">Tout voir</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="accessoires_h.html#sac">Sacs</a>
+                        <a class="dropdown-item" href="accessoires_h.html#ceintures">Ceintures</a>
+                        <a class="dropdown-item" href="accessoires_h.html#casquettes">Casquettes</a>
+                        <a class="dropdown-item" href="accessoires_h.html#bonnet">Bonnets</a>
+                        <a class="dropdown-item" href="accessoires_h.html#montre">Montres</a>
+                        <a class="dropdown-item" href="accessoires_h.html#lunette">Lunettes</a>
+                        <a class="dropdown-item" href="accessoires_h.html#portefeuille">Portefeuilles</a>
+                    </div>
+                </div>
+            </li>
 
 
-            </ul>
-            </div>
-    </nav>
+        </ul>
+    </div>
+</nav>
 
 
 <!-------------------------------CAROUSSEL--------------------------------------->
@@ -164,7 +181,7 @@
             <div class="carousel-caption  d-md-block">
                 <h2>Les Soldes</h2>
                 <p>Vite Vite! <br> Derniéres démarques.</p>
-                <a href="#"><button class="btn btn-outline-success redbutton" type="submit"> Je découvre <i class="fas fa-arrow-right"></i></button></a>
+                <a href="solde.h.html"><button class="btn btn-outline-success redbutton" type="submit"> Je découvre <i class="fas fa-arrow-right"></i></button></a>
             </div>
         </div>
         <div class="carousel-item costume">
@@ -172,7 +189,7 @@
             <div class="carousel-caption  d-md-block">
                 <h2>Un Mariage ?</h2>
                 <p>Une selection de style juste pour vous.</p>
-                <a href="#"><button class="btn btn-outline-success redbutton" type="submit"> Je découvre <i class="fas fa-arrow-right"></i></button></a>
+                <a href="nouveautés_h.html"><button class="btn btn-outline-success redbutton" type="submit"> Je découvre <i class="fas fa-arrow-right"></i></button></a>
             </div>
         </div>
         <div class="carousel-item new">
@@ -180,7 +197,7 @@
             <div class="carousel-caption  d-md-block">
                 <h2>Les Nouveautés</h2>
                 <p>Quoi de Neuf ?</p>
-                <a href="#"><button class="btn btn-outline-success redbutton" type="submit"> Je découvre <i class="fas fa-arrow-right"></i></button></a>
+                <a href="nouveautés_h.html"><button class="btn btn-outline-success redbutton" type="submit"> Je découvre <i class="fas fa-arrow-right"></i></button></a>
             </div>
         </div>
     </div>
@@ -199,7 +216,7 @@
 
 <nav aria-label="breadcrumb" id="ariane">
 <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="#">Accueil</a></li>
+    <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
     <li class="breadcrumb-item active" aria-current="page">Femme</li>
 </ol>
 </nav>
@@ -213,7 +230,8 @@
         <nav id="nav3" class="">
 
 <div class="toggle">
-    <i class="fas fa-angle-down"></i>
+    <p class="menu2"> femme <i class="fas fa-angle-down"></i></p>
+
 </div>
 <H3>FEMME</H3>
 <ul>
@@ -314,10 +332,10 @@
     <div class="col-md-6 categorie" id="pantalonsF">
         <!----- LES PANTALONS------>
 
-        <h3>Les Pantalons</h3>
+        <h4>Les Pantalons</h4>
         <span class="ligne"></span>
 
-        <p>"Retrouvez notre large gamme de pantalons, pour toute occasion. En effet, <span class="orange">LePetitCommerce</span> sait s'assortir à tous les styles."</p>
+       
 
         <a href="pantalons_femme.html"><img name=pantalonsF alt="image_pantalon"></a>
 
@@ -328,10 +346,10 @@
     <div class="col-md-6 categorie" id="jeansF">
         <!----- LES JEANS------>
 
-        <h3>Les Jeans</h3>
+        <h4>Les Jeans</h4>
         <span class="ligne"></span>
 
-        <p>"À chaque femme son jean. <span class="vert">LePetitCommerce</span> est là pour s'adapter à toutes les morphologies."</p>
+       
 
         <a href="jeans_femme.html"> <img name=jeansF alt="image_jean"></a>
 
@@ -342,10 +360,10 @@
     <div class="col-md-6 categorie" id="chemisiersF">
         <!----- LES CHEMISIERS------>
 
-        <h3>Les Chemisiers</h3>
+        <h4>Les Chemisiers</h4>
         <span class="ligne"></span>
 
-        <p> "Les chemisiers <span class="vert">LePetitCommerce</span> sont les pièces maîtresses de tout look féminin."</p>
+        
 
         <a href="chemisiers_femme.html"> <img name=chemisiersF alt="image_chemisier"></a>
 
@@ -356,10 +374,10 @@
     <div class="col-md-6 categorie" id="topsF">
         <!----- LES TOPS------>
 
-        <h3>Les Tops</h3>
+        <h4>Les Tops</h4>
         <span class="ligne"></span>
 
-        <p>"Avec <span class="vert">LePetitCommerce</span>, vous trouverez le petit top, débardeur ou tee-shirt qui s'accordera parfaitement à votre style."</p>
+       
 
         <a href="hauts_femme.html"> <img name=topsF alt="image_top"></a>
 
@@ -385,12 +403,10 @@
     <div class="col-md-6 categorie" id="pullF">
         <!----- LES PULLS------>
 
-        <h3>Les Pulls</h3>
+        <h4>Les Pulls</h4>
         <span class="ligne"></span>
 
-        <p> "Vous trouverez ici le petit pull idéal pour parfaire votre look tendance hivernal, grâce à l'élégance de la maille ou à la douceur du cachemire."
-        </p>
-
+       
         <a href="pulls_femme.html"> <img name=pullF alt="image_pull"></a>
 
     </div>
@@ -400,10 +416,10 @@
     <div class="col-md-6 categorie" id="vesteF">
         <!----- LES VESTES------>
 
-        <h3>Les Vestes</h3>
+        <h4>Les Vestes</h4>
         <span class="ligne"></span>
 
-        <p>"Nos vestes pour femme <span class="vert">LePetitCommerce</span> apportent la touche d'élégance et de raffinement que vous recherchez!"</p>
+       
 
         <a href="vestes_femme.html"> <img name=vesteF alt="image_veste"></a>
 
@@ -414,10 +430,10 @@
     <div class="col-md-6 categorie" id="manteauxF">
         <!----- LES MANTEAUX------>
 
-        <h3>Les Manteaux</h3>
+        <h4>Les Manteaux</h4>
         <span class="ligne"></span>
 
-        <p>"Nos manteaux pour femme <span class="vert">LePetitCommerce</span> sauront vous tenir chaud et vous protéger des intempéries!"</p>
+        
 
         <a href="manteaux_femme.html"> <img name=manteauxF alt="image_manteaux"></a>
     
@@ -428,10 +444,10 @@
     <div class="col-md-6 categorie" id="chaussuresF">
         <!----- LES CHAUSSURES------>
 
-        <h3>Les Chaussures</h3>
+        <h4>Les Chaussures</h4>
         <span class="ligne"></span>
 
-        <p>"Avec <span class="vert">LePetitCommerce</span>, vous trouverez forcément chaussure à votre pied. Découvrez tous nos modèles."</p>
+        
 
         <a href="chaussures_femme.html"> <img name=chaussuresF alt="image_chaussures"></a>
 
@@ -441,10 +457,10 @@
 
     <div class="col-md-6 categorie" id="accessF">
         <!----- LES ACCESSOIRES------>
-        <h3>Les Accessoires</h3>
+        <h4>Les Accessoires</h4>
         <span class="ligne"></span>
 
-        <p>"Les accessoires <span class="vert">LePetitCommerce</span> pour femme apportent la touche finale à votre look, ils perfectionnent votre style en réhaussant chacune de vos tenues. "</p>
+        
         <a href="accessoires_femme.html"> <img name=accessF alt="image_accessoires"></a>
 
     </div>
@@ -501,7 +517,7 @@
     <!-------------------------FOOTER---------------------------->
 
     <footer>
-
+    
         <div class="container-fluid">
             <div class="row ">
                 <Div id="newsletter" class="newsletter col-sm-4 col-md-4 test">
@@ -510,12 +526,14 @@
                         <span class="ligne"></span>
                     </div>
                     <div class="footer_align" id="news_p">
-                        <p>Inscrivez-vous à notre programme relationnel <span class="vert">LePetitCommerce</span> afin de recevoir toute notre actualité et nos meilleures offres.</p>
+                        <p>Inscrivez-vous à notre programme relationnel <span class="vert">LePetitCommerce</span> afin de
+                            recevoir toute notre actualité et nos meilleures offres.</p>
                     </div>
-                    <a href="newsletter.html"><button class="btn btn-outline-success" type="submit"> M'inscrire !</button></a>
-
+                    <a href="newsletter.html"><button class="btn btn-outline-success" type="submit"> M'inscrire
+                            !</button></a>
+    
                 </Div>
-
+    
                 <div class="col-sm-4 col-md-4 test" id="infos">
                     <div id="toggle_infos">
                         <h4>Informations Utiles <i class="fas fa-angle-down"></i> </h4>
@@ -524,14 +542,14 @@
                     <div class="footer_align" id="infos_liste">
                         <ul>
                             <li><a href="#">Contact</a></li>
-                            <li><a href="#">Mentions Légales</a></li>
-                            <li><a href="#">Nos conditions Générales de Vente</a></li>
+                            <li><a href="cgv.html">Mentions Légales</a></li>
+                            <li><a href="cgv.html">Nos conditions Générales de Vente</a></li>
                             <li><a href="#">Plan du site</a></li>
                             <li><a href="#">Imprimer la page</a></li>
                         </ul>
                     </div>
                 </div>
-
+    
                 <div class="col-sm-4 col-md-4 " id="Social">
                     <div id="toggle_Social">
                         <h4>Suivez Nous <i class="fas fa-angle-down"></i></h4>
@@ -542,16 +560,16 @@
                         <a href="https://www.instagram.com/?hl=fr"><i class="fab fa-instagram"></i></a>
                         <a href="https://twitter.com/?lang=fr"><i class="fab fa-twitter-square"></i></a>
                         <a href="https://www.pinterest.fr/"><i class="fab fa-pinterest-square"></i></a>
-                        <a href="https://www.youtube.com/?gl=FR&hl=fr"><i class="fab fa-youtube"></i></a>
+    
                     </div>
                 </div>
             </div>
         </div>
-
+    
         <div id="copy">
             <p>Copyright &copy; LePetitCommerce</p>
         </div>
-
+    
     </footer>
 
     <!----------------------------------------------------------------------------------------->
