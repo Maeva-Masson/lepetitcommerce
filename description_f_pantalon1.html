@@ -21,286 +21,279 @@
 <body>
 
 
-    <!----------------------------------HEADER------------------------------------------>
+<!----------------------------------HEADER------------------------------------------>
 
-    <header>
+<header>
 
-        <div class="headerLogo">
+    <div class="headerLogo">
 
-            <div id="conteneur">
-                <ul id="menu">
-                    <li>
-                        <a href="#" class="langues">Langues</a>
-                        <ul class="sous_menu">
-                            <li>
-                                <a href="#"><img class="logoLangues" src="img/logo/flag-fr.png" alt="langue france"></a>
-                            </li>
-                            <li>
-                                <a href="#"><img class="logoLangues" src="img/logo/flag-gb.png" alt="langue anglais"></a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="searchbar"><i class="fas fa-search"></i></div>
-            <a href="localisation.html" class="localisation"><i class="fas fa-map-marker-alt"></i></a>
-            <a href="login.html" class="user"> <i class="fas fa-user"></i></a>
-            <a href="panier.html" class="panier"><i class="fas fa-shopping-cart"></i></a>
-        </div>
-
-        <figure class="logoMarque">
-            <img class="logoMarque" src="img/logo/logo.png" alt="Logo Marque">
-        </figure>
-
-
-
-
-
-    </header>
-
-    <script>
-        $(document).ready(function() {
-            $(".langues").hover(function() {
-                $(".langues").parent().find("ul.sous_menu").stop(true, true).slideDown(200).show();
-                $(".langues").parent().hover(function() {}, function() {
-                    $(this).parent().find("ul.sous_menu").slideUp(150);
-                });
-            });
-        });
-    </script>
-
-    <!----------------------------------NAV------------------------------------------>
-
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Accueil</a>
+        <div id="conteneur">
+            <ul id="menu">
+                <li>
+                    <a href="#" class="langues">Langues</a>
+                    <ul class="sous_menu">
+                        <li>
+                            <a href="#"><img class="logoLangues" src="img/logo/flag-fr.png" alt="langue france"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="logoLangues" src="img/logo/flag-gb.png" alt="langue anglais"></a>
+                        </li>
+                    </ul>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    La Boutique <span class="sr-only">(current)</span></a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="quisommesnous.html">Qui Sommes-Nous?</a>
-                        <a class="dropdown-item" href="#">Contact</a>
-                        <a class="dropdown-item" href="reservation.html">Personal Shopper - Coaching</a>
-                        <a class="dropdown-item" href="#">Avis Clients</a>
-                        <a class="dropdown-item" href="recrutement.html">Recrutement</a>
-                        <a class="dropdown-item" href="#">Evenements</a>
-                        <a class="dropdown-item" href="presse.html">Presse</a>
-                        <a class="dropdown-item" href="#">Actualités</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle redsoldes" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SOLDES<span
-                        class="sr-only">(current)</span></a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">FEMME</a>
-                        <a class="dropdown-item" href="solde.h.html">HOMME</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    FEMME</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item redsolde" href="#">Soldes</a>
-                        <a class="dropdown-item" href="tous_produits_f.html">Tout voir</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="pantalons_femme.html">Pantalons</a>
-                        <a class="dropdown-item" href="jeans_femme.html">Jeans</a>
-                        <a class="dropdown-item" href="chemisiers_femme.html">Chemisiers</a>
-                        <a class="dropdown-item" href="hauts_femme.html">Tops</a>
-                        <a class="dropdown-item" href="robes.html">Robes</a>
-                        <a class="dropdown-item" href="pulls_femme.html">Pulls</a>
-                        <a class="dropdown-item" href="vestes_femme.html">Vestes</a>
-                        <a class="dropdown-item" href="manteaux_femme.html">Manteaux</a>
-                        <a class="dropdown-item" href="chaussures_femme.html">Chaussures</a>
-                        <a class="access_f" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
-                                Accessoires <i class="fas fa-angle-down"></i></a>
-                                <div class="sous_menu_f" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="accessoires_femme.html">Tout voir</a>
-                                    <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="accessoires_femme.html#sacs">Sacs</a>
-                            <a class="dropdown-item" href="accessoires_femme.html#ceintures">Ceintures</a>
-                            <a class="dropdown-item" href="accessoires_femme.html#montres">Montres</a>
-                            <a class="dropdown-item" href="accessoires_femme.html#colliers">Colliers</a>
-                            <a class="dropdown-item" href="accessoires_femme.html#lunettes">Lunettes</a>
-                        </div>
-                    </div>
-                </li>
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    HOMME</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item redsolde" href="solde.h.html">Soldes</a>
-                        <a class="dropdown-item" href="tous_nos_produits_h.html">Tout voir</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="pantalons.html">Pantalons</a>
-                        <a class="dropdown-item" href="jean_h.html">Jeans</a>
-                        <a class="dropdown-item" href="chemise_h.html">Chemises</a>
-                        <a class="dropdown-item" href="Hauts_h.html">Hauts</a>
-                        <a class="dropdown-item" href="pull_h.html">Pulls</a>
-                        <a class="dropdown-item" href="veste_h.html">Vestes / Manteaux</a>
-                        <a class="dropdown-item" href="chaussures_h.html">Chaussures</a>
-                        <a class="access_h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="accessoires_h.html">
-                        Accessoires <i class="fas fa-angle-down"></i> </a>
-                        <div class="sous_menu_h" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="accessoires_h.html">Tout voir</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="accessoires_h.html#sac">Sacs</a>
-                            <a class="dropdown-item" href="accessoires_h.html#ceintures">Ceintures</a>
-                            <a class="dropdown-item" href="accessoires_h.html#casquettes">Casquettes</a>
-                            <a class="dropdown-item" href="accessoires_h.html#bonnet">Bonnets</a>
-                            <a class="dropdown-item" href="accessoires_h.html#montre">Montres</a>
-                            <a class="dropdown-item" href="accessoires_h.html#lunette">Lunettes</a>
-                            <a class="dropdown-item" href="accessoires_h.html#portefeuille">Portefeuilles</a>
-                        </div>
-                    </div>
-                </li>
-
-
             </ul>
         </div>
-    </nav>
+        <div class="searchbar"><i class="fas fa-search"></i></div>
+        <a href="localisation.html" class="localisation"><i class="fas fa-map-marker-alt"></i></a>
+        <a href="login.html" class="user"> <i class="fas fa-user"></i></a>
+        <a href="panier.html" class="panier"><i class="fas fa-shopping-cart"></i></a>
+    </div>
+
+    <figure class="logoMarque">
+        <img class="logoMarque" src="img/logo/logo.png" alt="Logo Marque">
+    </figure>
 
 
 
-    <!----------------MAIN IMAGE------------------>
-
-    <main>
-
-        <div class="soldes ">
-            <h2>Les Soldes</h2>
-            <p>Vite Vite ! <br> Dernières démarques.</p>
-            <a href="solde.h.html" class="btn btn-outline-success redbutton"> Je découvre <i class="fas fa-arrow-right"></i></a>
-        </div>
-
-        <!----------------FIL D'ARIANE------------------>
-
-        <nav aria-label="breadcrumb" id="ariane">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Accueil</a></li>
-                <li class="breadcrumb-item"><a href="tous_produits_f.html">Femme</a></li>
-                <li class="breadcrumb-item"><a href="pantalons_femme.html">Les Pantalons</a></li>
-                <li class="breadcrumb-item active" aria-current="page">A pinces</li>
-            </ol>
-        </nav>
 
 
-        <!----------------DESCRIPTION COMPLETE DE L'ARTICLE------------------>
+</header>
 
-        <div class="container col-12">
-            <div class="row">
+<script>
+    $(document).ready(function() {
+        $(".langues").hover(function() {
+            $(".langues").parent().find("ul.sous_menu").stop(true, true).slideDown(200).show();
+            $(".langues").parent().hover(function() {}, function() {
+                $(this).parent().find("ul.sous_menu").slideUp(150);
+            });
+        });
+    });
+</script>
 
-                <div class="col-xs-12 col-md-4">
-                    <figure class="image_description">
-                        <img src="img/femme/PANTALONS/pantalon9b.jpg" alt="photo_pantalon" class="image_vetement" id="produit1">
-                    </figure>
+<!----------------------------------NAV------------------------------------------>
+
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+</button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Accueil</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                La Boutique <span class="sr-only">(current)</span></a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="quisommesnous.html">Qui Sommes-Nous?</a>
+                    <a class="dropdown-item" href="#">Contact</a>
+                    <a class="dropdown-item" href="reservation.html">Personal Shopper - Coaching</a>
+                    <a class="dropdown-item" href="#">Avis Clients</a>
+                    <a class="dropdown-item" href="recrutement.html">Recrutement</a>
+                    <a class="dropdown-item" href="#">Evenements</a>
+                    <a class="dropdown-item" href="presse.html">Presse</a>
+                    <a class="dropdown-item" href="#">Actualités</a>
                 </div>
-
-                <div class="col-xs-12 col-md-4">
-                    <figure class="image_description">
-                        <img src="img/femme/PANTALONS/pantalon9.jpg" alt="photo_pantalon" class="image_vetement" id="produit2">
-                    </figure>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle redsoldes" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SOLDES<span
+                    class="sr-only">(current)</span></a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">FEMME</a>
+                    <a class="dropdown-item" href="solde.h.html">HOMME</a>
                 </div>
-
-                <div class="descript_art col-xs-12 col-md-4" id="description">
-                    <aside class="description_article">
-                        <h3>Pantalon à pinces</h3>
-                        <hr>
-
-                        <p>Taille haute, avec détail boutons argentés.<br> 2 poches avant, longueur 90cm.<br> Braguette zippée et pli marqué.<br><br>
-                            <span class="prix_description">29,95€</span>
-                        </p>
-
-                        <!-----------------------Déclinaisons d'article----------------------->
-
-                        <div class="declinaison container">
-                            <div class="img_declinaison">
-                                <img src="img/femme/PANTALONS/pantalon9.jpg" alt="photo_pantalon" class="image_vetement" id="img_description">
-                            </div>
-                            <div class="img_declinaison">
-                                <img src="img/femme/PANTALONS/pantalon9.jpg" alt="photo_pantalon" class="image_vetement" id="img_description2">
-                            </div>
-                            <div class="img_declinaison">
-                                <img src="img/femme/PANTALONS/pantalon9.jpg" alt="photo_pantalon" class="image_vetement" id="img_description3">
-                            </div>
-                            <div class="img_declinaison">
-                                <img src="img/femme/PANTALONS/pantalon9.jpg" alt="photo_pantalon" class="image_vetement" id="img_description4">
-                            </div>
-                        </div>
-
-                        <!---------------------Choisir une taille---------------------------->
-
-                        <nav id="nav3" class="choisir1taille">
-                            <div class="ul">
-                                <h5 class="nav2_sous_menu">Choisir une taille : <i class="fas fa-angle-down"></i></h5>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                FEMME</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item redsolde" href="#">Soldes</a>
+                    <a class="dropdown-item" href="tous_produits_f.html">Tout voir</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="pantalons_femme.html">Pantalons</a>
+                    <a class="dropdown-item" href="jeans_femme.html">Jeans</a>
+                    <a class="dropdown-item" href="chemisiers_femme.html">Chemisiers</a>
+                    <a class="dropdown-item" href="hauts_femme.html">Tops</a>
+                    <a class="dropdown-item" href="robes.html">Robes</a>
+                    <a class="dropdown-item" href="pulls_femme.html">Pulls</a>
+                    <a class="dropdown-item" href="vestes_femme.html">Vestes</a>
+                    <a class="dropdown-item" href="manteaux_femme.html">Manteaux</a>
+                    <a class="dropdown-item" href="chaussures_femme.html">Chaussures</a>
+                    <a class="access_f" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                            Accessoires <i class="fas fa-angle-down"></i></a>
+                            <div class="sous_menu_f" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="accessoires_femme.html">Tout voir</a>
                                 <div class="dropdown-divider"></div>
-                                <select id="size_p">
-                        <option value="">Ma taille</option>
-                        <option value="34">34</option>
-                        <option value="36">36</option>
-                        <option value="38">38</option>
-                        <option value="40">40</option>
-                        <option value="42">42</option>
-                        <option value="44">44</option>
-                    </select>
-                            </div>
-                            <a href="#" class="btn btn-outline-success achat">Acheter</a>
-                        </nav>
-
-
-
-                    </aside>
+                        <a class="dropdown-item" href="accessoires_femme.html#sacs">Sacs</a>
+                        <a class="dropdown-item" href="accessoires_femme.html#ceintures">Ceintures</a>
+                        <a class="dropdown-item" href="accessoires_femme.html#montres">Montres</a>
+                        <a class="dropdown-item" href="accessoires_femme.html#colliers">Colliers</a>
+                        <a class="dropdown-item" href="accessoires_femme.html#lunettes">Lunettes</a>
+                    </div>
                 </div>
-                <!-- </div> -->
+            </li>
 
-                <!-----------------Avis clients------------------>
-
-                <div class="avisClients1 col-xs-10 col-md-6">
-                    <p class="avis_c"> <span class="avisClients">Un classique indispensable."</span> - Jenny, Lyon </p>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                HOMME</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item redsolde" href="solde.h.html">Soldes</a>
+                    <a class="dropdown-item" href="tous_nos_produits_h.html">Tout voir</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="pantalons.html">Pantalons</a>
+                    <a class="dropdown-item" href="jean_h.html">Jeans</a>
+                    <a class="dropdown-item" href="chemise_h.html">Chemises</a>
+                    <a class="dropdown-item" href="Hauts_h.html">Hauts</a>
+                    <a class="dropdown-item" href="pull_h.html">Pulls</a>
+                    <a class="dropdown-item" href="veste_h.html">Vestes / Manteaux</a>
+                    <a class="dropdown-item" href="chaussures_h.html">Chaussures</a>
+                    <a class="access_h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="accessoires_h.html">
+                    Accessoires <i class="fas fa-angle-down"></i> </a>
+                    <div class="sous_menu_h" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="accessoires_h.html">Tout voir</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="accessoires_h.html#sac">Sacs</a>
+                        <a class="dropdown-item" href="accessoires_h.html#ceintures">Ceintures</a>
+                        <a class="dropdown-item" href="accessoires_h.html#casquettes">Casquettes</a>
+                        <a class="dropdown-item" href="accessoires_h.html#bonnet">Bonnets</a>
+                        <a class="dropdown-item" href="accessoires_h.html#montre">Montres</a>
+                        <a class="dropdown-item" href="accessoires_h.html#lunette">Lunettes</a>
+                        <a class="dropdown-item" href="accessoires_h.html#portefeuille">Portefeuilles</a>
+                    </div>
                 </div>
-                <div class="avisClients2 col-xs-10 col-md-8">
-                    <p class="avis_c"> <span class="avisClients">"Taille super bien!"</span> - Astrid, Paris </p>
-                </div>
-                <div class="avisClients3 col-10">
-                    <p class="avis_c"> <span class="avisClients">"Hyper confortable, je recommande!"</span> - Alex, Caen </p>
-                </div>
+            </li>
 
-                <!--------------------------------------------------------------------------->
 
-                <!--Suite des photos-->
+        </ul>
+    </div>
+</nav>
 
-                <div class="col-xs-12 col-md-4">
-                    <figure class="image_description">
-                        <img src="img/femme/PANTALONS/pantalon9c.jpg" alt="photo_pantalon" class="image_vetement" id="produit3">
-                    </figure>
-                </div>
-                <div class="col-xs-12 col-md-4">
-                    <figure class="image_description">
-                        <img src="img/femme/PANTALONS/pantalon9d.jpg" alt="photo_pantalon" class="image_vetement" id="produit4">
-                    </figure>
-                </div>
 
-                <!--------------------------------------------------------------------------->
 
-                <!--Dernière photo, centrée dans l'axe des 2 photos-->
+<!----------------MAIN IMAGE------------------>
 
-                <div class="col-xs-12 col-md-4 offset-2">
-                    <figure class="image_description solo">
-                        <img src="img/femme/PANTALONS/pantalon9e.jpg" alt="photo_pantalon" class="image_vetement" id="produit5">
-                    </figure>
-                </div>
-            </div>
+<main>
+
+<div class="soldes ">
+    <h2>Les Soldes</h2>
+    <p>Vite Vite ! <br> Dernières démarques.</p>
+    <a href="solde.h.html" class="btn btn-outline-success redbutton"> Je découvre <i class="fas fa-arrow-right"></i></a>
+</div>
+
+<!----------------FIL D'ARIANE------------------>
+
+<nav aria-label="breadcrumb" id="ariane">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Accueil</a></li>
+        <li class="breadcrumb-item"><a href="tous_produits_f.html">Femme</a></li>
+        <li class="breadcrumb-item"><a href="pantalons_femme.html">Les Pantalons</a></li>
+        <li class="breadcrumb-item active" aria-current="page">A pinces</li>
+    </ol>
+</nav>
+
+
+<!----------------DESCRIPTION COMPLETE DE L'ARTICLE------------------>
+
+<div class="container col-12">
+    <div class="row">
+
+        <div class="col-xs-12 col-md-4">
+            <figure class="image_description">
+                <img src="img/femme/PANTALONS/pantalon9b.jpg" alt="photo_pantalon" class="image_vetement" id="produit1">
+            </figure>
         </div>
 
-        <div class="clear "></div>
+        <div class="col-xs-12 col-md-4">
+            <figure class="image_description">
+                <img src="img/femme/PANTALONS/pantalon9.jpg" alt="photo_pantalon" class="image_vetement" id="produit2">
+            </figure>
+        </div>
+
+        <div class="descript_art col-xs-12 col-md-4" id="description">
+            <aside class="description_article">
+                <h3>Pantalon à pinces</h3>
+                <hr>
+
+                <p>Taille haute, avec détail boutons argentés.<br> 2 poches avant, longueur 90cm.<br> Braguette zippée et pli marqué.<br><br>
+                    <span class="prix_description">29,95€</span>
+                </p>
+
+                <!-----------------------Déclinaisons d'article----------------------->
+
+                <div class="declinaison container">
+                    <div class="img_declinaison">
+                        <img src="img/femme/PANTALONS/pantalon9.jpg" alt="photo_pantalon" class="image_vetement" id="img_description">
+                    </div>
+                    <div class="img_declinaison">
+                        <img src="img/femme/PANTALONS/pantalon9.jpg" alt="photo_pantalon" class="image_vetement" id="img_description2">
+                    </div>
+                    <div class="img_declinaison">
+                        <img src="img/femme/PANTALONS/pantalon9.jpg" alt="photo_pantalon" class="image_vetement" id="img_description3">
+                    </div>
+                    <div class="img_declinaison">
+                        <img src="img/femme/PANTALONS/pantalon9.jpg" alt="photo_pantalon" class="image_vetement" id="img_description4">
+                    </div>
+                </div>
+
+                <!---------------------Choisir une taille---------------------------->
+
+                <nav id="nav3" class="choisir1taille">
+                    <div class="ul">
+                        <h5 class="nav2_sous_menu">Choisir une taille : <i class="fas fa-angle-down"></i></h5>
+                        <div class="dropdown-divider"></div>
+                        <select id="size_p">
+                <option value="">Ma taille</option>
+                <option value="34">34</option>
+                <option value="36">36</option>
+                <option value="38">38</option>
+                <option value="40">40</option>
+                <option value="42">42</option>
+                <option value="44">44</option>
+            </select>
+                    </div>
+                    <a href="#" class="btn btn-outline-success achat">Acheter</a>
+                </nav>
+
+
+
+            </aside>
+        </div>
+        <!-- </div> -->
+
+<!-----------------Avis clients------------------>
+
+        <div class="avisClients1 col-xs-10 col-md-6">
+            <p class="avis_c"> <span class="avisClients">Un classique indispensable."</span> - Jenny, Lyon </p>
+        </div>
+        <div class="avisClients2 col-xs-10 col-md-8">
+            <p class="avis_c"> <span class="avisClients">"Taille super bien!"</span> - Astrid, Paris </p>
+        </div>
+        <div class="avisClients3 col-10">
+            <p class="avis_c"> <span class="avisClients">"Hyper confortable, je recommande!"</span> - Alex, Caen </p>
+        </div>
+
+<!--------------------------------------------------------------------------->
+
+        <!--Suite des photos-->
+
+        <div class="col-xs-12 col-md-4">
+            <figure class="image_description">
+                <img src="img/femme/PANTALONS/pantalon9c.jpg" alt="photo_pantalon" class="image_vetement" id="produit3">
+            </figure>
+        </div>
+        <div class="col-xs-12 col-md-4">
+            <figure class="image_description">
+                <img src="img/femme/PANTALONS/pantalon9d.jpg" alt="photo_pantalon" class="image_vetement" id="produit4">
+            </figure>
+        </div>
+
+<!--------------------------------------------------------------------------->
+
+    </div>
+</div>
+
+<div class="clear "></div>
 
         <!-- -------------------------SELECTION "POUR COMPLETER CE LOOK"----------------------------------------- -->
 
