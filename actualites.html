@@ -21,280 +21,300 @@
 <body>
 
 
-<!----------------------------------HEADER------------------------------------------>
+    <!----------------------------------HEADER------------------------------------------>
 
-<header>
+    <header>
 
-    <div class="headerLogo">
+        <div class="headerLogo">
 
-        <div id="conteneur">
-            <ul id="menu">
-                <li>
-                    <a href="#" class="langues">Langues</a>
-                    <ul class="sous_menu">
-                        <li>
-                            <a href="#"><img class="logoLangues" src="img/logo/flag-fr.png" alt="langue france"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img class="logoLangues" src="img/logo/flag-gb.png" alt="langue anglais"></a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
+            <div id="conteneur">
+                <ul id="menu">
+                    <li>
+                        <a href="#" class="langues">Langues</a>
+                        <ul class="sous_menu">
+                            <li>
+                                <a href="#"><img class="logoLangues" src="img/logo/flag-fr.png" alt="langue france"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img class="logoLangues" src="img/logo/flag-gb.png" alt="langue anglais"></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="searchbar"><i class="fas fa-search"></i></div>
+            <a href="localisation.html" class="localisation"><i class="fas fa-map-marker-alt"></i></a>
+            <a href="login.html" class="user"> <i class="fas fa-user"></i></a>
+            <a href="panier.html" class="panier"><i class="fas fa-shopping-cart"></i></a>
         </div>
-        <div class="searchbar"><i class="fas fa-search"></i></div>
-        <a href="localisation.html" class="localisation"><i class="fas fa-map-marker-alt"></i></a>
-        <a href="login.html" class="user"> <i class="fas fa-user"></i></a>
-        <a href="panier.html" class="panier"><i class="fas fa-shopping-cart"></i></a>
-    </div>
 
-    <figure class="logoMarque">
-        <img class="logoMarque" src="img/logo/logo.png" alt="Logo Marque">
-    </figure>
+        <figure class="logoMarque">
+            <img class="logoMarque" src="img/logo/logo.png" alt="Logo Marque">
+        </figure>
 
 
 
 
 
-</header>
+    </header>
 
-<script>
-    $(document).ready(function() {
-        $(".langues").hover(function() {
-            $(".langues").parent().find("ul.sous_menu").stop(true, true).slideDown(200).show();
-            $(".langues").parent().hover(function() {}, function() {
-                $(this).parent().find("ul.sous_menu").slideUp(150);
+    <script>
+        $(document).ready(function() {
+            $(".langues").hover(function() {
+                $(".langues").parent().find("ul.sous_menu").stop(true, true).slideDown(200).show();
+                $(".langues").parent().hover(function() {}, function() {
+                    $(this).parent().find("ul.sous_menu").slideUp(150);
+                });
             });
         });
-    });
-</script>
+    </script>
 
-<!----------------------------------NAV------------------------------------------>
+    <!----------------------------------NAV------------------------------------------>
 
-<nav class="navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="#"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">Accueil</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Accueil</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     La Boutique <span class="sr-only">(current)</span></a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="quisommesnous.html">Qui Sommes-Nous?</a>
-                    <a class="dropdown-item" href="#">Contact</a>
-                    <a class="dropdown-item" href="reservation.html">Personal Shopper - Coaching</a>
-                    <a class="dropdown-item" href="#">Avis Clients</a>
-                    <a class="dropdown-item" href="recrutement.html">Recrutement</a>
-                    <a class="dropdown-item" href="#">Evenements</a>
-                    <a class="dropdown-item" href="presse.html">Presse</a>
-                    <a class="dropdown-item" href="#">Actualités</a>
-                </div>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle redsoldes" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SOLDES<span
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="quisommesnous.html">Qui Sommes-Nous?</a>
+                        <a class="dropdown-item" href="contact.html">Contact</a>
+                        <a class="dropdown-item" href="reservation.html">Personal Shopper - Coaching</a>
+                        <a class="dropdown-item" href="#">Avis Clients</a>
+                        <a class="dropdown-item" href="recrutement.html">Recrutement</a>
+                        <a class="dropdown-item" href="#">Evenements</a>
+                        <a class="dropdown-item" href="presse.html">Presse</a>
+                        <a class="dropdown-item" href="actualites.html">Actualités</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle redsoldes" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SOLDES<span
                         class="sr-only">(current)</span></a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">FEMME</a>
-                    <a class="dropdown-item" href="solde.h.html">HOMME</a>
-                </div>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item disabled" href="#">FEMME</a>
+                        <a class="dropdown-item" href="solde.h.html">HOMME</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     FEMME</a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item redsolde" href="#">Soldes</a>
-                    <a class="dropdown-item" href="tous_produits_f.html">Tout voir</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="pantalons_femme.html">Pantalons</a>
-                    <a class="dropdown-item" href="jeans_femme.html">Jeans</a>
-                    <a class="dropdown-item" href="chemisiers_femme.html">Chemisiers</a>
-                    <a class="dropdown-item" href="hauts_femme.html">Tops</a>
-                    <a class="dropdown-item" href="robes.html">Robes</a>
-                    <a class="dropdown-item" href="pulls_femme.html">Pulls</a>
-                    <a class="dropdown-item" href="vestes_femme.html">Vestes</a>
-                    <a class="dropdown-item" href="manteaux_femme.html">Manteaux</a>
-                    <a class="dropdown-item" href="chaussures_femme.html">Chaussures</a>
-                    <a class="access_f" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                        <a class="dropdown-item" href="tous_produits_f.html">Tout voir</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="pantalons_femme.html">Pantalons</a>
+                        <a class="dropdown-item" href="jeans_femme.html">Jeans</a>
+                        <a class="dropdown-item" href="chemisiers_femme.html">Chemisiers</a>
+                        <a class="dropdown-item" href="hauts_femme.html">Tops</a>
+                        <a class="dropdown-item" href="robes.html">Robes</a>
+                        <a class="dropdown-item" href="pulls_femme.html">Pulls</a>
+                        <a class="dropdown-item" href="vestes_femme.html">Vestes</a>
+                        <a class="dropdown-item" href="manteaux_femme.html">Manteaux</a>
+                        <a class="dropdown-item" href="chaussures_femme.html">Chaussures</a>
+                        <a class="access_f" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
                             Accessoires <i class="fas fa-angle-down"></i></a>
-                    <div class="sous_menu_f" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="accessoires_femme.html">Tout voir</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="accessoires_femme.html#sacs">Sacs</a>
-                        <a class="dropdown-item" href="accessoires_femme.html#ceintures">Ceintures</a>
-                        <a class="dropdown-item" href="accessoires_femme.html#montres">Montres</a>
-                        <a class="dropdown-item" href="accessoires_femme.html#colliers">Colliers</a>
-                        <a class="dropdown-item" href="accessoires_femme.html#lunettes">Lunettes</a>
+                        <div class="sous_menu_f" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="accessoires_femme.html">Tout voir</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="accessoires_femme.html#sacs">Sacs</a>
+                            <a class="dropdown-item" href="accessoires_femme.html#ceintures">Ceintures</a>
+                            <a class="dropdown-item" href="accessoires_femme.html#montres">Montres</a>
+                            <a class="dropdown-item" href="accessoires_femme.html#colliers">Colliers</a>
+                            <a class="dropdown-item" href="accessoires_femme.html#lunettes">Lunettes</a>
+                        </div>
                     </div>
-                </div>
-            </li>
+                </li>
 
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     HOMME</a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item redsolde" href="solde.h.html">Soldes</a>
-                    <a class="dropdown-item" href="tous_nos_produits_h.html">Tout voir</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="pantalons.html">Pantalons</a>
-                    <a class="dropdown-item" href="jean_h.html">Jeans</a>
-                    <a class="dropdown-item" href="chemise_h.html">Chemises</a>
-                    <a class="dropdown-item" href="hauts_h.html">Hauts</a>
-                    <a class="dropdown-item" href="pull_h.html">Pulls</a>
-                    <a class="dropdown-item" href="veste_h.html">Vestes / Manteaux</a>
-                    <a class="dropdown-item" href="chaussures_h.html">Chaussures</a>
-                    <a class="access_h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="accessoires_h.html">
-                        Accessoires <i class="fas fa-angle-down"></i> </a>
-                    <div class="sous_menu_h" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="accessoires_h.html">Tout voir</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item redsolde" href="solde.h.html">Soldes</a>
+                        <a class="dropdown-item" href="tous_nos_produits_h.html">Tout voir</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="accessoires_h.html#sac">Sacs</a>
-                        <a class="dropdown-item" href="accessoires_h.html#ceinture">Ceintures</a>
-                        <a class="dropdown-item" href="accessoires_h.html#casquette">Casquettes</a>
-                        <a class="dropdown-item" href="accessoires_h.html#bonnet">Bonnets</a>
-                        <a class="dropdown-item" href="accessoires_h.html#montre">Montres</a>
-                        <a class="dropdown-item" href="accessoires_h.html#lunette">Lunettes</a>
-                        <a class="dropdown-item" href="accessoires_h.html#portefeuille">Portefeuilles</a>
+                        <a class="dropdown-item" href="pantalons.html">Pantalons</a>
+                        <a class="dropdown-item" href="jean_h.html">Jeans</a>
+                        <a class="dropdown-item" href="chemise_h.html">Chemises</a>
+                        <a class="dropdown-item" href="hauts_h.html">Hauts</a>
+                        <a class="dropdown-item" href="pull_h.html">Pulls</a>
+                        <a class="dropdown-item" href="veste_h.html">Vestes / Manteaux</a>
+                        <a class="dropdown-item" href="chaussures_h.html">Chaussures</a>
+                        <a class="access_h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="accessoires_h.html">
+                        Accessoires <i class="fas fa-angle-down"></i> </a>
+                        <div class="sous_menu_h" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="accessoires_h.html">Tout voir</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="accessoires_h.html#sac">Sacs</a>
+                            <a class="dropdown-item" href="accessoires_h.html#ceinture">Ceintures</a>
+                            <a class="dropdown-item" href="accessoires_h.html#casquette">Casquettes</a>
+                            <a class="dropdown-item" href="accessoires_h.html#bonnet">Bonnets</a>
+                            <a class="dropdown-item" href="accessoires_h.html#montre">Montres</a>
+                            <a class="dropdown-item" href="accessoires_h.html#lunette">Lunettes</a>
+                            <a class="dropdown-item" href="accessoires_h.html#portefeuille">Portefeuilles</a>
+                        </div>
                     </div>
-                </div>
-            </li>
+                </li>
 
 
-        </ul>
-    </div>
-</nav>
+            </ul>
+        </div>
+    </nav>
 
 
 
-<!----------------MAIN IMAGE------------------>
+    <!----------------MAIN IMAGE------------------>
 
 
-<!----------------FIL D'ARIANE------------------>
+    <!----------------FIL D'ARIANE------------------>
 
-<nav aria-label="breadcrumb" id="ariane">
-    <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
-        <li class="breadcrumb-item"><a href="tous_produits_f.html">La Boutique</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Actualités</li>
-    </ol>
-</nav>
+    <nav aria-label="breadcrumb" id="ariane">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
+            <li class="breadcrumb-item"><a href="tous_produits_f.html">La Boutique</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Actualités</li>
+        </ol>
+    </nav>
 
-<main>
-<!----------------ARTICLES------------------>
+    <main>
+        <!----------------ARTICLES------------------>
 
-<div class="choixpages">
-    <h4>Actualiltés E-Commerce #Mode</h4> 
-    <p>Page <span class="numeroPage">1</span> - <a href="actualites_page2.html">2</a> - <a href="actualites_page3.html">3</a></p>
-</div>
+        <div class="choixpages">
+            <h4>Actualiltés E-Commerce #Mode</h4>
+            <p>Page <span class="numeroPage">1</span> - <a href="actualites_page2.html">2</a> - <a href="actualites_page3.html">3</a></p>
+        </div>
 
-<!--Colonne 1-->
-<section class="section1">
-<article class="article"><p class="span"><span><a href="https://www.iadvize.com/blog/fr/ecommerce-mode-les-facteurs-cles-de-succes-a-lheure-du-social-shopping/" target="blank">Un vent nouveau souffle sur l’industrie de la mode et les investisseurs croient en la digitalisation de leur secteur. </span></p>
-    <img src="img/optimize-fashion.png" alt="image_mode" class="img_actu">
-<p class="art">En 2015, ce fut le deuxième secteur le plus lucratif du commerce en ligne : 10% du CA de l’e-commerce est généré par l’habillement-chaussures et textiles de maison. Cela représente 5,4 milliards d’euros.</p></a></article>
+        <!--Colonne 1-->
+        <section class="section1">
+            <article class="article">
+                <p class="span"><span><a href="https://www.iadvize.com/blog/fr/ecommerce-mode-les-facteurs-cles-de-succes-a-lheure-du-social-shopping/" target="blank">Un vent nouveau souffle sur l’industrie de la mode et les investisseurs croient en la digitalisation de leur secteur. </span></p>
+                <img src="img/optimize-fashion.png" alt="image_mode" class="img_actu">
+                <p class="art">En 2015, ce fut le deuxième secteur le plus lucratif du commerce en ligne : 10% du CA de l’e-commerce est généré par l’habillement-chaussures et textiles de maison. Cela représente 5,4 milliards d’euros.</p>
+                </a>
+            </article>
 
-<article class="article"><p class="span"><span><a href="https://www.journaldunet.com/ebusiness/commerce/1417547-e-commerce-de-mode-typologie-des-acteurs-audience-et-part-de-marche-selon-xerfi/" target="blank">En 2017, les ménages français ont dépensé près de 20% de leur budget dédié aux vêtements sur Internet. </span></p>
-    <img src="img/img2.jpg" alt="image_mode" class="img_actu">
-<p class="art">Ce qui fait de la mode le marché où l'e-commerce BtoC est le plus développé, juste après la vente de biens culturels, multimédias et électroménagers. Résultat, la concurrence se fait rude entre les marchands et l'e-commerce de l'habillement s'est structuré autour de trois catégories d'acteurs, selon l'étude "Le marché de la mode" publiée par Xerfi, dont voici plusieurs enseignements.</a></p></article>
+            <article class="article">
+                <p class="span"><span><a href="https://www.journaldunet.com/ebusiness/commerce/1417547-e-commerce-de-mode-typologie-des-acteurs-audience-et-part-de-marche-selon-xerfi/" target="blank">En 2017, les ménages français ont dépensé près de 20% de leur budget dédié aux vêtements sur Internet. </span></p>
+                <img src="img/img2.jpg" alt="image_mode" class="img_actu">
+                <p class="art">Ce qui fait de la mode le marché où l'e-commerce BtoC est le plus développé, juste après la vente de biens culturels, multimédias et électroménagers. Résultat, la concurrence se fait rude entre les marchands et l'e-commerce de l'habillement
+                    s'est structuré autour de trois catégories d'acteurs, selon l'étude "Le marché de la mode" publiée par Xerfi, dont voici plusieurs enseignements.</a>
+                </p>
+            </article>
 
-<article class="article"><p class="span"><p class="span"><span><a href="https://fr.fashionnetwork.com/news/-E-commerce-la-mode-toujours-en-tete-des-produits-les-plus-achetes-sur-la-Toile,843980.html#.XVgF9egzaUk" target="blank">E-commerce : la mode toujours en tête des produits les plus achetés sur la Toile</span></p>
-    <img src="img/img3.jpg" alt="image_mode" class="img_actu">
-<p class="art">Les Français sont 59 % à avoir commandé des produits de mode/habillement en 2016, en faisant la catégorie de produits la plus consommée en ligne, devant les biens culturels (49 %), les chaussures (39 %), les voyages (38 % ) et la beauté/santé (37 %). Les articles de sport arrivent eux en 11ème position (20 %), selon la Fédération de la vente en ligne (Fevad).</p>
-</a></p></article>
+            <article class="article">
+                <p class="span">
+                    <p class="span"><span><a href="https://fr.fashionnetwork.com/news/-E-commerce-la-mode-toujours-en-tete-des-produits-les-plus-achetes-sur-la-Toile,843980.html#.XVgF9egzaUk" target="blank">E-commerce : la mode toujours en tête des produits les plus achetés sur la Toile</span></p>
+                    <img src="img/img3.jpg" alt="image_mode" class="img_actu">
+                    <p class="art">Les Français sont 59 % à avoir commandé des produits de mode/habillement en 2016, en faisant la catégorie de produits la plus consommée en ligne, devant les biens culturels (49 %), les chaussures (39 %), les voyages (38 % ) et la beauté/santé
+                        (37 %). Les articles de sport arrivent eux en 11ème position (20 %), selon la Fédération de la vente en ligne (Fevad).</p>
+                    </a>
+                </p>
+            </article>
 
-<article class="article"><p class="span"><span><a href="https://fr.statista.com/infographie/15009/chiffre-affaires-e-commerce-mode-et-habillement/" target="blank">Top 5 eCommerce : catégorie mode et habillement</span></p>
-    <img src="img/img4.jpg" alt="image_mode" class="img_actu">
-<p class="art">La plateforme eCommerceDB, lancée par Statista, fournie une base de données comparatives des revenus et indicateurs de performance pour plus de 5 000 entreprises du secteur du e-commerce. Notre graphique issu des données de la plateforme montre le Top 5 des e-commerçants de la catégorie « habillement » qui réalisent les plus gros chiffres d’affaires en France.</a></p></article>
+            <article class="article">
+                <p class="span"><span><a href="https://fr.statista.com/infographie/15009/chiffre-affaires-e-commerce-mode-et-habillement/" target="blank">Top 5 eCommerce : catégorie mode et habillement</span></p>
+                <img src="img/img4.jpg" alt="image_mode" class="img_actu">
+                <p class="art">La plateforme eCommerceDB, lancée par Statista, fournie une base de données comparatives des revenus et indicateurs de performance pour plus de 5 000 entreprises du secteur du e-commerce. Notre graphique issu des données de la plateforme
+                    montre le Top 5 des e-commerçants de la catégorie « habillement » qui réalisent les plus gros chiffres d’affaires en France.</a>
+                </p>
+            </article>
 
-<article class="article"><p class="span"><span><a href="https://leblog.powerboutique.com/etude-e-commerce-mode-habillement/" target="blank">ÉTUDE E-COMMERCE : MODE & HABILLEMENT: LES CHAUSSURES, L’ARTICLE DE MODE PRÉFÉRÉ DES CYBER-ACHETEURS</span></p>
-    <img src="img/img6.jpg" alt="image_mode" class="img_actu">
-<p class="art">De nombreuses petites entreprises spécialisées dans la mode se lancent dans la vente en ligne en créant un site marchand. Le nombre de nouveaux sites a augmenté de 29 %, une croissance supérieure à la moyenne constatée sur l’ensemble des secteurs d’activité (+ 24 %).</a></p></article>
-</section>
+            <article class="article">
+                <p class="span"><span><a href="https://leblog.powerboutique.com/etude-e-commerce-mode-habillement/" target="blank">ÉTUDE E-COMMERCE : MODE & HABILLEMENT: LES CHAUSSURES, L’ARTICLE DE MODE PRÉFÉRÉ DES CYBER-ACHETEURS</span></p>
+                <img src="img/img6.jpg" alt="image_mode" class="img_actu">
+                <p class="art">De nombreuses petites entreprises spécialisées dans la mode se lancent dans la vente en ligne en créant un site marchand. Le nombre de nouveaux sites a augmenté de 29 %, une croissance supérieure à la moyenne constatée sur l’ensemble des
+                    secteurs d’activité (+ 24 %).</a>
+                </p>
+            </article>
+        </section>
 
 
-<div class="clear"></div>
-</main>
+        <div class="clear"></div>
+    </main>
 
 
 
 
     <!-- ******  Footer  ****** -->
-<footer>
+    <footer>
 
-    <div class="container-fluid">
-        <div class="row ">
-            <Div id="newsletter" class="newsletter col-sm-4 col-md-4 test">
-                <div id="toggle_news">
-                    <h4>NewsLetter <i class="fas fa-angle-down"></i> </h4>
-                    <span class="ligne"></span>
-                </div>
-                <div class="footer_align" id="news_p">
-                    <p>Inscrivez-vous à notre programme relationnel <span class="vert">LePetitCommerce</span> afin de recevoir toute notre actualité et nos meilleures offres.</p>
-                </div>
-                <a href="newsletter.html"><button class="btn btn-outline-success" type="submit"> M'inscrire
+        <div class="container-fluid">
+            <div class="row ">
+                <Div id="newsletter" class="newsletter col-sm-4 col-md-4 test">
+                    <div id="toggle_news">
+                        <h4>NewsLetter <i class="fas fa-angle-down"></i> </h4>
+                        <span class="ligne"></span>
+                    </div>
+                    <div class="footer_align" id="news_p">
+                        <p>Inscrivez-vous à notre programme relationnel <span class="vert">LePetitCommerce</span> afin de recevoir toute notre actualité et nos meilleures offres.</p>
+                    </div>
+                    <a href="newsletter.html"><button class="btn btn-outline-success" type="submit"> M'inscrire
                         !</button></a>
 
-            </Div>
+                </Div>
 
-            <div class="col-sm-4 col-md-4 test" id="infos">
-                <div id="toggle_infos">
-                    <h4>Informations Utiles <i class="fas fa-angle-down"></i> </h4>
-                    <span class="ligne"></span>
+                <div class="col-sm-4 col-md-4 test" id="infos">
+                    <div id="toggle_infos">
+                        <h4>Informations Utiles <i class="fas fa-angle-down"></i> </h4>
+                        <span class="ligne"></span>
+                    </div>
+                    <div class="footer_align" id="infos_liste">
+                        <ul>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="cgv.html">Mentions Légales</a></li>
+                            <li><a href="cgv.html">Nos conditions Générales de Vente</a></li>
+                            <li><a href="plan.html">Plan du site</a></li>
+                            <li><a href="#">Imprimer la page</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="footer_align" id="infos_liste">
-                    <ul>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="cgv.html">Mentions Légales</a></li>
-                        <li><a href="cgv.html">Nos conditions Générales de Vente</a></li>
-                        <li><a href="plan.html">Plan du site</a></li>
-                        <li><a href="#">Imprimer la page</a></li>
-                    </ul>
-                </div>
-            </div>
 
-            <div class="col-sm-4 col-md-4 " id="Social">
-                <div id="toggle_Social">
-                    <h4>Suivez Nous <i class="fas fa-angle-down"></i></h4>
-                    <span class="ligne"></span>
-                </div>
-                <div class="footer_align row" id="Social_logo">
-                    <a href="https://fr-fr.facebook.com/"><i class="fab fa-facebook-square"></i></a>
-                    <a href="https://www.instagram.com/?hl=fr"><i class="fab fa-instagram"></i></a>
-                    <a href="https://twitter.com/?lang=fr"><i class="fab fa-twitter-square"></i></a>
-                    <a href="https://www.pinterest.fr/"><i class="fab fa-pinterest-square"></i></a>
+                <div class="col-sm-4 col-md-4 " id="Social">
+                    <div id="toggle_Social">
+                        <h4>Suivez Nous <i class="fas fa-angle-down"></i></h4>
+                        <span class="ligne"></span>
+                    </div>
+                    <div class="footer_align row" id="Social_logo">
+                        <a href="https://fr-fr.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                        <a href="https://www.instagram.com/?hl=fr"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/?lang=fr"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://www.pinterest.fr/"><i class="fab fa-pinterest-square"></i></a>
 
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div id="copy">
-        <p>Copyright &copy; LePetitCommerce</p>
-    </div>
+        <div id="copy">
+            <p>Copyright &copy; LePetitCommerce</p>
+        </div>
 
-</footer>
+    </footer>
 
-<script>
-    $(document).ready(function() {
-        $('#toggle_Social').click(function() {
-            $('#Social_logo').slideToggle(200);
+    <script>
+        $(document).ready(function() {
+            $('#toggle_Social').click(function() {
+                $('#Social_logo').slideToggle(200);
+            });
+            $('#toggle_infos').click(function() {
+                $('#infos_liste').slideToggle(200);
+            });
+            $('#toggle_news').click(function() {
+                $('#news_p').slideToggle(200);
+            });
         });
-        $('#toggle_infos').click(function() {
-            $('#infos_liste').slideToggle(200);
-        });
-        $('#toggle_news').click(function() {
-            $('#news_p').slideToggle(200);
-        });
-    });
-</script>
+    </script>
 
-<script src="js/script.js"></script>
-<script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.js"></script>
 </body>
 
 </html>
