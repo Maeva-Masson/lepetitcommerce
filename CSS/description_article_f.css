@@ -1,8 +1,3 @@
-.descript_art{
-    position: sticky;
-    top: 0;
-}
-
 
 
 /* ------------------*/
@@ -13,14 +8,16 @@
 }
 
 
-.image_description{
+#image_description, #img_description2, #img_description3, #img_description4{
     cursor: pointer;
+}
+
+.img_description{
     margin: 20px;
 }
 
 .description_article{
     margin-top: 30px;
-    margin-left: 33px;
 }
 
 .prix_description{
@@ -67,4 +64,285 @@
     text-align: center;
     margin-top: 2%;
 }
+
+/* --------RESPONSIVE--------- */
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    .deuxColonnes{
+        display: flex!important;
+        flex-direction: column;
+    }
+
+    .image_description{
+        width: 100%;
+    }
+
+    .img_description{
+        order: 2;
+        position: static;
+    }
+
+    .first{
+        display: none;
+    }
+
+    .second{
+        width: 100%;
+    }
+    
+    .descript_art{
+        margin-right: 50px;
+        order: 1!important;
+        position: static!important;
+    }
+
+    h3{
+        font-size: 25px!important;
+    }
+
+    h5{
+        font-size: 15px!important;
+    }
+
+    .declinaison{
+        margin-top: -20px;
+    }
+
+    .three, .four{
+        width: 100%;
+    }
+
+    .colonnes{
+        flex-direction: initial;
+    }
+}
+/*  Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+
+@media (max-width: 768px) {
+
+    .descript_art{
+        position: sticky;
+        top: 0;
+    }
+
+    .deuxColonnes{
+        display: flex!important;
+    }
+
+    .image_description{
+        width: 50%;
+    }
+
+    .first{
+        display: none;
+    }
+
+    .second{
+        width: 100%;
+    }
+
+    h3{
+        font-size: 20px;
+    }
+
+    h5{
+        font-size: 15px;
+    }
+
+    .descript_art{
+        width: 100%;
+        font-size: 50%;
+        margin-right: 50px;
+    }
+    .description_article{
+        width: 100%;
+        margin-right: 30px;
+    }
+
+    .declinaison{
+        width: 100%;
+        margin-top: -15px;
+    }
+
+    .three, .four{
+        width: 90%;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .deuxColonnes{
+        display: flex!important;
+    }
+
+    .image_description{
+        width: 20%;
+    }
+
+    .first{
+        display: none;
+    }
+
+    .second{
+        width: 80%;
+    }
+
+    h3{
+        font-size: 25px;
+    }
+
+    .descript_art{
+        width: 100%;
+        font-size: 50%;
+        margin-right: 50px;
+    }
+    .description_article{
+        width: 100%;
+        margin-right: 50px;
+    }
+
+    .declinaison{
+        width: 100%;
+    }
+
+    .three, .four{
+        width: 90%;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    .descript_art{
+        position: sticky;
+        top: 0;
+    }
+
+    .first{
+        display: initial;
+    }
+    
+    
+    
+    /* ------------------*/
+    
+    .container{
+        display: flex;
+        width: 100%;
+    }
+
+    .second{
+        width: 100%;
+    }
+    
+    
+    .image_description{
+        cursor: pointer;
+        /* margin: 20px; */
+    }
+    
+    .description_article{
+        margin-top: 30px;
+        margin-left: 33px;
+    }
+    
+    .prix_description{
+        font-weight: bold;
+    }
+    
+    .img_declinaison{
+        margin: 10px;
+    }
+    
+    #img_description{
+        cursor: pointer;
+    }
+    
+    .declinaison{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .achat{
+        margin-top: 30px;
+    }
+    
+    #nav3{
+        list-style: none;
+        margin-top: 10px;
+        border-bottom: unset;
+    }
+}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .descript_art{
+        position: sticky;
+        top: 0;
+    }
+
+    .first{
+        display: initial;
+    }
+    
+    
+    
+    /* ------------------*/
+    
+    .container{
+        display: flex;
+        width: 100%;
+    }
+    
+    
+    .image_description{
+        cursor: pointer;
+    }
+
+    .descript_art{
+        width: 100%;
+        font-size: 100%;
+        /* margin-right: -50px; */
+    }
+    
+    .description_article{
+        margin-top: 30px;
+        margin-left: 33px;
+    }
+    
+    .prix_description{
+        font-weight: bold;
+    }
+    
+    .img_declinaison{
+        margin: 10px;
+    }
+    
+    #img_description{
+        cursor: pointer;
+    }
+    
+    .declinaison{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .achat{
+        margin-top: 30px;
+    }
+    
+    #nav3{
+        list-style: none;
+        margin-top: 10px;
+        border-bottom: unset;
+    }
+}
+
 
