@@ -51,23 +51,6 @@
     border-bottom: unset;
 }
 
-/* .fixdroite{
-    z-index: 9999;
-    position: fixed; */
-    /* top: 530px; */
-    /* margin-top: -600px;
-    margin-left: 66.6%; */
-    /* margin-bottom: */
-    /* width: 80%;
-} */
-
-/* .fixdroiteB{
-    z-index: 9999;
-    background: orange;
-    display: block;
-    scroll-margin-block-end: 100px;
-} */
-
 .avisClients{
     font-weight: bold;
 }
@@ -78,5 +61,10 @@
 
 .avisClients1, .avisClients2, .avisClients3{
     font-style: italic; 
+}
+
+.container-fluid h4{
+    text-align: center;
+    margin-top: 2%;
 }
 
