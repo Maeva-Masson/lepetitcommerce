@@ -174,3 +174,17 @@ function changeImg20() {
 window.onload = function() {
     changeImg11(), changeImg12(), changeImg13(), changeImg14(), changeImg15(), changeImg16(), changeImg17(), changeImg18(), changeImg19(), changeImg20()
 };
+
+//-------------Page Description: Pantalons Femme-----------------
+
+$(function() {
+    $(window).scroll(
+        function() {
+            if ($(this).scrollTop() > 580 && $(this).scrollTop() < 1950) {
+                $('#description').addClass("fixdroite");
+            } else {
+                $('#description').removeClass("fixdroite");
+            }
+        }
+    );
+});
