@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+i{
+    display: flex;
+    color: #BA55D3!important;
+}
+
+.container{
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+    width: 120%;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.commentaireClient{
+    margin-left: 13%;
+    margin-top: 15px;;
+    width: 70%;
+}
+
+p{
+    text-align: justify;
+    margin-bottom: 0;
+}
+
+h4{
+    margin-bottom: 0;
+}
+
+.espace{
+    width: 40%;
+}
+
+.child1{
+    width: 45%;
+}
+
+.child3{
+    width: 67%;
+}
+
+.name{
+    font-weight: bold;
+    position: relative;
+    text-align-last: right;
+}
+
+.container .com{
+    margin: 0 auto; 
+}
+
+.com{
+    width: 106%;
+}
+
+
+
