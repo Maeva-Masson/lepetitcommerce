@@ -1,3 +1,12 @@
+.descript_art{
+    position: sticky;
+    top: 0;
+}
+
+
+
+/* ------------------*/
+
 .container{
     display: flex;
     width: 100%;
@@ -39,24 +48,25 @@
 #nav3{
     list-style: none;
     margin-top: 10px;
+    border-bottom: unset;
 }
 
-.fixdroite{
+/* .fixdroite{
     z-index: 9999;
-    position: fixed;
+    position: fixed; */
     /* top: 530px; */
-    margin-top: -600px;
-    margin-left: 66.6%;
+    /* margin-top: -600px;
+    margin-left: 66.6%; */
     /* margin-bottom: */
-    width: 80%;
-}
+    /* width: 80%;
+} */
 
-.fixdroiteB{
+/* .fixdroiteB{
     z-index: 9999;
     background: orange;
     display: block;
     scroll-margin-block-end: 100px;
-}
+} */
 
 .avisClients{
     font-weight: bold;
