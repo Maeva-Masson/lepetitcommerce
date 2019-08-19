@@ -5,4 +5,4 @@ Disallow: /panier.html/
 Disallow: /cgv.html/
 
 
-Sitemap :
+Sitemap : http://www.http://lepetitcommerce.julien-quentier.fr/sitemap.xml
