@@ -2027,6 +2027,21 @@ legend {
 }
 
     /* ************ Page Recrutement *********/
+
+        /*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    .input_checkbox{
+        width: 50%;
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .conditions p{
+        width: 60%!important;
+    }
+}
     
     .input_recrut {
         margin-left: 10px;
