@@ -1,6 +1,6 @@
 /* ***********************  PAGE ACCEUIL *************************** */
 
-/* img homme /  femme*/
+
 
 
 $(document).ready(function() {
