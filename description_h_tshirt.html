@@ -60,12 +60,13 @@
 
     <script>
         $(document).ready(function() {
-                    $(".langues").hover(function() {
-                        $(".langues").parent().find("ul.sous_menu").stop(true, true).slideDown(200).show();
-                        $(".langues").parent().hover(function() {}, function() {
-                            $(this).parent().find("ul.sous_menu").slideUp(150);
-                        });
-                    });
+            $(".langues").hover(function() {
+                $(".langues").parent().find("ul.sous_menu").stop(true, true).slideDown(200).show();
+                $(".langues").parent().hover(function() {}, function() {
+                    $(this).parent().find("ul.sous_menu").slideUp(150);
+                });
+            });
+        });
     </script>
 
     <!----------------------------------NAV------------------------------------------>
