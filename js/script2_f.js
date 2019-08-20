@@ -1,4 +1,3 @@
-
 //-------------Page tous les Produits Femme-----------------
 var time = 3000;
 
@@ -63,7 +62,7 @@ accessoiresF[1] = 'img/femme/ACCESSOIRES/montre2.jpg';
 accessoiresF[2] = 'img/femme/ACCESSOIRES/ceinture1.jpg';
 
 function changeImg11() {
-    document.pantalonsF.src = PanF[pF];
+    document.getElementById('pantalonsF_image').src = PanF[pF];
     if (pF < PanF.length - 1) {
         pF++
     } else {
@@ -74,7 +73,7 @@ function changeImg11() {
 }
 
 function changeImg12() {
-    document.jeansF.src = jeans_F[jF];
+    document.getElementById('jeansF_image').src = jeans_F[jF];
     if (jF < jeans_F.length - 1) {
         jF++
     } else {
@@ -85,7 +84,7 @@ function changeImg12() {
 }
 
 function changeImg13() {
-    document.chemisiersF.src = CheF[cF];
+    document.getElementById('chemisiersF_image').src = CheF[cF];
     if (cF < CheF.length - 1) {
         cF++
     } else {
@@ -96,7 +95,7 @@ function changeImg13() {
 }
 
 function changeImg14() {
-    document.topsF.src = tops_F[topF];
+    document.getElementById('topsF_image').src = tops_F[topF];
     if (topF < tops_F.length - 1) {
         topF++
     } else {
@@ -107,7 +106,7 @@ function changeImg14() {
 }
 
 function changeImg15() {
-    document.robes.src = rob[rb];
+    document.getElementById('robes_image').src = rob[rb];
     if (rb < rob.length - 1) {
         rb++
     } else {
@@ -118,7 +117,7 @@ function changeImg15() {
 }
 
 function changeImg16() {
-    document.pullF.src = pull_F[PuF];
+    document.getElementById('pullF_image').src = pull_F[PuF];
     if (PuF < pull_F.length - 1) {
         PuF++
     } else {
@@ -129,7 +128,7 @@ function changeImg16() {
 }
 
 function changeImg17() {
-    document.vesteF.src = veste_F[vF];
+    document.getElementById('vesteF_image').src = veste_F[vF];
     if (vF < veste_F.length - 1) {
         vF++
     } else {
@@ -140,7 +139,7 @@ function changeImg17() {
 }
 
 function changeImg18() {
-    document.manteauxF.src = manteaux_F[manF];
+    document.getElementById('manteauxF_image').src = manteaux_F[manF];
     if (manF < manteaux_F.length - 1) {
         manF++
     } else {
@@ -151,7 +150,7 @@ function changeImg18() {
 }
 
 function changeImg19() {
-    document.chaussuresF.src = chaussures_F[chF];
+    document.getElementById('chaussuresF_image').src = chaussures_F[chF];
     if (chF < chaussures_F.length - 1) {
         chF++
     } else {
@@ -162,7 +161,7 @@ function changeImg19() {
 }
 
 function changeImg20() {
-    document.accessF.src = accessoiresF[aF];
+    document.getElementById('accessF_image').src = accessoiresF[aF];
     if (aF < accessoiresF.length - 1) {
         aF++
     } else {

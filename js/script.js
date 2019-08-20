@@ -313,7 +313,7 @@ access[2] = 'img/homme/accessoires/ceinture_bleu1.jpg';
 access[3] = 'img/homme/accessoires/croco_noir3.jpg';
 
 function changeImg() {
-    document.pantalons.src = Pan[p];
+    document.getElementById('pantalons_image').src = Pan[p];
     if (p < Pan.length - 1) {
         p++
     } else {
@@ -324,7 +324,7 @@ function changeImg() {
 }
 
 function changeImg2() {
-    document.jeans.src = jeans[j];
+    document.getElementById('jeans_image').src = jeans[j];
     if (j < jeans.length - 1) {
         j++
     } else {
@@ -335,7 +335,7 @@ function changeImg2() {
 }
 
 function changeImg3() {
-    document.chemises.src = Che[c];
+    document.getElementById('chemises_image').src = Che[c];
     if (c < Che.length - 1) {
         c++
     } else {
@@ -346,7 +346,7 @@ function changeImg3() {
 }
 
 function changeImg4() {
-    document.hauts.src = hauts[h];
+    document.getElementById('hauts_image').src = hauts[h];
     if (h < hauts.length - 1) {
         h++
     } else {
@@ -357,7 +357,7 @@ function changeImg4() {
 }
 
 function changeImg5() {
-    document.pull.src = pull[Pu];
+    document.getElementById('pull_image').src = pull[Pu];
     if (Pu < pull.length - 1) {
         Pu++
     } else {
@@ -368,7 +368,7 @@ function changeImg5() {
 }
 
 function changeImg6() {
-    document.veste.src = veste[v];
+    document.getElementById('veste_image').src = veste[v];
     if (v < veste.length - 1) {
         v++
     } else {
@@ -379,7 +379,7 @@ function changeImg6() {
 }
 
 function changeImg7() {
-    document.chaussures.src = chaussures[ch];
+    document.getElementById('chaussures_image').src = chaussures[ch];
     if (ch < chaussures.length - 1) {
         ch++
     } else {
@@ -390,7 +390,7 @@ function changeImg7() {
 }
 
 function changeImg8() {
-    document.bonnet.src = bonnet[b];
+    document.getElementById('bonnet_image').src = bonnet[b];
     if (b < bonnet.length - 1) {
         b++
     } else {
@@ -401,7 +401,7 @@ function changeImg8() {
 }
 
 function changeImg9() {
-    document.sac.src = sac[s];
+    document.getElementById('sac_image').src = sac[s];
     if (s < sac.length - 1) {
         s++
     } else {
@@ -412,7 +412,7 @@ function changeImg9() {
 }
 
 function changeImg10() {
-    document.access.src = access[a];
+    document.getElementById('access_image').src = access[a];
     if (a < access.length - 1) {
         a++
     } else {
