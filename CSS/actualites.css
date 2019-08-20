@@ -1,30 +1,29 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-
-.choixpages{
+.choixpages {
     margin: 0 auto;
 }
 
-h4{
+h4 {
     text-align: center;
     margin: 40px;
 }
 
-
-main{
+main {
     background: url("../img/fond.jpg");
     background-size: cover;
 }
 
-.section1, .section2, .section3{
+.section1,
+.section2,
+.section3 {
     margin-bottom: 30px;
 }
 
-
-.article{
+.article {
     width: 70%;
     margin: 0 auto;
     margin-bottom: 5px;
@@ -34,133 +33,131 @@ main{
     padding: 10px;
 }
 
-a:hover{
+a:hover {
     color: #BA55D3;
 }
 
-p.art{
+p.art {
     padding-bottom: 20px;
 }
 
-a:link{
+a:link {
     text-decoration: none;
 }
 
-a{
+a {
     color: black;
 }
 
-span{
+span {
     font-weight: bold;
 }
 
-.span{
+.span {
     margin: 15px;
 }
 
-.img_actu{
+.img_actu {
     margin-right: 5px;
 }
 
-.article img{
-    width: 14%;
+.article img {
+    width: 50%;
 }
 
-.numeroPage{
+.numeroPage {
     font-weight: bold;
     color: #BA55D3;
 }
 
+
 /* --------RESPONSIVE--------- */
 
+
 /*Extra small devices (portrait phones, less than 576px)*/
+
 @media (max-width: 575.98px) {
-    .img_actu{
-        width: 70%;
+    .img_actu {
         float: unset;
     }
-
-    .article{
+    .article {
         text-align: center;
     }
-
-    .article p{
+    .article p {
         font-size: 13px;
     }
-
-    .art{
+    .art {
         margin-top: 10px;
     }
 }
+
+
 /*  Small devices (landscape phones, 576px and up) */
+
 @media (min-width: 576px) {
-    .img_actu{
-        width: 40%;
+    .img_actu {
+        width: 10%;
         float: unset;
     }
-
-    .article{
+    .article {
         text-align: center;
     }
-
-    .article p{
+    .article p {
         font-size: 13px;
     }
-
-    .art{
+    .art {
         margin-top: 15px;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) {}
 
-}
 
 /* Medium devices (tablets, 768px and up) */
+
 @media (min-width: 768px) {
-    .img_actu{
-        width: 18%;
+    img.img_actu {
+        width: 100% !important;
         float: left;
     }
-
-    .article p{
+    .article p {
         font-size: 11px;
+        width: 100%;
     }
-
-    .art{
-        margin-top: 20px;
+    .art {
+        margin-top: 0;
+        margin-right: 30px;
     }
 }
 
+
 /* Large devices (desktops, 992px and up) */
+
 @media (min-width: 992px) {
-    .img_actu{
-        width: 15%;
+    .img_actu {
+        width: 18% !important;
         float: left;
     }
-
-    .article p{
+    .article p {
         font-size: 14px;
     }
-
-    .art{
+    .art {
         margin-top: 20px;
     }
 }
 
 
 /* Extra large devices (large desktops, 1200px and up) */
+
 @media (min-width: 1200px) {
-    .img_actu{
+    .img_actu {
         width: 15%;
         float: left;
     }
-
-    .article p{
+    .article p {
         font-size: 15px;
     }
-
-    .art{
+    .art {
         margin-top: 30px;
     }
 }
