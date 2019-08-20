@@ -336,6 +336,57 @@ nav {
     border: 1px solid red !important;
 }
 
+.soldesF {
+    height: 300px !important;
+    background: url('../img/femme/soldeF.jpg');
+    align-items: center;
+    background-size: 70%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.soldesF h2 {
+    text-align: right;
+    color: red;
+    padding-top: 50px;
+    font-size: 50px;
+    margin-right: 20px;
+    line-height: 0;
+}
+
+.soldesF P {
+    text-align: right;
+    color: red;
+    padding-top: 40px;
+    font-size: 1.2em;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+.soldesF .redbutton {
+    display: block;
+    color: red !important;
+    text-decoration: none;
+    font-size: 1.3rem;
+    width: 175px;
+    height: 50px;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid black !important;
+    margin-top: 40px;
+    float: right;
+    margin-right: 5px;
+}
+
+.soldesF .redbutton:hover {
+    color: white !important;
+    transform: none;
+    background-color: red !important;
+    border: 1px solid red !important;
+}
+
 .costume {
     height: 300px;
     background: url('../img/homme/image_slider_3.jpeg');
@@ -1879,6 +1930,33 @@ legend {
     
     .soldes .btn {
         margin-right: 200px;
+    }
+    
+    .soldesF {
+        height: 500px !important;
+        align-items: right;
+        background-size: 70%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .soldesF h2 {
+        text-align: right;
+        padding-top: 70px;
+        font-size: 100px;
+        margin-right: 100px;
+        line-height: 0;
+    }
+    
+    .soldesF P {
+        text-align: right;
+        padding-top: 40px;
+        font-size: 2.2em;
+        margin-right: 100px;
+    }
+    
+    .soldesF .btn {
+        margin-right: 100px;
     }
     
     .costume {
