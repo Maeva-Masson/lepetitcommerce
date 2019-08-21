@@ -724,7 +724,7 @@ nav {
 }
 
 .categorie_women {
-    background: url('../img/femme/TEE-SHIRTS/tee-shirt2d.jpg');
+    background: url('../img/femme/TSHIRTS/tee-shirt2d.jpg');
     background-size: 100%;
     background-position: top 50%;
     text-align: center;
@@ -2008,40 +2008,36 @@ legend {
         margin-left: 50px;
         font-family: 'Didact Gothic', sans-serif;
     }
-
     /* ********** Page Contact ************ */
-
     /*Extra small devices (portrait phones, less than 576px)*/
-@media (max-width: 575.98px) {
-    .input_checkbox{
-        width: 50%;
+    
+    @media (max-width: 575.98px) {
+        .input_checkbox {
+            width: 50%;
+        }
     }
-
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-    .conditions p{
-        width: 60%!important;
+    /* Medium devices (tablets, 768px and up) */
+    
+    @media (min-width: 768px) {
+        .conditions p {
+            width: 60%!important;
+        }
     }
-}
-
     /* ************ Page Recrutement *********/
-
-        /*Extra small devices (portrait phones, less than 576px)*/
-@media (max-width: 575.98px) {
-    .input_checkbox{
-        width: 50%;
+    /*Extra small devices (portrait phones, less than 576px)*/
+    
+    @media (max-width: 575.98px) {
+        .input_checkbox {
+            width: 50%;
+        }
     }
-
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-    .conditions p{
-        width: 60%!important;
+    /* Medium devices (tablets, 768px and up) */
+    
+    @media (min-width: 768px) {
+        .conditions p {
+            width: 60%!important;
+        }
     }
-}
     
     .input_recrut {
         margin-left: 10px;
