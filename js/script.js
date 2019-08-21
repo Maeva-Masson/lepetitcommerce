@@ -4,8 +4,31 @@
 
 
 $(document).ready(function() {
+    var etat_news = false;
+    var btn_recherche = false;
+
     $('.btn_news').click(function() {
-        $('.tbox').css({ 'width': '260px', 'padding': ' 0 10px' })
+        if (etat_news == false) {
+
+            $('.tbox').css({ 'width': '240px', 'padding': ' 0 10px' });
+            etat_news = true;
+        } else {
+            $('.tbox').css({ 'width': '0px', 'padding': '0' });
+            etat_news = false;
+        }
+    });
+
+
+
+    $('.search-btn').click(function() {
+        if (btn_recherche == false) {
+            $('.search-txt').css({ 'width': '200px', 'padding': ' 0 2px' });
+            btn_recherche = true;
+        } else {
+            $('.search-txt').css({ 'width': '0px', 'padding': '0' });
+            btn_recherche = false;
+        }
+
     });
 })
 
