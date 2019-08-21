@@ -22,7 +22,7 @@ $(document).ready(function() {
 
     $('.search-btn').click(function() {
         if (btn_recherche == false) {
-            $('.search-txt').css({ 'width': '200px', 'padding': ' 0 2px' });
+            $('.search-txt').css({ 'width': '100px', 'padding': ' 0 2px' });
             btn_recherche = true;
         } else {
             $('.search-txt').css({ 'width': '0px', 'padding': '0' });
