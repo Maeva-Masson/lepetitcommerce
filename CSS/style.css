@@ -442,7 +442,7 @@ nav {
 
 .new {
     height: 300px;
-    background: url('../img/homme/slide_homme2.jpg');
+    background: url('../img/femme/new.jpeg');
     align-items: center;
     background-size: 70%;
     background-size: cover;
@@ -1997,7 +1997,7 @@ legend {
         color: #152A9E !important;
         padding-top: 40px;
         font-size: 2.5em;
-        margin-left: 20px;
+        margin-right: 100px !important;
     }
     
     .new P {
@@ -2005,7 +2005,7 @@ legend {
         color: #152A9E !important;
         padding-top: 40px;
         font-size: 1.2em;
-        margin-left: 50px;
+        margin-right: 100px !important;
         font-family: 'Didact Gothic', sans-serif;
     }
     /* ********** Page Contact ************ */

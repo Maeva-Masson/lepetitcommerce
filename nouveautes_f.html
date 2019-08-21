@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <title>LePetitCommerce - Nouveautés</title>
+    <meta name="description" content="Retrouvez tout l'univers de la marque LePetitcommerce à travers sa E-boutique.">
+
+</head>
+
+
+<body>
+    <!-- ******  Header  ****** -->
+    <header>
+
+        <div class="headerLogo">
+
+            <div id="conteneur">
+                <ul id="menu">
+                    <li>
+                        <a href="#" class="langues">Langues</a>
+                        <ul class="sous_menu">
+                            <li>
+                                <a href="#"><img class="logoLangues" src="img/logo/flag-fr.png" alt="langue france"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img class="logoLangues" src="img/logo/flag-gb.png" alt="langue anglais"></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="searchbar"><i class="fas fa-search"></i></div>
+            <a href="localisation.html" class="localisation"><i class="fas fa-map-marker-alt"></i></a>
+            <a href="login.html" class="user"> <i class="fas fa-user"></i></a>
+            <a href="" class="panier"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+
+        <figure class="logoMarque">
+            <img class="logoMarque" src="img/logo/logo.png" alt="Logo Marque">
+        </figure>
+
+
+
+
+
+    </header>
+
+    <script>
+        $(document).ready(function() {
+            $(".langues").hover(function() {
+                $(".langues").parent().find("ul.sous_menu").stop(true, true).slideDown(200).show();
+                $(".langues").parent().hover(function() {}, function() {
+                    $(this).parent().find("ul.sous_menu").slideUp(150);
+                });
+            });
+        });
+    </script>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Accueil</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        La Boutique <span class="sr-only">(current)</span></a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="quisommesnous.html">Qui Sommes-Nous?</a>
+                        <a class="dropdown-item" href="contact.html">Contact</a>
+                        <a class="dropdown-item" href="reservation.html">Personal Shopper - Coaching</a>
+                        <a class="dropdown-item" href="avisclients.html">Avis Clients</a>
+                        <a class="dropdown-item" href="recrutement.html">Recrutement</a>
+                        <a class="dropdown-item" href="evenements.html">Evenements</a>
+                        <a class="dropdown-item" href="presse.html">Presse</a>
+                        <a class="dropdown-item" href="actualites.html">Actualités</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle redsoldes" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SOLDES<span
+                            class="sr-only">(current)</span></a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="soldes_f.html">FEMME</a>
+                        <a class="dropdown-item" href="solde.h.html">HOMME</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        FEMME</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item redsolde" href="soldes_f.html">Soldes</a>
+                        <a class="dropdown-item" href="tous_produits_f.html">Tout voir</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="pantalons_femme.html">Pantalons</a>
+                        <a class="dropdown-item" href="jeans_femme.html">Jeans</a>
+                        <a class="dropdown-item" href="chemisiers_femme.html">Chemisiers</a>
+                        <a class="dropdown-item" href="hauts_femme.html">Tops</a>
+                        <a class="dropdown-item" href="robes.html">Robes</a>
+                        <a class="dropdown-item" href="pulls_femme.html">Pulls</a>
+                        <a class="dropdown-item" href="vestes_femme.html">Vestes</a>
+                        <a class="dropdown-item" href="manteaux_femme.html">Manteaux</a>
+                        <a class="dropdown-item" href="chaussures_femme.html">Chaussures</a>
+                        <a class="access_f" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                                Accessoires <i class="fas fa-angle-down"></i></a>
+                        <div class="sous_menu_f" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="accessoires_femme.html">Tout voir</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="accessoires_femme.html#sacs">Sacs</a>
+                            <a class="dropdown-item" href="accessoires_femme.html#ceintures">Ceintures</a>
+                            <a class="dropdown-item" href="accessoires_femme.html#montres">Montres</a>
+                            <a class="dropdown-item" href="accessoires_femme.html#colliers">Colliers</a>
+                            <a class="dropdown-item" href="accessoires_femme.html#lunettes">Lunettes</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        HOMME</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item redsolde" href="solde.h.html">Soldes</a>
+                        <a class="dropdown-item" href="tous_nos_produits_h.html">Tout voir</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="pantalons.html">Pantalons</a>
+                        <a class="dropdown-item" href="jean_h.html">Jeans</a>
+                        <a class="dropdown-item" href="chemise_h.html">Chemises</a>
+                        <a class="dropdown-item" href="hauts_h.html">Hauts</a>
+                        <a class="dropdown-item" href="pull_h.html">Pulls</a>
+                        <a class="dropdown-item" href="veste_h.html">Vestes / Manteaux</a>
+                        <a class="dropdown-item" href="chaussures_h.html">Chaussures</a>
+                        <a class="access_h" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="accessoires_h.html">
+                            Accessoires <i class="fas fa-angle-down"></i> </a>
+                        <div class="sous_menu_h" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="accessoires_h.html">Tout voir</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="accessoires_h.html#sac">Sacs</a>
+                            <a class="dropdown-item" href="accessoires_h.html#ceintures">Ceintures</a>
+                            <a class="dropdown-item" href="accessoires_h.html#casquettes">Casquettes</a>
+                            <a class="dropdown-item" href="accessoires_h.html#bonnet">Bonnets</a>
+                            <a class="dropdown-item" href="accessoires_h.html#montre">Montres</a>
+                            <a class="dropdown-item" href="accessoires_h.html#lunette">Lunettes</a>
+                            <a class="dropdown-item" href="accessoires_h.html#portefeuille">Portefeuilles</a>
+                        </div>
+                    </div>
+                </li>
+
+
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <!-- *****  fil d'ariane *****-->
+    <nav aria-label="breadcrumb" id="ariane">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
+
+            <li class="breadcrumb-item active" aria-current="page">Nouveautés</li>
+        </ol>
+    </nav>
+
+
+    <div class="clear"></div>
+
+
+    <div>
+        <h2>Nouveautés</h2>
+        <span class="ligne"></span>
+        <br>
+        <p>L'équipe <span class="orange">LePetitCommerce</span> est fière de vous présenter sa nouvelle collection de t-shirts pour femme 2019. <br> Cette collection se distingue par leur coupe et leur style.</p>
+    </div>
+
+    <div class="container nouveaute">
+
+
+        <div class="card-columns">
+            <div class="card">
+                <img src="img/femme/TSHIRTS/tee-shirt2b.jpg" class="card-img-top" alt="photo_tshirt">
+                <div class="card-body">
+                    <h5 class="card-title">Chaud! CHaud!</h5>
+                    <p class="card-text">La nouvelle collection SUMMER 2019.</p>
+
+                </div>
+            </div>
+            <div class="card text-center">
+                <div class="card-body">
+                    <h5 class="card-title">Inscrivez-vous à la Newsletter pour etre tenus informés</h5>
+                    <form>
+
+                        <div class="email-box ">
+                            <i class="fas fa-envelope "></i>
+                            <input class="tbox " type="email " placeholder="Entrez votre email " required>
+                            <button class="btn_news " type="button " name="button ">Souscrire</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+
+
+            <div class="card">
+                <img src="img/femme/TSHIRTS/tee-shirt2c.jpg" class="card-img-top" alt="photo_costume">
+            </div>
+
+
+            <div class="card">
+                <img src="img/femme/TSHIRTS/tee-shirt2d.jpg" class="card-img-top" alt="photo_costume">
+            </div>
+
+
+            <div class="card bg-primary text-white text-center p-3">
+                <blockquote class="blockquote mb-0">
+                    <p>Nos Tshirts 2019 tendance </p>
+                    <footer class="blockquote-footer text-white">
+                        <small>
+                    <cite title="Source Title">LePetitCommerce</cite>
+                </small>
+                    </footer>
+                </blockquote>
+            </div>
+
+            <div class="card">
+                <img src="img/femme/TSHIRTS/tee-shirt2g.jpg" class="card-img-top" alt="photo_costume">
+                <div class="card-body">
+
+
+                    <a href="hauts_femme.html" class="btn_achat">Acheter <i class="fas fa-angle-right"></i></a>
+                </div>
+            </div>
+
+
+            <div class="card p-3">
+                <blockquote class="blockquote mb-0 card-body">
+                    <p>"La nouvelle collection pour femme LePetitCommerce arrive"</p>
+                    <footer class="blockquote-footer">
+                        <small class="text-muted">
+                            M. Curie de <cite title="Source Title">Grazia</cite>
+                        </small>
+                    </footer>
+                </blockquote>
+            </div>
+
+
+
+
+            <div class="card">
+                <img src="img/femme/TSHIRTS/tee-shirt2e.jpg" class="card-img-top" alt="photo_costume">
+
+            </div>
+
+            <div class="card text-center">
+                <div class="card-body">
+                    <h5 class="card-title">Besoin d'aide?</h5>
+                    <p class="card-text">Rencontrez nous pour vous aider à choisir le costume parfait</p>
+                    <a href="reservation.html" class="btn btn-outline-success">Je découvre <i class="fas fa-angle-right"></i></a>
+
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/femme/CHAUSSURES/chaussures4b.jpg" class="card-img-top" alt="photo_costume">
+                <div class="card-body">
+                    <h5 class="card-title">Chaussures pour l'été</h5>
+
+                    <a href="chaussures_femme.html#sandales" class="btn btn-outline-success">Je découvre <i class="fas fa-angle-right"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <div class="clear"></div>
+
+    <!-- **** infos sup **** -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 ">
+                <fieldset class=" pay">
+                    <legend> Moyens de paiement </legend>
+
+                    <img src="img/logo/cb.png" alt="logo_cb" class="cb">
+                    <img src="img/logo/mastercard.png" alt="logo_mastercard" class="cb">
+                    <img src="img/logo/visa.png" alt="logo_visa" class="cb">
+                    <img src="img/logo/amex.png" alt="logo_amex" class="cb">
+                    <img src="img/logo/google_pay.png" alt="logo_google" class="cb">
+                    <img src="img/logo/apple_pay.png" alt="return" class="cb">
+                </fieldset>
+            </div>
+            <div class="col-md-4 col-xl-4">
+                <fieldset class="return">
+                    <legend> Satisfait ou remboursé </legend>
+
+
+                    <img src="img/logo/return.png" alt="return" id="return_logo">
+
+
+                </fieldset>
+            </div>
+            <div class="col-md-4 ">
+                <fieldset class=" help">
+                    <legend> Besoin d'aide</legend>
+
+
+
+                    <a href="tel:+33762765434">0101010101</a>
+
+                    <p>(Appel Gratuit)</p>
+
+
+                </fieldset>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- ******  Footer  ****** -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row ">
+                <Div id="newsletter" class="newsletter col-sm-4 col-md-4 test">
+                    <div id="toggle_news">
+                        <h4>NewsLetter <i class="fas fa-angle-down"></i></h4>
+                        <span class="ligne"></span>
+                    </div>
+                    <div class="footer_align" id="news_p">
+                        <p>Inscrivez-vous à notre programme relationnel <strong>LePetitCommerce</strong> afin de recevoir toute notre actualité et nos meilleures offres.</p>
+                    </div>
+                    <a href="newsletter.html" class="btn btn-outline-success"> M'inscrire !</a>
+
+                </Div>
+
+                <div class="col-sm-4 col-md-4 test" id="infos">
+                    <div id="toggle_infos">
+                        <h4>Informations Utiles <i class="fas fa-angle-down"></i></h4>
+                        <span class="ligne"></span>
+                    </div>
+                    <div class="footer_align" id="infos_liste">
+                        <ul>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="cgv.html">Mentions Légales</a></li>
+                            <li><a href="cgv.html">Nos conditions Générales de Vente</a></li>
+                            <li><a href="plan.html">Plan du site</a></li>
+                            <li><a href="#" OnClick="javascript:window.print()">Imprimer la page</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 " id="Social">
+                    <div id="toggle_Social">
+                        <h4>Suivez Nous <i class="fas fa-angle-down"></i></h4>
+                        <span class="ligne"></span>
+                    </div>
+                    <div class="footer_align row" id="Social_logo">
+                        <a href="https://fr-fr.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                        <a href="https://www.instagram.com/?hl=fr"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/?lang=fr"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://www.pinterest.fr/"><i class="fab fa-pinterest-square"></i></a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <div id="copy">
+            <p>Copyright &copy; LePetitCommerce</p>
+        </div>
+    </footer>
+
+
+
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>
