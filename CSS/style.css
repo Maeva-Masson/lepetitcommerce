@@ -1250,6 +1250,15 @@ h3 {
 }
 
 
+/* ***********  Pages produit********************************** */
+
+.nom_produit {
+    color: #000 !important;
+    font-family: 'abangregular';
+    font-size: 2em;
+}
+
+
 /* ***********  Pages Produits  ********************************** */
 
 .presentation {
