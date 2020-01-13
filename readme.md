@@ -1,6 +1,6 @@
 Readmme.md
 
-Sujet: Créationd’unsitewebeCommerceHTML/CSS/JAVASCRIPT
+Sujet: Création d’un site web eCommerce HTML/CSS/JAVASCRIPT
 
 Consigne et Contexte :
 PROJET LePetitCommerce
